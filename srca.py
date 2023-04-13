@@ -5,7 +5,7 @@ from Inicio import Inicio
 from PantallaCarga import PantallaCarga
 from Resultados import Resultados
 
-ctk.set_appearance_mode('dark')
+ctk.set_appearance_mode('light')
 
 class App(ctk.CTk):
     def __init__(self):
