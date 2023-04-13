@@ -66,7 +66,7 @@ class Inicio(ctk.CTkFrame):
 			filename = askopenfilename(initialdir="C://")
 			student  = Student(ruta = filename, periodoActual = self.periodoActualEntry.get())
 			message = "Bienvenido " + student.nombre
-			CTkMessagebox(message= message, icon="check", option_1="Thanks")
+			CTkMessagebox(title="Bienvenido",message= message, icon="check", option_1="Thanks")
 			self.boolKardex = True
 			self.controlador.obtenerKardex(student)
 
