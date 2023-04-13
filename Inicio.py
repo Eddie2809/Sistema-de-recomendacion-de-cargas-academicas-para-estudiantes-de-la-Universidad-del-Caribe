@@ -38,7 +38,7 @@ class Inicio(ctk.CTkFrame):
 		self.containerButtons.rowconfigure(0, weight=1)
 
 
-		self.subirKardex = ctk.CTkButton(self.containerButtons , text="Subir Kardex", command=self.cargarKardex)
+		self.subirKardex = ctk.CTkButton(self.containerButtons , fg_color = estilo.COLOR_FONDO , hover_color = estilo.COLOR_FONDO, text_color= estilo.COLOR_PRINCIPAL, border_color=estilo.COLOR_PRINCIPAL, text="Subir Kardex", border_width =2 ,command=self.cargarKardex)
 		self.subirKardex.grid(row = 0, column = 0, sticky= 'e',padx=10,pady=10)
 
 		#Ingresar periodo actual
@@ -51,7 +51,7 @@ class Inicio(ctk.CTkFrame):
 		self.periodoActualEntry.grid(column=2, row=0, sticky="we",padx=10,pady=10)
 
 
-		self.continuarButton = ctk.CTkButton(self.container, text="Continuar", command=self.cambiarVentana)
+		self.continuarButton = ctk.CTkButton(self.container, text="Continuar", fg_color = estilo.COLOR_PRINCIPAL , hover_color = estilo.COLOR_PRINCIPAL, text_color= estilo.COLOR_FONDO, border_color=estilo.COLOR_FONDO,command=self.cambiarVentana)
 		self.continuarButton.grid(row = 2, column = 0, padx=10, pady=10,sticky= 'n')
 
 	def cambiarVentana(self):
