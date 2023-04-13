@@ -1,6 +1,5 @@
 import customtkinter
 import tkinter 
-from win32api import GetSystemMetrics
 
 customtkinter.set_appearance_mode("Light") 
             
