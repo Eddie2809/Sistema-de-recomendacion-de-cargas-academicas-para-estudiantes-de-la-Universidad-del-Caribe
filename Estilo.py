@@ -1,5 +1,7 @@
+
 class Estilo():
-	def __init__():
+	def __init__(self):
+		super().__init__()
 		self.COLOR_FONDO = '#EFEFEF'
 		self.COLOR_PRINCIPAL = ''
 		self.COLOR_SECUNDARIO = ''

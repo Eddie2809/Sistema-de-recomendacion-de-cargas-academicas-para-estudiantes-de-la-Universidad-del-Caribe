@@ -1,6 +1,9 @@
 import customtkinter as ctk
 from Preferencias import Preferencias
 from Verificacion import Verificacion
+from Inicio import Inicio
+from PantallaCarga import PantallaCarga
+from Resultados import Resultados
 
 ctk.set_appearance_mode('dark')
 
@@ -14,11 +17,11 @@ class App(ctk.CTk):
 
         self.frames = {}
 
-        for F in (Preferencias,Verificacion):
-        	nombreRuta = F.__name__
-        	frame = F(self,controlador=self)
-        	self.frames[nombreRuta] = frame
-        	frame.grid(row=0,column=0,sticky='nsew')
+        for F in (Inicio,PantallaCarga,Preferencias,Verificacion,Resultados):
+            nombreRuta = F.__name__
+            frame = F(self,controlador=self)
+            self.frames[nombreRuta] = frame
+            frame.grid(row=0,column=0,sticky='nsew')
 
         self.cambiarRuta('Verificacion')
 
