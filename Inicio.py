@@ -16,7 +16,7 @@ class Inicio(ctk.CTkFrame):
 		estilo = Estilo()
 
 		self.container = ctk.CTkFrame(self,width=1200, height=600, corner_radius=10, fg_color=estilo.COLOR_FONDO, bg_color=estilo.COLOR_FONDO)
-		self.container.grid(row=0,column=0,sticky= 'ns')
+		self.container.grid(row=0,column=0,sticky= 'nsew')
 		self.container.grid_propagate(0)
 
 		self.container.grid_columnconfigure(0, weight=1)
@@ -26,7 +26,7 @@ class Inicio(ctk.CTkFrame):
 
 		title = "Sistema de recomendación de cargas académicas para estudiantes de licenciatura de la Universidad del Caribe"
 
-		self.titleSistem  = ctk.CTkLabel(self.container, text = title , text_color = "black", wraplength=600, justify="center")
+		self.titleSistem  = ctk.CTkLabel(self.container, text = title , text_color = "black", wraplength=900, justify="center",font=estilo.FUENTE_TITULO)
 		self.titleSistem.grid(row=0, column = 0, pady = 10, sticky="s")
 
 		self.containerButtons  = ctk.CTkFrame(self.container,width=600, height=50, corner_radius=10, fg_color=estilo.COLOR_FONDO, bg_color=estilo.COLOR_FONDO)

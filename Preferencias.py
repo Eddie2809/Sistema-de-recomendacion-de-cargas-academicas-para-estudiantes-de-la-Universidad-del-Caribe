@@ -117,6 +117,10 @@ class PreferenciasIzquierda(ctk.CTkFrame):
 
         estilo = Estilo()
 
+        self.configure(fg_color = estilo.COLOR_PRINCIPAL)
+
+        self.prefAvanzadasEstado = False
+
         self.titulo = ctk.CTkLabel(self,text='Cantidad de asignaturas',font=estilo.FUENTE_SUBTITULO)
         self.titulo.grid(row=0,column=0)
 
@@ -126,11 +130,18 @@ class PreferenciasIzquierda(ctk.CTkFrame):
         self.cda = CantidadDeAsignaturas(self)
         self.cda.grid(row = 2, column = 0)
 
-        self.opcionesAvanzadasBoton = ctk.CTkButton(self,text='Opciones avanzadas')
+        self.opcionesAvanzadasBoton = ctk.CTkButton(self,text='Opciones avanzadas',command=self.alternarPrefAvanzadas)
         self.opcionesAvanzadasBoton.grid(row = 3, column = 0)
 
         self.pesos = Pesos(self)
-        self.pesos.grid(row = 4, column = 0)
+
+    def alternarPrefAvanzadas(self):
+        if self.prefAvanzadasEstado:
+            self.pesos.grid_forget()
+            self.prefAvanzadasEstado = not(self.prefAvanzadasEstado)
+        else:
+            self.pesos.grid(row = 4, column = 0)
+            self.prefAvanzadasEstado = not(self.prefAvanzadasEstado)
 
 
 
@@ -140,23 +151,39 @@ class PreferenciasDerecha(ctk.CTkFrame):
 
         estilo = Estilo()
 
+
         self.titulo = ctk.CTkLabel(self,text='Horario de diponibilidad',font=estilo.FUENTE_SUBTITULO)
         self.titulo.grid(row=0,column=0)
 
-        self.texto = ctk.CTkCheckBox(self,text='Marca las horas en las que tienes diponibilidad para tomar clases.')
+        self.dhCheck = ctk.CTkCheckBox(self,text='Generar cargas únicamente dentr del horario de disponibilidad.',font=estilo.FUENTE_TEXTO)
+        self.dhCheck.grid(row=1,column=0)
+
+        self.texto = ctk.CTkLabel(self,text='Marca las horas en las que tienes diponibilidad para tomar clases.',font=estilo.FUENTE_TEXTO)
         self.texto.grid(row=2,column=0)
+
+class DisponibilidadDeHorario(ctk.CTkFrame):
+    def __init__(self,*args,**kwargs):
+        super().__init__(*args,**kwargs)
+
+        estilo = Estilo()
+
+
 
 class Preferencias(ctk.CTkFrame):
     def __init__(self,*args,controlador,**kwargs):
         super().__init__(*args,**kwargs)
 
         estilo = Estilo()
+        self.configure(fg_color='transparent')
+        self.grid_rowconfigure(1,weight=1)
+        self.grid_columnconfigure(0,weight=1)
+        self.grid_columnconfigure(1,weight=1)
 
-        self.titulo = ctk.CTkLabel(self,text='Preferencias',font=estilo.FUENTE_TITULO)
-        self.titulo.grid(row=0,column=0)
+        self.titulo = ctk.CTkLabel(self,text='Preferencias',font=estilo.FUENTE_TITULO, text_color = estilo.COLOR_TEXTO)
+        self.titulo.grid(row=0,column=0,sticky='w', pady = (0,25))
 
         self.prefIzq = PreferenciasIzquierda(self,width=600)
-        self.prefIzq.grid(row = 1, column = 0)
+        self.prefIzq.grid(row = 1, column = 0,sticky='nsew')
 
         self.prefDer = PreferenciasDerecha(self,width=600)
-        self.prefDer.grid(row = 1, column = 1)
+        self.prefDer.grid(row = 1, column = 1,sticky='nsew')

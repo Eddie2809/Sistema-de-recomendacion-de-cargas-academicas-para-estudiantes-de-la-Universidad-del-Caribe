@@ -4,6 +4,7 @@ from Verificacion import Verificacion
 from Inicio import Inicio
 from PantallaCarga import PantallaCarga
 from Resultados import Resultados
+from Estilo import Estilo
 
 ctk.set_appearance_mode('light')
 
@@ -11,20 +12,30 @@ class App(ctk.CTk):
     def __init__(self):
         super().__init__()
 
+        estilo = Estilo()
+
         self.title("Sistema de recomendación de cargas académicas")
         self.geometry('1200x600')
         self.minsize(1200,600)
+        self.configure(fg_color = estilo.COLOR_FONDO)
+        self.grid_columnconfigure(0,weight=1)
+        self.grid_rowconfigure(0,weight=1)
 
         self.frames = {}
+        self.framePrincipal = ctk.CTkFrame(self)
+        self.framePrincipal.configure(fg_color='transparent')
+        self.framePrincipal.grid_columnconfigure(0,weight=1)
+        self.framePrincipal.grid_rowconfigure(0,weight=1)
+        self.framePrincipal.grid(row = 0, column = 0, sticky = 'nsew',padx = 100, pady = 50)
         self.estudiante = {}
 
         for F in (Inicio,PantallaCarga,Preferencias,Verificacion,Resultados):
             nombreRuta = F.__name__
-            frame = F(self,controlador=self)
+            frame = F(self.framePrincipal,controlador=self)
             self.frames[nombreRuta] = frame
             frame.grid(row=0,column=0,sticky='nsew')
 
-        self.cambiarRuta('Inicio')
+        self.cambiarRuta('Preferencias')
 
     def cambiarRuta(self,nuevaRuta):
         self.frames[nuevaRuta].tkraise()
