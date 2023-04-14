@@ -96,7 +96,7 @@ class PesosHeader(ctk.CTkFrame):
         self.titulo.grid(row = 0, column = 1)
 
         self.subtitulo = ctk.CTkLabel(self,text='Los pesos añaden prioridad a los objetivos que se describen a continuación.',font=estilo.FUENTE_TEXTO_PEQUEÑO)
-        self.subtitulo.grid(row = 0, column = 2)
+        self.subtitulo.grid(row = 1, column = 0)
 
 
 class CantidadDeAsignaturas(ctk.CTkFrame):
@@ -117,7 +117,6 @@ class PreferenciasIzquierda(ctk.CTkFrame):
 
         estilo = Estilo()
 
-        self.configure(fg_color = estilo.COLOR_PRINCIPAL)
 
         self.prefAvanzadasEstado = False
 
@@ -182,8 +181,8 @@ class Preferencias(ctk.CTkFrame):
         self.titulo = ctk.CTkLabel(self,text='Preferencias',font=estilo.FUENTE_TITULO, text_color = estilo.COLOR_TEXTO)
         self.titulo.grid(row=0,column=0,sticky='w', pady = (0,25))
 
-        self.prefIzq = PreferenciasIzquierda(self,width=600)
+        self.prefIzq = PreferenciasIzquierda(self)
         self.prefIzq.grid(row = 1, column = 0,sticky='nsew')
 
-        self.prefDer = PreferenciasDerecha(self,width=600)
+        self.prefDer = PreferenciasDerecha(self)
         self.prefDer.grid(row = 1, column = 1,sticky='nsew')
