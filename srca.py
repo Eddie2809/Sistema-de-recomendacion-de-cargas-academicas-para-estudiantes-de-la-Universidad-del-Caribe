@@ -26,25 +26,36 @@ class App(ctk.CTk):
         self.framePrincipal.configure(fg_color='transparent')
         self.framePrincipal.grid_columnconfigure(0,weight=1)
         self.framePrincipal.grid_rowconfigure(0,weight=1)
-        self.framePrincipal.grid(row = 0, column = 0, sticky = 'nsew')
+        self.framePrincipal.grid(row = 0, column = 0, sticky = 'nsew', padx = 100, pady = 50)
         self.framePrincipal.grid_propagate(0)
         self.estudiante = {}
 
-        for F in (Inicio,PantallaCarga,Preferencias,Verificacion,Resultados):
-            nombreRuta = F.__name__
-            frame = F(self.framePrincipal,controlador=self)
-            self.frames[nombreRuta] = frame
-            frame.grid(row=0,column=0,sticky='nsew')
-
+        
+        self.cargarFrame(Inicio)
         self.cambiarRuta('Inicio')
+
+
+        
 
     def cambiarRuta(self,nuevaRuta):
         self.frames[nuevaRuta].tkraise()
         
     def obtenerKardex(self, estudiante):
         self.estudiante = estudiante
-        print(self.estudiante.nombre)
+        self.cargarFrame(Verificacion)
+        self.cambiarRuta('Verificacion')
+        #print(self.estudiante.nombre)
+        #print(self.estudiante.kardex)
 
+    def cargarFrame(self, F):
+        nombreRuta = F.__name__
+        frame = F(self.framePrincipal,controlador=self)
+        self.frames[nombreRuta] = frame
+        frame.grid(row=0,column=0,sticky='nsew')
+    
+    def regresar(self):
+        self.cargarFrame(Inicio)
+        self.cambiarRuta('Inicio')
 
 
 if __name__ == "__main__":

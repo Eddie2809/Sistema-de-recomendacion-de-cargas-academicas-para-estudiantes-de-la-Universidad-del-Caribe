@@ -97,6 +97,10 @@ class Verificacion(ctk.CTkFrame):
 	def __init__(self,*args,route='verificacion',controlador,**kwargs):
 		super().__init__(*args,**kwargs)
 
+		self.printEstudent(controlador)
+
+		self.controlador = controlador
+
 		self.columnconfigure(0, weight=1)
 		self.columnconfigure(1, weight=2)
 		self.columnconfigure(2, weight=1)
@@ -105,6 +109,9 @@ class Verificacion(ctk.CTkFrame):
 		self.rowconfigure(1, weight=2)
 		self.rowconfigure(2, weight=2)
 		self.rowconfigure(3, weight=1)
+
+		self.subirKardex = ctk.CTkButton(self , fg_color = estilo.COLOR_FONDO , hover_color = estilo.COLOR_FONDO, text_color= estilo.COLOR_PRINCIPAL, border_color=estilo.COLOR_PRINCIPAL, text="Regresar", border_width =2 ,command=self.cargarKardex)
+		self.subirKardex.grid(row = 0, column = 0, sticky= 'e',padx=10,pady=10)
 
 		self.titulos = FrameTitulos(master=self)
 		self.titulos.grid(row=0, column=1, padx=100, pady=10, sticky=ctk.W)
@@ -119,3 +126,9 @@ class Verificacion(ctk.CTkFrame):
 		self.botonContinuar.grid(row=3,column=1)
 
 
+	def printEstudent(self, controlador):
+		print(controlador.estudiante.kardex)
+	
+	def cargarKardex(self):
+		self.controlador.regresar()
+		print("funciona")
