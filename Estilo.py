@@ -3,8 +3,8 @@ class Estilo():
 	def __init__(self):
 		super().__init__()
 		self.COLOR_FONDO = '#EFEFEF'
-		self.COLOR_PRINCIPAL = ''
-		self.COLOR_SECUNDARIO = ''
+		self.COLOR_PRINCIPAL = '#0E153B'
+		self.COLOR_SECUNDARIO = '#10CFC9'
 
 		self.FUENTE_TITULO = ('roboto',36)
 		self.FUENTE_SUBTITULO = ('roboto',24)
