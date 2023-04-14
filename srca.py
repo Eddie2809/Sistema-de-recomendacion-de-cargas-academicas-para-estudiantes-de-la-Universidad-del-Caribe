@@ -16,6 +16,7 @@ class App(ctk.CTk):
         self.minsize(1200,600)
 
         self.frames = {}
+        self.estudiante = {}
 
         for F in (Inicio,PantallaCarga,Preferencias,Verificacion,Resultados):
             nombreRuta = F.__name__
@@ -23,10 +24,15 @@ class App(ctk.CTk):
             self.frames[nombreRuta] = frame
             frame.grid(row=0,column=0,sticky='nsew')
 
-        self.cambiarRuta('Preferencias')
+        self.cambiarRuta('Inicio')
 
     def cambiarRuta(self,nuevaRuta):
-    	self.frames[nuevaRuta].tkraise()
+        self.frames[nuevaRuta].tkraise()
+        
+    def obtenerKardex(self, estudiante):
+        self.estudiante = estudiante
+        print(self.estudiante.nombre)
+
 
 
 if __name__ == "__main__":
