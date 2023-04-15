@@ -31,6 +31,7 @@ class App(ctk.CTk):
         self.estudiante = {}
         
         self.cambiarFrame(Inicio, "Inicio")
+        self.cambiarFrame(Resultados, "Resultados")
       
 
     def cambiarRuta(self,nuevaRuta):
