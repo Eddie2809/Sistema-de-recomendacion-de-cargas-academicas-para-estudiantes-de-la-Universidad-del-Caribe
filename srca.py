@@ -29,23 +29,16 @@ class App(ctk.CTk):
         self.framePrincipal.grid(row = 0, column = 0, sticky = 'nsew', padx = 100, pady = 50)
         self.framePrincipal.grid_propagate(0)
         self.estudiante = {}
-
         
-        self.cargarFrame(Inicio)
-        self.cambiarRuta('Inicio')
-
-
-        
+        self.cambiarFrame(Inicio, "Inicio")
+      
 
     def cambiarRuta(self,nuevaRuta):
         self.frames[nuevaRuta].tkraise()
         
     def obtenerKardex(self, estudiante):
         self.estudiante = estudiante
-        self.cargarFrame(Verificacion)
-        self.cambiarRuta('Verificacion')
-        #print(self.estudiante.nombre)
-        #print(self.estudiante.kardex)
+        self.cambiarFrame(Verificacion, 'Verificacion')
 
     def cargarFrame(self, F):
         nombreRuta = F.__name__
@@ -56,6 +49,10 @@ class App(ctk.CTk):
     def regresar(self):
         self.cargarFrame(Inicio)
         self.cambiarRuta('Inicio')
+    
+    def cambiarFrame(self, Frame, FrameName):
+        self.cargarFrame(Frame)
+        self.cambiarRuta(FrameName)        
 
 
 if __name__ == "__main__":
