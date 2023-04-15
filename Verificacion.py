@@ -82,11 +82,6 @@ class FrameListaAsignaturas(ctk.CTkFrame):
 		self.scrollAsignaturas.grid(row=1, columnspan=4, sticky=ctk.NSEW)
 
 
-listaClaves = []
-listaMaterias = []
-listaPeriodos = []
-listaCalificaciones = []
-
 class ScrollFrameAsignaturas(ctk.CTkScrollableFrame):
 	def __init__(self, master, controlador):
 		super().__init__(master)
@@ -107,24 +102,24 @@ class ScrollFrameAsignaturas(ctk.CTkScrollableFrame):
 		#print("-------------------------------------")
 		
 		for i in range(len(listaKardex)):
-			listaClaves.append(ctk.StringVar())
-			listaClaves[i].set(listaKardex[i][0])
-			self.entryClave = ctk.CTkEntry(self, width=100, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=listaClaves[i])
+			master.master.listaClaves.append(ctk.StringVar())
+			master.master.listaClaves[i].set(listaKardex[i][0])
+			self.entryClave = ctk.CTkEntry(self, width=100, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=master.master.listaClaves[i])
 			self.entryClave.grid(row=i, column=0, sticky=ctk.W)
 
-			listaMaterias.append(ctk.StringVar())
-			listaMaterias[i].set(listaKardex[i][3])
-			self.entryMateria = ctk.CTkEntry(self, width=324, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=listaMaterias[i])
+			master.master.listaMaterias.append(ctk.StringVar())
+			master.master.listaMaterias[i].set(listaKardex[i][3])
+			self.entryMateria = ctk.CTkEntry(self, width=324, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=master.master.listaMaterias[i])
 			self.entryMateria.grid(row=i, column=1, sticky=ctk.W)
 
-			listaPeriodos.append(ctk.StringVar())
-			listaPeriodos[i].set(listaKardex[i][1])
-			self.entryPeriodo = ctk.CTkEntry(self, width=90, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=listaPeriodos[i])
+			master.master.listaPeriodos.append(ctk.StringVar())
+			master.master.listaPeriodos[i].set(listaKardex[i][1])
+			self.entryPeriodo = ctk.CTkEntry(self, width=90, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=master.master.listaPeriodos[i])
 			self.entryPeriodo.grid(row=i, column=2, sticky=ctk.W)
 
-			listaCalificaciones.append(ctk.StringVar())
-			listaCalificaciones[i].set(listaKardex[i][2])
-			self.entryCalificacion = ctk.CTkEntry(self, width=50, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=listaCalificaciones[i])
+			master.master.listaCalificaciones.append(ctk.StringVar())
+			master.master.listaCalificaciones[i].set(listaKardex[i][2])
+			self.entryCalificacion = ctk.CTkEntry(self, width=50, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=master.master.listaCalificaciones[i])
 			self.entryCalificacion.grid(row=i, column=3, sticky=ctk.W)
 
 
@@ -137,6 +132,11 @@ class Verificacion(ctk.CTkFrame):
 		self.valorMatricula = ctk.StringVar()
 		self.valorSituacion = ctk.StringVar()
 		self.valorPlan = ctk.StringVar()
+
+		self.listaClaves = []		
+		self.listaMaterias = []
+		self.listaPeriodos = []
+		self.listaCalificaciones = []
 
 		self.columnconfigure(0, weight=1)
 		self.columnconfigure(1, weight=2)
@@ -169,14 +169,21 @@ class Verificacion(ctk.CTkFrame):
 
 
 	def validarDatos(self, controlador):
-		for i in range(len(listaClaves)):
-			listaClaves[i] = listaClaves[i].get()
-			listaPeriodos[i] = listaPeriodos[i].get()
-			listaCalificaciones[i] = listaCalificaciones[i].get()
+		for i in range(len(self.listaClaves)):
+			self.listaClaves[i] = self.listaClaves[i].get()
+			self.listaPeriodos[i] = self.listaPeriodos[i].get()
+			self.listaCalificaciones[i] = self.listaCalificaciones[i].get()
 		nombreModificado = self.valorNombre.get()
 		matriculaModificada = self.valorMatricula.get()
 		situacionModificada = self.valorSituacion.get()
 		planModificado = self.valorPlan.get()
-		print(nombreModificado, " ", matriculaModificada, " ", situacionModificada, " ", planModificado)
-		controlador.cargarFrame(Preferencias)
-		controlador.cambiarRuta('Preferencias')
+
+		dataframeKardex = pd.DataFrame(list(zip(self.listaClaves, self.listaPeriodos, self.listaCalificaciones)), columns=["clave", "periodo", "promediofinal"])
+		controlador.dataframeKardex = dataframeKardex
+		controlador.estudianteNombre = nombreModificado
+		controlador.estudianteMatricula = matriculaModificada
+		controlador.estudianteSituacion = situacionModificada
+		controlador.estudiantePlan = planModificado
+
+		#print(nombreModificado, " ", matriculaModificada, " ", situacionModificada, " ", planModificado)
+		controlador.cambiarFrame(Preferencias, 'Preferencias')

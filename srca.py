@@ -29,6 +29,12 @@ class App(ctk.CTk):
         self.framePrincipal.grid(row = 0, column = 0, sticky = 'nsew', padx = 100, pady = 50)
         self.framePrincipal.grid_propagate(0)
         self.estudiante = {}
+
+        self.dataframeKardex = {}
+        self.estudianteNombre = ""
+        self.estudianteMatricula = ""
+        self.estudianteSituacion = ""
+        self.estudiantePlan = ""
         
         self.cambiarFrame(Inicio, "Inicio")
       
