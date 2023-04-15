@@ -8,23 +8,24 @@ estilo = Estilo()
 class FrameTitulos(ctk.CTkFrame):
 	def __init__(self, master):
 		super().__init__(master)
+		self.configure(fg_color='transparent')
+
+		self.rowconfigure(0, weight=1)
+		self.rowconfigure(1, weight=1)
 		self.labelTitulo = ctk.CTkLabel(self,text='Verifica tus datos',font=estilo.FUENTE_TITULO,text_color=estilo.GRIS_OSCURO)
-		self.labelTitulo.grid(row=0,column=0, sticky=ctk.W)
-		self.labelSubtitulo = ctk.CTkLabel(self,text='Es importante que verifiques tus datos antes de continuar para que el sistema funcione correctamente',font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO)
-		self.labelSubtitulo.grid(row=1,column=0, sticky=ctk.W)
+		self.labelTitulo.grid(row=0, sticky=ctk.W)
+		self.labelSubtitulo = ctk.CTkLabel(self,text='Es importante que verifiques tus datos antes de continuar para que el sistema funcione correctamente', font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO)
+		self.labelSubtitulo.grid(row=1, sticky=ctk.W)
+
 
 class FrameDatosKardex(ctk.CTkFrame):
 	def __init__(self, master, controlador):
 		super().__init__(master)
 
+		self.configure(fg_color='transparent')
 		self.columnconfigure(0, weight=1)
 		self.columnconfigure(1, weight=3)
-		self.rowconfigure(0, weight=1)
-		self.rowconfigure(1, weight=1)
-		self.rowconfigure(2, weight=1)
-		self.rowconfigure(3, weight=1)
-		self.rowconfigure(4, weight=1)
-
+		
 		self.labelKardex = ctk.CTkLabel(self,text='Kardex',font=estilo.FUENTE_SUBTITULO,text_color=estilo.GRIS_OSCURO)
 		self.labelKardex.grid(row=0,column=0, sticky=ctk.W)
 
@@ -34,7 +35,7 @@ class FrameDatosKardex(ctk.CTkFrame):
 		self.labelNombre = ctk.CTkLabel(self,text='Nombre:',font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO)
 		self.labelNombre.grid(row=1,column=0, sticky=ctk.W)
 		self.entryNombre = ctk.CTkEntry(self, width=283, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=master.valorNombre)
-		self.entryNombre.grid(row=1, column=1, padx=10, pady=8, sticky=ctk.W)
+		self.entryNombre.grid(row=1, column=1, padx=10, sticky=ctk.W)
 
 		#valorMatricula = ctk.StringVar()
 		master.valorMatricula.set(controlador.estudiante.matricula)
@@ -42,7 +43,7 @@ class FrameDatosKardex(ctk.CTkFrame):
 		self.labelMatricula = ctk.CTkLabel(self,text='Matrícula:',font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO)
 		self.labelMatricula.grid(row=2,column=0, sticky=ctk.W)
 		self.entryMatricula = ctk.CTkEntry(self, width=122, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=master.valorMatricula)
-		self.entryMatricula.grid(row=2, column=1, padx=10, pady=8, sticky=ctk.W)
+		self.entryMatricula.grid(row=2, column=1, padx=10, sticky=ctk.W)
 
 		#valorSituacion = ctk.StringVar()
 		master.valorSituacion.set(controlador.estudiante.situacion)
@@ -50,24 +51,21 @@ class FrameDatosKardex(ctk.CTkFrame):
 		self.labelSituacion = ctk.CTkLabel(self,text='Situación:',font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO)
 		self.labelSituacion.grid(row=3,column=0, sticky=ctk.W)
 		self.comboSituacion = ctk.CTkComboBox(self, width=122, font=estilo.FUENTE_TEXTO_PEQUEÑO, values=["Regular", "Irregular", "Condicionado"], variable=master.valorSituacion)
-		self.comboSituacion.grid(row=3, column=1, padx=10, pady = 8, sticky=ctk.W)
+		self.comboSituacion.grid(row=3, column=1, padx=10, sticky=ctk.W)
 
 		#valorPlan = ctk.StringVar()
 		master.valorPlan.set(controlador.estudiante.planNombre)
 
 		self.labelPlan = ctk.CTkLabel(self,text='Plan:',font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO)
 		self.labelPlan.grid(row=4,column=0, sticky=ctk.W)
-		self.entryPlan = ctk.CTkComboBox(self, width=122, font=estilo.FUENTE_TEXTO_PEQUEÑO, values=["lista", "de", "planes"], variable=master.valorPlan)
-		self.entryPlan.grid(row=4, column=1, padx=10, pady=8, sticky=ctk.W)
+		self.entryPlan = ctk.CTkEntry(self, width=122, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=master.valorPlan)
+		self.entryPlan.grid(row=4, column=1, padx=10, sticky=ctk.W)
 	
 
 class FrameListaAsignaturas(ctk.CTkFrame):
 	def __init__(self, master, controlador):
 		super().__init__(master)
-		self.columnconfigure(0, weight=1)
-		self.columnconfigure(1, weight=2)
-		self.columnconfigure(2, weight=1)
-		self.columnconfigure(3, weight=1)
+		self.configure(fg_color='transparent')
 
 		self.labelClave = ctk.CTkLabel(self,text='Clave',width=110,anchor=ctk.W,font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO)
 		self.labelClave.grid(row=0,column=0, padx=10,sticky=ctk.W)
@@ -85,6 +83,7 @@ class FrameListaAsignaturas(ctk.CTkFrame):
 class ScrollFrameAsignaturas(ctk.CTkScrollableFrame):
 	def __init__(self, master, controlador):
 		super().__init__(master)
+		self.configure(fg_color='transparent')
 		self.columnconfigure(0, weight=1)
 		self.columnconfigure(1, weight=1)
 		self.columnconfigure(2, weight=1)
@@ -123,7 +122,6 @@ class ScrollFrameAsignaturas(ctk.CTkScrollableFrame):
 			self.entryCalificacion.grid(row=i, column=3, sticky=ctk.W)
 
 
-
 class Verificacion(ctk.CTkFrame):
 	def __init__(self,*args,route='verificacion',controlador,**kwargs):
 		super().__init__(*args,**kwargs)
@@ -138,35 +136,30 @@ class Verificacion(ctk.CTkFrame):
 		self.listaPeriodos = []
 		self.listaCalificaciones = []
 
-		self.columnconfigure(0, weight=1)
-		self.columnconfigure(1, weight=2)
-		self.columnconfigure(2, weight=1)
-
-		self.rowconfigure(0, weight=1)
-		self.rowconfigure(1, weight=2)
-		self.rowconfigure(2, weight=2)
-		self.rowconfigure(3, weight=1)
-
-		self.subirKardex = ctk.CTkButton(self , fg_color = estilo.COLOR_FONDO , hover_color = estilo.COLOR_FONDO, text_color= estilo.COLOR_PRINCIPAL, border_color=estilo.COLOR_PRINCIPAL, text="Regresar", border_width =2 ,command=self.cargarKardex)
-		self.subirKardex.grid(row = 0, column = 0, sticky= 'e',padx=10,pady=10)
+		self.configure(fg_color='transparent')
+		
+		self.grid_rowconfigure(0, weight=1)
+		self.grid_rowconfigure(1, weight=2)
+		self.grid_rowconfigure(2, weight=2)
+		self.grid_rowconfigure(3, weight=1)
 
 		self.titulos = FrameTitulos(master=self)
-		self.titulos.grid(row=0, column=1, padx=100, pady=10, sticky=ctk.W)
+		self.titulos.grid(row=0, sticky=ctk.NSEW)
 		
 		self.datosKardex = FrameDatosKardex(master=self, controlador = controlador)
-		self.datosKardex.grid(row=1, column=1, padx=100, pady=10, sticky=ctk.W)
+		self.datosKardex.grid(row=1, sticky=ctk.W)
 
 		self.datosKardex = FrameListaAsignaturas(master=self, controlador=controlador)
-		self.datosKardex.grid(row=2, column=1, padx=100, pady=10, sticky=ctk.W)
+		self.datosKardex.grid(row=2, sticky=ctk.NSEW)
 
-		self.botonContinuar = ctk.CTkButton(self,text='Continuar',command=lambda: self.validarDatos(controlador))
-		self.botonContinuar.grid(row=3,column=1)
+		self.subirKardex = ctk.CTkButton(self , fg_color = "#FFFFFF" , hover_color = estilo.COLOR_FONDO, text_color= estilo.COLOR_PRINCIPAL, height=29, border_color=estilo.COLOR_PRINCIPAL, text="Regresar", border_width =2 ,command= lambda: self.cargarKardex(controlador))
+		self.subirKardex.grid(row=3, sticky=ctk.W)
 
-	
-	def cargarKardex(self):
-		self.controlador.regresar()
-		print("funciona")
+		self.botonContinuar = ctk.CTkButton(self, fg_color=estilo.COLOR_PRINCIPAL, text_color=estilo.COLOR_FONDO, text='Continuar',height=29 ,command=lambda: self.validarDatos(controlador))
+		self.botonContinuar.grid(row=3)
 
+	def cargarKardex(self, controlador):
+		controlador.regresar()
 
 	def validarDatos(self, controlador):
 		for i in range(len(self.listaClaves)):
@@ -185,5 +178,4 @@ class Verificacion(ctk.CTkFrame):
 		controlador.estudianteSituacion = situacionModificada
 		controlador.estudiantePlan = planModificado
 
-		#print(nombreModificado, " ", matriculaModificada, " ", situacionModificada, " ", planModificado)
 		controlador.cambiarFrame(Preferencias, 'Preferencias')
