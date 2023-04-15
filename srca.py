@@ -37,7 +37,6 @@ class App(ctk.CTk):
         self.estudiantePlan = ""
         
         self.cambiarFrame(Inicio, "Inicio")
-      
 
     def cambiarRuta(self,nuevaRuta):
         self.frames[nuevaRuta].tkraise()
