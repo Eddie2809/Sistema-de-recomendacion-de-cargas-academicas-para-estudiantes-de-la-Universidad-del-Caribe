@@ -8,8 +8,8 @@ class PantallaCarga(ctk.CTkFrame):
 
 		estilo = Estilo()
 
-		self.container = ctk.CTkFrame(self,width=1200, height=600, corner_radius=10, fg_color=estilo.COLOR_FONDO, bg_color=estilo.COLOR_FONDO)
-		self.container.grid(row=0,column=0,sticky= 'ns')
+		self.container = ctk.CTkFrame(self,width=1100, height=550, corner_radius=10, fg_color=estilo.COLOR_FONDO, bg_color=estilo.COLOR_FONDO)
+		self.container.grid(row=0,column=0,sticky= 'nswe')
 		self.container.grid_propagate(0)
 
 		self.container.grid_columnconfigure(0, weight=1)
