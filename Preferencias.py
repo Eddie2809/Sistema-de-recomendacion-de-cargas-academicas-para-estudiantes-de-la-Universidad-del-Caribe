@@ -160,12 +160,85 @@ class PreferenciasDerecha(ctk.CTkFrame):
         self.texto = ctk.CTkLabel(self,text='Marca las horas en las que tienes diponibilidad para tomar clases.',font=estilo.FUENTE_TEXTO)
         self.texto.grid(row=2,column=0)
 
-class DisponibilidadDeHorario(ctk.CTkFrame):
+        self.horario = Horario(self).grid(row = 3, column = 0)
+
+class Horario(ctk.CTkFrame):
     def __init__(self,*args,**kwargs):
         super().__init__(*args,**kwargs)
 
-        estilo = Estilo()
+        self.estilo = Estilo()
 
+        #     FILA DE DIAS
+        ctk.CTkLabel(self,text='Horas',width=85).grid(row = 0,column = 0)
+        ctk.CTkLabel(self,text='Lunes',width=85).grid(row = 0,column = 1)
+        ctk.CTkLabel(self,text='Martes',width=85).grid(row = 0, column = 2)
+        ctk.CTkLabel(self,text='Miercoles',width=85).grid(row = 0, column = 3)
+        ctk.CTkLabel(self,text='Jueves',width=85).grid(row = 0, column = 4)
+        ctk.CTkLabel(self,text='Viernes',width=85).grid(row = 0, column = 5)
+
+        # COLUMNA DE HORAS
+        hora = 7
+        for i in range(15):
+            ctk.CTkLabel(self,text=self.obtenerHora(hora)).grid(row = i+1, column = 0)
+            hora += 1
+
+        # CELDAS
+        self.disponibilidad = [
+            [True,True,True,True,True,True,True,True,True,True,True,True,True,True,True],
+            [True,True,True,True,True,True,True,True,True,True,True,True,True,True,True],
+            [True,True,True,True,True,True,True,True,True,True,True,True,True,True,True],
+            [True,True,True,True,True,True,True,True,True,True,True,True,True,True,True],
+            [True,True,True,True,True,True,True,True,True,True,True,True,True,True,True]
+        ]
+
+        for dia in range(5):
+            for hora in range(15):
+                Celda(self,cambiarDisponibilidad=self.cambiarDisponibilidad,width=85,hover_color='#20A325',dia=dia,hora=hora,corner_radius=0,font=self.estilo.FUENTE_TEXTO_PEQUEÑO,text_color=self.estilo.COLOR_TEXTO).grid(row = hora+1, column = dia+1)
+
+    def cambiarDisponibilidad(self,dia,hora):
+        self.disponibilidad[dia][hora] = not(self.disponibilidad[dia][hora])
+
+    def obtenerHora(self,hora):
+        if hora < 10:
+            horaTexto = '0' + str(hora) + ':00 - '
+        else:
+            horaTexto = str(hora) + ':00 - '
+
+        if hora + 1 < 10:
+            horaTexto += ('0' + str(hora+1) + ':00')
+        else:
+            horaTexto += (str(hora+1) + ':00')
+
+        return horaTexto
+
+
+
+
+class Celda(ctk.CTkButton):
+    def __init__(self,*args,cambiarDisponibilidad,dia,hora,**kwargs):
+        super().__init__(*args,**kwargs)
+        self.estilo = Estilo()
+
+        self.dia = dia
+        self.hora = hora
+        self.cambiarDisponibilidad = cambiarDisponibilidad
+
+        self.dispTexto = ctk.StringVar(value = 'Disponible')
+        self.disponibilidad = True
+
+        self.configure(fg_color = self.estilo.VERDE,textvariable=self.dispTexto,command=self.onClick)
+
+    def onClick(self):
+        if self.disponibilidad:
+            self.configure(fg_color = '#EFEFEF',hover_color='#CFCFCF')
+            self.disponibilidad = False
+            self.dispTexto.set( 'No disponible')
+            self.cambiarDisponibilidad(self.dia,self.hora)
+        else:
+            self.configure(fg_color = self.estilo.VERDE,hover_color='#20A325')
+            self.dispTexto.set( 'Disponible')
+            self.disponibilidad = True
+            self.cambiarDisponibilidad(self.dia,self.hora)
 
 
 class Preferencias(ctk.CTkFrame):
