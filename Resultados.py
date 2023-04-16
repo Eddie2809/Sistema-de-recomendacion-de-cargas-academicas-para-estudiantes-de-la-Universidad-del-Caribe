@@ -188,7 +188,7 @@ class Resultados(ctk.CTkFrame):
         
         #Datos de ejemplo ---> Sustituir por datos reales
         
-        datos = [["ID0204", "Bases de Datos", "Lara Peraza/Wilberth Eduardo"], ["ID0204", "Bases de Datos", "Lara Peraza/Wilberth Eduardo"] ,["ID0204", "Bases de Datos", "Lara Peraza/Wilberth Eduardo"]]
+        datos = [["ID0204", "Bases de datos", "Lara Peraza/Wilberth Eduardo"], ["ID0204", "Bases de Datos", "Lara Peraza/Wilberth Eduardo"] ,["ID0204", "Bases de Datos", "Lara Peraza/Wilberth Eduardo"]]
         columnas = ["Clave", "Asignatura", "Profesor"]
         
         df = pd.DataFrame(datos, columns=columnas)
@@ -196,13 +196,25 @@ class Resultados(ctk.CTkFrame):
         arrDfs = []
 
         arrDfs.append(df)
+
+        datos = [["ID0204", "Algoritmos", "Lara Peraza/Wilberth Eduardo"], ["ID0204", "Bases de Datos", "Lara Peraza/Wilberth Eduardo"] ,["ID0204", "Bases de Datos", "Lara Peraza/Wilberth Eduardo"]]
+        columnas = ["Clave", "Asignatura", "Profesor"]
+        
+        df = pd.DataFrame(datos, columns=columnas)
+
         arrDfs.append(df)
+        
+        datos = [["ID0204", "Algebra lineal", "Lara Peraza/Wilberth Eduardo"], ["ID0204", "Bases de Datos", "Lara Peraza/Wilberth Eduardo"] ,["ID0204", "Bases de Datos", "Lara Peraza/Wilberth Eduardo"]]
+        columnas = ["Clave", "Asignatura", "Profesor"]
+        
+        df = pd.DataFrame(datos, columns=columnas)
+
         arrDfs.append(df)
 
         
 
         #Cargas generadas
-
+        self.resultadosDfAcum = arrDfs
         self.resultadosDf = arrDfs
 
         #Usamos variable global para iniciar el valor de Fav
@@ -256,20 +268,27 @@ class Resultados(ctk.CTkFrame):
         self.comboOrdenar = ctk.CTkComboBox(self.containerOrdenarPor, width=150, font=self.estilo.FUENTE_TEXTO_PEQUEÑO, values=["Desempeño regular", "Disponibilidad de horario", "XD"])
         self.comboOrdenar.grid(row=0, column=1, padx=10, pady = 8, sticky="w")  
 
+        self.buttonOrdenar = ctk.CTkButton(self.containerOrdenarPor , text = "Ordenar",width=30,fg_color = self.estilo.COLOR_PRINCIPAL , hover_color = self.estilo.COLOR_PRINCIPAL, text_color= self.estilo.COLOR_FONDO, border_color= self.estilo.COLOR_FONDO, border_width =2 ,command=self.ordenar)
+        self.buttonOrdenar.grid(row=0,column=2, sticky = "w")
+
+
         #Sección de buscar
-        self.containerBuscar  = ctk.CTkFrame(self.container,width=300, height=50, corner_radius=10, fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
+        self.containerBuscar  = ctk.CTkFrame(self.container,width=500, height=50, corner_radius=10, fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
         self.containerBuscar.grid(row=3,column=0,sticky = "w")
         self.containerBuscar.grid_propagate(0)
         self.containerBuscar.grid_columnconfigure(0, weight=1)
         self.containerBuscar.grid_columnconfigure(1, weight=2)
+        self.containerBuscar.grid_columnconfigure(1, weight=2)
         self.containerBuscar.rowconfigure(0, weight=1)
-
 
         self.tituloBuscar = ctk.CTkLabel(self.containerBuscar,text='Buscar', wraplength=50 ,font=self.estilo.FUENTE_TEXTO)
         self.tituloBuscar.grid(row=0,column=0, sticky = "w")
 
-        self.entryBuscar = ctk.CTkEntry(self.containerBuscar, width=200)
+        self.entryBuscar = ctk.CTkEntry(self.containerBuscar, width=300)
         self.entryBuscar.grid(row=0,column=1, sticky="we")
+
+        self.buttonBuscar = ctk.CTkButton(self.containerBuscar , text = "Buscar",width=30,fg_color = self.estilo.COLOR_PRINCIPAL , hover_color = self.estilo.COLOR_PRINCIPAL, text_color= self.estilo.COLOR_FONDO, border_color= self.estilo.COLOR_FONDO, border_width =2 ,command=self.buscar)
+        self.buttonBuscar.grid(row=0,column=2, sticky = "w")
 
 
         #Sección de general y favoritos
@@ -296,7 +315,63 @@ class Resultados(ctk.CTkFrame):
 
         self.scrollableFrame = ListaHorarios(master = self.resultadosFrame, boolFav= False, horarios= self.resultadosDf, height=400, width=WIDTH_MAX)
         self.scrollableFrame.grid(row=0, column=0, sticky="nsew")
-        #Frame de Favoritos
+
+    def buscar(self):
+
+        palabra = self.entryBuscar.get()
+        
+        self.resultadosDf = self.resultadosDfAcum
+        
+        arrResultadosFiltrados = []
+
+        for i,resultado in enumerate(self.resultadosDf):
+            if self.buscarEnColumnas(resultadoDf= resultado, palabra= palabra):
+                arrResultadosFiltrados.append(resultado)
+
+        self.resultadosDf = arrResultadosFiltrados
+        self.cargarResultados()
+
+
+    #columnas = ["Clave", "Asignatura", "Profesor"]
+
+    def buscarEnColumnas(self, resultadoDf, palabra ):
+        encontrado = False 
+        palabra = self.formatearPalabra(palabra)
+
+        for i in range(len(resultadoDf )):
+            encontrado = self.encontrarPalabra(resultadoDf['Clave'][i],palabra)
+            if encontrado:
+                return True
+            encontrado = self.encontrarPalabra(resultadoDf['Asignatura'][i],palabra)
+            if encontrado:
+                return True
+            encontrado = self.encontrarPalabra(resultadoDf['Profesor'][i],palabra)
+            if encontrado:
+                return True
+            
+        return encontrado
+
+    def formatearPalabra(self, palabra):
+        palabra = palabra.lower()
+        palabra = palabra.replace('á', 'a')
+        palabra = palabra.replace('é', 'e')
+        palabra = palabra.replace('í', 'i')
+        palabra = palabra.replace('ó', 'o')
+        palabra = palabra.replace('ú', 'u')
+        palabra = palabra.replace(" ", "")
+
+        return palabra
+
+    def encontrarPalabra(self, palabra1, palabra2):
+        palabra1 = self.formatearPalabra(palabra1)
+        #print(palabra1)
+        if palabra1.find(palabra2) >= 0:
+            return True
+        else:
+            return False       
+
+    def ordenar(self):
+        print("Ordenar")  
 
 
     def cargarFavoritos(self):
@@ -305,7 +380,6 @@ class Resultados(ctk.CTkFrame):
         if len(self.favsLista) == 0:
             CTkMessagebox(title="Error", message="No ha seleccionado ningun favorito", icon="cancel")
             self.cargarResultados()
-            print("Termino antes de empezar XD")
             return 
         
         print("Cargando Favoritos")
@@ -325,7 +399,6 @@ class Resultados(ctk.CTkFrame):
             print("No se ha creado el resultados Frame")
         try:
             self.favoritosFrame.destroy()
-            print("Lo intente destruir")
         except:
             print("No se ha creado el favoritos Frame desde Favoritos")
 
@@ -350,7 +423,6 @@ class Resultados(ctk.CTkFrame):
         colorPrincipal = self.estilo.COLOR_PRINCIPAL
         colorSecundario = self.estilo.COLOR_FONDO
 
-        print("Cargando Resultados")
 
         self.buttonResultados.configure(fg_color = colorPrincipal , hover_color = colorPrincipal , text_color= colorSecundario, border_color= colorSecundario)
         self.buttonFavoritos.configure(fg_color = colorSecundario , hover_color = colorSecundario , text_color= colorPrincipal, border_color= colorPrincipal)
