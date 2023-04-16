@@ -49,9 +49,13 @@ class App(ctk.CTk):
         ]
         self.disponibilidadComoRestriccion = False
 
+        self.dataframeKardex = {}
+        self.estudianteNombre = ""
+        self.estudianteMatricula = ""
+        self.estudianteSituacion = ""
+        self.estudiantePlan = ""
         
         self.cambiarFrame(Inicio, "Inicio")
-      
 
     def cambiarRuta(self,nuevaRuta):
         self.frames[nuevaRuta].tkraise()
