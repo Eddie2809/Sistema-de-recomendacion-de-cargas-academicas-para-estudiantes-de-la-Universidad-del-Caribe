@@ -4,7 +4,9 @@ from Verificacion import Verificacion
 from Inicio import Inicio
 from PantallaCarga import PantallaCarga
 from Resultados import Resultados
+from Algoritmo import Algoritmo
 from Estilo import Estilo
+import threading
 
 ctk.set_appearance_mode('light')
 
@@ -29,6 +31,24 @@ class App(ctk.CTk):
         self.framePrincipal.grid(row = 0, column = 0, sticky = 'nsew', padx = 100, pady = 50)
         self.framePrincipal.grid_propagate(0)
         self.estudiante = {}
+        self.pesos = {
+            'UpCC': 0.8,
+            'UpMR': 0.4,
+            'UpCM': 0.4,
+            'CpDH': 1,
+            'CpAH': 0.6,
+            'CpRR': 0.1
+        }
+        self.cantidadIdealMaterias = 3
+        self.disponibilidad = [
+            [True,True,True,True,True,True,True,True,True,True,True,True,True,True,True],
+            [True,True,True,True,True,True,True,True,True,True,True,True,True,True,True],
+            [True,True,True,True,True,True,True,True,True,True,True,True,True,True,True],
+            [True,True,True,True,True,True,True,True,True,True,True,True,True,True,True],
+            [True,True,True,True,True,True,True,True,True,True,True,True,True,True,True]
+        ]
+        self.disponibilidadComoRestriccion = False
+
         
         self.cambiarFrame(Inicio, "Inicio")
       
@@ -54,6 +74,18 @@ class App(ctk.CTk):
         self.cargarFrame(Frame)
         self.cambiarRuta(FrameName)        
 
+    def cambiarPreferencias(self,nuevaDisponibilidad,nuevosPesos,nuevoCIM,nuevoDCR):
+        self.disponibilidad = nuevaDisponibilidad
+        self.disponibilidadComoRestriccion = nuevoDCR
+        self.cantidadIdealMaterias = nuevoCIM
+        self.pesos = nuevosPesos
+
+    def ejecutarAlgoritmo(self):
+        self.cambiarFrame(PantallaCarga,'PantallaCarga')
+
+        algoritmo = Algoritmo(kardex = self.estudiante.kardex,planNombre = self.estudiante.planNombre,periodoActual=202301,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
+        x = threading.Thread(target=algoritmo.run,args=(1,))
+        x.start()
 
 if __name__ == "__main__":
     app = App()
