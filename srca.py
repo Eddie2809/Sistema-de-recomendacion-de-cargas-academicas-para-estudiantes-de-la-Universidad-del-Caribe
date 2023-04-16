@@ -38,6 +38,7 @@ class App(ctk.CTk):
         
         self.cambiarFrame(Inicio, "Inicio")
 
+
     def cambiarRuta(self,nuevaRuta):
         self.frames[nuevaRuta].tkraise()
         
