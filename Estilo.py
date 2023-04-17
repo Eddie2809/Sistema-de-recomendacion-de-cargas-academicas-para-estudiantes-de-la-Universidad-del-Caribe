@@ -10,7 +10,9 @@ class Estilo():
 		self.FUENTE_TITULO = ('roboto',34)
 		self.FUENTE_SUBTITULO = ('roboto',22)
 		self.FUENTE_TEXTO = ('roboto',14)
+		self.FUENTE_TEXTO_BOLD = ('roboto',14,"bold")
 		self.FUENTE_TEXTO_PEQUEÑO = ('roboto',11)
+		self.FUENTE_TEXTO_PEQUEÑO_BOLD = ('roboto',11,"bold")
 
 		self.ROJO = '#FF2929'
 		self.VERDE = '#28C52E'

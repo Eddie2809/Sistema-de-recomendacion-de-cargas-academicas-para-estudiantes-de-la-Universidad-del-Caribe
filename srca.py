@@ -6,6 +6,9 @@ from PantallaCarga import PantallaCarga
 from Resultados import Resultados
 from Algoritmo import Algoritmo
 from Estilo import Estilo
+from ResultadosHorario import ResultadosHorario
+from ResultadosEstadisticas import ResultadosEstadisticas
+
 import threading
 
 ctk.set_appearance_mode('light')
@@ -22,6 +25,8 @@ class App(ctk.CTk):
         self.configure(fg_color = estilo.COLOR_FONDO)
         self.grid_columnconfigure(0,weight=1)
         self.grid_rowconfigure(0,weight=1)
+
+        self.recomendaciones = []
 
         self.frames = {}
         self.framePrincipal = ctk.CTkFrame(self,width=1200, height=600)
@@ -87,18 +92,35 @@ class App(ctk.CTk):
         self.pesos = nuevosPesos
 
     def setCancelarEjecucion(self,nuevoValor):
+        if nuevoValor:
+            self.cambiarRuta('Preferencias')
         self.cancelarEjecucion = nuevoValor
 
     def obtenerCancelarEjecucion(self):
         return self.cancelarEjecucion
 
+    def cargarResultados(self,recomendaciones):
+        self.resultados = []
+        con = 0
+
+        for r in recomendaciones:
+            if con > 10:
+                break
+            self.resultados.append(self.algoritmo.obtenerDatosCarga(r))
+
+            con += 1
+
+        self.cambiarFrame(Resultados,'Resultados')
+
     def ejecutarAlgoritmo(self):
         self.cambiarFrame(PantallaCarga,'PantallaCarga')
 
-        algoritmo = Algoritmo(kardex = self.estudiante.kardex, cambiarFrame = self.cambiarRuta, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,planNombre = self.estudiante.planNombre,periodoActual=202301,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
-        algThread = threading.Thread(target=lambda x: algoritmo.run(callbackProceso=self.frames['PantallaCarga'].actualizarBarra),args=(1,))
+        self.algoritmo = Algoritmo(kardex = self.estudiante.kardex, cambiarFrame = self.cambiarRuta, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,planNombre = self.estudiante.planNombre,periodoActual=202301,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
+        algThread = threading.Thread(target=lambda x: self.algoritmo.run(callbackTerminacion=self.cargarResultados,callbackProceso=self.frames['PantallaCarga'].actualizarBarra),args=(1,))
         algThread.start()
 
 if __name__ == "__main__":
     app = App()
+    app.protocol("WM_DELETE_WINDOW", app.quit)
     app.mainloop()
+    
