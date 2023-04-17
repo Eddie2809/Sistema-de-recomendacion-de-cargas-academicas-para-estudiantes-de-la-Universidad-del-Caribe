@@ -2,11 +2,17 @@ import pandas as pd
 import deap as dp
 import numpy as np
 from deap import base, creator, tools, gp, algorithms
+import time
 import random
+from Preferencias import Preferencias
 
 class Algoritmo():
-	def __init__(self,*args,kardex,planNombre,periodoActual,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,**kwargs):
+	def __init__(self,*args,obtenerCancelarEjecucion,cambiarFrame,setCancelarEjecucion,kardex,planNombre,periodoActual,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,**kwargs):
 		super().__init__(*args,**kwargs)
+
+		self.obtenerCancelarEjecucion = obtenerCancelarEjecucion
+		self.setCancelarEjecucion = setCancelarEjecucion
+		self.cambiarFrame = cambiarFrame
 
 		self.kardex = kardex
 		self.pesos = pesos
@@ -491,6 +497,14 @@ class Algoritmo():
 	    
 	    return res
 
+	def comprobarCancelacion(self):
+		if(self.obtenerCancelarEjecucion()):
+			self.setCancelarEjecucion(False)
+			self.cambiarFrame('Preferencias')
+			return True
+		else:
+			return False
+
 	def run(self,seed=None,callbackProceso = None, callbackTerminacion = None):
 	    random.seed(seed)
 
@@ -513,14 +527,16 @@ class Algoritmo():
 	        ind.fitness.values = fit
 
 	    # Compile statistics about the population
+	    tiempo_inicio = time.time()
 	    record = stats.compile(pop)
 	    logbook.record(gen=0, evals=len(invalid_ind), **record)
-	    print('Gen: 0')
 
 	    # Begin the generational process
 	    for gen in range(1, self.NGEN):
 	        offspring = algorithms.varAnd(pop, self.toolbox, self.CXPB, self.MUTPB)
 
+	        if self.comprobarCancelacion():
+	        	break
 	        # Evaluate the individuals with an invalid fitness
 	        invalid_ind = [ind for ind in offspring if not ind.fitness.valid]
 	        fitnesses = self.toolbox.map(self.toolbox.evaluate, invalid_ind)
@@ -535,7 +551,7 @@ class Algoritmo():
 	        logbook.record(gen=gen, evals=len(invalid_ind), **record)
 	        print('Gen: ' + str(gen))
 
-	        self.llamarCallback(callbackProceso)
+	        callbackProceso(porcentaje = gen,tiempoTranscurrido = (time.time() - tiempo_inicio))
 
 	    self.llamarCallback(callbackTerminacion)
 

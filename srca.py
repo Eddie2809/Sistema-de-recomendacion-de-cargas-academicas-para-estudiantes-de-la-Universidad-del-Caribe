@@ -54,6 +54,8 @@ class App(ctk.CTk):
         self.estudianteMatricula = ""
         self.estudianteSituacion = ""
         self.estudiantePlan = ""
+
+        self.cancelarEjecucion = False
         
         self.cambiarFrame(Inicio, "Inicio")
 
@@ -84,12 +86,18 @@ class App(ctk.CTk):
         self.cantidadIdealMaterias = nuevoCIM
         self.pesos = nuevosPesos
 
+    def setCancelarEjecucion(self,nuevoValor):
+        self.cancelarEjecucion = nuevoValor
+
+    def obtenerCancelarEjecucion(self):
+        return self.cancelarEjecucion
+
     def ejecutarAlgoritmo(self):
         self.cambiarFrame(PantallaCarga,'PantallaCarga')
 
-        algoritmo = Algoritmo(kardex = self.estudiante.kardex,planNombre = self.estudiante.planNombre,periodoActual=202301,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
-        x = threading.Thread(target=algoritmo.run,args=(1,))
-        x.start()
+        algoritmo = Algoritmo(kardex = self.estudiante.kardex, cambiarFrame = self.cambiarRuta, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,planNombre = self.estudiante.planNombre,periodoActual=202301,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
+        algThread = threading.Thread(target=lambda x: algoritmo.run(callbackProceso=self.frames['PantallaCarga'].actualizarBarra),args=(1,))
+        algThread.start()
 
 if __name__ == "__main__":
     app = App()

@@ -22,16 +22,28 @@ class PantallaCarga(ctk.CTkFrame):
 		self.titleSystem  = ctk.CTkLabel(self.container, text = title , font = estilo.FUENTE_TITULO ,text_color = "black", wraplength=600, justify="center")
 		self.titleSystem.grid(row=0, column = 0, pady = 10, sticky="s")
 		
-		self.BotonDeCarga = ctk.CTkProgressBar(self.container, width=700, height=45 , progress_color=estilo.VERDE, fg_color= '#C7EAE9')
+		self.BotonDeCarga = ctk.CTkProgressBar(self.container, width=700, height=15 , progress_color=estilo.VERDE, fg_color= '#C7EAE9')
 		self.BotonDeCarga.grid(row=1,column=0)
-		self.BotonDeCarga.set(0.1)
+		self.BotonDeCarga.set(0)
 
-		tiempoRestanteText = "Tiempo restante 10 minutos"
-		self.tiempoRestante  = ctk.CTkLabel(self.container, text = tiempoRestanteText, font = estilo.FUENTE_TEXTO , text_color = "black", wraplength=600, justify="center")
-		self.tiempoRestante.grid(row=2, column = 0, pady = 10)
+		self.tiempoRestanteText = ctk.StringVar(value= "Tiempo restante: - minutos")
+		self.porcentajeTexto = ctk.StringVar(value = '0%')
 
-		self.cancelarButton = ctk.CTkButton(self.container, text="Cancelar", fg_color = estilo.ROJO , hover_color = estilo.ROJO,command=self.presionarButton)
-		self.cancelarButton.grid(row = 3, column = 0, padx=10, pady=10,sticky= 'n')
+		ctk.CTkLabel(self.container,textvariable=self.porcentajeTexto,font=estilo.FUENTE_TEXTO, text_color='black').grid(row = 2, column = 0)
 
-	def presionarButton(self):
-		print("Boton presionado")
+		self.tiempoRestante  = ctk.CTkLabel(self.container, textvariable = self.tiempoRestanteText, font = estilo.FUENTE_TEXTO , text_color = "black", wraplength=600, justify="center")
+		self.tiempoRestante.grid(row=3, column = 0)
+
+		self.cancelarButton = ctk.CTkButton(self.container, text="Cancelar", fg_color = estilo.ROJO , hover_color = estilo.ROJO,command=lambda: controlador.setCancelarEjecucion(True))
+		self.cancelarButton.grid(row = 4, column = 0, padx=10, pady=10,sticky= 'n')
+
+	def actualizarBarra(self,porcentaje,tiempoTranscurrido):
+		self.BotonDeCarga.set(porcentaje/100)
+
+		tiempoFaltante = ((100 * tiempoTranscurrido) / porcentaje) - tiempoTranscurrido 
+		segundosFaltantes = int(tiempoFaltante % 60)
+		tiempoFaltante /= 60
+		tiempoFaltante = int(round(tiempoFaltante,0))
+
+		self.porcentajeTexto.set(str(porcentaje) + '%')
+		self.tiempoRestanteText.set('Tiempo restante: ' + str(tiempoFaltante) + ' minuto(s) ' + str(segundosFaltantes) + ' segundo(s)')
