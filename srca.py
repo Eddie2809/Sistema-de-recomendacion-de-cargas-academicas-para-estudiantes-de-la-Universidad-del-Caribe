@@ -6,6 +6,9 @@ from PantallaCarga import PantallaCarga
 from Resultados import Resultados
 from Algoritmo import Algoritmo
 from Estilo import Estilo
+from ResultadosHorario import ResultadosHorario
+from ResultadosEstadisticas import ResultadosEstadisticas
+
 import threading
 
 ctk.set_appearance_mode('light')
@@ -56,8 +59,6 @@ class App(ctk.CTk):
         self.estudiantePlan = ""
         
         self.cambiarFrame(Inicio, "Inicio")
-        self.cambiarFrame(Resultados, "Resultados")
-
 
     def cambiarRuta(self,nuevaRuta):
         self.frames[nuevaRuta].tkraise()
@@ -95,4 +96,6 @@ class App(ctk.CTk):
 
 if __name__ == "__main__":
     app = App()
+    app.protocol("WM_DELETE_WINDOW", app.quit)
     app.mainloop()
+    
