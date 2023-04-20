@@ -33,8 +33,7 @@ class App(ctk.CTk):
         self.framePrincipal.configure(fg_color='transparent')
         self.framePrincipal.grid_columnconfigure(0,weight=1)
         self.framePrincipal.grid_rowconfigure(0,weight=1)
-        self.framePrincipal.grid(row = 0, column = 0, sticky = 'nsew', padx = 100, pady = 50)
-        self.framePrincipal.grid_propagate(0)
+        self.framePrincipal.grid(row = 0, column = 0, sticky = 'nsew', padx = 100, pady = 15)
         self.estudiante = {}
         self.pesos = {
             'UpCC': 0.8,
@@ -100,6 +99,7 @@ class App(ctk.CTk):
         return self.cancelarEjecucion
 
     def cargarResultados(self,recomendaciones):
+        #recomendaciones = self.algoritmo.obtenerRecomendacionesUnicas(recomendaciones,0)
         self.resultados = []
         con = 0
 

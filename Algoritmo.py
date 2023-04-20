@@ -4,6 +4,7 @@ import numpy as np
 from deap import base, creator, tools, gp, algorithms
 import time
 import random
+from math import factorial
 from Preferencias import Preferencias
 
 class Algoritmo():
@@ -49,8 +50,7 @@ class Algoritmo():
 		self.K = 10
 		self.NDIM = self.NOBJ + self.K - 1
 		self.P = 12
-		self.H = self.factorial(self.NOBJ + self.P - 1) / (self.factorial(self.P) * self.factorial(self.NOBJ - 1))
-		self.BOUND_LOW, self.BOUND_UP = 0.0, 1.0
+		self.H = factorial(self.NOBJ + self.P - 1) / (factorial(self.P) * factorial(self.NOBJ - 1))
 		self.MU = int(self.H + (4 - self.H % 4))
 		self.NGEN = 2
 		self.CXPB = 1.0
@@ -90,6 +90,15 @@ class Algoritmo():
 				if not(self.materiaHaSidoAprobada(necesaria)):
 					return False
 			return True
+
+	def obtenerRecomendacionesUnicas(self,recomendaciones,umbral):
+	    recomendacionesFinal = []
+	    for rec in recomendaciones:
+	        recomendacionesFinal.append(list(set(rec)))
+	    recomendacionesFinal = list(np.unique(recomendacionesFinal))
+	    recomendacionesFinal.sort(key=lambda x: -self.obtenerDesempenoPonderado(x))
+
+	    return recomendacionesFinal
 
 
 	def obtenerOfertaUtil(self):
@@ -257,14 +266,14 @@ class Algoritmo():
 		if(cantidadIdealMaterias == 0):
 			return 1
 		
-		diferenciaMaxima = max(cantidadIdealMaterias-3,cantidadIdealMaterias)
+		diferenciaMaxima = max(cantidadIdealMaterias - 3,9 - cantidadIdealMaterias)
 		solucionSet = set(solucion)
 		
 		if -1 in solucionSet:
 			solucionSet.remove(-1)
 			
 		tamanoCarga = len(solucionSet)
-		separacion = abs(cantidadIdealMaterias)
+		separacion = abs(tamanoCarga - cantidadIdealMaterias)
 		
 		return 1 - (separacion / diferenciaMaxima)
 
@@ -488,15 +497,6 @@ class Algoritmo():
 				solucion[i] = self.toolbox.attr_int()
 		return (dp.creator.Individual(solucion),)
 
-	def factorial(self,p):
-		res = 1
-		
-		while p > 0:
-			res *= p
-			p -= 1
-		
-		return res
-
 	def comprobarCancelacion(self):
 		if(self.obtenerCancelarEjecucion()):
 			self.setCancelarEjecucion(False)
@@ -548,7 +548,6 @@ class Algoritmo():
 			# Compile statistics about the new population
 			record = stats.compile(pop)
 			logbook.record(gen=gen, evals=len(invalid_ind), **record)
-			print('Gen: ' + str(gen))
 
 			callbackProceso(porcentaje = gen,tiempoTranscurrido = (time.time() - tiempo_inicio))
 

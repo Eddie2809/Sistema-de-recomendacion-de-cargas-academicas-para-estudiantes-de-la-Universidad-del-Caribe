@@ -170,7 +170,7 @@ class ResultadosEstadisticas(ctk.CTkFrame):
         return listaString
     
     def regresar(self):
-        print("regresar")
+        self.controlador.cambiarRuta('Resultados')
         
 
 

@@ -1,6 +1,7 @@
 import customtkinter as ctk
 from PantallaCarga import PantallaCarga
 from Estilo import Estilo
+from PIL import Image, ImageTk
 
 class Pesos(ctk.CTkFrame):
     def __init__(self,*args,pesos,cambiarPeso,**kwargs):
@@ -102,9 +103,12 @@ class PesosHeader(ctk.CTkFrame):
         super().__init__(*args,**kwargs)
 
         estilo = Estilo()
+
+        botonRestaurarImagen = ctk.CTkImage(Image.open('assets/boton.png'),size=(30,30))
         
-        self.botonRestaurar = ctk.CTkButton(self,text='Restaurar',command=lambda: restaurarPesos())    
+        self.botonRestaurar = ctk.CTkButton(self,text='', image=botonRestaurarImagen,hover_color=estilo.GRIS_CLARO,bg_color='transparent',fg_color='transparent',width = 30, height = 30,command=lambda: restaurarPesos())
         self.botonRestaurar.grid(row = 0, column = 0)
+        self.botonRestaurar.grid_configure(ipadx = 0, ipady = 0)
 
         self.titulo = ctk.CTkLabel(self,text='Pesos',font=estilo.FUENTE_SUBTITULO)
         self.titulo.grid(row = 0, column = 1)
@@ -163,8 +167,8 @@ class PreferenciasIzquierda(ctk.CTkFrame):
         self.cda = CantidadDeAsignaturas(self,fg_color='transparent',cantidadIdealMaterias=cantidadIdealMaterias,cambiarCantidadIdealMaterias=cambiarCantidadIdealMaterias)
         self.cda.grid(row = 2, column = 0, sticky='ew',pady=(0,15))
 
-        self.opcionesAvanzadasBoton = ctk.CTkButton(self,text='Opciones avanzadas',command=self.alternarPrefAvanzadas)
-        self.opcionesAvanzadasBoton.grid(row = 3, column = 0)
+        self.opcionesAvanzadasBoton = ctk.CTkButton(self,text='Opciones avanzadas',command=self.alternarPrefAvanzadas,fg_color='white',hover_color=estilo.GRIS_CLARO,font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO,anchor='w')
+        self.opcionesAvanzadasBoton.grid(row = 3, column = 0,sticky='ew')
 
         self.pesos = Pesos(self,pesos=pesos,cambiarPeso=cambiarPeso)
 
