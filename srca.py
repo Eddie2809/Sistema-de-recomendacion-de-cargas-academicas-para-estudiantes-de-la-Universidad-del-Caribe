@@ -104,7 +104,7 @@ class App(ctk.CTk):
         con = 0
 
         for r in recomendaciones:
-            if con > 10:
+            if con >= 30:
                 break
             self.resultados.append(self.algoritmo.obtenerDatosCarga(r))
 

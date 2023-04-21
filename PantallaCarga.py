@@ -8,7 +8,7 @@ class PantallaCarga(ctk.CTkFrame):
 
 		estilo = Estilo()
 		self.configure(fg_color = 'transparent',width=1100,height=550)
-		self.grid_columnconfigure(0,weight=0)
+		self.grid_columnconfigure(0,weight=1)
 
 		title = "Generando cargas"
 		self.titleSystem  = ctk.CTkLabel(self, text = title , font = estilo.FUENTE_TITULO ,text_color = "black", wraplength=600, justify="center")
