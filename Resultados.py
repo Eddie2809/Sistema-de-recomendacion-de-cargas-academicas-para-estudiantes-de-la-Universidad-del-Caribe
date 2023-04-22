@@ -82,8 +82,10 @@ class ListaCargas(ctk.CTkFrame):
         self.cargasParaMostrar = cargasParaMostrar
 
         seccionBotonesNavegacion = ctk.CTkFrame(self, fg_color = 'transparent')
-        seccionBotonesNavegacion.grid(row = 0, column = 0, sticky = 'ew')
-        seccionBotonesNavegacion.grid_columnconfigure(0,weight = 0)
+        seccionBotonesNavegacion.grid(row = 0, column = 0)
+        seccionBotonesNavegacion.grid_columnconfigure(0,weight = 1)
+        seccionBotonesNavegacion.grid_columnconfigure(1,weight = 1)
+        seccionBotonesNavegacion.grid_columnconfigure(2,weight = 1)
 
         flechaIzquierda = ctk.CTkImage(Image.open('assets/flecha-izquierda.png'),size=(20,20))
         flechaDerecha = ctk.CTkImage(Image.open('assets/flecha-derecha.png'),size=(20,20))

@@ -328,7 +328,7 @@ class Preferencias(ctk.CTkFrame):
     def cambiarPeso(self,nuevoPeso,objetivo):
         self.pesos[objetivo] = nuevoPeso
     def cambiarCantidadIdealMaterias(self,nuevaCantidadIdealMaterias):
-        self.cantidadIdealMaterias = nuevaCantidadIdealMaterias
+        self.cantidadIdealMaterias = int(nuevaCantidadIdealMaterias)
     def cambiarDisponibilidad(self,dia,hora):
         self.disponibilidad[dia][hora] = not(self.disponibilidad[dia][hora])
     def cambiarDisponibilidadComoRestriccion(self):

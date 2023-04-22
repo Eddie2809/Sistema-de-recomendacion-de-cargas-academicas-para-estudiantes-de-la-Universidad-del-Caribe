@@ -5,16 +5,16 @@ from deap import base, creator, tools, gp, algorithms
 import time
 import random
 from math import factorial
-from Preferencias import Preferencias
 
 class Algoritmo():
-	def __init__(self,*args,obtenerCancelarEjecucion,cambiarFrame,setCancelarEjecucion,kardex,planNombre,periodoActual,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,**kwargs):
+	def __init__(self,*args,obtenerCancelarEjecucion,setCancelarEjecucion,kardex,planNombre,periodoActual,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,**kwargs):
 		super().__init__(*args,**kwargs)
 
 		self.obtenerCancelarEjecucion = obtenerCancelarEjecucion
 		self.setCancelarEjecucion = setCancelarEjecucion
-		self.cambiarFrame = cambiarFrame
 
+		self.amplitudAceptable = 7
+		self.dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
 		self.kardex = kardex
 		self.pesos = pesos
 		self.disponibilidad = pd.DataFrame({
@@ -59,6 +59,73 @@ class Algoritmo():
 
 		self.toolbox.register("select", tools.selNSGA3, ref_points=self.ref_points)
 
+		#				Variable globales del estudiante
+		#Diferencias maxima de cantidad idal de materias
+		self.diferenciaMaxima = max(cantidadIdealMaterias - 3,9 - cantidadIdealMaterias)
+
+		#Materias reprobadas
+		materiasReprobadas = self.kardex.query('promediofinal < 7')['clave'].unique()
+		materiasReprobadasFinal = []
+		for clave in materiasReprobadas:
+			aprobado = len(self.kardex.query('clave == "' + clave + '" and promediofinal >= 7'))
+			if aprobado == 0 and clave[0:2] != 'LI':
+				materiasReprobadasFinal.append(clave)
+		self.materiasReprobadas = materiasReprobadasFinal
+
+		#Materias reprobadas ofertadas
+		self.materiasReprobadasOfertadas = 0
+		for clave in self.materiasReprobadas:
+			ofertado = len(self.ofertaUtil.query('clave == "' + clave + '"'))
+			if ofertado >= 1:
+				self.materiasReprobadasOfertadas += 1
+
+		#Menor ciclo
+		self.menorCiclo = min(self.ofertaUtil['ciclos']) - 1
+
+		#Utilidad de materias por ciclo		
+		omega = 3
+		self.utilidad = [omega**3,omega**2,omega,1]
+
+		#Utilidad ideal de cierre de ciclos
+		self.utilidadMaxima = 0
+		cantidadMateriasCiclo1 = len(self.ofertaUtil.query('ciclos == ' + str(self.menorCiclo+1))['clave'].unique())
+		cantidadMateriasCiclo2 = len(self.ofertaUtil.query('ciclos == ' + str(self.menorCiclo+2))['clave'].unique())
+		cantidadMateriasCiclo3 = len(self.ofertaUtil.query('ciclos == ' + str(self.menorCiclo+3))['clave'].unique())
+		cantidadMateriasCiclo4 = len(self.ofertaUtil.query('ciclos == ' + str(self.menorCiclo+4))['clave'].unique())
+		cantidadMateriasMaxima = 9
+		
+		m1 = m2 = m3 = m4 = 0
+		
+		if (cantidadMateriasMaxima - cantidadMateriasCiclo1) >= 0:
+			m1 = cantidadMateriasCiclo1
+			cantidadMateriasMaxima -= cantidadMateriasCiclo1
+		else:
+			m1 = 9
+			cantidadMateriasMaxima = 0
+		if (cantidadMateriasMaxima - cantidadMateriasCiclo2) >= 0:
+			m2 = cantidadMateriasCiclo2
+			cantidadMateriasMaxima -= cantidadMateriasCiclo2
+		elif cantidadMateriasMaxima > 0:
+			m2 = cantidadMateriasMaxima
+			cantidadMateriasMaxima = 0
+		if (cantidadMateriasMaxima - cantidadMateriasCiclo3) >= 0:
+			m3 = cantidadMateriasCiclo3
+			cantidadMateriasMaxima -= cantidadMateriasCiclo3
+		elif cantidadMateriasMaxima > 0:
+			m3 = cantidadMateriasMaxima
+			cantidadMateriasMaxima = 0
+		if (cantidadMateriasMaxima - cantidadMateriasCiclo4) >= 0:
+			m4 = cantidadMateriasCiclo4
+			cantidadMateriasMaxima -= cantidadMateriasCiclo4
+		elif cantidadMateriasMaxima > 0:
+			m4 = cantidadMateriasMaxima
+			cantidadMateriasMaxima = 0
+
+		self.utilidadMaxima = m1*self.utilidad[0] + m2*self.utilidad[1] + m3*self.utilidad[2] + m4*self.utilidad[3]
+
+		#Total de horas donde el estudiante se encuentra disponible
+		self.disponibilidadTotal = sum(self.disponibilidad['Lunes']) + sum(self.disponibilidad['Martes']) + sum(self.disponibilidad['Miercoles']) + sum(self.disponibilidad['Jueves']) + sum(self.disponibilidad['Viernes'])
+
 	def obtenerCreditos(self):
 		claves = self.kardex.query('promediofinal >= 7')['clave'].unique()
 		totalCreditos = 0
@@ -102,7 +169,6 @@ class Algoritmo():
 		return sorted(recomendaciones,key = lambda x: orden * func(x))
 
 	def obtenerOfertaUtil(self):
-		dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
 		kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
 		respetaSeriacion = self.respetaSeriacion
 		materiaHaSidoAprobada = self.materiaHaSidoAprobada
@@ -155,7 +221,7 @@ class Algoritmo():
 		if(disponibilidadComoRestriccion):
 			indices = set(ofertaUtil.index)
 			indicesUtiles = indices.copy()
-			for dia in dias:
+			for dia in self.dias:
 				for i in indices:
 					if ofertaUtil.loc[i][dia] == '-':
 						continue
@@ -181,10 +247,9 @@ class Algoritmo():
 
 	def comprobarTraslapacion(self,solucion):
 		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
-		datosCarga = self.obtenerDatosCarga(solucion)
-		dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
+		datosCarga = self.obtenerDatosCarga(solucion) if type(solucion) != pd.DataFrame else solucion
 		
-		for dia in dias:
+		for dia in self.dias:
 			horarioDia = datosCarga.sort_values(dia)[dia].values
 			for i in range(len(horarioDia)):
 				if horarioDia[i] == '-':
@@ -243,8 +308,7 @@ class Algoritmo():
 			'Jueves': ['-','-','-','-','-','-','-','-','-','-','-','-','-','-','-'],
 			'Viernes': ['-','-','-','-','-','-','-','-','-','-','-','-','-','-','-'],
 		})
-		dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
-		for dia in dias:
+		for dia in self.dias:
 			for i in range(len(datosCarga)):
 				if datosCarga[dia].iloc[i] == '-':
 					continue
@@ -262,64 +326,35 @@ class Algoritmo():
 		return horario[(primeraHoraMinima-7):(ultimaHoraMaxima-6)]
 
 	def UpCM(self,solucion):
-		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
-		if(cantidadIdealMaterias == 0):
+		if(self.cantidadIdealMaterias == 0):
 			return 1
 		
-		diferenciaMaxima = max(cantidadIdealMaterias - 3,9 - cantidadIdealMaterias)
 		solucionSet = set(solucion)
 		
 		if -1 in solucionSet:
 			solucionSet.remove(-1)
 			
 		tamanoCarga = len(solucionSet)
-		separacion = abs(tamanoCarga - cantidadIdealMaterias)
+		separacion = abs(tamanoCarga - self.cantidadIdealMaterias)
 		
-		return 1 - (separacion / diferenciaMaxima)
-
-	def obtenerMateriasReprobadas(self):
-		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
-		materiasReprobadas = kardex.query('promediofinal < 7')['clave'].unique()
-		materiasReprobadasFinal = []
-		for clave in materiasReprobadas:
-			aprobado = len(kardex.query('clave == "' + clave + '" and promediofinal >= 7'))
-			if aprobado == 0 and clave[0:2] != 'LI':
-				materiasReprobadasFinal.append(clave)
-		return materiasReprobadasFinal
+		return 1 - (separacion / self.diferenciaMaxima)
 
 	def UpMR(self,solucion):
-		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
-		materiasReprobadas = self.obtenerMateriasReprobadas()
-		materiasReprobadasOfertadas = 0
-		if len(materiasReprobadas) == 0:
+		if len(self.materiasReprobadas) == 0 or self.materiasReprobadasOfertadas == 0:
 			return 1
 
 		datosCarga = self.obtenerDatosCarga(solucion) if type(solucion) != pd.DataFrame else solucion
 		materiasReprobadasCargadas = 0
 		
-		for clave in materiasReprobadas:
+		for clave in self.materiasReprobadas:
 			cargado = len(datosCarga.query('clave == "' + clave + '"'))
-			ofertado = len(ofertaUtil.query('clave == "' + clave + '"'))
 			if cargado >= 1:
 				materiasReprobadasCargadas += 1
-			if ofertado >= 1:
-				materiasReprobadasOfertadas += 1
-			
-		if materiasReprobadasOfertadas == 0:
-			return 1
-		
-		#Normalización
-		utilidad = (materiasReprobadasCargadas)/(materiasReprobadasOfertadas)
-		return utilidad
+
+		return (materiasReprobadasCargadas)/(self.materiasReprobadasOfertadas)
 
 	def UpCC(self,solucion):
-		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
-		base = 3
-		utilidad = [base**3,base**2,base,1]
 		utilidadTotal = 0
-		
-		menorCiclo = min(ofertaUtil['ciclos']) - 1
-		
 		datosCarga = self.obtenerDatosCarga(solucion) if type(solucion) != pd.DataFrame else solucion
 		
 		claves = datosCarga['clave'].unique()
@@ -327,60 +362,17 @@ class Algoritmo():
 			if claves[i][0:2] == 'AD'or claves[i][0:2] == 'TA' or claves[i][0:2] == 'LI' or claves[i][0:2] == 'PI':
 				continue
 				
-			ciclo = plan.query('clave == "' + claves[i] + '"')['ciclos'].values[0] - 1
-			utilidadTotal += utilidad[ciclo - menorCiclo]
+			ciclo = self.plan.query('clave == "' + claves[i] + '"')['ciclos'].values[0] - 1
+			utilidadTotal += self.utilidad[ciclo - self.menorCiclo]
 		
-		utilidadMaxima = 0
-		cantidadMateriasCiclo1 = len(ofertaUtil.query('ciclos == ' + str(menorCiclo+1))['clave'].unique())
-		cantidadMateriasCiclo2 = len(ofertaUtil.query('ciclos == ' + str(menorCiclo+2))['clave'].unique())
-		cantidadMateriasCiclo3 = len(ofertaUtil.query('ciclos == ' + str(menorCiclo+3))['clave'].unique())
-		cantidadMateriasCiclo4 = len(ofertaUtil.query('ciclos == ' + str(menorCiclo+4))['clave'].unique())
-		cantidadMateriasMaxima = 9
-		
-		m1 = m2 = m3 = m4 = 0
-		
-		if (cantidadMateriasMaxima - cantidadMateriasCiclo1) >= 0:
-			m1 = cantidadMateriasCiclo1
-			cantidadMateriasMaxima -= cantidadMateriasCiclo1
-		else:
-			m1 = 9
-			cantidadMateriasMaxima = 0
-		if (cantidadMateriasMaxima - cantidadMateriasCiclo2) >= 0:
-			m2 = cantidadMateriasCiclo2
-			cantidadMateriasMaxima -= cantidadMateriasCiclo2
-		elif cantidadMateriasMaxima > 0:
-			m2 = cantidadMateriasMaxima
-			cantidadMateriasMaxima = 0
-		if (cantidadMateriasMaxima - cantidadMateriasCiclo3) >= 0:
-			m3 = cantidadMateriasCiclo3
-			cantidadMateriasMaxima -= cantidadMateriasCiclo3
-		elif cantidadMateriasMaxima > 0:
-			m3 = cantidadMateriasMaxima
-			cantidadMateriasMaxima = 0
-		if (cantidadMateriasMaxima - cantidadMateriasCiclo4) >= 0:
-			m4 = cantidadMateriasCiclo4
-			cantidadMateriasMaxima -= cantidadMateriasCiclo4
-		elif cantidadMateriasMaxima > 0:
-			m4 = cantidadMateriasMaxima
-			cantidadMateriasMaxima = 0
-			
-		
-		utilidadMaxima = m1*utilidad[0] + m2*utilidad[1] + m3*utilidad[2] + m4*utilidad[3]
-		
-		#Normalización
-		utilidadNorm = (utilidadTotal)/(utilidadMaxima)
-		return utilidadNorm
+		return (utilidadTotal)/(self.utilidadMaxima)
 
 	def CpAH(self,solucion):
-		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
-		amplitudAceptable = 7
-		
 		datosCarga = self.obtenerDatosCarga(solucion) if type(solucion) != pd.DataFrame else solucion
-		dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
 		horaMin = 21
 		horaMax = 7
 		
-		for dia in dias:
+		for dia in self.dias:
 			for hora in datosCarga[dia]:
 				if hora == '-':
 					continue
@@ -388,21 +380,19 @@ class Algoritmo():
 				horaMax = max(int(hora[6:8]),horaMax)
 				
 		amplitud = (horaMax - horaMin)
-		if amplitud <= amplitudAceptable:
+		if amplitud <= self.amplitudAceptable:
 			return 0
-		amplitud -= amplitudAceptable
+		amplitud -= self.amplitudAceptable
 		
-		return amplitud / (15 - amplitudAceptable)
+		return amplitud / (15 - self.amplitudAceptable)
 
 	def CpHL(self,solucion):
-		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
-		dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
 		costoTotal = 0
 		hlMax = 0
 
 		datosCarga = self.obtenerDatosCarga(solucion) if type(solucion) != pd.DataFrame else solucion
 
-		for dia in dias:
+		for dia in self.dias:
 			datosCarga = datosCarga.sort_values(dia)
 			if datosCarga[dia].iloc[len(datosCarga)-2] == '-':
 				continue
@@ -427,17 +417,13 @@ class Algoritmo():
 		return costo
 
 	def CpDH(self,solucion):
-		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
-		disponibilidadTotal = sum(disponibilidad['Lunes']) + sum(disponibilidad['Martes']) + sum(disponibilidad['Miercoles']) + sum(disponibilidad['Jueves']) + sum(disponibilidad['Viernes'])
-		if disponibilidadTotal == 75:
+		if self.disponibilidadTotal == 75:
 			return 0
 		
-		dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
-
 		datosCarga = self.obtenerDatosCarga(solucion) if type(solucion) != pd.DataFrame else solucion
 		costoTotal = 0
 
-		for dia in dias:
+		for dia in self.dias:
 			for i in range(len(datosCarga)):
 				if datosCarga[dia].iloc[i] == '-':
 					continue
@@ -446,15 +432,12 @@ class Algoritmo():
 				horaFin = int(datosCarga.iloc[i][dia][6:8])
 
 				for hora in range(horaInicio,horaFin):
-					if not(disponibilidad.query('hora == ' + str(hora))[dia].values[0]):
+					if not(self.disponibilidad.query('hora == ' + str(hora))[dia].values[0]):
 						costoTotal += 1
 						
-		#Normalización
-		costo = (costoTotal)/(75 - disponibilidadTotal)
-		return costo
+		return (costoTotal)/(75 - self.disponibilidadTotal)
 
 	def obtenerDesempenoPonderado(self,solucion):
-		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
 		if not(self.esValido(solucion)):
 			return 0
 		
@@ -465,17 +448,16 @@ class Algoritmo():
 		cpah = self.CpAH(solucion)
 		
 		utilidades = {
-			"upcc": (upcc * pesos["upcc"]),
-			"upmr": (upmr * pesos["upmr"]),
-			"upcm": (upcm * pesos["upcm"]),
-			"cpdh": pesos["cpdh"] - (cpdh * pesos["cpdh"]),
-			"cpah": pesos["cpah"] - (cpah * pesos["cpah"]),
+			"upcc": (upcc * self.pesos["upcc"]),
+			"upmr": (upmr * self.pesos["upmr"]),
+			"upcm": (upcm * self.pesos["upcm"]),
+			"cpdh": self.pesos["cpdh"] - (cpdh * self.pesos["cpdh"]),
+			"cpah": self.pesos["cpah"] - (cpah * self.pesos["cpah"]),
 		}
 		
 		return sum(utilidades.values())
 
 	def obtenerDesempeno(self,solucion):
-		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
 		if not(self.esValido(solucion)):
 			return 0,0,0,1,1
 		
