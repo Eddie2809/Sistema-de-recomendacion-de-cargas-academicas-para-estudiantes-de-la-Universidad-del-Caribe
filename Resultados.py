@@ -1,25 +1,26 @@
 import customtkinter as ctk
+import numpy as np
 from Estilo import Estilo
 from ResultadosHorario import ResultadosHorario
 from ResultadosEstadisticas import ResultadosEstadisticas
 from PIL import Image, ImageTk
 import pandas as pd
+from math import ceil
 from CTkMessagebox import CTkMessagebox
 
 WIDTH_MAX = 1000
-estiloG = Estilo()
+estiloG = Estilo()      # No lo borro solo porque lo usé en todos lados xD
 
 class DatosCarga(ctk.CTkFrame):
-    def __init__(self, *args, controladorResultados, controlador, datos, pos, **kwargs):
+    def __init__(self, *args, controladorResultados, controlador, datos, **kwargs):
         super().__init__(*args, **kwargs)
-        
-        self.posDataFrame = pos
+
         self.configure(fg_color = 'transparent')
         self.controladorResultados = controladorResultados
 
         ctk.CTkLabel(self, text="Clave", font= estiloG.FUENTE_TEXTO_BOLD,width=70,text_color=estiloG.COLOR_TEXTO).grid(row=0, column=0)
-        ctk.CTkLabel(self, text="Asignatura", font= estiloG.FUENTE_TEXTO_BOLD,width=235,text_color=estiloG.COLOR_TEXTO).grid(row=0, column=1)
-        ctk.CTkLabel(self, text="Profesor", font= estiloG.FUENTE_TEXTO_BOLD,width=235,text_color=estiloG.COLOR_TEXTO).grid(row=0, column=2)
+        ctk.CTkLabel(self, text="Asignatura", font= estiloG.FUENTE_TEXTO_BOLD,width=220,text_color=estiloG.COLOR_TEXTO).grid(row=0, column=1, padx=(0,15))
+        ctk.CTkLabel(self, text="Profesor", font= estiloG.FUENTE_TEXTO_BOLD,width=220,text_color=estiloG.COLOR_TEXTO).grid(row=0, column=2, padx = (0,15))
         ctk.CTkLabel(self,text = "Lunes", font = estiloG.FUENTE_TEXTO_BOLD,width=70,text_color=estiloG.COLOR_TEXTO).grid(row=0,column=3)
         ctk.CTkLabel(self,text = "Martes", font = estiloG.FUENTE_TEXTO_BOLD,width=70,text_color=estiloG.COLOR_TEXTO).grid(row=0,column=4)
         ctk.CTkLabel(self,text = "Miercoles", font = estiloG.FUENTE_TEXTO_BOLD,width=70,text_color=estiloG.COLOR_TEXTO).grid(row=0,column=5)
@@ -32,18 +33,18 @@ class DatosCarga(ctk.CTkFrame):
         for numfila in range(len(self.datos)):
 
             ctk.CTkLabel(self,text=self.datos.iloc[numfila]['clave'],font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 0)
-            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Nombre'],wraplength=235,justify='left',font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 1,sticky='w')
-            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Maestro'],wraplength=235,justify='left',font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 2,sticky='w')
-            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Lunes'],font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 3,sticky='w')
-            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Martes'],font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 4,sticky='w')
-            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Miercoles'],font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 5,sticky='w')
-            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Jueves'],font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 6,sticky='w')
-            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Viernes'],font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 7,sticky='w')
+            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Nombre'],wraplength=220,justify='left',font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 1,sticky='w')
+            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Maestro'],wraplength=220,justify='left',font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 2,sticky='w')
+            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Lunes'],font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 3)
+            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Martes'],font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 4)
+            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Miercoles'],font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 5)
+            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Jueves'],font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 6)
+            ctk.CTkLabel(self,text=self.datos.iloc[numfila]['Viernes'],font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO).grid(row = numfila+1,column = 7)
 
         self.estrellaDoradaImg = ctk.CTkImage(Image.open('assets/favselect.png'),size=(20,20))
         self.estrellaBlancaImg = ctk.CTkImage(Image.open('assets/favdeselect.png'),size=(20,20))
 
-        self.iconoFavorito = self.estrellaDoradaImg if pos in self.controladorResultados.favsLista else self.estrellaBlancaImg
+        self.iconoFavorito = self.estrellaDoradaImg if self.datos.iloc[0]['id_carga'] in self.controladorResultados.resultadosFavoritos else self.estrellaBlancaImg
         self.botonFavorito = ctk.CTkButton(self,command = self.cambiarFavorito, width = 40, image = self.iconoFavorito, text = '', fg_color='transparent',hover_color=estiloG.GRIS_CLARO)
         self.botonFavorito.grid(row = 1, column = 8, rowspan=len(self.datos))
 
@@ -55,55 +56,89 @@ class DatosCarga(ctk.CTkFrame):
 
 
     def cambiarFavorito(self):
-        if self.posDataFrame in self.controladorResultados.favsLista:
+        idCarga = self.datos.iloc[0]['id_carga']
+        if idCarga in self.controladorResultados.resultadosFavoritos:
             self.botonFavorito.configure(image = self.estrellaBlancaImg)
-            self.controladorResultados.favsLista.remove(self.posDataFrame)
-            self.controladorResultados.recargarFavsFunc()
+            self.controladorResultados.resultadosFavoritos.remove(idCarga)
 
         else:
             self.botonFavorito.configure(image = self.estrellaDoradaImg)
-            self.controladorResultados.favsLista.append(self.posDataFrame)
-
+            self.controladorResultados.resultadosFavoritos.add(idCarga)
 
 class ListaCargas(ctk.CTkFrame):
-    def __init__(self, *args, mostrarSoloFavoritos, controladorResultados, controlador ,**kwargs):
+    def __init__(self, *args, controladorResultados, controlador, cargasParaMostrar, **kwargs):
         super().__init__(*args, **kwargs)
         self.configure(fg_color = 'transparent')
         self.controladorResultados = controladorResultados
+        self.controlador = controlador
 
-        self.intervalo = 10
-
-        inicio = self.intervalo * (controladorResultados.paginaActual - 1)
-        fin = self.intervalo * controladorResultados.paginaActual
+        self.intervaloResultados = 10
+        self.paginaActual = 1
+        self.ultimaPagina = ceil(len(cargasParaMostrar) / self.intervaloResultados)
+        self.cargasParaMostrar = cargasParaMostrar
 
         seccionBotonesNavegacion = ctk.CTkFrame(self, fg_color = 'transparent')
-        seccionBotonesNavegacion.grid(row = 0, column = 0)
+        seccionBotonesNavegacion.grid(row = 0, column = 0, sticky = 'ew')
         seccionBotonesNavegacion.grid_columnconfigure(0,weight = 0)
+
         flechaIzquierda = ctk.CTkImage(Image.open('assets/flecha-izquierda.png'),size=(20,20))
         flechaDerecha = ctk.CTkImage(Image.open('assets/flecha-derecha.png'),size=(20,20))
         casaIcono = ctk.CTkImage(Image.open('assets/home.png'),size=(20,20))
-        ctk.CTkButton(seccionBotonesNavegacion, command = lambda: self.cambiarPagina(-1), image=flechaIzquierda,text='',fg_color = estiloG.COLOR_PRINCIPAL,text_color='white', font=estiloG.FUENTE_TEXTO,width=30).grid(row = 0, column = 0)
-        ctk.CTkButton(seccionBotonesNavegacion, command = lambda: self.cambiarPagina(0), image=casaIcono,text='',fg_color = estiloG.COLOR_PRINCIPAL,text_color='white', font=estiloG.FUENTE_TEXTO,width=30).grid(row = 0, column = 1, padx=15)
-        ctk.CTkButton(seccionBotonesNavegacion, command = lambda: self.cambiarPagina(1), image=flechaDerecha,text='',fg_color = estiloG.COLOR_PRINCIPAL,text_color='white', font=estiloG.FUENTE_TEXTO,width=30).grid(row = 0, column = 2)
 
-        seccionLista = ctk.CTkFrame(self, fg_color = 'transparent')
-        seccionLista.grid(row = 1, column = 0)
-        seccionLista.grid_columnconfigure(0,weight = 0)
+        self.botonAnterior = ctk.CTkButton(seccionBotonesNavegacion, command = lambda: self.cambiarPagina(-1), state='disabled', image=flechaIzquierda,text='',fg_color = estiloG.GRIS_CLARO,text_color='white', font=estiloG.FUENTE_TEXTO,width=30)
+        self.botonAnterior.grid(row = 0, column = 0)
+        self.botonCasa = ctk.CTkButton(seccionBotonesNavegacion, command = lambda: self.cambiarPagina(0), state = 'disabled', image=casaIcono,text='',fg_color = estiloG.GRIS_CLARO,text_color='white', font=estiloG.FUENTE_TEXTO,width=30)
+        self.botonCasa.grid(row = 0, column = 1, padx=15)
+        self.botonSiguiente = ctk.CTkButton(seccionBotonesNavegacion, command = lambda: self.cambiarPagina(1), state = 'normal' if len(cargasParaMostrar) > 10 else 'disabled', image=flechaDerecha,text='',fg_color = estiloG.COLOR_PRINCIPAL if len(cargasParaMostrar) > 10 else estiloG.GRIS_CLARO,text_color='white', font=estiloG.FUENTE_TEXTO,width=30)
+        self.botonSiguiente.grid(row = 0, column = 2)
 
-        for pos in range(inicio,fin):
-            if mostrarSoloFavoritos == True and pos not in controladorResultados.favsLista:
-                continue
-            if pos >= len(self.controladorResultados.resultadosDf):
+        self.paginaActualLabel = ctk.CTkLabel(self, fg_color = 'transparent', font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO, text='Pagina: 1 / ' + str(self.ultimaPagina))
+        self.paginaActualLabel.grid(row = 1, column = 0, pady = (0,30))
+
+        self.seccionLista = ctk.CTkFrame(self, fg_color = 'transparent')
+        self.seccionLista.grid(row = 2, column = 0)
+        self.seccionLista.grid_columnconfigure(0,weight = 0)
+
+        self.cargasListadas = []
+
+        for pos in range(self.intervaloResultados):
+            if pos >= len(cargasParaMostrar):
                 break
-            datosCargaFrame = DatosCarga(seccionLista, controladorResultados = controladorResultados, controlador = controlador ,pos = pos, datos = controladorResultados.resultadosDf[pos])
-            datosCargaFrame.grid(row = pos, column = 0, pady=(0,35))
+            self.cargasListadas.append(DatosCarga(self.seccionLista, controladorResultados = controladorResultados, controlador = controlador, datos = cargasParaMostrar[pos]))
+            self.cargasListadas[pos].grid(row = pos, column = 0, pady=(0,35))
 
     def cambiarPagina(self,direccion):
         if direccion == 0:
-            self.controladorResultados.paginaActual = 1
+            self.paginaActual = 1
         else:
-            self.controladorResultados.paginaActual += direccion
-        self.controladorResultados.cargarResultados()
+            self.paginaActual += direccion
+
+        inicio = self.intervaloResultados * (self.paginaActual - 1)
+        fin = self.intervaloResultados * self.paginaActual
+
+        estadoFlechaIzquierda = 'disabled' if self.paginaActual == 1 else 'normal'
+        colorFlechaIzquierda = estiloG.GRIS_CLARO if estadoFlechaIzquierda == 'disabled' else estiloG.COLOR_PRINCIPAL
+        estadoFlechaDerecha = 'disabled' if self.paginaActual == self.ultimaPagina else 'normal'
+        colorFlechaDerecha = estiloG.GRIS_CLARO if estadoFlechaDerecha == 'disabled' else estiloG.COLOR_PRINCIPAL
+        estadoCasaIcono = 'disabled' if self.paginaActual == 1 else 'normal'
+        colorCasaIcono = estiloG.GRIS_CLARO if estadoCasaIcono == 'disabled' else estiloG.COLOR_PRINCIPAL
+
+        self.botonAnterior.configure(state = estadoFlechaIzquierda, fg_color = colorFlechaIzquierda)
+        self.botonCasa.configure(state = estadoCasaIcono, fg_color = colorCasaIcono)
+        self.botonSiguiente.configure(state = estadoFlechaDerecha, fg_color = colorFlechaDerecha)
+        
+        self.paginaActualLabel.configure(text = 'Página: ' + str(self.paginaActual) + ' / ' + str(self.ultimaPagina))
+
+        for i in range(self.intervaloResultados):
+            if i >= len(self.cargasParaMostrar):
+                break
+            self.cargasListadas[i].destroy()
+
+        for i,pos in enumerate(range(inicio,fin)):
+            if pos >= len(self.cargasParaMostrar):
+                break
+            self.cargasListadas[i] = DatosCarga(self.seccionLista, controladorResultados = self.controladorResultados, controlador = self.controlador, datos = self.cargasParaMostrar[pos])
+            self.cargasListadas[i].grid(row = i, column = 0, pady = (0,35))
 
 class Resultados(ctk.CTkScrollableFrame):
     def __init__(self,*args,controlador,**kwargs):
@@ -111,21 +146,14 @@ class Resultados(ctk.CTkScrollableFrame):
 
         self.controlador = controlador
         self.estilo = Estilo()
-        self.color = 0
         self.configure(fg_color = 'transparent')
-        self.paginaActual = 1
         
-        arrDfs = self.controlador.resultados
-
         #Cargas generadas
-        self.resultadosDfAcum = arrDfs
-        self.resultadosDf = arrDfs
+        self.resultadosOriginal = controlador.resultados
+        self.listaActual = self.resultadosOriginal.copy()
 
         #Usamos variable global para iniciar el valor de Fav
-        self.favsCubeta = [0] * len(self.resultadosDf)
-        self.favsLista = []
-
-        self.favoritos = self.generarListFavoritos()
+        self.resultadosFavoritos = set()
 
         self.grid_columnconfigure(0, weight=1)
         self.rowconfigure(0, weight=1)
@@ -136,9 +164,8 @@ class Resultados(ctk.CTkScrollableFrame):
         self.rowconfigure(5, weight=3)
         self.grid_columnconfigure(0,weight=1)
 
-        self.resultados  = ctk.CTkLabel(self, text = 'Resultados' , text_color = "black", wraplength=200, justify="center",font=self.estilo.FUENTE_TITULO)
-        self.resultados.grid(row=0, column = 0, sticky="w")
-
+        self.titulo  = ctk.CTkLabel(self, text = 'Resultados' , text_color = "black", wraplength=200, justify="center",font=self.estilo.FUENTE_TITULO)
+        self.titulo.grid(row=0, column = 0, sticky="w")
 
         #Sección de ordenar por
         self.containerOrdenarPor  = ctk.CTkFrame(self,width=300, height=50, corner_radius=10, fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
@@ -165,11 +192,11 @@ class Resultados(ctk.CTkScrollableFrame):
         self.containerBuscar.grid_columnconfigure(1, weight=2)
         self.containerBuscar.rowconfigure(0, weight=1)
 
-        self.tituloBuscar = ctk.CTkLabel(self.containerBuscar,text='Buscar', wraplength=50 ,font=self.estilo.FUENTE_TEXTO)
+        self.tituloBuscar = ctk.CTkLabel(self.containerBuscar,text='Buscar: ', wraplength=50 ,font=self.estilo.FUENTE_TEXTO)
         self.tituloBuscar.grid(row=0,column=0, sticky = "w")
 
         self.entryBuscar = ctk.CTkEntry(self.containerBuscar, width=300)
-        self.entryBuscar.grid(row=0,column=1, sticky="we")
+        self.entryBuscar.grid(row=0,column=1, sticky="we", padx=10)
 
         self.buttonBuscar = ctk.CTkButton(self.containerBuscar , text = "Buscar",width=30,fg_color = self.estilo.COLOR_PRINCIPAL , hover_color = self.estilo.COLOR_PRINCIPAL, text_color= self.estilo.COLOR_FONDO, border_color= self.estilo.COLOR_FONDO, border_width =2 ,command=self.buscar)
         self.buttonBuscar.grid(row=0,column=2, sticky = "w")
@@ -177,42 +204,46 @@ class Resultados(ctk.CTkScrollableFrame):
         self.cargasGeneradas  = ctk.CTkLabel(self, text = 'Cargas académicas' , height=35 ,text_color = "black", wraplength=200, justify="center",font=self.estilo.FUENTE_SUBTITULO)
         self.cargasGeneradas.grid(row=3, column = 0, sticky="w", pady = 5)
 
-        #Sección de general y favoritos
+        ctk.CTkLabel(self,text = 'Resultados: ' + str(len(self.resultadosOriginal)),font=estiloG.FUENTE_TEXTO,text_color = estiloG.COLOR_TEXTO,fg_color = 'transparent').grid(row = 4, column = 0,sticky = 'w', pady = 5)
+
+        #Sección de resultados
         self.containerButtons2  = ctk.CTkFrame(self,width=300, height=50, corner_radius=10, fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
-        self.containerButtons2.grid(row=4,column=0,sticky = "w")
+        self.containerButtons2.grid(row=5,column=0,sticky = "w")
         self.containerButtons2.grid_columnconfigure(0, weight=1)
         self.containerButtons2.grid_columnconfigure(1, weight=2)
         self.containerButtons2.rowconfigure(0, weight=1)
 
-        self.buttonResultados = ctk.CTkButton(self.containerButtons2 , text = "Resultados",width=30,fg_color = self.estilo.COLOR_PRINCIPAL , hover_color = self.estilo.COLOR_PRINCIPAL, text_color= self.estilo.COLOR_FONDO, border_color= self.estilo.COLOR_FONDO, border_width =2 ,command=self.cargarResultados)
+        self.buttonResultados = ctk.CTkButton(self.containerButtons2 , text = "Resultados",width=30,fg_color = self.estilo.COLOR_PRINCIPAL , hover_color = self.estilo.COLOR_PRINCIPAL, text_color= self.estilo.COLOR_FONDO, border_color= self.estilo.COLOR_FONDO, border_width =2 ,command=lambda: self.actualizarListaCargas(self.resultadosOriginal))
         self.buttonResultados.grid(row=0,column=0, sticky = "w")
 
-        self.buttonFavoritos = ctk.CTkButton(self.containerButtons2 , text = "Favoritos",width=30,fg_color = self.estilo.COLOR_FONDO , hover_color = self.estilo.COLOR_FONDO, text_color=  self.estilo.COLOR_PRINCIPAL, border_color= self.estilo.COLOR_PRINCIPAL, border_width =2 ,command=self.cargarFavoritos)
+        self.buttonFavoritos = ctk.CTkButton(self.containerButtons2 , text = "Favoritos",width=30,fg_color = self.estilo.COLOR_FONDO , hover_color = self.estilo.COLOR_FONDO, text_color=  self.estilo.COLOR_PRINCIPAL, border_color= self.estilo.COLOR_PRINCIPAL, border_width =2 ,command = lambda: self.actualizarListaCargas(self.obtenerFavoritosLista()))
         self.buttonFavoritos.grid(row=0,column=1, sticky = "we")
 
-        #Frame de resultados
-        self.resultadosFrame = ctk.CTkFrame(self, corner_radius=10, height=400, width=WIDTH_MAX , fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
-        self.resultadosFrame.grid(row=5,column=0,sticky= 'nsew')
-        self.resultadosFrame.grid_columnconfigure(0, weight=1)
-        self.resultadosFrame.rowconfigure(0, weight=1)
+        self.scrollableFrame = ListaCargas(self, cargasParaMostrar = self.listaActual, controladorResultados = self, controlador = self.controlador, height=400, width=WIDTH_MAX)
+        self.scrollableFrame.grid(row=6, column=0, sticky="nsew")
 
-        self.scrollableFrame = ListaCargas(self.resultadosFrame, mostrarSoloFavoritos = False, controladorResultados = self, controlador = self.controlador, height=400, width=WIDTH_MAX)
-        self.scrollableFrame.grid(row=0, column=0, sticky="nsew")
+    def actualizarListaCargas(self,nuevaLista):
+        self.scrollableFrame.destroy()
+        self.scrollableFrame = ListaCargas(self, cargasParaMostrar = nuevaLista, controladorResultados = self, controlador = self.controlador, height=400, width=WIDTH_MAX)
+        self.scrollableFrame.grid(row=6, column=0, sticky="nsew")
 
     def buscar(self):
         palabra = self.entryBuscar.get()
-        
-        self.resultadosDf = self.resultadosDfAcum
-        
         arrResultadosFiltrados = []
 
-        for i,resultado in enumerate(self.resultadosDf):
+        for resultado in self.resultadosOriginal:
             if self.buscarEnColumnas(resultadoDf= resultado, palabra= palabra):
                 arrResultadosFiltrados.append(resultado)
+        self.actualizarListaCargas(arrResultadosFiltrados)
 
-        self.resultadosDf = arrResultadosFiltrados
-        self.cargarResultados()
 
+    def obtenerFavoritosLista(self):
+        nuevaLista = []
+        for r in self.resultadosOriginal:
+            if r.iloc[0]['id_carga'] in self.resultadosFavoritos:
+                nuevaLista.append(r)
+
+        return nuevaLista
 
     def buscarEnColumnas(self, resultadoDf, palabra ):
         encontrado = False 
@@ -250,79 +281,6 @@ class Resultados(ctk.CTkScrollableFrame):
             return False       
 
     def ordenar(self):
-        print("Ordenar")  
-
-    def cargarFavoritos(self):
-        if len(self.favsLista) == 0:
-            CTkMessagebox(title="Error", message="No ha seleccionado ningun favorito", icon="cancel")
-            self.cargarResultados()
-            return 
-        
-        colorPrincipal = self.estilo.COLOR_FONDO
-        colorSecundario = self.estilo.COLOR_PRINCIPAL
-
-        self.buttonResultados.configure(fg_color = colorPrincipal , hover_color = colorPrincipal , text_color= colorSecundario, border_color= colorSecundario)
-        self.buttonFavoritos.configure(fg_color = colorSecundario , hover_color = colorSecundario , text_color= colorPrincipal, border_color= colorPrincipal)
-
-        try:
-            self.resultadosFrame.destroy()
-        except:
-            print("No se ha creado el resultados Frame")
-        try:
-            self.favoritosFrame.destroy()
-        except:
-            print("No se ha creado el favoritos Frame desde Favoritos")
-
-        self.favoritosFrame = ctk.CTkFrame(self, corner_radius=10,height=400, width=WIDTH_MAX , fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
-        self.favoritosFrame.grid(row=5,column=0,sticky= 'nsew')
-        self.favoritosFrame.grid_columnconfigure(0, weight=1)
-        self.favoritosFrame.rowconfigure(0, weight=1)
-        
-        self.scrollableFrame = ListaCargas(self.favoritosFrame, mostrarSoloFavoritos = True, controladorResultados = self, controlador = self.controlador, height=400, width=WIDTH_MAX)
-        self.scrollableFrame.grid(row=0, column=0, sticky="nsew")
-
-    def recargarFavsFunc(self):
-        self.cargarResultados()
-        self.cargarFavoritos()
-
-    def cargarResultados(self):
-        self.buttonResultados.configure(fg_color = self.estilo.COLOR_PRINCIPAL , hover_color = self.estilo.COLOR_PRINCIPAL , text_color= self.estilo.COLOR_FONDO, border_color= self.estilo.COLOR_FONDO)
-        self.buttonFavoritos.configure(fg_color = self.estilo.COLOR_FONDO , hover_color = self.estilo.COLOR_FONDO , text_color= self.estilo.COLOR_PRINCIPAL, border_color= self.estilo.COLOR_PRINCIPAL)
-
-        try:
-            self.resultadosFrame.destroy()
-        except:
-            print("No se ha creado el resultados Frame")
-        try:
-            self.favoritosFrame.destroy()
-        except:
-            print("No se ha creado el favoritos Frame")
-
-        self.resultadosFrame = ctk.CTkFrame(self, corner_radius=10, height=400, width=WIDTH_MAX , fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
-        self.resultadosFrame.grid(row=5,column=0,sticky= 'nsew')
-        self.resultadosFrame.grid_columnconfigure(0, weight=1)
-        self.resultadosFrame.rowconfigure(0, weight=1)
-
-        self.scrollableFrame = ListaCargas(self.resultadosFrame, mostrarSoloFavoritos = False, controladorResultados = self, controlador = self.controlador, height=400, width=WIDTH_MAX)
-        self.scrollableFrame.grid(row=0, column=0, sticky="nsew") 
-
-    
-    def cambiarColor(self):
-        colorPrincipal = ""
-        colorSecundario = ""
-        if self.color == 1 :
-            colorPrincipal = self.estilo.COLOR_PRINCIPAL
-            colorSecundario = self.estilo.COLOR_FONDO
-            self.color = 0
-        else:
-            colorPrincipal = self.estilo.COLOR_FONDO
-            colorSecundario = self.estilo.COLOR_PRINCIPAL
-            self.color = 1
-        return colorPrincipal,colorSecundario
-    
-    def generarListFavoritos(self):
-        dfFavArr = []
-        for pos, resultado in enumerate(self.resultadosDf):
-            if self.favsCubeta[pos] == 1:
-                dfFavArr.append(resultado)
-        return dfFavArr
+        comboBoxValue = self.comboOrdenar.get()
+        objetivo = 'despon' if comboBoxValue == 'Desempeño general' else 'upcc' if comboBoxValue == 'Cierre de ciclos' else 'upmr' if comboBoxValue ==  'Cantidad de materias reprobadas de semestres anteriores' else 'upcm' if comboBoxValue == 'Cantidad ideal de materias' else 'cpdh' if comboBoxValue == 'Disponibilidad de horario' else 'cpah' if comboBoxValue ==  'Amplitud de horario' else 'cprr' if comboBoxValue == 'Riesgo de reprobación' else 'cphl'
+        self.actualizarListaCargas(self.controlador.algoritmo.ordenarRecomendacionesPor(self.resultadosOriginal,objetivo))

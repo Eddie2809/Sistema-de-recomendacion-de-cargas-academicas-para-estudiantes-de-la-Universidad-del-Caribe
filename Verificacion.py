@@ -80,7 +80,7 @@ class FrameListaAsignaturas(ctk.CTkFrame):
 		self.scrollAsignaturas.grid(row=1, columnspan=4, sticky=ctk.NSEW)
 
 
-class ScrollFrameAsignaturas(ctk.CTkScrollableFrame):
+class ScrollFrameAsignaturas(ctk.CTkFrame):
 	def __init__(self, master, controlador):
 		super().__init__(master)
 		self.configure(fg_color='transparent')
@@ -122,7 +122,7 @@ class ScrollFrameAsignaturas(ctk.CTkScrollableFrame):
 			self.entryCalificacion.grid(row=i, column=3, sticky=ctk.W)
 
 
-class Verificacion(ctk.CTkFrame):
+class Verificacion(ctk.CTkScrollableFrame):
 	def __init__(self,*args,route='verificacion',controlador,**kwargs):
 		super().__init__(*args,**kwargs)
 

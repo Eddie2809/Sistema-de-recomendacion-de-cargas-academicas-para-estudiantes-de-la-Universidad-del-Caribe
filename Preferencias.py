@@ -9,12 +9,12 @@ class Pesos(ctk.CTkFrame):
 
         estilo = Estilo()
 
-        self.valorCC = ctk.IntVar(value=pesos['UpCC'] * 100)
-        self.valorMR = ctk.IntVar(value=pesos['UpMR'] * 100)
-        self.valorCM = ctk.IntVar(value=pesos['UpCM'] * 100)
-        self.valorDH = ctk.IntVar(value=pesos['CpDH'] * 100)
-        self.valorAH = ctk.IntVar(value=pesos['CpAH'] * 100)
-        self.valorRR = ctk.IntVar(value=pesos['CpRR'] * 100)
+        self.valorCC = ctk.IntVar(value=pesos['upcc'] * 100)
+        self.valorMR = ctk.IntVar(value=pesos['upmr'] * 100)
+        self.valorCM = ctk.IntVar(value=pesos['upcm'] * 100)
+        self.valorDH = ctk.IntVar(value=pesos['cpdh'] * 100)
+        self.valorAH = ctk.IntVar(value=pesos['cpah'] * 100)
+        self.valorRR = ctk.IntVar(value=pesos['cprr'] * 100)
 
         self.header = PesosHeader(self,restaurarPesos=self.restaurarPesos)
         self.header.grid(row = 0, column = 0)
@@ -22,37 +22,37 @@ class Pesos(ctk.CTkFrame):
         self.ccTexto = ctk.CTkLabel(self,text='Cierre de ciclos',font=estilo.FUENTE_TEXTO)
         self.ccTexto.grid(row = 1, column = 0)
 
-        self.ccEntrada = PesosEntrada(self,valor=self.valorCC,objetivo='UpCC',cambiarPeso=cambiarPeso)
+        self.ccEntrada = PesosEntrada(self,valor=self.valorCC,objetivo='upcc',cambiarPeso=cambiarPeso)
         self.ccEntrada.grid(row = 2, column = 0)
 
         self.mrTexto = ctk.CTkLabel(self,text='Selección de materias reprobadas',font=estilo.FUENTE_TEXTO)
         self.mrTexto.grid(row = 3, column = 0)
 
-        self.mrEntrada = PesosEntrada(self,valor=self.valorMR,objetivo='UpMR',cambiarPeso=cambiarPeso)
+        self.mrEntrada = PesosEntrada(self,valor=self.valorMR,objetivo='upmr',cambiarPeso=cambiarPeso)
         self.mrEntrada.grid(row = 4, column = 0)
 
         self.cmTexto = ctk.CTkLabel(self,text='Cantidad ideal de materias',font=estilo.FUENTE_TEXTO)
         self.cmTexto.grid(row = 5, column = 0)
 
-        self.cmEntrada = PesosEntrada(self,valor=self.valorCM,objetivo='UpCM',cambiarPeso=cambiarPeso)
+        self.cmEntrada = PesosEntrada(self,valor=self.valorCM,objetivo='upcm',cambiarPeso=cambiarPeso)
         self.cmEntrada.grid(row = 6, column = 0)
 
         self.dhTexto = ctk.CTkLabel(self,text='Disponibilidad de horario',font=estilo.FUENTE_TEXTO)
         self.dhTexto.grid(row = 7, column = 0)
 
-        self.dhEntrada = PesosEntrada(self,valor=self.valorDH,objetivo='CpDH',cambiarPeso=cambiarPeso)
+        self.dhEntrada = PesosEntrada(self,valor=self.valorDH,objetivo='cpdh',cambiarPeso=cambiarPeso)
         self.dhEntrada.grid(row = 8, column = 0)
 
         self.ahTexto = ctk.CTkLabel(self,text='Amplitud de horario',font=estilo.FUENTE_TEXTO)
         self.ahTexto.grid(row = 9, column = 0)
 
-        self.ahEntrada = PesosEntrada(self,valor=self.valorAH,objetivo='CpAH',cambiarPeso=cambiarPeso)
+        self.ahEntrada = PesosEntrada(self,valor=self.valorAH,objetivo='cpah',cambiarPeso=cambiarPeso)
         self.ahEntrada.grid(row = 10, column = 0)
 
         self.rrTexto = ctk.CTkLabel(self,text='Riesgo de reprobación',font=estilo.FUENTE_TEXTO)
         self.rrTexto.grid(row = 11, column = 0)
 
-        self.rrEntrada = PesosEntrada(self,valor=self.valorRR,objetivo='CpRR',cambiarPeso=cambiarPeso)
+        self.rrEntrada = PesosEntrada(self,valor=self.valorRR,objetivo='cprr',cambiarPeso=cambiarPeso)
         self.rrEntrada.grid(row = 12, column = 0)
 
     def restaurarPesos(self):

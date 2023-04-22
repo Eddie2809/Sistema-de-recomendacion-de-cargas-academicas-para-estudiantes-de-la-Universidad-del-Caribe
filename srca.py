@@ -1,4 +1,5 @@
 import customtkinter as ctk
+import numpy as np
 from Preferencias import Preferencias
 from Verificacion import Verificacion
 from Inicio import Inicio
@@ -36,12 +37,12 @@ class App(ctk.CTk):
         self.framePrincipal.grid(row = 0, column = 0, sticky = 'nsew', padx = 100, pady = 15)
         self.estudiante = {}
         self.pesos = {
-            'UpCC': 0.8,
-            'UpMR': 0.4,
-            'UpCM': 0.4,
-            'CpDH': 1,
-            'CpAH': 0.6,
-            'CpRR': 0.1
+            'upcc': 0.8,
+            'upmr': 0.4,
+            'upcm': 0.4,
+            'cpdh': 1,
+            'cpah': 0.6,
+            'cprr': 0.1
         }
         self.cantidadIdealMaterias = 3
         self.disponibilidad = [
@@ -99,16 +100,13 @@ class App(ctk.CTk):
         return self.cancelarEjecucion
 
     def cargarResultados(self,recomendaciones):
-        #recomendaciones = self.algoritmo.obtenerRecomendacionesUnicas(recomendaciones,0)
+        recomendaciones = self.algoritmo.obtenerRecomendacionesUnicas(recomendaciones = recomendaciones)
         self.resultados = []
-        con = 0
 
-        for r in recomendaciones:
-            if con >= 30:
-                break
-            self.resultados.append(self.algoritmo.obtenerDatosCarga(r))
-
-            con += 1
+        for i in range(len(recomendaciones)):
+            carga = self.algoritmo.obtenerDatosCarga(recomendaciones[i])
+            carga['id_carga'] = i
+            self.resultados.append(carga)
 
         self.cambiarFrame(Resultados,'Resultados')
 

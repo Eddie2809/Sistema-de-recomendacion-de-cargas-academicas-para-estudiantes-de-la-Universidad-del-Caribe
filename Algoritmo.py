@@ -59,12 +59,6 @@ class Algoritmo():
 
 		self.toolbox.register("select", tools.selNSGA3, ref_points=self.ref_points)
 
-	def llamarCallback(self,callback):
-		if callback == None:
-			return
-		else:
-			callback()
-
 	def obtenerCreditos(self):
 		claves = self.kardex.query('promediofinal >= 7')['clave'].unique()
 		totalCreditos = 0
@@ -91,15 +85,21 @@ class Algoritmo():
 					return False
 			return True
 
-	def obtenerRecomendacionesUnicas(self,recomendaciones,umbral):
+	def obtenerRecomendacionesUnicas(self,recomendaciones):
 	    recomendacionesFinal = []
-	    for rec in recomendaciones:
-	        recomendacionesFinal.append(list(set(rec)))
-	    recomendacionesFinal = list(np.unique(recomendacionesFinal))
-	    recomendacionesFinal.sort(key=lambda x: -self.obtenerDesempenoPonderado(x))
+	    for i in range(len(recomendaciones)):
+	    	recomendacionSet = set(recomendaciones[i])
+	    	recomendacionesFinal.append(list(recomendacionSet))
+	    	n = 9 - len(recomendacionesFinal[i])
+	    	recomendacionesFinal[i] += (n * [-1])
+	    	recomendacionesFinal[i] = sorted(recomendacionesFinal[i])
+	    recomendacionesFinal = np.unique(recomendacionesFinal, axis = 0)
+	    return self.ordenarRecomendacionesPor(recomendacionesFinal,'despon')
 
-	    return recomendacionesFinal
-
+	def ordenarRecomendacionesPor(self,recomendaciones,objetivo):
+		func = self.UpCC if objetivo == 'upcc' else self.UpMR if objetivo == 'upmr' else self.UpCM if objetivo == 'upcm' else self.CpDH if objetivo == 'cpdh' else self.CpAH if objetivo == 'cpah' else self.CpHL if objetivo == 'uphl' else self.obtenerDesempenoPonderado
+		orden = 1 if (objetivo == 'cpdh' or objetivo == 'cpah' or objetivo == 'cphl') else -1
+		return sorted(recomendaciones,key = lambda x: orden * func(x))
 
 	def obtenerOfertaUtil(self):
 		dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
@@ -203,7 +203,7 @@ class Algoritmo():
 	def esValido(self,solucion):
 		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
 		#Si se repite una materia es inválido
-		datosCarga = self.obtenerDatosCarga(solucion)
+		datosCarga = self.obtenerDatosCarga(solucion) if type(solucion) != pd.DataFrame else solucion
 		if len(datosCarga['clave'].unique()) < len(datosCarga):
 			return False
 		#Si se traslapan dos materias es inválido
@@ -293,7 +293,8 @@ class Algoritmo():
 		materiasReprobadasOfertadas = 0
 		if len(materiasReprobadas) == 0:
 			return 1
-		datosCarga = self.obtenerDatosCarga(solucion)
+
+		datosCarga = self.obtenerDatosCarga(solucion) if type(solucion) != pd.DataFrame else solucion
 		materiasReprobadasCargadas = 0
 		
 		for clave in materiasReprobadas:
@@ -319,7 +320,7 @@ class Algoritmo():
 		
 		menorCiclo = min(ofertaUtil['ciclos']) - 1
 		
-		datosCarga = self.obtenerDatosCarga(solucion)
+		datosCarga = self.obtenerDatosCarga(solucion) if type(solucion) != pd.DataFrame else solucion
 		
 		claves = datosCarga['clave'].unique()
 		for i in range(len(claves)):
@@ -374,7 +375,7 @@ class Algoritmo():
 		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
 		amplitudAceptable = 7
 		
-		datosCarga = self.obtenerDatosCarga(solucion)
+		datosCarga = self.obtenerDatosCarga(solucion) if type(solucion) != pd.DataFrame else solucion
 		dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
 		horaMin = 21
 		horaMax = 7
@@ -399,7 +400,7 @@ class Algoritmo():
 		costoTotal = 0
 		hlMax = 0
 
-		datosCarga = self.obtenerDatosCarga(solucion)
+		datosCarga = self.obtenerDatosCarga(solucion) if type(solucion) != pd.DataFrame else solucion
 
 		for dia in dias:
 			datosCarga = datosCarga.sort_values(dia)
@@ -432,7 +433,8 @@ class Algoritmo():
 			return 0
 		
 		dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
-		datosCarga = self.obtenerDatosCarga(solucion)
+
+		datosCarga = self.obtenerDatosCarga(solucion) if type(solucion) != pd.DataFrame else solucion
 		costoTotal = 0
 
 		for dia in dias:
@@ -453,7 +455,7 @@ class Algoritmo():
 
 	def obtenerDesempenoPonderado(self,solucion):
 		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
-		if not(self.esValido(solucion,ofertaUtil)):
+		if not(self.esValido(solucion)):
 			return 0
 		
 		upcc = self.UpCC(solucion)
