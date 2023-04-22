@@ -50,9 +50,13 @@ class DatosCarga(ctk.CTkFrame):
         self.buttonEstadisticas = ctk.CTkButton(self , text = "Ver estadísticas",width=30,fg_color = estiloG.COLOR_PRINCIPAL , hover_color = estiloG.COLOR_PRINCIPAL, text_color= estiloG.COLOR_FONDO, border_color= estiloG.COLOR_FONDO, border_width =2 ,command=lambda: controlador.cambiarFrame(ResultadosEstadisticas, 'ResultadosEstadisticas'))
         self.buttonEstadisticas.grid(row=numfila+2,column=1)
 
-        self.buttonHorario = ctk.CTkButton(self , text = "Ver horario",width=30,fg_color = estiloG.COLOR_FONDO , hover_color = estiloG.COLOR_FONDO, text_color=  estiloG.COLOR_PRINCIPAL, border_color= estiloG.COLOR_PRINCIPAL, border_width =2 ,command=lambda: controlador.cambiarFrame(ResultadosHorario,'ResultadosHorario'))
+        self.buttonHorario = ctk.CTkButton(self , text = "Ver horario",width=30,fg_color = estiloG.COLOR_FONDO , hover_color = estiloG.COLOR_FONDO, text_color=  estiloG.COLOR_PRINCIPAL, border_color= estiloG.COLOR_PRINCIPAL, border_width =2 ,command=lambda: self.verHorario(controlador=controlador, controladorResultados=controladorResultados, posDataFrame=self.posDataFrame))
         self.buttonHorario.grid(row=numfila+2,column=2)
 
+    def verHorario(self, controlador, controladorResultados, posDataFrame):
+        controlador.cargaVisualizada = posDataFrame
+        controlador.paginaActual = controladorResultados.paginaActual
+        controlador.cambiarFrame(ResultadosHorario,'ResultadosHorario')
 
     def cambiarFavorito(self):
         if self.posDataFrame in self.controladorResultados.favsLista:

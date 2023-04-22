@@ -60,6 +60,7 @@ class App(ctk.CTk):
         self.estudiantePlan = ""
 
         self.cancelarEjecucion = False
+        self.cargaVisualizada = 0
         
         self.cambiarFrame(Inicio, "Inicio")
 
