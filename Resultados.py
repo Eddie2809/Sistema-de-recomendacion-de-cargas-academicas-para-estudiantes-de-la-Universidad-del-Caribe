@@ -12,7 +12,7 @@ WIDTH_MAX = 1000
 estiloG = Estilo()      # No lo borro solo porque lo usé en todos lados xD
 
 class DatosCarga(ctk.CTkFrame):
-    def __init__(self, *args, controladorResultados, controlador, datos, **kwargs):
+    def __init__(self, *args, controladorResultados, controlador, datos, pos, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.configure(fg_color = 'transparent')
@@ -51,12 +51,11 @@ class DatosCarga(ctk.CTkFrame):
         self.buttonEstadisticas = ctk.CTkButton(self , text = "Ver estadísticas",width=30,fg_color = estiloG.COLOR_PRINCIPAL , hover_color = estiloG.COLOR_PRINCIPAL, text_color= estiloG.COLOR_FONDO, border_color= estiloG.COLOR_FONDO, border_width =2 ,command=lambda: controlador.cambiarFrame(ResultadosEstadisticas, 'ResultadosEstadisticas'))
         self.buttonEstadisticas.grid(row=numfila+2,column=1)
 
-        self.buttonHorario = ctk.CTkButton(self , text = "Ver horario",width=30,fg_color = estiloG.COLOR_FONDO , hover_color = estiloG.COLOR_FONDO, text_color=  estiloG.COLOR_PRINCIPAL, border_color= estiloG.COLOR_PRINCIPAL, border_width =2 ,command=lambda: self.verHorario(controlador=controlador, controladorResultados=controladorResultados, posDataFrame=self.posDataFrame))
+        self.buttonHorario = ctk.CTkButton(self , text = "Ver horario",width=30,fg_color = estiloG.COLOR_FONDO , hover_color = estiloG.COLOR_FONDO, text_color=  estiloG.COLOR_PRINCIPAL, border_color= estiloG.COLOR_PRINCIPAL, border_width =2 ,command=lambda: self.verHorario(controlador=controlador, controladorResultados=controladorResultados, posDataFrame=pos))
         self.buttonHorario.grid(row=numfila+2,column=2)
 
     def verHorario(self, controlador, controladorResultados, posDataFrame):
         controlador.cargaVisualizada = posDataFrame
-        controlador.paginaActual = controladorResultados.paginaActual
         controlador.cambiarFrame(ResultadosHorario,'ResultadosHorario')
 
     def cambiarFavorito(self):
@@ -110,7 +109,7 @@ class ListaCargas(ctk.CTkFrame):
         for pos in range(self.intervaloResultados):
             if pos >= len(cargasParaMostrar):
                 break
-            self.cargasListadas.append(DatosCarga(self.seccionLista, controladorResultados = controladorResultados, controlador = controlador, datos = cargasParaMostrar[pos]))
+            self.cargasListadas.append(DatosCarga(self.seccionLista, controladorResultados = controladorResultados, controlador = controlador, datos = cargasParaMostrar[pos], pos = pos))
             self.cargasListadas[pos].grid(row = pos, column = 0, pady=(0,35))
 
     def cambiarPagina(self,direccion):
@@ -143,7 +142,7 @@ class ListaCargas(ctk.CTkFrame):
         for i,pos in enumerate(range(inicio,fin)):
             if pos >= len(self.cargasParaMostrar):
                 break
-            self.cargasListadas[i] = DatosCarga(self.seccionLista, controladorResultados = self.controladorResultados, controlador = self.controlador, datos = self.cargasParaMostrar[pos])
+            self.cargasListadas[i] = DatosCarga(self.seccionLista, controladorResultados = self.controladorResultados, controlador = self.controlador, datos = self.cargasParaMostrar[pos], pos = pos)
             self.cargasListadas[i].grid(row = i, column = 0, pady = (0,35))
 
 class Resultados(ctk.CTkScrollableFrame):

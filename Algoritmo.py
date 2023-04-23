@@ -52,7 +52,7 @@ class Algoritmo():
 		self.P = 12
 		self.H = factorial(self.NOBJ + self.P - 1) / (factorial(self.P) * factorial(self.NOBJ - 1))
 		self.MU = int(self.H + (4 - self.H % 4))
-		self.NGEN = 2
+		self.NGEN = 100
 		self.CXPB = 1.0
 		self.MUTPB = 1.0
 		self.ref_points = tools.uniform_reference_points(self.NOBJ, self.P)
