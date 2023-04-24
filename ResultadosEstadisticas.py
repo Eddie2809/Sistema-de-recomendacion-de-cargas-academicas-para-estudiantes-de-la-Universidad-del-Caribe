@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from Resultados import Resultados
 
 WIDTH_MAX = 1200
 estiloG = Estilo()
@@ -62,32 +63,33 @@ class TitulosFila(ctk.CTkFrame):
         self.profesor.grid(row=0, column=2,  sticky="w")
 
 
-class ListaAsignatura(ctk.CTkFrame):
+class ListaAsignatura(ctk.CTkScrollableFrame):
     def __init__(self, master, datos, **kwargs):
         super().__init__(master, **kwargs)
         
         self.master = master
 
+        self.configure( width=770, height= 200)
         self.grid(row=2,column=0,sticky= 'nsew')
 
 
         self.filaTitulos = TitulosFila(master = self, width=770, height=25 ,fg_color=estiloG.COLOR_FONDO, bg_color=estiloG.COLOR_FONDO)
-
+        
         self.datosMatriz = self.convertPandasToList(datos)
-
 
         for numfila in range(len(self.datosMatriz)):
             self.filaTexto = TextoFilas(master = self,pos= numfila,arr= self.datosMatriz[numfila] ,width=770, height=25 ,fg_color=estiloG.COLOR_FONDO, bg_color=estiloG.COLOR_FONDO)
     
     def convertPandasToList(self, df):
         auxMax =[]
-        for x in range(len(df)):
+        for x in df.index.values:
             auxArr = []
-            auxArr.append(df['Clave'][x])
-            auxArr.append(df['Asignatura'][x])
-            auxArr.append(df['Profesor'][x])
+            auxArr.append(df['clave'][x])
+            auxArr.append(df['Nombre'][x])
+            auxArr.append(df['Maestro'][x])
             auxMax.append(auxArr)
         return auxMax
+
 
 class ResultadosEstadisticas(ctk.CTkFrame):
     def __init__(self,*args,controlador,**kwargs):
@@ -96,6 +98,8 @@ class ResultadosEstadisticas(ctk.CTkFrame):
         self.controlador = controlador
         self.estilo = Estilo()
         self.color = 0
+
+        
         
 
         self.container = ctk.CTkFrame(self,width=WIDTH_MAX, height=600, corner_radius=10, fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
@@ -121,23 +125,42 @@ class ResultadosEstadisticas(ctk.CTkFrame):
         self.cargasGeneradas  = ctk.CTkLabel(self.container, text = subtitle , height=25 ,text_color = "black", wraplength=200, justify="center",font=self.estilo.FUENTE_SUBTITULO)
         self.cargasGeneradas.grid(row=1, column = 0, sticky="w")
 
+        
+
+        '''
+        Para pruebas =
         datos = [["ID0204", "Bases de datos", "Lara Peraza/Wilberth Eduardo"], ["ID0204", "Bases de Datos", "Lara Peraza/Wilberth Eduardo"] ,["ID0204", "Bases de Datos", "Lara Peraza/Wilberth Eduardo"]]
         columnas = ["Clave", "Asignatura", "Profesor"]
-        
         df = pd.DataFrame(datos, columns=columnas)
+        '''
 
-        self.listaAsignaturasFrame  = ListaAsignatura(self.container,datos = df, bg_color = estiloG.COLOR_FONDO, fg_color = estiloG.COLOR_FONDO)
+        #Establecemos la carga visualizada
+        self.carga = controlador.resultados[controlador.cargaVisualizada]
+
+        self.listaAsignaturasFrame  = ListaAsignatura(self.container,datos = self.carga, bg_color = estiloG.COLOR_FONDO, fg_color = estiloG.COLOR_FONDO)
 
         self.estadisticasLabel = ctk.CTkFrame(master=self.container,height=300,width=1200,fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
         self.estadisticasLabel.grid(row=3, column = 0, sticky="nsew")
 
+        #Obtener estadísticas
+        upcc,upmr,upcm,cpdh,cpah = controlador.algoritmo.obtenerDesempeno(self.carga)
+
+        upcc = self.redondear(upcc)
+        upmr = self.redondear(upmr)
+        upcm = self.redondear(upcm)
+        cpdh = self.redondear(cpdh)
+        cpah = self.redondear(cpah)
+
+        #print(upcc,upmr,upcm,cpdh,cpah)
+
+
        
         x = ["Cierre de ciclos", "Selección de materias reprobadas", "Cantidad ideal de materias"]
-        y = [75, 61, 100]
+        y = [upcc, upmr, upcm]
     
 
-        x2 = ["Disponibilidad de horarios", "Amplitud de horario", "Riesgo de reprobación"]
-        y2 = [25, 25, 25]
+        x2 = ["Disponibilidad de horarios", "Amplitud de horario"]
+        y2 = [cpdh, cpah]
         
         fig, axs = plt.subplots(1,2, dpi= 80, figsize=(20,5), sharey= True, facecolor= estiloG.COLOR_FONDO)
         #fig.suptitle("Evaluación de utilidades y costos")
@@ -170,7 +193,11 @@ class ResultadosEstadisticas(ctk.CTkFrame):
         return listaString
     
     def regresar(self):
-        self.controlador.cambiarRuta('Resultados')
+        self.controlador.cargarFrame(Resultados,'Resultados')
         
-
+    def redondear(self, num):
+        numRedondeado = int(num*100)
+        if numRedondeado < 0:
+            numRedondeado = numRedondeado * -1
+        return numRedondeado
 
