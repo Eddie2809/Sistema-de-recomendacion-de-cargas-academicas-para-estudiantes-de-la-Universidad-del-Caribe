@@ -226,7 +226,7 @@ class BotonesPreferenciasDerecha(ctk.CTkFrame):
         estilo = Estilo()
 
         ctk.CTkButton(self,text='Empezar a generar!',command=self.onEmpezarAGenerar,fg_color = estilo.COLOR_PRINCIPAL, text_color = 'white', hover_color = '#0A0F29').grid(row = 0, column = 0,sticky='w',padx=20)
-        ctk.CTkButton(self,text='Volver',command=lambda: controlador.cambiarRuta('Verificacion'), fg_color = 'white', border_width = 2, border_color = estilo.COLOR_PRINCIPAL, text_color = estilo.COLOR_PRINCIPAL, width = 70, hover_color = estilo.COLOR_FONDO).grid(row = 0, column = 1,sticky='w')
+        ctk.CTkButton(self,text='Volver',command=lambda: controlador.cambiarFrame('Verificacion'), fg_color = 'white', border_width = 2, border_color = estilo.COLOR_PRINCIPAL, text_color = estilo.COLOR_PRINCIPAL, width = 70, hover_color = estilo.COLOR_FONDO).grid(row = 0, column = 1,sticky='w')
 
     def onEmpezarAGenerar(self):
         self.hacerCambios()

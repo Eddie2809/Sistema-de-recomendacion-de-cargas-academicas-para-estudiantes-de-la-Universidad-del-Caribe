@@ -483,7 +483,6 @@ class Algoritmo():
 
 	def comprobarCancelacion(self):
 		if(self.obtenerCancelarEjecucion()):
-			self.setCancelarEjecucion(False)
 			return True
 		else:
 			return False

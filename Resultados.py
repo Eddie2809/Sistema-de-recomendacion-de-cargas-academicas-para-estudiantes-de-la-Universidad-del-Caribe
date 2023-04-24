@@ -8,8 +8,8 @@ import pandas as pd
 from math import ceil
 from CTkMessagebox import CTkMessagebox
 from Carga import Carga
+import webbrowser
 
-WIDTH_MAX = 1000
 estiloG = Estilo()      # No lo borro solo porque lo usé en todos lados xD
 
 class DatosCarga(ctk.CTkFrame):
@@ -28,7 +28,7 @@ class DatosCarga(ctk.CTkFrame):
 
         self.iconoFavorito = self.estrellaDoradaImg if self.datos.iloc[0]['id_carga'] in self.controladorResultados.resultadosFavoritos else self.estrellaBlancaImg
         self.botonFavorito = ctk.CTkButton(self,command = self.cambiarFavorito, width = 40, image = self.iconoFavorito, text = '', fg_color='transparent',hover_color=estiloG.GRIS_CLARO)
-        self.botonFavorito.grid(row = 0, column = 1, padx = (5,8))
+        self.botonFavorito.grid(row = 0, column = 1, rowspan = 2, padx = (5,8))
 
         self.botones = ctk.CTkFrame(self, fg_color = 'transparent')
         self.botones.grid(row = 1, column = 0, pady = (0,8))
@@ -177,14 +177,18 @@ class Resultados(ctk.CTkScrollableFrame):
         self.containerOrdenarPor.grid_columnconfigure(2, weight=1)
         self.containerOrdenarPor.rowconfigure(0, weight=1)
 
+        self.retroalimentacion = ctk.CTkLabel(self.containerOrdenarPor,text='Contestar la encuesta de retroalimentación.',width=50,font=self.estilo.FUENTE_TEXTO, underline = True,text_color=self.estilo.COLOR_SECUNDARIO,cursor = 'hand2')
+        self.retroalimentacion.grid(row=0,column=0,columnspan = 2, sticky="w",pady = (0,2))
+        self.retroalimentacion.bind('<Button-1>', lambda e: webbrowser.open_new('https://docs.google.com/forms/d/e/1FAIpQLSeC6P9Goht48M3LwBaD0HoLUs02kAMjngyy4cK9od1HeT7iTw/viewform?usp=sf_link'))
+
         self.ordenarPor = ctk.CTkLabel(self.containerOrdenarPor,text='Ordenar por:',width=50,font=self.estilo.FUENTE_TEXTO,text_color=self.estilo.GRIS_OSCURO)
-        self.ordenarPor.grid(row=0,column=0, sticky="w")
+        self.ordenarPor.grid(row=1,column=0, sticky="w")
         
         self.comboOrdenar = ctk.CTkComboBox(self.containerOrdenarPor, width=150, font=self.estilo.FUENTE_TEXTO_PEQUEÑO, values=['Desempeño general', 'Cierre de ciclos', 'Cantidad de materias reprobadas de semestres anteriores', 'Cantidad ideal de materias', 'Disponibilidad de horario', 'Amplitud de horario','Riesgo de reprobación'])
-        self.comboOrdenar.grid(row=0, column=1, padx=10, pady = 8, sticky="w")  
+        self.comboOrdenar.grid(row=1, column=1, padx=10, pady = 8, sticky="w")  
 
         self.buttonOrdenar = ctk.CTkButton(self.containerOrdenarPor , text = "Ordenar",width=30,fg_color = self.estilo.COLOR_PRINCIPAL , hover_color = self.estilo.COLOR_PRINCIPAL, text_color= self.estilo.COLOR_FONDO, border_color= self.estilo.COLOR_FONDO, border_width =2 ,command=self.ordenar)
-        self.buttonOrdenar.grid(row=0,column=2, sticky = "w")
+        self.buttonOrdenar.grid(row=1,column=2, sticky = "w")
 
         #Sección de buscar
         self.containerBuscar  = ctk.CTkFrame(self,width=500, height=50, corner_radius=10, fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
@@ -221,12 +225,12 @@ class Resultados(ctk.CTkScrollableFrame):
         self.buttonFavoritos = ctk.CTkButton(self.containerButtons2 , text = "Favoritos",width=30,fg_color = self.estilo.COLOR_FONDO , hover_color = self.estilo.COLOR_FONDO, text_color=  self.estilo.COLOR_PRINCIPAL, border_color= self.estilo.COLOR_PRINCIPAL, border_width =2 ,command = lambda: self.actualizarListaCargas(self.obtenerFavoritosLista()))
         self.buttonFavoritos.grid(row=0,column=1, sticky = "we")
 
-        self.scrollableFrame = ListaCargas(self, cargasParaMostrar = self.listaActual, controladorResultados = self, controlador = self.controlador, height=400, width=WIDTH_MAX)
+        self.scrollableFrame = ListaCargas(self, cargasParaMostrar = self.listaActual, controladorResultados = self, controlador = self.controlador, height=400)
         self.scrollableFrame.grid(row=6, column=0, sticky="nsew")
 
     def actualizarListaCargas(self,nuevaLista):
         self.scrollableFrame.destroy()
-        self.scrollableFrame = ListaCargas(self, cargasParaMostrar = nuevaLista, controladorResultados = self, controlador = self.controlador, height=400, width=WIDTH_MAX)
+        self.scrollableFrame = ListaCargas(self, cargasParaMostrar = nuevaLista, controladorResultados = self, controlador = self.controlador, height=400)
         self.scrollableFrame.grid(row=6, column=0, sticky="nsew")
 
     def buscar(self):

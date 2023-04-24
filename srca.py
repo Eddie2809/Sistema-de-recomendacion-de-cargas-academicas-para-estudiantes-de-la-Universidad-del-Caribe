@@ -17,7 +17,7 @@ class App(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.enDesarrollo = True
+        self.enDesarrollo =  True
 
         estilo = Estilo()
 
@@ -35,7 +35,7 @@ class App(ctk.CTk):
         self.framePrincipal.configure(fg_color='transparent')
         self.framePrincipal.grid_columnconfigure(0,weight=1)
         self.framePrincipal.grid_rowconfigure(0,weight=1)
-        self.framePrincipal.grid(row = 0, column = 0, sticky = 'nsew', padx = 100, pady = 15)
+        self.framePrincipal.grid(row = 0, column = 0, sticky = 'nsew', padx = (100,0), pady = 15)
         self.estudiante = {}
         self.pesos = {
             'upcc': 0.8,
@@ -63,14 +63,14 @@ class App(ctk.CTk):
 
         self.cancelarEjecucion = False
         
-        self.cambiarFrame(Inicio, "Inicio")
+        self.cambiarFrame("Inicio")
 
     def cambiarRuta(self,nuevaRuta):
         self.frames[nuevaRuta].tkraise()
         
     def obtenerKardex(self, estudiante):
         self.estudiante = estudiante
-        self.cambiarFrame(Verificacion, 'Verificacion')
+        self.cambiarFrame('Verificacion')
 
     def cargarFrame(self, F):
         nombreRuta = F.__name__
@@ -82,9 +82,19 @@ class App(ctk.CTk):
         self.cargarFrame(Inicio)
         self.cambiarRuta('Inicio')
     
-    def cambiarFrame(self, Frame, FrameName):
-        self.cargarFrame(Frame)
-        self.cambiarRuta(FrameName)        
+    def cambiarFrame(self, frame):
+        if frame == 'Preferencias':
+            self.cargarFrame(Preferencias)
+        elif frame == 'Inicio':
+            self.cargarFrame(Inicio)
+        elif frame == 'PantallaCarga':
+            self.cargarFrame(PantallaCarga)
+        elif frame == 'Resultados':
+            self.cargarFrame(Resultados)
+        elif frame == 'Verificacion':
+            self.cargarFrame(Verificacion)
+
+        self.cambiarRuta(frame)        
 
     def cambiarPreferencias(self,nuevaDisponibilidad,nuevosPesos,nuevoCIM,nuevoDCR):
         self.disponibilidad = nuevaDisponibilidad
@@ -94,7 +104,7 @@ class App(ctk.CTk):
 
     def setCancelarEjecucion(self,nuevoValor):
         if nuevoValor:
-            self.cambiarRuta('Preferencias')
+            self.cambiarFrame('Preferencias')
         self.cancelarEjecucion = nuevoValor
 
     def obtenerCancelarEjecucion(self):
@@ -109,10 +119,13 @@ class App(ctk.CTk):
             carga['id_carga'] = i
             self.resultados.append(carga)
 
-        self.cambiarFrame(Resultados,'Resultados')
+        if self.cancelarEjecucion == False:
+            self.cambiarFrame('Resultados')
+        else:
+            self.cancelarEjecucion = False
 
     def ejecutarAlgoritmo(self):
-        self.cambiarFrame(PantallaCarga,'PantallaCarga')
+        self.cambiarFrame('PantallaCarga')
         NGEN = 0 if self.enDesarrollo else 100
 
         self.algoritmo = Algoritmo(kardex = self.estudiante.kardex, NGEN = NGEN, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,planNombre = self.estudiante.planNombre,periodoActual=202301,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)

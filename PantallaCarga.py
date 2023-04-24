@@ -12,7 +12,7 @@ class PantallaCarga(ctk.CTkFrame):
 		self.grid_rowconfigure(0,weight=1)
 
 		container = ctk.CTkFrame(self, fg_color = 'transparent')
-		container.grid(row = 0,column = 0)
+		container.grid(row = 0,column = 0, padx = (0,100))
 
 		self.titleSystem  = ctk.CTkLabel(container, text =  "Generando cargas" , font = estilo.FUENTE_TITULO ,text_color = "black", wraplength=600, justify="center")
 		self.titleSystem.grid(row=0, column = 0, pady = 10)
@@ -31,6 +31,9 @@ class PantallaCarga(ctk.CTkFrame):
 
 		self.cancelarButton = ctk.CTkButton(container, text="Cancelar", fg_color = estilo.ROJO , hover_color = estilo.ROJO,command=lambda: controlador.setCancelarEjecucion(True))
 		self.cancelarButton.grid(row = 4, column = 0, padx=10, pady=10)
+
+	def cancelarEjecucion(self):
+		self.controlador.setCancelarEjecucion(True)
 
 	def actualizarBarra(self,porcentaje,tiempoTranscurrido):
 		self.BotonDeCarga.set(porcentaje/100)

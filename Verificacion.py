@@ -176,4 +176,4 @@ class Verificacion(ctk.CTkScrollableFrame):
 		controlador.estudianteSituacion = situacionModificada
 		controlador.estudiantePlan = planModificado
 
-		controlador.cambiarFrame(Preferencias, 'Preferencias')
+		controlador.cambiarFrame('Preferencias')

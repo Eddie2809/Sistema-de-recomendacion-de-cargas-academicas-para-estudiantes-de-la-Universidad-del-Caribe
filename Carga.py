@@ -1,6 +1,5 @@
 import customtkinter as ctk
 from Estilo import Estilo
-from PIL import Image, ImageTk
 
 estiloG = Estilo()
 

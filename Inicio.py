@@ -17,6 +17,7 @@ class Inicio(ctk.CTkFrame):
 		self.grid_propagate(0)
 
 		self.grid_columnconfigure(0, weight=1)
+		self.grid_configure(padx = (0,100))
 		self.rowconfigure(0, weight=4)
 		self.rowconfigure(1, weight=1)
 		self.rowconfigure(2, weight=4)
@@ -24,7 +25,7 @@ class Inicio(ctk.CTkFrame):
 		#Verifica si ya se cargo algun kardex
 		self.boolKardex = False
 
-		title = "Sistema de recomendación de cargas académicas para estudiantes de licenciatura de la Universidad del Caribe"
+		title = "Sistema de recomendación de cargas académicas para estudiantes de la Universidad del Caribe"
 
 		self.titleSistem  = ctk.CTkLabel(self, text = title , text_color = "black", wraplength=1000, justify="center",font=estilo.FUENTE_TITULO)
 		self.titleSistem.grid(row=0, column = 0, sticky="s",pady=(0,30))
@@ -41,10 +42,14 @@ class Inicio(ctk.CTkFrame):
 
 	def cargarKardex(self):
 		try:
-			try:
-				filename = 'C:/Users/eddie/OneDrive/Escritorio/Proyecto Terminal/Recomendaci-n-de-cargas-acad-micas-basado-en-optimizaci-n-multiobjetivo/Kardex/1.pdf'
-				student  = Student(ruta = filename, periodoActual = 202301)
-			except:
+			if self.controlador.enDesarrollo:
+				try:
+					filename = 'C:/Users/eddie/OneDrive/Escritorio/Proyecto Terminal/Recomendaci-n-de-cargas-acad-micas-basado-en-optimizaci-n-multiobjetivo/Kardex/1.pdf'
+					student  = Student(ruta = filename, periodoActual = 202301)
+				except:
+					filename = askopenfilename(initialdir="C://")
+					student  = Student(ruta = filename, periodoActual = 202301)
+			else:
 				filename = askopenfilename(initialdir="C://")
 				student  = Student(ruta = filename, periodoActual = 202301)
 			message = "Bienvenido " + student.nombre
