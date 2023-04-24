@@ -14,8 +14,8 @@ class FrameTitulos(ctk.CTkFrame):
 		self.rowconfigure(1, weight=1)
 		self.labelTitulo = ctk.CTkLabel(self,text='Verifica tus datos',font=estilo.FUENTE_TITULO,text_color=estilo.GRIS_OSCURO)
 		self.labelTitulo.grid(row=0, sticky=ctk.W)
-		self.labelSubtitulo = ctk.CTkLabel(self,text='Es importante que verifiques tus datos antes de continuar para que el sistema funcione correctamente', font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO)
-		self.labelSubtitulo.grid(row=1, sticky=ctk.W)
+		self.labelSubtitulo = ctk.CTkLabel(self,text='Es importante que verifiques tus datos antes de continuar para que el sistema funcione correctamente', font=estilo.FUENTE_TEXTO_BOLD,text_color=estilo.GRIS_OSCURO)
+		self.labelSubtitulo.grid(row=1, sticky=ctk.W,pady= (0,20))
 
 
 class FrameDatosKardex(ctk.CTkFrame):
@@ -35,7 +35,7 @@ class FrameDatosKardex(ctk.CTkFrame):
 		self.labelNombre = ctk.CTkLabel(self,text='Nombre:',font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO)
 		self.labelNombre.grid(row=1,column=0, sticky=ctk.W)
 		self.entryNombre = ctk.CTkEntry(self, width=283, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=master.valorNombre)
-		self.entryNombre.grid(row=1, column=1, padx=10, sticky=ctk.W)
+		self.entryNombre.grid(row=1, column=1, padx=10, sticky=ctk.W,pady=(0,5))
 
 		#valorMatricula = ctk.StringVar()
 		master.valorMatricula.set(controlador.estudiante.matricula)
@@ -43,7 +43,7 @@ class FrameDatosKardex(ctk.CTkFrame):
 		self.labelMatricula = ctk.CTkLabel(self,text='Matrícula:',font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO)
 		self.labelMatricula.grid(row=2,column=0, sticky=ctk.W)
 		self.entryMatricula = ctk.CTkEntry(self, width=122, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=master.valorMatricula)
-		self.entryMatricula.grid(row=2, column=1, padx=10, sticky=ctk.W)
+		self.entryMatricula.grid(row=2, column=1, padx=10, sticky=ctk.W,pady=(0,5))
 
 		#valorSituacion = ctk.StringVar()
 		master.valorSituacion.set(controlador.estudiante.situacion)
@@ -51,7 +51,7 @@ class FrameDatosKardex(ctk.CTkFrame):
 		self.labelSituacion = ctk.CTkLabel(self,text='Situación:',font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO)
 		self.labelSituacion.grid(row=3,column=0, sticky=ctk.W)
 		self.comboSituacion = ctk.CTkComboBox(self, width=122, font=estilo.FUENTE_TEXTO_PEQUEÑO, values=["Regular", "Irregular", "Condicionado"], variable=master.valorSituacion)
-		self.comboSituacion.grid(row=3, column=1, padx=10, sticky=ctk.W)
+		self.comboSituacion.grid(row=3, column=1, padx=10, sticky=ctk.W,pady=(0,5))
 
 		#valorPlan = ctk.StringVar()
 		master.valorPlan.set(controlador.estudiante.planNombre)
@@ -59,7 +59,7 @@ class FrameDatosKardex(ctk.CTkFrame):
 		self.labelPlan = ctk.CTkLabel(self,text='Plan:',font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO)
 		self.labelPlan.grid(row=4,column=0, sticky=ctk.W)
 		self.entryPlan = ctk.CTkEntry(self, width=122, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=master.valorPlan)
-		self.entryPlan.grid(row=4, column=1, padx=10, sticky=ctk.W)
+		self.entryPlan.grid(row=4, column=1, padx=10, sticky=ctk.W,pady=(0,20))
 	
 
 class FrameListaAsignaturas(ctk.CTkFrame):
@@ -97,14 +97,12 @@ class ScrollFrameAsignaturas(ctk.CTkFrame):
 		
 		dataframeKardex = pd.concat([dataframeKardex,resultado], axis=1)
 		listaKardex = dataframeKardex.values.tolist()
-		#print(listaKardex)
-		#print("-------------------------------------")
 		
 		for i in range(len(listaKardex)):
 			master.master.listaClaves.append(ctk.StringVar())
 			master.master.listaClaves[i].set(listaKardex[i][0])
 			self.entryClave = ctk.CTkEntry(self, width=100, font=estilo.FUENTE_TEXTO_PEQUEÑO, textvariable=master.master.listaClaves[i])
-			self.entryClave.grid(row=i, column=0, sticky=ctk.W)
+			self.entryClave.grid(row=i, column=0, sticky=ctk.W,pady=(0,10))
 
 			master.master.listaMaterias.append(ctk.StringVar())
 			master.master.listaMaterias[i].set(listaKardex[i][3])

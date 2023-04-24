@@ -76,7 +76,7 @@ class ListaCargas(ctk.CTkFrame):
         self.controladorResultados = controladorResultados
         self.controlador = controlador
 
-        self.intervaloResultados = 10
+        self.intervaloResultados = 5
         self.paginaActual = 1
         self.ultimaPagina = ceil(len(cargasParaMostrar) / self.intervaloResultados)
         self.cargasParaMostrar = cargasParaMostrar
