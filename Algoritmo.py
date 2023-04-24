@@ -7,7 +7,7 @@ import random
 from math import factorial
 
 class Algoritmo():
-	def __init__(self,*args,obtenerCancelarEjecucion,setCancelarEjecucion,kardex,planNombre,periodoActual,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,**kwargs):
+	def __init__(self,*args,NGEN,obtenerCancelarEjecucion,setCancelarEjecucion,kardex,planNombre,periodoActual,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,**kwargs):
 		super().__init__(*args,**kwargs)
 
 		self.obtenerCancelarEjecucion = obtenerCancelarEjecucion
@@ -52,7 +52,7 @@ class Algoritmo():
 		self.P = 12
 		self.H = factorial(self.NOBJ + self.P - 1) / (factorial(self.P) * factorial(self.NOBJ - 1))
 		self.MU = int(self.H + (4 - self.H % 4))
-		self.NGEN = 2
+		self.NGEN = NGEN
 		self.CXPB = 1.0
 		self.MUTPB = 1.0
 		self.ref_points = tools.uniform_reference_points(self.NOBJ, self.P)
@@ -299,7 +299,7 @@ class Algoritmo():
 		ofertaUtil,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,oferta,plan,seriaciones = self.ofertaUtil,self.kardex,self.pesos,self.disponibilidad,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.oferta,self.plan,self.seriaciones
 		primeraHoraMinima = 24
 		ultimaHoraMaxima = 0
-		datosCarga = self.obtenerDatosCarga(carga)
+		datosCarga = self.obtenerDatosCarga(carga) if type(carga) != pd.DataFrame else carga
 		horario = pd.DataFrame({
 			'Hora': ['7:00-8:00','8:00-9:00','9:00-10:00','10:00-11:00','11:00-12:00','12:00-13:00','13:00-14:00','14:00-15:00','15:00-16:00','16:00-17:00','17:00-18:00','18:00-19:00','19:00-20:00','20:00-21:00','21:00-22:00'],
 			'Lunes': ['-','-','-','-','-','-','-','-','-','-','-','-','-','-','-'],

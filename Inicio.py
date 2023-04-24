@@ -41,8 +41,12 @@ class Inicio(ctk.CTkFrame):
 
 	def cargarKardex(self):
 		try:
-			filename = askopenfilename(initialdir="C://")
-			student  = Student(ruta = filename, periodoActual = 202301)
+			try:
+				filename = 'C:/Users/eddie/OneDrive/Escritorio/Proyecto Terminal/Recomendaci-n-de-cargas-acad-micas-basado-en-optimizaci-n-multiobjetivo/Kardex/1.pdf'
+				student  = Student(ruta = filename, periodoActual = 202301)
+			except:
+				filename = askopenfilename(initialdir="C://")
+				student  = Student(ruta = filename, periodoActual = 202301)
 			message = "Bienvenido " + student.nombre
 			CTkMessagebox(title="Bienvenido",message= message, icon="check", option_1="Thanks")
 			self.boolKardex = True

@@ -170,11 +170,12 @@ class Horario(ctk.CTkScrollableFrame):
             self.frameHoras.grid_columnconfigure(i, weight=1)
 
 
-class ResultadosHorario(ctk.CTkFrame):
+class ResultadosHorario(ctk.CTkToplevel):
     def __init__(self,*args,controlador,**kwargs):
         super().__init__(*args,**kwargs)
 
         self.controlador = controlador
+        self.geometry("1200x600")
         self.estilo = Estilo()
         
         self.container = ctk.CTkFrame(self,width=1000, height=600, corner_radius=10, fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
@@ -199,7 +200,7 @@ class ResultadosHorario(ctk.CTkFrame):
 
         self.listaAsignaturasFrame  = ListaAsignatura(self.container,datos = self.carga, bg_color = estiloG.COLOR_FONDO, fg_color = estiloG.COLOR_FONDO)
         
-        horario = self.obtenerHorario(carga = self.carga)
+        horario = self.controlador.algoritmo.obtenerHorario(carga = self.carga)
 
         self.horarioFrame = Horario(master=self.container, horario= horario, height=200,width=1000,fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
         self.horarioFrame.grid(row=3, column = 0, sticky="nsew")
@@ -207,31 +208,3 @@ class ResultadosHorario(ctk.CTkFrame):
         self.buttonRegresar = ctk.CTkButton(self.container , text = "Regresar",width=30,fg_color = self.estilo.COLOR_PRINCIPAL , hover_color = self.estilo.COLOR_PRINCIPAL, text_color= self.estilo.COLOR_FONDO, border_color= self.estilo.COLOR_FONDO, border_width =2 ,command= lambda: controlador.cambiarRuta('Resultados'))
         self.buttonRegresar.grid(row=4, column = 0, sticky="s")
     
-    def obtenerHorario(self, carga):
-        primeraHoraMinima = 24
-        ultimaHoraMaxima = 0
-        horario = pd.DataFrame({
-			'Hora': ['7:00-8:00','8:00-9:00','9:00-10:00','10:00-11:00','11:00-12:00','12:00-13:00','13:00-14:00','14:00-15:00','15:00-16:00','16:00-17:00','17:00-18:00','18:00-19:00','19:00-20:00','20:00-21:00','21:00-22:00'],
-			'Lunes': ['-','-','-','-','-','-','-','-','-','-','-','-','-','-','-'],
-			'Martes': ['-','-','-','-','-','-','-','-','-','-','-','-','-','-','-'],
-			'Miercoles': ['-','-','-','-','-','-','-','-','-','-','-','-','-','-','-'],
-			'Jueves': ['-','-','-','-','-','-','-','-','-','-','-','-','-','-','-'],
-			'Viernes': ['-','-','-','-','-','-','-','-','-','-','-','-','-','-','-'],
-		})
-        dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
-        for dia in dias:
-            for i in range(len(carga)):
-                if carga[dia].iloc[i] == '-':
-                    continue
-
-                horaInicio = int(carga.iloc[i][dia][0:2])
-                horaFin = int(carga.iloc[i][dia][6:8])
-                
-                primeraHoraMinima = min(primeraHoraMinima,horaInicio)
-                ultimaHoraMaxima = max(ultimaHoraMaxima,horaFin)
-                
-                nombre = carga.iloc[i]['Nombre']
-
-                for hora in range(horaInicio,horaFin):
-                    horario.loc[hora-7,dia]=nombre
-        return horario[(primeraHoraMinima-7):(ultimaHoraMaxima-6)]

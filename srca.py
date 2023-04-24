@@ -9,7 +9,6 @@ from Algoritmo import Algoritmo
 from Estilo import Estilo
 from ResultadosHorario import ResultadosHorario
 from ResultadosEstadisticas import ResultadosEstadisticas
-
 import threading
 
 ctk.set_appearance_mode('light')
@@ -17,6 +16,8 @@ ctk.set_appearance_mode('light')
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
+
+        self.enDesarrollo = True
 
         estilo = Estilo()
 
@@ -61,7 +62,6 @@ class App(ctk.CTk):
         self.estudiantePlan = ""
 
         self.cancelarEjecucion = False
-        self.cargaVisualizada = 0
         
         self.cambiarFrame(Inicio, "Inicio")
 
@@ -113,8 +113,9 @@ class App(ctk.CTk):
 
     def ejecutarAlgoritmo(self):
         self.cambiarFrame(PantallaCarga,'PantallaCarga')
+        NGEN = 0 if self.enDesarrollo else 100
 
-        self.algoritmo = Algoritmo(kardex = self.estudiante.kardex, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,planNombre = self.estudiante.planNombre,periodoActual=202301,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
+        self.algoritmo = Algoritmo(kardex = self.estudiante.kardex, NGEN = NGEN, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,planNombre = self.estudiante.planNombre,periodoActual=202301,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
         algThread = threading.Thread(target=lambda x: self.algoritmo.run(callbackTerminacion=self.cargarResultados,callbackProceso=self.frames['PantallaCarga'].actualizarBarra),args=(1,))
         algThread.start()
 
