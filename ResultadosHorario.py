@@ -89,10 +89,13 @@ class LabelTitulo(ctk.CTkFrame):
         self.grid(row=0, column=pos, sticky="w")
         self.grid_columnconfigure(0, weight=1)
         self.rowconfigure(0, weight=1)
-        self.configure(bg_color=estiloG.COLOR_PRINCIPAL ,fg_color=estiloG.COLOR_PRINCIPAL,width=200, height=30)
+        if texto == "Hora":
+            self.configure(bg_color=estiloG.COLOR_PRINCIPAL ,fg_color=estiloG.COLOR_PRINCIPAL,width=120, height=30)
+        else:    
+            self.configure(bg_color=estiloG.COLOR_PRINCIPAL ,fg_color=estiloG.COLOR_PRINCIPAL,width=166, height=30)
         self.grid_propagate(0)
 
-        self.label = ctk.CTkLabel(master=self,text=texto, font= estiloG.FUENTE_TEXTO, text_color=estiloG.COLOR_FONDO,wraplength=190)
+        self.label = ctk.CTkLabel(master=self,text=texto, font= estiloG.FUENTE_TEXTO, text_color=estiloG.COLOR_FONDO,wraplength=150)
         self.label.grid(row=0, column=0)
 
 
@@ -106,12 +109,10 @@ class TitulosHorario(ctk.CTkFrame):
         self.grid_columnconfigure(0, weight=1)
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure(2, weight=1)
-        self.grid_propagate(0)
 
         self.rowconfigure(0, weight=1)
-        self.grid_propagate(0)
 
-        elementos = ["Hora", "Lunes", "Martes", "Miercoles", "Jueves","Viernes"]
+        elementos = ["Hora","Lunes","Martes","Miercoles","Jueves","Viernes"]
 
         for i,elemento in enumerate(elementos):
             self.labelTitulo = LabelTitulo(master=self, texto=elemento, pos = i)
@@ -124,10 +125,14 @@ class LabelHora(ctk.CTkFrame):
         self.grid(row=posRow, column=posColumn, sticky="w")
         self.grid_columnconfigure(0, weight=1)
         self.rowconfigure(0, weight=1)
-        self.configure(bg_color=estiloG.COLOR_FONDO ,fg_color=estiloG.COLOR_FONDO,width=200, height=50, border_width = 0, border_color = estiloG.COLOR_PRINCIPAL)
+        if posColumn == 0:
+            self.configure(bg_color=estiloG.COLOR_FONDO ,fg_color=estiloG.COLOR_FONDO,width=120, height=50, border_width = 0, border_color = estiloG.COLOR_PRINCIPAL)
+        else:
+            self.configure(bg_color=estiloG.COLOR_FONDO ,fg_color=estiloG.COLOR_FONDO,width=166, height=50, border_width = 0, border_color = estiloG.COLOR_PRINCIPAL)
+        
         self.grid_propagate(0)
 
-        self.label = ctk.CTkLabel(master=self,text=texto,height=15, font= estiloG.FUENTE_TEXTO_PEQUEÑO, text_color=estiloG.COLOR_PRINCIPAL,wraplength=190, bg_color=estiloG.COLOR_FONDO ,fg_color=estiloG.COLOR_FONDO)
+        self.label = ctk.CTkLabel(master=self,text=texto,height=15, font= estiloG.FUENTE_TEXTO_PEQUEÑO, text_color=estiloG.COLOR_PRINCIPAL,wraplength=150, bg_color=estiloG.COLOR_FONDO ,fg_color=estiloG.COLOR_FONDO)
         self.label.grid(row=0, column=0)
 
 
@@ -140,15 +145,12 @@ class HorasHorario(ctk.CTkFrame):
         self.grid(row=0,column=posColumn,sticky= 'w')
         self.grid_columnconfigure(0, weight=1)
 
-        self.grid_propagate(0)
-
         self.rowconfigure(0, weight=1)
-        self.grid_propagate(0)
 
         for i,elemento in enumerate(elementos):
             if elemento == "-":
                 elemento = " "
-            self.labelhora = LabelHora(master=self, texto=elemento, posRow=i , posColumn=0)
+            self.labelhora = LabelHora(master=self, texto=elemento, posRow=i , posColumn=posColumn)
             self.rowconfigure(i,weight=1)
 
 
@@ -156,14 +158,12 @@ class Horario(ctk.CTkScrollableFrame):
     def __init__(self, master, horario, **kwargs):
         super().__init__(master, **kwargs)
 
-        #self.grid_propagate(0)
-        self.titulos = TitulosHorario(master=self, width=1200, height=30)
+        self.titulos = TitulosHorario(master=self, width=1000, height=30)
 
         elementos = ["Hora", "Lunes", "Martes", "Miercoles", "Jueves","Viernes"]
 
-        self.frameHoras = ctk.CTkFrame(master=self, width=1200, height=300)
+        self.frameHoras = ctk.CTkFrame(master=self, width=1000, height=300)
         self.frameHoras.grid(row=1,column=0,sticky= 'nsew')
-        #self.frameHoras.grid_propagate(0)
 
         for i,elemento in enumerate(elementos):
             self.horario = HorasHorario(master= self.frameHoras,posColumn = i, elementos=list(horario[elemento]))
@@ -176,9 +176,8 @@ class ResultadosHorario(ctk.CTkFrame):
 
         self.controlador = controlador
         self.estilo = Estilo()
-        self.color = 0
         
-        self.container = ctk.CTkFrame(self,width=WIDTH_MAX, height=600, corner_radius=10, fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
+        self.container = ctk.CTkFrame(self,width=1000, height=600, corner_radius=10, fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
         self.container.grid(row=0,column=0,sticky= 'nsew')
         self.container.grid_propagate(0)
 
@@ -189,28 +188,20 @@ class ResultadosHorario(ctk.CTkFrame):
         self.container.rowconfigure(3, weight=1) 
         self.container.rowconfigure(4, weight=1)
         self.container.rowconfigure(5, weight=1)
-        self.container.grid_columnconfigure(0,weight=1)
-        #self.container.grid_columnconfigure(1,weight=3)
 
-        title = "Resultados"
-        self.resultados  = ctk.CTkLabel(self.container, text = title , text_color = "black", wraplength=200, justify="center",font=self.estilo.FUENTE_TITULO)
+        self.resultados  = ctk.CTkLabel(self.container, text = "Resultados" , text_color = "black", wraplength=200, justify="center",font=self.estilo.FUENTE_TITULO)
         self.resultados.grid(row=0, column = 0, sticky="w")
 
-        subtitle = "Horario"
-        self.cargasGeneradas  = ctk.CTkLabel(self.container, text = subtitle , height=35 ,text_color = "black", wraplength=200, justify="center",font=self.estilo.FUENTE_SUBTITULO)
-        self.cargasGeneradas.grid(row=1, column = 0, sticky="w", pady = 5)
+        self.cargasGeneradas  = ctk.CTkLabel(self.container, text = "Horario", text_color = "black", wraplength=200, justify="center",font=self.estilo.FUENTE_SUBTITULO)
+        self.cargasGeneradas.grid(row=1, column = 0, sticky="w")
 
         self.carga = controlador.resultados[controlador.cargaVisualizada]
-        #datos = [["ID0204", "Bases de datos", "Lara Peraza/Wilberth Eduardo"], ["ID0204", "Bases de Datos", "Lara Peraza/Wilberth Eduardo"] ,["ID0204", "Bases de Datos", "Lara Peraza/Wilberth Eduardo"]]
-        columnas = ["Clave", "Asignatura", "Profesor"]
-        
-        #df = pd.DataFrame(datos, columns=columnas)
 
         self.listaAsignaturasFrame  = ListaAsignatura(self.container,datos = self.carga, bg_color = estiloG.COLOR_FONDO, fg_color = estiloG.COLOR_FONDO)
         
         horario = self.obtenerHorario(carga = self.carga)
 
-        self.horarioFrame = Horario(master=self.container, horario= horario, height=200,width=1200,fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
+        self.horarioFrame = Horario(master=self.container, horario= horario, height=200,width=1000,fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
         self.horarioFrame.grid(row=3, column = 0, sticky="nsew")
 
         self.buttonRegresar = ctk.CTkButton(self.container , text = "Regresar",width=30,fg_color = self.estilo.COLOR_PRINCIPAL , hover_color = self.estilo.COLOR_PRINCIPAL, text_color= self.estilo.COLOR_FONDO, border_color= self.estilo.COLOR_FONDO, border_width =2 ,command= lambda: controlador.cambiarRuta('Resultados'))
