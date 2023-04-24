@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-from Resultados import Resultados
 
 WIDTH_MAX = 1200
 estiloG = Estilo()
