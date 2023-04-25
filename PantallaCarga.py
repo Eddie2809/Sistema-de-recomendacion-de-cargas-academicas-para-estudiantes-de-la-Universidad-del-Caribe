@@ -29,7 +29,7 @@ class PantallaCarga(ctk.CTkFrame):
 		self.tiempoRestante  = ctk.CTkLabel(container, textvariable = self.tiempoRestanteText, font = estilo.FUENTE_TEXTO , text_color = "black", wraplength=600, justify="center")
 		self.tiempoRestante.grid(row=3, column = 0)
 
-		self.cancelarButton = ctk.CTkButton(container, text="Cancelar", fg_color = estilo.ROJO , hover_color = estilo.ROJO,command=lambda: controlador.setCancelarEjecucion(True))
+		self.cancelarButton = ctk.CTkButton(container, text="Cancelar", fg_color = estilo.ROJO , hover_color = '#D72424',command=lambda: controlador.setCancelarEjecucion(True))
 		self.cancelarButton.grid(row = 4, column = 0, padx=10, pady=10)
 
 	def cancelarEjecucion(self):

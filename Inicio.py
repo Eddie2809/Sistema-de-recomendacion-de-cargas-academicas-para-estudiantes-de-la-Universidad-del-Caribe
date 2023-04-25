@@ -30,7 +30,7 @@ class Inicio(ctk.CTkFrame):
 		self.titleSistem  = ctk.CTkLabel(self, text = title , text_color = "black", wraplength=1000, justify="center",font=estilo.FUENTE_TITULO)
 		self.titleSistem.grid(row=0, column = 0, sticky="s",pady=(0,30))
 
-		self.continuarButton = ctk.CTkButton(self, text="Subir Kardex", fg_color = estilo.COLOR_PRINCIPAL , hover_color = estilo.COLOR_PRINCIPAL, text_color= estilo.COLOR_FONDO, border_color=estilo.COLOR_FONDO,command=self.cargarKardex)
+		self.continuarButton = ctk.CTkButton(self, text="Subir Kardex", hover_color = '#0A0F29', fg_color = estilo.COLOR_PRINCIPAL, text_color= estilo.COLOR_FONDO, border_color=estilo.COLOR_FONDO,command=self.cargarKardex)
 		self.continuarButton.grid(row = 1, column = 0,sticky= 'n')
 
 	def cambiarVentana(self):

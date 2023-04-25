@@ -14,7 +14,8 @@ class FrameTitulos(ctk.CTkFrame):
 		self.rowconfigure(1, weight=1)
 		self.labelTitulo = ctk.CTkLabel(self,text='Verifica tus datos',font=estilo.FUENTE_TITULO,text_color=estilo.GRIS_OSCURO)
 		self.labelTitulo.grid(row=0, sticky=ctk.W)
-		self.labelSubtitulo = ctk.CTkLabel(self,text='Es importante que verifiques tus datos antes de continuar para que el sistema funcione correctamente', font=estilo.FUENTE_TEXTO_BOLD,text_color=estilo.GRIS_OSCURO)
+		font = ctk.CTkFont(family = estilo.FUENTE_TEXTO[0], size = estilo.FUENTE_TEXTO[1], underline = True, weight = 'bold')
+		self.labelSubtitulo = ctk.CTkLabel(self,text='Es importante que verifiques tus datos antes de continuar para que el sistema funcione correctamente', font=font,text_color=estilo.GRIS_OSCURO)
 		self.labelSubtitulo.grid(row=1, sticky=ctk.W,pady= (0,20))
 
 
@@ -94,10 +95,19 @@ class ScrollFrameAsignaturas(ctk.CTkFrame):
 		dataframeKardex = controlador.estudiante.kardex
 		resultado = pd.merge(dataframePlan, dataframeKardex, how="right")
 		resultado = resultado['nombre']
-		
+
+		for i in range(len(resultado)):
+			if str(resultado[i]) == 'nan' and dataframeKardex.iloc[i]['clave'][0:2] == 'LI':
+				resultado[i] = 'Inglés'
+			if str(resultado[i]) == 'nan' and dataframeKardex.iloc[i]['clave'][0:2] == 'TA':
+				resultado[i] = 'Taller artístico'
+			if str(resultado[i]) == 'nan' and dataframeKardex.iloc[i]['clave'][0:2] == 'AD':
+				resultado[i] = 'Taller deportivo'
+
 		dataframeKardex = pd.concat([dataframeKardex,resultado], axis=1)
 		listaKardex = dataframeKardex.values.tolist()
-		
+
+
 		for i in range(len(listaKardex)):
 			master.master.listaClaves.append(ctk.StringVar())
 			master.master.listaClaves[i].set(listaKardex[i][0])
@@ -153,7 +163,7 @@ class Verificacion(ctk.CTkScrollableFrame):
 		self.subirKardex = ctk.CTkButton(self , fg_color = "#FFFFFF" , hover_color = estilo.COLOR_FONDO, text_color= estilo.COLOR_PRINCIPAL, height=29, border_color=estilo.COLOR_PRINCIPAL, text="Regresar", border_width =2 ,command= lambda: self.cargarKardex(controlador))
 		self.subirKardex.grid(row=3, sticky=ctk.W)
 
-		self.botonContinuar = ctk.CTkButton(self, fg_color=estilo.COLOR_PRINCIPAL, text_color=estilo.COLOR_FONDO, text='Continuar',height=29 ,command=lambda: self.validarDatos(controlador))
+		self.botonContinuar = ctk.CTkButton(self, hover_color = '#0A0F29', fg_color=estilo.COLOR_PRINCIPAL, text_color=estilo.COLOR_FONDO, text='Continuar',height=29 ,command=lambda: self.validarDatos(controlador))
 		self.botonContinuar.grid(row=3)
 
 	def cargarKardex(self, controlador):

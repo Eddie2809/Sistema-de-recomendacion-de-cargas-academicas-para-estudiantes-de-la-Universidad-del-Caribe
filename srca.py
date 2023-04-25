@@ -117,6 +117,7 @@ class App(ctk.CTk):
         for i in range(len(recomendaciones)):
             carga = self.algoritmo.obtenerDatosCarga(recomendaciones[i])
             carga['id_carga'] = i
+            carga['desempeno'] = round(self.algoritmo.obtenerDesempenoPonderado(recomendaciones[i]),2)
             self.resultados.append(carga)
 
         if self.cancelarEjecucion == False:

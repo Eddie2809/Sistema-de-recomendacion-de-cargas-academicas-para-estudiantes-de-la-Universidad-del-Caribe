@@ -21,10 +21,6 @@ class ResultadosEstadisticas(ctk.CTkToplevel):
         self.resultados  = ctk.CTkLabel(self.container, text = title , text_color = "black",font=self.estilo.FUENTE_TITULO,height=25)
         self.resultados.grid(row=0, column = 0, sticky="w")
 
-        #Establecemos la carga visualizada
-        listaCarga = Carga(self.container,datos = datos,corner_radius = 0, fg_color = 'transparent')
-        listaCarga.grid(row = 1, column = 0, sticky = 'w')
-
         #Obtener estadísticas
         upcc,upmr,upcm,cpdh,cpah = controlador.algoritmo.obtenerDesempeno(datos)
 

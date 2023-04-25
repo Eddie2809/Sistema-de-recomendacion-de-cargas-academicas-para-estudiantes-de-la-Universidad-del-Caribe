@@ -11,10 +11,11 @@ class LabelTitulo(ctk.CTkFrame):
         self.grid(row=0, column=pos, sticky="w")
         self.grid_columnconfigure(0, weight=1)
         self.rowconfigure(0, weight=1)
+        self.configure(bg_color=estiloG.COLOR_PRINCIPAL ,fg_color=estiloG.COLOR_PRINCIPAL, height=30)
         if texto == "Hora":
-            self.configure(bg_color=estiloG.COLOR_PRINCIPAL ,fg_color=estiloG.COLOR_PRINCIPAL,width=120, height=30)
+            self.configure(width = 120)
         else:    
-            self.configure(bg_color=estiloG.COLOR_PRINCIPAL ,fg_color=estiloG.COLOR_PRINCIPAL,width=166, height=30)
+            self.configure(width = 166)
         self.grid_propagate(0)
 
         self.label = ctk.CTkLabel(master=self,text=texto, font= estiloG.FUENTE_TEXTO, text_color=estiloG.COLOR_FONDO,wraplength=150)
@@ -47,20 +48,22 @@ class LabelHora(ctk.CTkFrame):
         self.grid(row=posRow, column=posColumn, sticky="w")
         self.grid_columnconfigure(0, weight=1)
         self.rowconfigure(0, weight=1)
+        self.configure(border_width = 1, border_color = 'gray',fg_color='transparent', height=50,corner_radius = 0)
         if posColumn == 0:
-            self.configure(bg_color=estiloG.COLOR_FONDO ,fg_color=estiloG.COLOR_FONDO,width=120, height=50, border_width = 0, border_color = estiloG.COLOR_PRINCIPAL)
+            self.configure(width = 120)
         else:
-            self.configure(bg_color=estiloG.COLOR_FONDO ,fg_color=estiloG.COLOR_FONDO,width=166, height=50, border_width = 0, border_color = estiloG.COLOR_PRINCIPAL)
+            self.configure(width = 166)
         
         self.grid_propagate(0)
 
-        self.label = ctk.CTkLabel(master=self,text=texto,height=15, font= estiloG.FUENTE_TEXTO, text_color=estiloG.COLOR_PRINCIPAL,wraplength=150, bg_color=estiloG.COLOR_FONDO ,fg_color=estiloG.COLOR_FONDO)
+        self.label = ctk.CTkLabel(master=self,text=texto,height=15, font= estiloG.FUENTE_TEXTO, text_color=estiloG.COLOR_PRINCIPAL,wraplength=150,fg_color = 'transparent')
         self.label.grid(row=0, column=0)
 
 
 class HorasHorario(ctk.CTkFrame):
     def __init__(self, master, elementos,posColumn, **kwargs):
         super().__init__(master, **kwargs)
+        self.configure(fg_color = 'transparent')
 
         self.master = master
 
@@ -72,7 +75,7 @@ class HorasHorario(ctk.CTkFrame):
 
         for i,elemento in enumerate(elementos):
             if elemento == "-":
-                elemento = " "
+                elemento = ""
             self.labelhora = LabelHora(master=self, texto=elemento, posRow=i , posColumn=posColumn)
             self.rowconfigure(i,weight=1)
 
@@ -80,6 +83,7 @@ class HorasHorario(ctk.CTkFrame):
 class Horario(ctk.CTkFrame):
     def __init__(self, master, horario, **kwargs):
         super().__init__(master, **kwargs)
+        self.configure(fg_color = 'transparent')
 
         self.titulos = TitulosHorario(master=self, width=1000, height=30)
 
@@ -98,11 +102,16 @@ class ResultadosHorario(ctk.CTkToplevel):
         super().__init__(*args,**kwargs)
 
         self.controlador = controlador
-        self.geometry("1000x600")
+        self.geometry("1100x530+10+10")
         self.estilo = Estilo()
+
+        self.containerDelContainerXD = ctk.CTkScrollableFrame(self,fg_color = 'transparent',width = 1050, height = 500)
+        self.containerDelContainerXD.grid_columnconfigure(0,weight = 1)
+        self.containerDelContainerXD.grid_rowconfigure(0,weight = 1)
+        self.containerDelContainerXD.grid(row = 0, column = 0)
         
-        self.container = ctk.CTkScrollableFrame(self,width=1000, height=600, corner_radius=10, fg_color='transparent')
-        self.container.grid(row=0,column=0,sticky= 'nsew',padx = 50, pady = 7)
+        self.container = ctk.CTkFrame(self.containerDelContainerXD,width=1000, height=600, corner_radius=10, fg_color='transparent')
+        self.container.grid(row=0,column=0,sticky= 'nsew',padx = (20,0), pady = (2,0))
         self.container.grid_propagate()
 
         self.container.grid_columnconfigure(0, weight=1)
@@ -113,14 +122,9 @@ class ResultadosHorario(ctk.CTkToplevel):
         self.container.rowconfigure(4, weight=1)
         self.container.rowconfigure(5, weight=1)
 
-        self.resultados  = ctk.CTkLabel(self.container, text = "Resultados" , text_color = "black", wraplength=200, justify="center",font=self.estilo.FUENTE_TITULO)
+        self.resultados  = ctk.CTkLabel(self.container, text = "Horario" , text_color = "black", wraplength=200, justify="center",font=self.estilo.FUENTE_TITULO)
         self.resultados.grid(row=0, column = 0, sticky="w")
 
-        self.cargasGeneradas  = ctk.CTkLabel(self.container, text = "Horario", text_color = "black", wraplength=200, justify="center",font=self.estilo.FUENTE_SUBTITULO)
-        self.cargasGeneradas.grid(row=1, column = 0, sticky="w")
-
-        Carga(self.container,datos = datos,fg_color='transparent').grid(row = 2, column = 0)
-
         horario = self.controlador.algoritmo.obtenerHorario(carga = datos)
-        self.horarioFrame = Horario(master=self.container, horario= horario, height=200,width=1000,fg_color=self.estilo.COLOR_FONDO, bg_color=self.estilo.COLOR_FONDO)
+        self.horarioFrame = Horario(master=self.container, horario= horario, height=200,width=1000,fg_color = 'transparent')
         self.horarioFrame.grid(row=3, column = 0, sticky="nsew")

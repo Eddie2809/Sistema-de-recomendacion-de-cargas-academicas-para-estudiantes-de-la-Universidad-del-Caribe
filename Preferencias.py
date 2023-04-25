@@ -34,7 +34,7 @@ class Pesos(ctk.CTkFrame):
         self.titulo = pesosTitulo(self,restaurarPesos = self.restaurarPesos)
         self.titulo.grid(row = 0, column = 0,sticky='ew')
 
-        descripcion = 'Los pesos determinan la prioridad que tendrá cada objetivo en relación con los demás al momento de ejecutar el algoritmo y mostrar los resultados. Actualmente los objetivos que se consideran son: cierre de ciclos, materias reprobadas, cantidad ideal de materias, disponibilidad de horario, amplitud de horario y riesgo de reprobación.'
+        descripcion = 'El sistema de recomendación persigue 5 principales objetivos para generar cargas académicas que cumplan con tus necesidades y preferencias. Cada uno de estos objetivos cuenta con un peso el cual le ayuda al algoritmo a entender cuáles de estos objetivos son más importantes para ti. La importancia del valor de cada peso radica en la relación que tiene con los demás pesos, por lo que si estableces el peso de todos los objetivos con un número cercano a 0 tendrás el mismo resultado que establecer el peso de todos los objetivos a 1. A continuación se hace una descripción breve de cada objetivo.'
 
         self.subtitulo = ctk.CTkLabel(self, text = descripcion, font = estilo.FUENTE_TEXTO,text_color = estilo.COLOR_TEXTO,wraplength = 465, justify='left')
         self.subtitulo.grid(row = 1, column = 0, pady = (0,20))
@@ -48,14 +48,14 @@ class Pesos(ctk.CTkFrame):
 
         self.mrTexto = ctk.CTkLabel(self,text='Selección de materias reprobadas',font=estilo.FUENTE_TEXTO_BOLD)
         self.mrTexto.grid(row = 5, column = 0)
-        ctk.CTkLabel(self,text = 'Este objetivo pretende que las cargas generadas incluyan materias que hayas reprobado de periodos anteriores si es que alguna se oferto en el periodo actual. Si no has reprobado ninguna materia, entonces este objetivo no tendrá ningún efecto.', font = estilo.FUENTE_TEXTO, wraplength = 465, justify = 'left').grid(row = 6, column = 0)
+        ctk.CTkLabel(self,text = 'Este objetivo pretende que las cargas generadas incluyan materias que hayas reprobado de periodos anteriores si es que alguna se ofertó en el periodo actual. Si no has reprobado ninguna materia, entonces este objetivo no tendrá ningún efecto.', font = estilo.FUENTE_TEXTO, wraplength = 465, justify = 'left').grid(row = 6, column = 0)
 
         self.mrEntrada = PesosEntrada(self,valor=self.valorMR,objetivo='upmr',cambiarPeso=cambiarPeso)
         self.mrEntrada.grid(row = 7, column = 0, pady = (0,20))
 
         self.cmTexto = ctk.CTkLabel(self,text='Cantidad ideal de materias',font=estilo.FUENTE_TEXTO_BOLD)
         self.cmTexto.grid(row = 8, column = 0)
-        ctk.CTkLabel(self,text = 'Las cargas académicas tendrán un valor muy aproximado a la cantidad ideal de materias que hayas escogido si se le asigna un valor de peso muy alto. En caso de que hayas seleccionado "indefinido" entonces este peso no tendrá ningún efecto.', font = estilo.FUENTE_TEXTO, wraplength = 465, justify = 'left').grid(row = 9, column = 0)
+        ctk.CTkLabel(self,text = 'Las cargas académicas tendrán un tamaño igual o muy aproximado a la cantidad ideal de materias que hayas escogido si se le asigna un valor de peso muy alto. En caso de que hayas seleccionado "indefinido" entonces este peso no tendrá ningún efecto.', font = estilo.FUENTE_TEXTO, wraplength = 465, justify = 'left').grid(row = 9, column = 0)
 
         self.cmEntrada = PesosEntrada(self,valor=self.valorCM,objetivo='upcm',cambiarPeso=cambiarPeso)
         self.cmEntrada.grid(row = 10, column = 0, pady = (0,20))
@@ -76,7 +76,7 @@ class Pesos(ctk.CTkFrame):
 
         self.rrTexto = ctk.CTkLabel(self,text='Riesgo de reprobación',font=estilo.FUENTE_TEXTO_BOLD)
         self.rrTexto.grid(row = 17, column = 0)
-        ctk.CTkLabel(self,text = 'El riesgo de reprobación es calculado mediante un modelo con una exactitud del 70%. Al aumentar este peso se busca que las cargas académicas que se te recomienden tengan un riesgo de reprobación muy bajo.', font = estilo.FUENTE_TEXTO, wraplength = 465, justify = 'left').grid(row = 18, column = 0)
+        ctk.CTkLabel(self,text = 'El riesgo de reprobación se refiere a la probabilidad de reprobar al menos una asignatura de cierta carga académica. Al aumentar el peso de este objetivo se le dará prioridad a aquellas cargas que tengan un bajo riesgo de reprobación.', font = estilo.FUENTE_TEXTO, wraplength = 465, justify = 'left').grid(row = 18, column = 0)
 
         self.rrEntrada = PesosEntrada(self,valor=self.valorRR,objetivo='cprr',cambiarPeso=cambiarPeso)
         self.rrEntrada.grid(row = 19, column = 0, pady = (0,20))
@@ -108,7 +108,7 @@ class PesosEntrada(ctk.CTkFrame):
         self.objetivo = objetivo
         self.cambiarPeso = cambiarPeso
 
-        self.entradaRango = ctk.CTkSlider(self,from_ = 0, to = 100, command = self.cambiarValor)
+        self.entradaRango = ctk.CTkSlider(self,from_ = 0, to = 100, command = self.cambiarValor, button_color = estilo.COLOR_SECUNDARIO, button_hover_color = '#0DB1AC')
         self.entradaRango.set(valor.get())
         self.entradaRango.grid(row = 0, column = 0)
 
@@ -136,6 +136,7 @@ class CantidadDeAsignaturas(ctk.CTkFrame):
         self.cambiarCantidadIdealMaterias = cambiarCantidadIdealMaterias
 
         self.cdaEntrada = ctk.CTkComboBox(self,values=['3','4','5','6','7','8','9'],command=self.onCombo,width=50,bg_color='transparent')
+        self.cdaEntrada.set('7')
         self.cdaEntrada.grid(row = 0, column = 0,padx = (0,15))
 
         self.cdaIndefinido = ctk.CTkCheckBox(self,text = 'Indefinido',command=self.onIndefinido,bg_color='transparent')
@@ -213,6 +214,7 @@ class PreferenciasDerecha(ctk.CTkFrame):
         self.horario = Horario(self,controlador=controlador,cambiarDisponibilidad=cambiarDisponibilidad).grid(row = 3, column = 0,pady=(0,15))
 
         self.botones = BotonesPreferenciasDerecha(self,controlador=controlador,hacerCambios=hacerCambios).grid(row = 4,column = 0,sticky='nsew')
+        ctk.CTkLabel(self,text='Este proceso puede tomar varios minutos!', font = estilo.FUENTE_TEXTO_BOLD).grid(row = 5, column = 0, sticky = 'w', padx = 20)
 
 
 class BotonesPreferenciasDerecha(ctk.CTkFrame):
@@ -225,8 +227,8 @@ class BotonesPreferenciasDerecha(ctk.CTkFrame):
 
         estilo = Estilo()
 
-        ctk.CTkButton(self,text='Empezar a generar!',command=self.onEmpezarAGenerar,fg_color = estilo.COLOR_PRINCIPAL, text_color = 'white', hover_color = '#0A0F29').grid(row = 0, column = 0,sticky='w',padx=20)
-        ctk.CTkButton(self,text='Volver',command=lambda: controlador.cambiarFrame('Verificacion'), fg_color = 'white', border_width = 2, border_color = estilo.COLOR_PRINCIPAL, text_color = estilo.COLOR_PRINCIPAL, width = 70, hover_color = estilo.COLOR_FONDO).grid(row = 0, column = 1,sticky='w')
+        ctk.CTkButton(self,text='Empezar a generar!',command=self.onEmpezarAGenerar,fg_color = estilo.COLOR_PRINCIPAL, text_color = 'white', hover_color = '#0A0F29').grid(row = 1, column = 0,sticky='w',padx=20)
+        ctk.CTkButton(self,text='Volver',command=lambda: controlador.cambiarFrame('Verificacion'), fg_color = 'white', border_width = 2, border_color = estilo.COLOR_PRINCIPAL, text_color = estilo.COLOR_PRINCIPAL, width = 70, hover_color = estilo.COLOR_FONDO).grid(row = 1, column = 1,sticky='w')
 
     def onEmpezarAGenerar(self):
         self.hacerCambios()
