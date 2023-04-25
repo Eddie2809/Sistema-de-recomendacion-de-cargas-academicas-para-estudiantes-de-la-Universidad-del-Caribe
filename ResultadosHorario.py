@@ -102,10 +102,11 @@ class ResultadosHorario(ctk.CTkToplevel):
         super().__init__(*args,**kwargs)
 
         self.controlador = controlador
-        self.geometry("1100x530+10+10")
+        self.geometry("1020x530+10+10")
+        self.resizable(0,0)
         self.estilo = Estilo()
 
-        self.containerDelContainerXD = ctk.CTkScrollableFrame(self,fg_color = 'transparent',width = 1050, height = 500)
+        self.containerDelContainerXD = ctk.CTkScrollableFrame(self,fg_color = 'transparent',width = 1000, height = 500)
         self.containerDelContainerXD.grid_columnconfigure(0,weight = 1)
         self.containerDelContainerXD.grid_rowconfigure(0,weight = 1)
         self.containerDelContainerXD.grid(row = 0, column = 0)
