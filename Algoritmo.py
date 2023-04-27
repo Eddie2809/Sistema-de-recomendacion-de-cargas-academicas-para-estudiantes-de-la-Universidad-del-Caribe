@@ -1,13 +1,15 @@
 import pandas as pd
 import deap as dp
 import numpy as np
+from sklearn.cluster import KMeans
+from sklearn.linear_model import LogisticRegressionCV
 from deap import base, creator, tools, gp, algorithms
 import time
 import random
 from math import factorial
 
 class Algoritmo():
-	def __init__(self,*args,NGEN = 100, oferta, eleccionLibrePorCiclos, preespecialidad, situacion, plan, seriaciones, obtenerCancelarEjecucion,setCancelarEjecucion,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,**kwargs):
+	def __init__(self,*args,NGEN = 100, oferta,periodoActual = 202301, eleccionLibrePorCiclos, preespecialidad, situacion,plan,seriaciones, obtenerCancelarEjecucion,setCancelarEjecucion,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,datosEntrenamientoKM,datosEntrenamientoModelo,datosCeneval,tasasReprobacion,matricula,**kwargs):
 		super().__init__(*args,**kwargs)
 
 		self.obtenerCancelarEjecucion = obtenerCancelarEjecucion
@@ -22,7 +24,14 @@ class Algoritmo():
 		self.amplitudAceptable = 8
 		self.dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
 		self.kardex = kardex
+		self.situacion = situacion
+		self.matricula = matricula
+		self.carrera = "Ingenieria en Datos e Inteligencia Organizacional"
 		self.pesos = pesos
+		self.tasasReprobacion = tasasReprobacion
+		self.datosCeneval = datosCeneval
+		self.datosEntrenamientoKM = datosEntrenamientoKM
+		self.datosEntrenamientoModelo = datosEntrenamientoModelo
 		self.disponibilidad = pd.DataFrame({
 		    "hora": [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],
 		    "Lunes": disponibilidad[0],
@@ -50,7 +59,7 @@ class Algoritmo():
 
 		self.ofertaUtil = self.obtenerOfertaUtil()
 
-		creator.create("FitnessMin", base.Fitness, weights=(1,1,1,-1,-1))
+		creator.create("FitnessMin", base.Fitness, weights=(1,1,1,-1,-1,-1))
 		creator.create("Individual", list, fitness=creator.FitnessMin)
 
 		self.toolbox = base.Toolbox()
@@ -142,6 +151,106 @@ class Algoritmo():
 
 		#Total de horas donde el estudiante se encuentra disponible
 		self.disponibilidadTotal = sum(self.disponibilidad['Lunes']) + sum(self.disponibilidad['Martes']) + sum(self.disponibilidad['Miercoles']) + sum(self.disponibilidad['Jueves']) + sum(self.disponibilidad['Viernes'])
+
+		# MPRREUC
+
+		# Modelo de K medias necesario para asignar a un cluster la carga a evaluar
+		self.modeloKM = KMeans(n_clusters = 5, n_init=100)
+		self.modeloKM.fit(self.datosEntrenamientoKM)
+
+		# Inicialización y entrenamiento del MPRREUC
+		self.mprreuc = LogisticRegressionCV(solver='lbfgs',cv=29, random_state=0)
+		self.entrenarMPRREUC()
+
+		# Asignación de variables necesarias para MPRREUC
+		self.año_encurso = (int(str(periodoActual)[2:4])) - int(self.matricula[:2])
+		self.tasa_aprob_per_prev = self.obtenerTasaAprobPerPrev()
+
+		self.asignarCeneval()
+		
+		self.carrera_IA = 1 if self.carrera == "Ingenieria Ambiental" else 0
+		self.carrera_IDeIO = 1 if self.carrera == "Ingenieria en Datos e Inteligencia Organizacional" else 0
+		self.carrera_NI = 1 if self.carrera == "Negocios Internacionales" else 0
+		self.carrera_TS = 1 if self.carrera == "Turismo Sustentable y Gestion Hotelera" else 0
+
+		self.semestre_Otoño = 1 if str(periodoActual)[4:6] == "03" else 0
+		self.situacion_Condicionado = 1 if self.situacion == "Condicionado" else 0
+		self.situacion_Irregular = 1 if self.situacion == "Irregular" else 0
+
+
+	def asignarCeneval(self):
+		#Si no se cuentan con los datos de ceneval del estudiante se asigna el promedio
+		if len(self.datosCeneval.query("matricula == "+self.matricula)["ceneval_analitico"]) == 0:
+			self.ceneval_analitico = 1058
+		else:
+			self.ceneval_analitico = int(self.datosCeneval.query("matricula == "+self.matricula)["ceneval_analitico"].values)
+		if len(self.datosCeneval.query("matricula == "+self.matricula)["ceneval_matematico"]) == 0:
+			self.ceneval_matematico = 1039
+		else:
+			self.ceneval_matematico = int(self.datosCeneval.query("matricula == "+self.matricula)["ceneval_matematico"].values)
+		if len(self.datosCeneval.query("matricula == "+self.matricula)["ceneval_lengua"]) == 0:
+			self.ceneval_lengua = 1069
+		else:
+			self.ceneval_lengua = int(self.datosCeneval.query("matricula == "+self.matricula)["ceneval_lengua"].values)
+		if len(self.datosCeneval.query("matricula == "+self.matricula)["ceneval_esp"]) == 0:
+			self.ceneval_esp = 1086
+		else:
+			self.ceneval_esp = int(self.datosCeneval.query("matricula == "+self.matricula)["ceneval_esp"].values)
+		
+
+	def entrenarMPRREUC(self):
+		# Entrena el modelo con los datos recibidos. Notese que no hay conjunto de prueba
+		trainX = self.datosEntrenamientoModelo
+		trainY = trainX['carga_aprobada'].to_numpy()
+		del trainX["carga_aprobada"]
+		
+		self.mprreuc.fit(trainX, trainY)
+
+	def obtenerTotalRecursando(self, datosCarga):
+		cantidad = 0
+		materiasReprobadas = set(self.materiasReprobadas)
+		for c in datosCarga['clave'].values:
+			if c in materiasReprobadas:
+				cantidad += 1
+		return cantidad
+
+	def obtenerComplejidadCarga5(self, datosCarga):
+		# En los datos de tasasReprobacion se encuentra el quintil al que pertenece cada asignatura. 
+		# Se suma la cantidad de asignaturas por quintil y se obtiene el grupo al que pertence la carga.
+		vectorCarga = []
+		
+		cargaQuintil = pd.merge(self.tasasReprobacion, datosCarga, how="right", on="clave")
+		vectorCarga.append(len(cargaQuintil.query("quintil == 1")))
+		vectorCarga.append(len(cargaQuintil.query("quintil == 2")))
+		vectorCarga.append(len(cargaQuintil.query("quintil == 3")))
+		vectorCarga.append(len(cargaQuintil.query("quintil == 4")))
+		vectorCarga.append(len(cargaQuintil.query("quintil == 5")))
+
+		entrada = pd.DataFrame([vectorCarga], columns=["primerQuintil", "segundoQuintil", "tercerQuintil", "cuartoQuintil", "quintoQuintil"], index=[1])
+		return int(self.modeloKM.predict(entrada))
+
+	def obtenerTasaRepCarga(self, datosCarga):
+		# Calcula el promedio de las tasas de reprobacion de una carga
+		mergeTasaCarga = pd.merge(self.tasasReprobacion, datosCarga, how="right", on="clave")
+		return mergeTasaCarga["tasaReprobacion"].mean()*100
+
+	def obtenerTasaAprobPerPrev(self):
+		# Obtiene la tasa de aprobación en materias del 4to cuartil del periodo previo, si en el periodo previo no se cargó ninguna devuelve la mediana de los periodos anteriores
+		periodos = list(self.kardex["periodo"].unique())
+		tasasPeriodos = np.empty(0)
+		mergeTasasKardex = pd.merge(self.tasasReprobacion, self.kardex, how="right", on="clave")
+		tasaUltimoPeriodo = 0
+		for periodo in periodos:
+			if len(mergeTasasKardex.query("periodo == @periodo").query("cuartil == 4")) == 0:
+				tasaUltimoPeriodo = 0
+				continue
+			tasaUltimoPeriodo = len(mergeTasasKardex.query("periodo == @periodo").query("cuartil == 4").query("promediofinal >= 7")) / len(mergeTasasKardex.query("periodo == @periodo").query("cuartil == 4"))
+			tasasPeriodos = np.append(tasasPeriodos, tasaUltimoPeriodo)
+		
+		if tasaUltimoPeriodo == 0:
+			return np.median(tasasPeriodos)
+		
+		return tasaUltimoPeriodo
 
 	def obtenerCreditos(self):
 		claves = self.kardex.query('promediofinal >= 7')['clave'].unique()
@@ -446,6 +555,17 @@ class Algoritmo():
 						costoTotal += 1
 						
 		return (costoTotal)/(75 - self.disponibilidadTotal)
+	
+	def CpRR(self, solucion):
+		datosCarga = solucion if type(solucion) == pd.DataFrame else self.obtenerDatosCarga(solucion)
+		entrada = [[self.obtenerTasaRepCarga(datosCarga), self.ceneval_analitico, self.ceneval_matematico, self.ceneval_lengua, self.ceneval_esp, self.tasa_aprob_per_prev, self.carrera_IA, self.carrera_IDeIO, self.carrera_NI, self.carrera_TS, self.semestre_Otoño, self.obtenerComplejidadCarga5(datosCarga), self.año_encurso, self.obtenerTotalRecursando(datosCarga), self.situacion_Condicionado, self.situacion_Irregular]]
+		pdentrada = pd.DataFrame(entrada , columns = ['tasa_rep_carga', 'ceneval_analitico', 'ceneval_matematico',
+       'ceneval_lengua', 'ceneval_esp', 'tasa_aprob_per_prev',
+       'carrera_IA', 'carrera_IDeIO','carrera_NI', 'carrera_TS', 'semestre_Otonio',
+       'complejidad_carga5', 'anio_encurso', 'total_recursando',
+       'situacion_Condicionado', 'situacion_Irregular'])
+		riesgoReprobacion = self.mprreuc.predict_proba(pdentrada)
+		return riesgoReprobacion[0][0]
 
 	def obtenerDesempenoPonderado(self,solucion):
 		if not(self.esValido(solucion)):
@@ -469,15 +589,16 @@ class Algoritmo():
 
 	def obtenerDesempeno(self,solucion):
 		if not(self.esValido(solucion)):
-			return 0,0,0,1,1
+			return 0,0,0,1,1,1
 		
 		upcc = self.UpCC(solucion)
 		upmr = self.UpMR(solucion)
 		upcm = self.UpCM(solucion)
 		cpdh = self.CpDH(solucion)
 		cpah = self.CpAH(solucion)
+		cprr = self.CpRR(solucion)
 		
-		return upcc,upmr,upcm,cpdh,cpah
+		return upcc,upmr,upcm,cpdh,cpah,cprr
 
 	def obtenerClase(self):
 		gen = np.random.randint(-1,len(self.ofertaUtil))

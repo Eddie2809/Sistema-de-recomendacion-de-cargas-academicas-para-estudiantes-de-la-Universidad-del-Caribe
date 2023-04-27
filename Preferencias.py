@@ -185,6 +185,7 @@ class PreferenciasIzquierda(ctk.CTkFrame):
 
         self.preespecialidadCombobox = ctk.CTkComboBox(self,values=controlador.obtenerPreespecialidades(),width=200,bg_color='transparent')
         self.preespecialidadCombobox.configure(command = lambda x: cambiarPreespecialidad(self.preespecialidadCombobox.get()))
+        cambiarPreespecialidad(self.preespecialidadCombobox.get())
         self.preespecialidadCombobox.grid(row = 5, column = 0,padx = (0,15), sticky = 'w')
 
         self.opcionesAvanzadasBoton = ctk.CTkButton(self,text='Opciones avanzadas',command=self.alternarPrefAvanzadas,fg_color='white',hover_color= '#E1E1E1',font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO,anchor='w',border_width=1,border_color='black',width = 465)

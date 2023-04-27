@@ -44,7 +44,7 @@ class Inicio(ctk.CTkFrame):
 		try:
 			if self.controlador.enDesarrollo:
 				try:
-					filename = 'C:/Users/eddie/OneDrive/Escritorio/Proyecto Terminal/Recomendaci-n-de-cargas-acad-micas-basado-en-optimizaci-n-multiobjetivo/Kardex/1.pdf'
+					filename = 'C:/Users/eddie/OneDrive/Escritorio/Proyecto Terminal/Recomendaci-n-de-cargas-acad-micas-basado-en-optimizaci-n-multiobjetivo/Kardex/IDEIO/1.pdf'
 					student  = Student(ruta = filename, periodoActual = 202301)
 				except:
 					filename = askopenfilename(initialdir="C://")

@@ -21,19 +21,20 @@ class ResultadosEstadisticas(ctk.CTkToplevel):
         self.resultados.grid(row=0, column = 0, sticky="w")
 
         #Obtener estadísticas
-        upcc,upmr,upcm,cpdh,cpah = controlador.algoritmo.obtenerDesempeno(datos)
+        upcc,upmr,upcm,cpdh,cpah,cprr = controlador.algoritmo.obtenerDesempeno(datos)
 
         upcc = round(abs(upcc)*100,2)
         upmr = round(abs(upmr)*100,2)
         upcm = round(abs(upcm)*100,2)
         cpdh = round(abs(cpdh)*100,2)
         cpah = round(abs(cpah)*100,2)
+        cprr = round(abs(cpah)*100,2)
 
         x = ["Cierre de ciclos", "Selección de materias reprobadas", "Cantidad ideal de materias"]
         y = [upcc, upmr, upcm]
 
-        x2 = ["Disponibilidad de horario", "Amplitud de horario"]
-        y2 = [cpdh, cpah]
+        x2 = ["Disponibilidad de horario", "Amplitud de horario",'Riesgo de reprobación']
+        y2 = [cpdh, cpah,cprr]
 
         fig, axs = plt.subplots(1,2, dpi= 80, figsize=(10,6), sharey= False, facecolor = '#EBEBEB')
         axs[0].set_ylim([0,110])
