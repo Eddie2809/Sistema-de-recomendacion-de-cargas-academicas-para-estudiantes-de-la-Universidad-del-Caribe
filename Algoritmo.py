@@ -576,6 +576,7 @@ class Algoritmo():
 		upcm = self.UpCM(solucion)
 		cpdh = self.CpDH(solucion)
 		cpah = self.CpAH(solucion)
+		cprr = self.CpRR(solucion)
 		
 		utilidades = {
 			"upcc": (upcc * self.pesos["upcc"]),
@@ -583,6 +584,7 @@ class Algoritmo():
 			"upcm": (upcm * self.pesos["upcm"]),
 			"cpdh": self.pesos["cpdh"] - (cpdh * self.pesos["cpdh"]),
 			"cpah": self.pesos["cpah"] - (cpah * self.pesos["cpah"]),
+			"cpah": self.pesos["cprr"] - (cprr * self.pesos["cprr"]),
 		}
 		
 		return sum(utilidades.values())

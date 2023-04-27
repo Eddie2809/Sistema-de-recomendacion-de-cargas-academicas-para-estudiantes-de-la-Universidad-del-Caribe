@@ -1,115 +1,242 @@
-,clave,Nombre,Maestro,Lunes,Martes,Miercoles,Jueves,Viernes,plan
-0,DP0193,Taller de redacción profesional,Alvarado Martínez / María Del Carmen,-,-,17:00-18:00,-,16:00-18:00,2016ID
-1,DP0191,Taller de interacción grupal y competencias comunicativas,Diaz Barriga Cuevas / Claudia,-,-,-,15:00-17:00,17:00-18:00,2016ID
-2,DP0191,Taller de interacción grupal y competencias comunicativas,Diaz Barriga Cuevas / Claudia,18:00-20:00,-,-,17:00-18:00,-,2016ID
-3,DP0193,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,18:00-20:00,-,17:00-18:00,2016ID
-4,DP0194,Desarrollo de habilidades del pensamiento,Mendoza Luna / José Arturo,-,-,19:00-20:00,-,20:00-22:00,2016ID
-5,ID0102,Física clásica,Kauil Castillo / Gener Antonio,-,15:00-17:00,-,-,15:00-17:00,2016ID
-6,II0209,Cálculo integral,Canul Chalé / Juan Diego,17:00-19:00,-,16:00-17:00,-,-,2016ID
-7,IT0104,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,2016ID
-8,DP0193,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,2016ID
-9,DP0193,Taller de redacción profesional,Caamal Lora / Gabriel Adoni,-,20:00-21:00,-,-,20:00-22:00,2016ID
-10,DP0194,Desarrollo de habilidades del pensamiento,Maich Sangiacomo / Karinna,-,20:00-22:00,-,20:00-21:00,-,2016ID
-11,DP0194,Desarrollo de habilidades del pensamiento,Aguilar Hernández / Miguel Ángel,-,19:00-20:00,-,-,18:00-20:00,2016ID
-12,DP0191,Taller de interacción grupal y competencias comunicativas,Maldonado Santiago / David,-,-,19:00-20:00,-,16:00-18:00,2016ID
-13,DP0193,Taller de redacción profesional,Caamal Lora / Gabriel Adoni,20:00-22:00,-,20:00-21:00,-,-,2016ID
-14,II0106,Cálculo diferencial,Zue / Juan Carlos,18:00-20:00,-,20:00-22:00,-,-,2016ID
-15,II0322,Álgebra lineal,Zavala Amezcua / Eva Mirelle,15:00-17:00,-,-,16:00-17:00,-,2016ID
-16,II0209,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,2016ID
-17,DP0191,Taller de interacción grupal y competencias comunicativas,Trujillo Ramírez / Jorge Antonio,-,20:00-21:00,-,20:00-22:00,-,2016ID
-18,DP0194,Desarrollo de habilidades del pensamiento,López Ávila / Nicté,19:00-21:00,-,-,-,20:00-21:00,2016ID
-19,DP0191,Taller de interacción grupal y competencias comunicativas,Maldonado Santiago / David,-,16:00-18:00,-,17:00-18:00,-,2016ID
-20,DP0191,Taller de interacción grupal y competencias comunicativas,Maldonado Santiago / David,-,-,18:00-19:00,-,18:00-20:00,2016ID
-21,DP0194,Desarrollo de habilidades del pensamiento,Cantero Flores / Víctor,19:00-20:00,-,-,18:00-20:00,-,2016ID
-22,DP0194,Desarrollo de habilidades del pensamiento,Aguilar Hernández / Miguel Ángel,-,16:00-18:00,-,16:00-17:00,-,2016ID
-23,DP0194,Desarrollo de habilidades del pensamiento,Aguilar Hernández / Miguel Ángel,-,18:00-19:00,-,19:00-21:00,-,2016ID
-24,DP0194,Desarrollo de habilidades del pensamiento,Peralta Del Riego / Víctor Manuel,-,-,12:00-14:00,-,13:00-14:00,2016ID
-25,II0106,Cálculo diferencial,Can Tun / Miguel Alberto,07:00-09:00,-,07:00-09:00,-,-,2016ID
-26,DP0193,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,09:00-11:00,-,09:00-10:00,2016ID
-27,DP0193,Taller de redacción profesional,Vargas Hernández / Argentina,07:00-09:00,-,-,07:00-08:00,-,2016ID
-28,II0106,Cálculo diferencial,Can Tun / Miguel Alberto,-,07:00-09:00,-,-,07:00-09:00,2016ID
-29,IT0161,Sistemas operativos POSIX,Báez López / Yarely,09:00-11:00,-,-,13:00-14:00,-,2016ID
-30,IT0161,Sistemas operativos POSIX,Báez López / Yarely,11:00-13:00,-,11:00-12:00,-,-,2016ID
-31,ID0161,Recursos de comunicación para la era digital,Zavala López / Erika Erendira,-,-,09:00-11:00,13:00-14:00,-,2016ID
-32,DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,09:00-11:00,-,08:00-09:00,-,2016ID
-33,ID0204,Bases de Datos,Lara Peraza / Wilberth Eduardo,09:00-11:00,-,09:00-11:00,-,-,2016ID
-34,ID0205,Geometría computacional,Naredo García / Enrique,-,-,-,09:00-11:00,10:00-11:00,2016ID
-35,ID0206,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,2016ID
-36,ID0263,Sistemas de planificación de recursos empresariales,Zavala López / Erika Erendira,13:00-14:00,-,13:00-15:00,-,-,2016ID
-37,ID0265,Programación web,Morales Saavedra / Emmanuel,13:00-14:00,-,13:00-15:00,-,-,2016ID
-38,II0320,Ecuaciones diferenciales,Mejenes Sánchez / Omar,-,07:00-09:00,-,07:00-08:00,-,2016ID
-39,IL0204,Estadística analítica,Cruz Pichardo / Felisa,07:00-09:00,-,07:00-09:00,-,-,2016ID
-40,DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,16:00-18:00,-,-,16:00-17:00,2016ID
-41,ID0204,Bases de Datos,Báez López / Yarely,18:00-20:00,-,17:00-19:00,-,-,2016ID
-42,ID0205,Geometría computacional,Naredo García / Enrique,-,20:00-21:00,-,-,18:00-20:00,2016ID
-43,ID0206,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,-,18:00-20:00,-,16:00-18:00,-,2016ID
-44,ID0263,Sistemas de planificación de recursos empresariales,Báez López / Yarely,16:00-18:00,-,16:00-17:00,-,-,2016ID
-45,II0320,Ecuaciones diferenciales,Canul Chalé / Juan Diego,-,-,19:00-20:00,-,14:00-16:00,2016ID
-46,IL0204,Estadística analítica,Cruz Pichardo / Felisa,20:00-22:00,-,-,18:00-20:00,-,2016ID
-47,DP0295,Taller de formación en responsabilidad social y ambiental,Cucurachi Durán / Sergio Jesús,-,-,17:00-18:00,-,16:00-18:00,2016ID
-48,DP0295,Taller de formación en responsabilidad social y ambiental,Cerón Benitez / Mitzi Anayancin,-,-,19:00-21:00,-,20:00-21:00,2016ID
-49,ID0205,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,2016ID
-50,PID0201,Prácticas Profesionales I,García Fernández / Alejandro,-,-,-,-,-,2016ID
-51,DP0295,Taller de formación en responsabilidad social y ambiental,Cucurachi Durán / Sergio Jesús,-,-,18:00-20:00,-,18:00-19:00,2016ID
-52,DP0295,Taller de formación en responsabilidad social y ambiental,Lugo Hernández / Lizbeth,-,-,17:00-19:00,17:00-18:00,-,2016ID
-53,DP0396,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,2016ID
-54,II0215,Electricidad y magnetismo,Casas De La Cruz / Rosa Guadalupe,11:00-13:00,-,-,13:00-15:00,-,2016ID
-55,II0215,Electricidad y magnetismo,Casas De La Cruz / Rosa Guadalupe,14:00-16:00,-,-,16:00-18:00,-,2016ID
-56,IL0204,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,2016ID
-57,IL0204,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,2016ID
-58,IL3422,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,2016ID
-59,DP0295,Taller de formación en responsabilidad social y ambiental,Blanco Valdés / Santiago,-,13:00-15:00,-,13:00-14:00,-,2016ID
-60,II0320,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,2016ID
-61,II0422,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,2016ID
-62,DP0295,Taller de formación en responsabilidad social y ambiental,Lugo Hernández / Lizbeth,-,-,19:00-21:00,-,20:00-21:00,2016ID
-63,DP0295,Taller de formación en responsabilidad social y ambiental,Muñoz Dzib / Melchor Ernesto,-,18:00-19:00,-,-,18:00-20:00,2016ID
-64,DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,14:00-16:00,-,15:00-16:00,-,2016ID
-65,II0422,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,2016ID
-66,DP0498,Problemas de México,Cervera León / José Samuel,-,09:00-11:00,-,-,10:00-11:00,2016ID
-67,ID0307,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,2016ID
-68,ID0310,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,2016ID
-69,ID3416,Diseño multimedia,Landeros Alvarado / Aurea,-,08:00-09:00,-,09:00-11:00,-,2016ID
-70,ID3468,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,2016ID
-71,II0422,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,07:00-09:00,-,07:00-08:00,-,-,2016ID
-72,IT0263,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,13:00-14:00,-,10:00-12:00,-,-,2016ID
-73,DP0498,Problemas de México,Manzo de León / Leonela Paola,20:00-22:00,-,20:00-21:00,-,-,2016ID
-74,ID0307,Ingeniería de software,Aguas García / Nancy,-,16:00-18:00,-,16:00-17:00,-,2016ID
-75,ID0310,Minería de datos,Gómez García / Hector Fernando,-,-,16:00-18:00,-,16:00-18:00,2016ID
-76,ID3422,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,2016ID
-77,ID3468,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,2016ID
-78,II0422,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,2016ID
-79,IT0263,Electrónica analógica,Márquez Chacón / Wilberth,-,-,18:00-20:00,-,18:00-19:00,2016ID
-80,DP0497,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,2016ID
-81,IT0425,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,2016ID
-82,PID0302,Prácticas profesionales II,García Fernández / Alejandro,-,-,-,-,-,2016ID
-83,IT0317,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,2016ID
-84,DP0497,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,20:00-22:00,-,-,17:00-18:00,-,2016ID
-85,DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,-,19:00-21:00,-,19:00-20:00,2016ID
-86,DP0396,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,2016ID
-87,ID0308,Análisis de grandes volúmenes de datos,Olivares González / Cyntya,09:00-11:00,-,-,09:00-11:00,-,2016ID
-88,ID0309,Aprendizaje estadístico,Arzápalo Treviño / Ángel Alejandro,-,09:00-11:00,-,07:00-08:00,-,2016ID
-89,ID3424,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,2016ID
-90,DP0497,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,18:00-20:00,-,-,20:00-21:00,2016ID
-91,DP0497,Problemas del mundo contemporáneo,Castro Gonzalez / Julieta,-,-,19:00-20:00,-,20:00-22:00,2016ID
-92,II0423,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,2016ID
-93,IL0414,Taller de argumentación y técnicas de negociación,Contreras Macossay / Bani Obed,19:00-20:00,-,20:00-22:00,-,-,2016ID
-94,ID0414,Seguridad de datos,Aguilar Pérez / Jairo Cesar,-,18:00-20:00,-,18:00-20:00,-,2016ID
-95,ID3415,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,2016ID
-96,ID3420,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,2016ID
-97,ID3423,Sistemas de apoyo para la toma de decisiones,Mendiola Fuentes / Jessica Carmin,-,16:00-18:00,-,17:00-18:00,-,2016ID
-98,IT0423,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,2016ID
-99,IT0427,Proyecto terminal,Aguas García / Nancy,16:00-19:00,-,-,-,-,2016ID
-100,IT3472,Principios de automatización y robótica,Landaverde Lorenzo / Pablo Jacob,-,20:00-22:00,-,21:00-22:00,-,2016ID
-101,NI3431,Marketing en los negocios electrónicos,Canche Dzul / Arely Del Socorro,21:00-22:00,-,-,-,19:00-21:00,2016ID
-102,DP0498,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,2016ID
-103,DP0499,Seminario de investigación,Barragan Garcia / Marco Antonio,16:00-19:00,-,-,-,-,2016ID
-104,DP0498,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,2016ID
-105,DP0499,Seminario de investigación,Barragan Garcia / Marco Antonio,-,20:00-22:00,-,20:00-21:00,-,2016ID
-106,PID0403,Prácticas profesionales preespecialidad: Inteligencia organizacional y de negocios,García Fernández / Alejandro,-,-,-,-,-,2016ID
-107,PID0404,Prácticas Profesionales preespecialidad: Innovación en TIC,García Fernández / Alejandro,-,-,-,-,-,2016ID
-109,DP0498,Problemas de México,Aguilar Hernández / Miguel Ángel,16:00-17:00,-,16:00-18:00,-,-,2016ID
-110,DP0498,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,2016ID
-111,DP0499,Seminario de investigación,Reyes Miranda / José Felipe,16:00-18:00,-,18:00-19:00,-,-,2016ID
-112,IT0427,Proyecto terminal,Zavala López / Erika Erendira,16:00-19:00,-,-,-,-,2016ID
-114,DP0498,Problemas de México,Manzo de León / Leonela Paola,18:00-20:00,-,-,-,18:00-19:00,2016ID
-115,DP0499,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,2016ID
+clave,Nombre,Maestro,Lunes,Martes,Miercoles,Jueves,Viernes,plan
+DP0193,Taller de redacción profesional,Alvarado Martínez / María Del Carmen,-,-,17:00-18:00,-,16:00-18:00,2016ID
+DP0191,Taller de interacción grupal y competencias comunicativas,Diaz Barriga Cuevas / Claudia,-,-,-,15:00-17:00,17:00-18:00,2016ID
+DP0191,Taller de interacción grupal y competencias comunicativas,Diaz Barriga Cuevas / Claudia,18:00-20:00,-,-,17:00-18:00,-,2016ID
+DP0193,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,18:00-20:00,-,17:00-18:00,2016ID
+DP0194,Desarrollo de habilidades del pensamiento,Mendoza Luna / José Arturo,-,-,19:00-20:00,-,20:00-22:00,2016ID
+ID0102,Física clásica,Kauil Castillo / Gener Antonio,-,15:00-17:00,-,-,15:00-17:00,2016ID
+II0209,Cálculo integral,Canul Chalé / Juan Diego,17:00-19:00,-,16:00-17:00,-,-,2016ID
+IT0104,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,2016ID
+DP0193,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,2016ID
+DP0193,Taller de redacción profesional,Caamal Lora / Gabriel Adoni,-,20:00-21:00,-,-,20:00-22:00,2016ID
+DP0194,Desarrollo de habilidades del pensamiento,Maich Sangiacomo / Karinna,-,20:00-22:00,-,20:00-21:00,-,2016ID
+DP0194,Desarrollo de habilidades del pensamiento,Aguilar Hernández / Miguel Ángel,-,19:00-20:00,-,-,18:00-20:00,2016ID
+DP0191,Taller de interacción grupal y competencias comunicativas,Maldonado Santiago / David,-,-,19:00-20:00,-,16:00-18:00,2016ID
+DP0193,Taller de redacción profesional,Caamal Lora / Gabriel Adoni,20:00-22:00,-,20:00-21:00,-,-,2016ID
+II0106,Cálculo diferencial,Zue / Juan Carlos,18:00-20:00,-,20:00-22:00,-,-,2016ID
+II0322,Álgebra lineal,Zavala Amezcua / Eva Mirelle,15:00-17:00,-,-,16:00-17:00,-,2016ID
+II0209,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,2016ID
+DP0191,Taller de interacción grupal y competencias comunicativas,Trujillo Ramírez / Jorge Antonio,-,20:00-21:00,-,20:00-22:00,-,2016ID
+DP0194,Desarrollo de habilidades del pensamiento,López Ávila / Nicté,19:00-21:00,-,-,-,20:00-21:00,2016ID
+DP0191,Taller de interacción grupal y competencias comunicativas,Maldonado Santiago / David,-,16:00-18:00,-,17:00-18:00,-,2016ID
+DP0191,Taller de interacción grupal y competencias comunicativas,Maldonado Santiago / David,-,-,18:00-19:00,-,18:00-20:00,2016ID
+DP0194,Desarrollo de habilidades del pensamiento,Cantero Flores / Víctor,19:00-20:00,-,-,18:00-20:00,-,2016ID
+DP0194,Desarrollo de habilidades del pensamiento,Aguilar Hernández / Miguel Ángel,-,16:00-18:00,-,16:00-17:00,-,2016ID
+DP0194,Desarrollo de habilidades del pensamiento,Aguilar Hernández / Miguel Ángel,-,18:00-19:00,-,19:00-21:00,-,2016ID
+DP0194,Desarrollo de habilidades del pensamiento,Peralta Del Riego / Víctor Manuel,-,-,12:00-14:00,-,13:00-14:00,2016ID
+II0106,Cálculo diferencial,Can Tun / Miguel Alberto,07:00-09:00,-,07:00-09:00,-,-,2016ID
+DP0193,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,09:00-11:00,-,09:00-10:00,2016ID
+DP0193,Taller de redacción profesional,Vargas Hernández / Argentina,07:00-09:00,-,-,07:00-08:00,-,2016ID
+II0106,Cálculo diferencial,Can Tun / Miguel Alberto,-,07:00-09:00,-,-,07:00-09:00,2016ID
+IT0161,Sistemas operativos POSIX,Báez López / Yarely,09:00-11:00,-,-,13:00-14:00,-,2016ID
+IT0161,Sistemas operativos POSIX,Báez López / Yarely,11:00-13:00,-,11:00-12:00,-,-,2016ID
+ID0161,Recursos de comunicación para la era digital,Zavala López / Erika Erendira,-,-,09:00-11:00,13:00-14:00,-,2016ID
+DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,09:00-11:00,-,08:00-09:00,-,2016ID
+ID0204,Bases de Datos,Lara Peraza / Wilberth Eduardo,09:00-11:00,-,09:00-11:00,-,-,2016ID
+ID0205,Geometría computacional,Naredo García / Enrique,-,-,-,09:00-11:00,10:00-11:00,2016ID
+ID0206,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,2016ID
+ID0263,Sistemas de planificación de recursos empresariales,Zavala López / Erika Erendira,13:00-14:00,-,13:00-15:00,-,-,2016ID
+ID0265,Programación web,Morales Saavedra / Emmanuel,13:00-14:00,-,13:00-15:00,-,-,2016ID
+II0320,Ecuaciones diferenciales,Mejenes Sánchez / Omar,-,07:00-09:00,-,07:00-08:00,-,2016ID
+IL0204,Estadística analítica,Cruz Pichardo / Felisa,07:00-09:00,-,07:00-09:00,-,-,2016ID
+DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,16:00-18:00,-,-,16:00-17:00,2016ID
+ID0204,Bases de Datos,Báez López / Yarely,18:00-20:00,-,17:00-19:00,-,-,2016ID
+ID0205,Geometría computacional,Naredo García / Enrique,-,20:00-21:00,-,-,18:00-20:00,2016ID
+ID0206,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,-,18:00-20:00,-,16:00-18:00,-,2016ID
+ID0263,Sistemas de planificación de recursos empresariales,Báez López / Yarely,16:00-18:00,-,16:00-17:00,-,-,2016ID
+II0320,Ecuaciones diferenciales,Canul Chalé / Juan Diego,-,-,19:00-20:00,-,14:00-16:00,2016ID
+IL0204,Estadística analítica,Cruz Pichardo / Felisa,20:00-22:00,-,-,18:00-20:00,-,2016ID
+DP0295,Taller de formación en responsabilidad social y ambiental,Cucurachi Durán / Sergio Jesús,-,-,17:00-18:00,-,16:00-18:00,2016ID
+DP0295,Taller de formación en responsabilidad social y ambiental,Cerón Benitez / Mitzi Anayancin,-,-,19:00-21:00,-,20:00-21:00,2016ID
+ID0205,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,2016ID
+PID0201,Prácticas Profesionales I,García Fernández / Alejandro,-,-,-,-,-,2016ID
+DP0295,Taller de formación en responsabilidad social y ambiental,Cucurachi Durán / Sergio Jesús,-,-,18:00-20:00,-,18:00-19:00,2016ID
+DP0295,Taller de formación en responsabilidad social y ambiental,Lugo Hernández / Lizbeth,-,-,17:00-19:00,17:00-18:00,-,2016ID
+DP0396,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,2016ID
+II0215,Electricidad y magnetismo,Casas De La Cruz / Rosa Guadalupe,11:00-13:00,-,-,13:00-15:00,-,2016ID
+II0215,Electricidad y magnetismo,Casas De La Cruz / Rosa Guadalupe,14:00-16:00,-,-,16:00-18:00,-,2016ID
+IL0204,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,2016ID
+IL0204,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,2016ID
+IL3422,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,2016ID
+DP0295,Taller de formación en responsabilidad social y ambiental,Blanco Valdés / Santiago,-,13:00-15:00,-,13:00-14:00,-,2016ID
+II0320,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,2016ID
+II0422,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,2016ID
+DP0295,Taller de formación en responsabilidad social y ambiental,Lugo Hernández / Lizbeth,-,-,19:00-21:00,-,20:00-21:00,2016ID
+DP0295,Taller de formación en responsabilidad social y ambiental,Muñoz Dzib / Melchor Ernesto,-,18:00-19:00,-,-,18:00-20:00,2016ID
+DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,14:00-16:00,-,15:00-16:00,-,2016ID
+II0422,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,2016ID
+DP0498,Problemas de México,Cervera León / José Samuel,-,09:00-11:00,-,-,10:00-11:00,2016ID
+ID0307,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,2016ID
+ID0310,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,2016ID
+ID3416,Diseño multimedia,Landeros Alvarado / Aurea,-,08:00-09:00,-,09:00-11:00,-,2016ID
+ID3468,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,2016ID
+II0422,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,07:00-09:00,-,07:00-08:00,-,-,2016ID
+IT0263,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,13:00-14:00,-,10:00-12:00,-,-,2016ID
+DP0498,Problemas de México,Manzo de León / Leonela Paola,20:00-22:00,-,20:00-21:00,-,-,2016ID
+ID0307,Ingeniería de software,Aguas García / Nancy,-,16:00-18:00,-,16:00-17:00,-,2016ID
+ID0310,Minería de datos,Gómez García / Hector Fernando,-,-,16:00-18:00,-,16:00-18:00,2016ID
+ID3422,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,2016ID
+ID3468,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,2016ID
+II0422,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,2016ID
+IT0263,Electrónica analógica,Márquez Chacón / Wilberth,-,-,18:00-20:00,-,18:00-19:00,2016ID
+DP0497,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,2016ID
+IT0425,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,2016ID
+PID0302,Prácticas profesionales II,García Fernández / Alejandro,-,-,-,-,-,2016ID
+IT0317,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,2016ID
+DP0497,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,20:00-22:00,-,-,17:00-18:00,-,2016ID
+DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,-,19:00-21:00,-,19:00-20:00,2016ID
+DP0396,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,2016ID
+ID0308,Análisis de grandes volúmenes de datos,Olivares González / Cyntya,09:00-11:00,-,-,09:00-11:00,-,2016ID
+ID0309,Aprendizaje estadístico,Arzápalo Treviño / Ángel Alejandro,-,09:00-11:00,-,07:00-08:00,-,2016ID
+ID3424,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,2016ID
+DP0497,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,18:00-20:00,-,-,20:00-21:00,2016ID
+DP0497,Problemas del mundo contemporáneo,Castro Gonzalez / Julieta,-,-,19:00-20:00,-,20:00-22:00,2016ID
+II0423,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,2016ID
+IL0414,Taller de argumentación y técnicas de negociación,Contreras Macossay / Bani Obed,19:00-20:00,-,20:00-22:00,-,-,2016ID
+ID0414,Seguridad de datos,Aguilar Pérez / Jairo Cesar,-,18:00-20:00,-,18:00-20:00,-,2016ID
+ID3415,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,2016ID
+ID3420,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,2016ID
+ID3423,Sistemas de apoyo para la toma de decisiones,Mendiola Fuentes / Jessica Carmin,-,16:00-18:00,-,17:00-18:00,-,2016ID
+IT0423,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,2016ID
+IT0427,Proyecto terminal,Aguas García / Nancy,16:00-19:00,-,-,-,-,2016ID
+IT3472,Principios de automatización y robótica,Landaverde Lorenzo / Pablo Jacob,-,20:00-22:00,-,21:00-22:00,-,2016ID
+NI3431,Marketing en los negocios electrónicos,Canche Dzul / Arely Del Socorro,21:00-22:00,-,-,-,19:00-21:00,2016ID
+DP0498,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,2016ID
+DP0499,Seminario de investigación,Barragan Garcia / Marco Antonio,16:00-19:00,-,-,-,-,2016ID
+DP0498,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,2016ID
+DP0499,Seminario de investigación,Barragan Garcia / Marco Antonio,-,20:00-22:00,-,20:00-21:00,-,2016ID
+PID0403,Prácticas profesionales preespecialidad: Inteligencia organizacional y de negocios,García Fernández / Alejandro,-,-,-,-,-,2016ID
+PID0404,Prácticas Profesionales preespecialidad: Innovación en TIC,García Fernández / Alejandro,-,-,-,-,-,2016ID
+DP0498,Problemas de México,Aguilar Hernández / Miguel Ángel,16:00-17:00,-,16:00-18:00,-,-,2016ID
+DP0498,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,2016ID
+DP0499,Seminario de investigación,Reyes Miranda / José Felipe,16:00-18:00,-,18:00-19:00,-,-,2016ID
+IT0427,Proyecto terminal,Zavala López / Erika Erendira,16:00-19:00,-,-,-,-,2016ID
+DP0498,Problemas de México,Manzo de León / Leonela Paola,18:00-20:00,-,-,-,18:00-19:00,2016ID
+DP0499,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,2016ID
+DP0193,Taller de redacción profesional,Mex Torres / Pedro Antonio,11:00-13:00,-,11:00-12:00,-,-,2019IA
+"DP0194	",Desarrollo de habilidades del pensamiento,Peralta Del Riego / Víctor Manuel,-,-,"12:00-14:00	",-,"13:00-14:00	",2019IA
+"IA0105	",Química Inorgánica,García Rosas / Marina Isabel,"9:00-11:00	",-,-,"9:00-11:00	",-,2019IA
+"IA0160	",Economía ambiental,Muñoz Dzib / Melchor Ernesto,"13:00-14:00	","9:00-11:00	",-,-,-,2019IA
+"II0102	",Física experimental,Ramírez Carmona / Leslye Johanna,-,"7:00-9:00	",-,"7:00-9:00	",-,2019IA
+II0104,Medio ambiente y desarrollo sustentable,Palomares Hofmann / Hugo,-,-,"9:00-11:00	",-,"8:00-9:00	",2019IA
+"II0106	",Cálculo diferencial,Can Tun / Miguel Alberto,7:00-9:00,-,"7:00-9:00	",-,-,2019IA
+"IL0102	",Teoría general de sistemas,Sánchez Pérez / Víctor Leonel,-,"9:00-11:00	",-,"14:00-15:00	",-,2019IA
+DP0193,Taller de redacción profesional,Alvarado Martínez / María Del Carmen,-,-,17:00-18:00,-,16:00-18:00,2019IA
+DP0001,"Propedéutico de habilidades básicas de lectura, estudio e investigación",Trujillo Ramírez / Jorge Antonio,15:00-17:00,-,-,17:00-18:00,-,2019IA
+"DP0001	","Propedéutico de habilidades básicas de lectura, estudio e investigación",Landero Caraveo / Cledia María,-,17:00-18:00,-,-,15:00-17:00,2019IA
+DP0191,Taller de interacción grupal y competencias comunicativas,Diaz Barriga Cuevas / Claudia,-,-,-,15:00-17:00,17:00-18:00,2019IA
+DP0191,Taller de interacción grupal y competencias comunicativas,Diaz Barriga Cuevas / Claudia,18:00-20:00,-,-,17:00-18:00,-,2019IA
+DP0193,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,18:00-20:00,-,17:00-18:00,2019IA
+DP0194,Desarrollo de habilidades del pensamiento,Mendoza Luna / José Arturo,-,-,19:00-20:00,-,20:00-22:00,2019IA
+II0209,Cálculo integral,Canul Chalé / Juan Diego,17:00-19:00,-,16:00-17:00,-,-,2019IA
+DP0193,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,2019IA
+DP0193,Taller de redacción profesional,Caamal Lora / Gabriel Adoni,-,20:00-21:00,-,-,20:00-22:00,2019IA
+DP0194,Desarrollo de habilidades del pensamiento,Maich Sangiacomo / Karinna,-,20:00-22:00,-,20:00-21:00,-,2019IA
+DP0194,Desarrollo de habilidades del pensamiento,Aguilar Hernández / Miguel Ángel,-,19:00-20:00,-,-,18:00-20:00,2019IA
+DP0191,Taller de interacción grupal y competencias comunicativas,Maldonado Santiago / David,-,-,19:00-20:00,-,16:00-18:00,2019IA
+DP0193,Taller de redacción profesional,Caamal Lora / Gabriel Adoni,20:00-22:00,-,20:00-21:00,-,-,2019IA
+DP0001,"Propedéutico de habilidades básicas de lectura, estudio e investigación",Landero Caraveo / Cledia María,14:00-16:00,-,14:00-15:00,-,-,2019IA
+"II0106	",Cálculo diferencial,Zue / Juan Carlos,18:00-20:00,-,20:00-22:00,-,-,2019IA
+II0322,Álgebra lineal,Zavala Amezcua / Eva Mirelle,15:00-17:00,-,-,16:00-17:00,-,2019IA
+II0002,Propedéutico de matematicas para ingenierias,Caamal Uc / Abner Gadiel,7:00-9:00,-,7:00-9:00,-,-,2019IA
+"II0209	",Cálculo integral,Zavala Amezcua / Eva Mirelle,9:00-11:00,-,-,9:00-10:00,-,2019IA
+"DP0191	",Taller de interacción grupal y competencias comunicativas,Trujillo Ramírez / Jorge Antonio,-,20:00-21:00,-,20:00-22:00,-,2019IA
+"DP0194	",Desarrollo de habilidades del pensamiento,López Ávila / Nicté,19:00-21:00,-,-,-,20:00-21:00,2019IA
+"DP0191	",Taller de interacción grupal y competencias comunicativas,Maldonado Santiago / David,-,16:00-18:00,-,17:00-18:00,-,2019IA
+"DP0191	",Taller de interacción grupal y competencias comunicativas,Maldonado Santiago / David,-,-,18:00-19:00,-,18:00-20:00,2019IA
+DP0194,Desarrollo de habilidades del pensamiento,Cantero Flores / Víctor,19:00-20:00,-,-,18:00-20:00,-,2019IA
+"DP0194	",Desarrollo de habilidades del pensamiento,Aguilar Hernández / Miguel Ángel,-,16:00-18:00,-,16:00-17:00,-,2019IA
+DP0194,Desarrollo de habilidades del pensamiento,Aguilar Hernández / Miguel Ángel,-,18:00-19:00,-,19:00-21:00,-,2019IA
+"II0106	",Cálculo diferencial,Can Tun / Miguel Alberto,-,7:00-9:00,-,-,7:00-9:00,2019IA
+DP0396,Identidad y cultura,Barragan Garcia / Marco Antonio,-,-,7:00-9:00,-,8:00-9:00,2019IA
+IA0103,Microbiología,Méndez Torres / Jennifer,-,9:00-11:00,-,9:00-11:00,-,2019IA
+IA0204,Química analítica,García Rosas / Marina Isabel,11:00-14:00,-,-,-,-,2019IA
+IA0209,Ecuaciones diferenciales,Zavala Amezcua / Eva Mirelle,-,-,13:00-15:00,7:00-9:00,-,2019IA
+IA0261,Introducción a la ciencia del suelo,Méndez Torres / Jennifer,-,13:00-15:00,-,13:00-14:00,-,2019IA
+II0215,Electricidad y magnetismo,Ramírez Carmona / Leslye Johanna,9:00-11:00,-,9:00-11:00,-,-,2019IA
+II0216,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,9:00-11:00,2019IA
+II0319,Probabilidad y estadística,Sánchez Pérez / Víctor Leonel,-,7:00-9:00,-,-,7:00-8:00,2019IA
+II0422,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,2019IA
+DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,14:00-16:00,-,15:00-16:00,-,2019IA
+IA0103,Microbiología,Méndez Torres / Jennifer,-,-,15:00-17:00,-,15:00-17:00,2019IA
+IA0204,Química analítica,García Rosas / Marina Isabel,17:00-18:00,-,17:00-19:00,-,-,2019IA
+IA0209,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,2019IA
+II0215,Electricidad y magnetismo,Márquez Chacón / Wilberth,-,18:00-20:00,-,18:00-20:00,-,2019IA
+II0216,Termodinámica,Kauil Castillo / Gener Antonio,18:00-20:00,-,19:00-21:00,-,-,2019IA
+II0319,Probabilidad y estadística,Zavala Amezcua / Eva Mirelle,-,16:00-18:00,-,14:00-15:00,-,2019IA
+DP0295,Taller de formación en responsabilidad social y ambiental,Cucurachi Durán / Sergio Jesús,-,-,17:00-18:00,-,16:00-18:00,2019IA
+DP0295,Taller de formación en responsabilidad social y ambiental,Cerón Benitez / Mitzi Anayancin,-,-,19:00-21:00,-,20:00-21:00,2019IA
+DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,16:00-18:00,-,-,16:00-17:00,2019IA
+IL0204,Estadística analítica,Cruz Pichardo / Felisa,7:00-9:00,-,7:00-9:00,-,-,2019IA
+DP0295,Taller de formación en responsabilidad social y ambiental,Cucurachi Durán / Sergio Jesús,-,-,18:00-20:00,-,18:00-19:00,2019IA
+DP0295,Taller de formación en responsabilidad social y ambiental,Lugo Hernández / Lizbeth,-,-,17:00-19:00,17:00-18:00,-,2019IA
+DP0396,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,2019IA
+II0215,Electricidad y magnetismo,Casas De La Cruz / Rosa Guadalupe,11:00-13:00,-,-,13:00-15:00,-,2019IA
+II0215,Electricidad y magnetismo,Casas De La Cruz / Rosa Guadalupe,14:00-16:00,-,-,16:00-18:00,-,2019IA
+II0216,Termodinámica,Ramírez Carmona / Leslye Johanna,7:00-9:00,-,13:00-15:00,-,-,2019IA
+II0216,Termodinámica,Murillo Gómez / Gabriela Margarita,-,16:00-18:00,-,-,18:00-20:00,2019IA
+II0218,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,2019IA
+IL0204,Estadística analítica,Virgen Suárez / Jarmen Said,-,7:00-9:00,-,7:00-9:00,-,2019IA
+IL0204,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,2019IA
+DP0295,Taller de formación en responsabilidad social y ambiental,Blanco Valdés / Santiago,-,13:00-15:00,-,13:00-14:00,-,2019IA
+II0422,Taller de emprendedores,Contreras Macossay / Bani Obed,-,9:00-11:00,11:00-12:00,-,-,2019IA
+DP0295,Taller de formación en responsabilidad social y ambiental,Lugo Hernández / Lizbeth,-,-,19:00-21:00,-,20:00-21:00,2019IA
+DP0295,Taller de formación en responsabilidad social y ambiental,Muñoz Dzib / Melchor Ernesto,-,18:00-19:00,-,-,18:00-20:00,2019IA
+PIA0202,Prácticas Profesionales I,García Fernández / Alejandro,-,-,-,-,-,2019IA
+IA0307,Gestión ambiental,Sánchez Drewes / Erece,-,-,7:00-9:00,-,7:00-8:00,2019IA
+IA0310,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,2019IA
+IA0412,Calidad del agua,Sánchez Drewes / Erece,7:00-9:00,-,-,9:00-11:00,-,2019IA
+IA3428,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,2019IA
+IA3462,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,2019IA
+IA3463,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,9:00-11:00,-,-,-,9:00-10:00,2019IA
+IA0307,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,2019IA
+IA0310,Procesos fisicoquímicos,Murillo Gómez / Gabriela Margarita,19:00-20:00,-,-,19:00-21:00,-,2019IA
+IA0412,Calidad del agua,Duarte Muñoz / Vicente Antonio,20:00-22:00,-,-,-,18:00-20:00,2019IA
+IA3418,Geohidrología,Méndez Torres / Jennifer,-,-,-,16:00-18:00,17:00-18:00,2019IA
+IA3428,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,2019IA
+IA3431,Abastecimiento y Potabilización del agua,Sulvaran Alpuche / Gibran Jalil Gibran,-,19:00-20:00,20:00-22:00,-,-,2019IA
+IA3462,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,-,16:00-18:00,17:00-18:00,2019IA
+IA3463,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,-,18:00-19:00,15:00-17:00,-,-,2019IA
+II0323,Transferencia de calor,Murillo Gómez / Gabriela Margarita,17:00-19:00,-,17:00-18:00,-,-,2019IA
+II0423,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,2019IA
+DP0497,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,2019IA
+IA3401,Movilidad I,Hernández Matus / Jessica,-,-,-,-,-,2019IA
+DP0498,Problemas de México,Manzo de León / Leonela Paola,20:00-22:00,-,20:00-21:00,-,-,2019IA
+II0422,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,7:00-9:00,-,7:00-8:00,-,-,2019IA
+DP0497,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,20:00-22:00,-,-,17:00-18:00,-,2019IA
+DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,-,19:00-21:00,-,19:00-20:00,2019IA
+DP0396,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,2019IA
+DP0497,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,18:00-20:00,-,-,20:00-21:00,2019IA
+DP0497,Problemas del mundo contemporáneo,Castro Gonzalez / Julieta,-,-,19:00-20:00,-,20:00-22:00,2019IA
+PIA0303,Prácticas Profesionales II,García Fernández / Alejandro,-,-,-,-,-,2019IA
+IA3401,Movilidad I,Hernández Matus / Jessica,-,-,-,-,-,2019IA
+IA3402,Movilidad II,Hernández Matus / Jessica,-,-,-,-,-,2019IA
+IA3403,Movilidad III,Hernández Matus / Jessica,-,-,-,-,-,2019IA
+IA3404,Movilidad IV,Hernández Matus / Jessica,-,-,-,-,-,2019IA
+PIA0303,Prácticas Profesionales II,García Fernández / Alejandro,-,-,-,-,-,2019IA
+DP0499,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,2019IA
+IA0411,Planeación y evaluación de proyectos ambientales,Escandón Aguilar / Juan Antonio,-,-,18:00-20:00,18:00-19:00,-,2019IA
+IA0413,Tratamiento de residuos,Palomares Hofmann / Hugo,-,-,15:00-17:00,-,16:00-18:00,2019IA
+IA3421,Sistema de tratamiento de agua,Duarte Muñoz / Vicente Antonio,-,20:00-22:00,-,19:00-20:00,-,2019IA
+IA3422,Control de emisiones,Murillo Gómez / Gabriela Margarita,20:00-22:00,-,-,-,20:00-21:00,2019IA
+IA3426,Eficiencia energética,Pech Moo / Juan Rafael,-,-,-,20:00-22:00,21:00-22:00,2019IA
+IA3429,Energía del agua,Bárcenas Graniel / Juan Francisco,-,18:00-20:00,-,17:00-18:00,-,2019IA
+II3429,Evaluación de tecnologías e impacto ambiental,Chavez Uribe / Juan Miguel,-,16:00-18:00,-,15:00-16:00,-,2019IA
+IL0414,Taller de argumentación y técnicas de negociación,Contreras Macossay / Bani Obed,19:00-20:00,-,20:00-22:00,-,-,2019IA
+IT0427,Proyecto terminal,López Monzalvo / Francisco,16:00-19:00,-,-,-,-,2019IA
+DP0498,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,2019IA
+DP0499,Seminario de investigación,Barragan Garcia / Marco Antonio,16:00-19:00,-,-,-,-,2019IA
+DP0498,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,2019IA
+DP0499,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,9:00-11:00,2019IA
+DP0499,Seminario de investigación,Barragan Garcia / Marco Antonio,-,20:00-22:00,-,20:00-21:00,-,2019IA
+IA3401,Movilidad I,Hernández Matus / Jessica,-,-,-,-,-,2019IA
+II0422,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,7:00-9:00,-,7:00-8:00,-,-,2019IA
+DP0498,Problemas de México,Aguilar Hernández / Miguel Ángel,16:00-17:00,-,16:00-18:00,-,-,2019IA
+DP0498,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,2019IA
+DP0499,Seminario de investigación,Reyes Miranda / José Felipe,16:00-18:00,-,18:00-19:00,-,-,2019IA
+DP0498,Problemas de México,Manzo de León / Leonela Paola,18:00-20:00,-,-,-,18:00-19:00,2019IA
+PIA0405,Prácticas profesionales preespecialidad: Regeneración ambiental,García Fernández / Alejandro,-,-,-,-,-,2019IA
+IA3401,Movilidad I,Hernández Matus / Jessica,-,-,-,-,-,2019IA
+IA3402,Movilidad II,Hernández Matus / Jessica,-,-,-,-,-,2019IA
+IA3403,Movilidad III,Hernández Matus / Jessica,-,-,-,-,-,2019IA
+IA3404,Movilidad IV,Hernández Matus / Jessica,-,-,-,-,-,2019IA

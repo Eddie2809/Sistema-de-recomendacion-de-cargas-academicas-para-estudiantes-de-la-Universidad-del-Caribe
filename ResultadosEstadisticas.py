@@ -48,6 +48,7 @@ class ResultadosEstadisticas(ctk.CTkToplevel):
         axs[0].bar_label((axs[0].containers[0]), fontsize = 12,labels=self.convertirListaIntToListaString(array=y), label_type='edge')
         axs[0].set_title('Utilidad')
 
+        axs[1].set_xticklabels(x2,rotation=10, ha = 'right')
         axs[1].bar(x2,y2,facecolor = '#FF2929')
         axs[1].bar_label((axs[1].containers[0]), fontsize = 12,labels=self.convertirListaIntToListaString(array=y2), label_type='edge')
         axs[1].set_title('Costo')
