@@ -8,7 +8,9 @@ from Resultados import Resultados
 from Algoritmo import Algoritmo
 from Estilo import Estilo
 from ResultadosHorario import ResultadosHorario
+from CTkMessagebox import CTkMessagebox
 from ResultadosEstadisticas import ResultadosEstadisticas
+import pandas as pd
 import threading
 
 ctk.set_appearance_mode('light')
@@ -20,6 +22,10 @@ class App(ctk.CTk):
         self.enDesarrollo =  True
 
         estilo = Estilo()
+        self.oferta = pd.read_csv('./Archivos/oferta.csv',encoding = 'utf8')
+        self.planes = pd.read_csv('./Archivos/planes.csv',encoding = 'utf8')
+        self.seriaciones = pd.read_csv('./Archivos/seriacion.csv',encoding = 'utf8')
+        self.eleccionLibrePorCiclos = pd.read_csv('./Archivos/elib_por_ciclos.csv',encoding = 'utf8')
 
         self.title("Sistema de recomendación de cargas académicas")
         self.geometry('1200x600+0+0')
@@ -45,7 +51,7 @@ class App(ctk.CTk):
             'cpah': 0.6,
             'cprr': 0.1
         }
-        self.cantidadIdealMaterias = 3
+        self.cantidadIdealMaterias = 8
         self.disponibilidad = [
             [True,True,True,True,True,True,True,True,True,True,True,True,True,True,True],
             [True,True,True,True,True,True,True,True,True,True,True,True,True,True,True],
@@ -54,6 +60,7 @@ class App(ctk.CTk):
             [True,True,True,True,True,True,True,True,True,True,True,True,True,True,True]
         ]
         self.disponibilidadComoRestriccion = False
+        self.preespecialidad = None
 
         self.dataframeKardex = {}
         self.estudianteNombre = ""
@@ -96,16 +103,21 @@ class App(ctk.CTk):
 
         self.cambiarRuta(frame)        
 
-    def cambiarPreferencias(self,nuevaDisponibilidad,nuevosPesos,nuevoCIM,nuevoDCR):
+    def cambiarPreferencias(self,nuevaDisponibilidad,nuevosPesos,nuevoCIM,nuevoDCR,nuevaPreespecialidad):
         self.disponibilidad = nuevaDisponibilidad
         self.disponibilidadComoRestriccion = nuevoDCR
         self.cantidadIdealMaterias = nuevoCIM
         self.pesos = nuevosPesos
+        self.preespecialidad = nuevaPreespecialidad
 
     def setCancelarEjecucion(self,nuevoValor):
         if nuevoValor:
             self.cambiarFrame('Preferencias')
         self.cancelarEjecucion = nuevoValor
+
+    def obtenerDesempenoMaximo(self):
+        desempenoMaximo = self.pesos['upcc'] + self.pesos['upcm'] + self.pesos['upmr'] + self.pesos['cpdh'] + self.pesos['cpah'] 
+        return round(desempenoMaximo,2)
 
     def obtenerCancelarEjecucion(self):
         return self.cancelarEjecucion
@@ -125,11 +137,30 @@ class App(ctk.CTk):
         else:
             self.cancelarEjecucion = False
 
+    def obtenerPreespecialidades(self):
+        preespecialidades = list(self.planes.query('plan == "' + self.estudiantePlan + '"')['preespecialidad'].unique())
+        preespecialidadesFinal = []
+        for p in preespecialidades:
+            if str(p) == 'nan':
+                continue
+            preespecialidadesFinal.append(p)
+        return preespecialidadesFinal
+
     def ejecutarAlgoritmo(self):
         self.cambiarFrame('PantallaCarga')
         NGEN = 0 if self.enDesarrollo else 100
 
-        self.algoritmo = Algoritmo(kardex = self.estudiante.kardex, NGEN = NGEN, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,planNombre = self.estudiante.planNombre,periodoActual=202301,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
+        plan = self.planes.query('plan == "' + self.estudiantePlan + '"')
+        seriacion = self.seriaciones.query('plan == "' + self.estudiantePlan + '"')
+        eleccionLibrePorCiclos = self.eleccionLibrePorCiclos.query('plan == "' + self.estudiantePlan + '"')
+        oferta = self.oferta.query('plan == "' + self.estudiantePlan + '"')
+
+        if self.estudiantePlan != '2016ID' and self.estudiantePlan != '2018II':
+            CTkMessagebox(title="Error", message="Una disculpa, no tenemos los datos completos de tu plan de estudios.", icon="cancel")
+            self.cambiarFrame('Inicio')
+            return
+
+        self.algoritmo = Algoritmo(kardex = self.estudiante.kardex, eleccionLibrePorCiclos = self.eleccionLibrePorCiclos, situacion = self.estudianteSituacion, oferta = oferta, preespecialidad = self.preespecialidad, plan = plan, seriaciones = seriacion, NGEN = NGEN, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
         algThread = threading.Thread(target=lambda x: self.algoritmo.run(callbackTerminacion=self.cargarResultados,callbackProceso=self.frames['PantallaCarga'].actualizarBarra),args=(1,))
         algThread.start()
 

@@ -7,13 +7,19 @@ import random
 from math import factorial
 
 class Algoritmo():
-	def __init__(self,*args,NGEN,obtenerCancelarEjecucion,setCancelarEjecucion,kardex,planNombre,periodoActual,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,**kwargs):
+	def __init__(self,*args,NGEN = 100, oferta, eleccionLibrePorCiclos, preespecialidad, situacion, plan, seriaciones, obtenerCancelarEjecucion,setCancelarEjecucion,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,**kwargs):
 		super().__init__(*args,**kwargs)
 
 		self.obtenerCancelarEjecucion = obtenerCancelarEjecucion
 		self.setCancelarEjecucion = setCancelarEjecucion
 
-		self.amplitudAceptable = 7
+		self.oferta = oferta
+		self.plan = plan
+		self.preespecialidad = preespecialidad
+		self.situacion = situacion
+		self.seriaciones = seriaciones
+
+		self.amplitudAceptable = 8
 		self.dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
 		self.kardex = kardex
 		self.pesos = pesos
@@ -28,9 +34,20 @@ class Algoritmo():
 		self.cantidadIdealMaterias = cantidadIdealMaterias
 		self.disponibilidadComoRestriccion = disponibilidadComoRestriccion
 
-		self.oferta = pd.read_csv('./Archivos/oferta.csv')
-		self.plan = pd.read_csv('./Archivos/plan_2016.csv')
-		self.seriaciones = pd.read_csv('./Archivos/seriacion.csv')
+		self.eleccionLibre = plan.query('tipo == "Elección libre" or (tipo == "Preespecialidad" and preespecialidad != "' + preespecialidad + '")')
+		self.eleccionLibre = set(self.eleccionLibre['clave'])
+		self.eleccionLibrePorCiclos = []
+		self.eleccionLibrePorCiclos.append(eleccionLibrePorCiclos.query('ciclo == 1')['cantidad'].values[0])
+		self.eleccionLibrePorCiclos.append(eleccionLibrePorCiclos.query('ciclo == 2')['cantidad'].values[0])
+		self.eleccionLibrePorCiclos.append(eleccionLibrePorCiclos.query('ciclo == 3')['cantidad'].values[0])
+
+		self.eleccionLibreCargadasPorCiclo = [0,0,0]
+		for clave in kardex['clave'].values:
+			if clave in self.eleccionLibre:
+				ciclo = plan.query('clave == "' + clave + '"')['ciclos'].values[0]
+				ciclo = ciclo - 2 if ciclo == 4 else ciclo - 1
+				self.eleccionLibreCargadasPorCiclo[ciclo] += 1
+
 		self.ofertaUtil = self.obtenerOfertaUtil()
 
 		creator.create("FitnessMin", base.Fitness, weights=(1,1,1,-1,-1))
@@ -194,28 +211,19 @@ class Algoritmo():
 					continue
 		ofertaUtil = oferta.loc[list(ofertaUtilIndex)]
 		
-		ofertaUtil = pd.merge(ofertaUtil,plan,how='left',on='clave')[['clave','ciclos','Nombre','Maestro','Lunes','Martes','Miercoles','Jueves','Viernes']]
+		ofertaUtil = pd.merge(ofertaUtil,plan,how='left',on='clave')[['clave','ciclos','Nombre','Maestro','Lunes','Martes','Miercoles','Jueves','Viernes','tipo']]
 		
 		#Se eliminan materias de elección libre de primer y segundo ciclo
-		if(materiaHaSidoAprobada('IL0102')):
-			ofertaUtil = ofertaUtil.query('clave != "ID0160"')
-		if(materiaHaSidoAprobada('ID0160')):
-			ofertaUtil = ofertaUtil.query('clave != "IL0102"')
-		
-		if(materiaHaSidoAprobada('IT0103')):
-			ofertaUtil = ofertaUtil.query('clave != "ID0161"')
-		if(materiaHaSidoAprobada('ID0161')):
-			ofertaUtil = ofertaUtil.query('clave != "IT0103"')
-			
-		if(materiaHaSidoAprobada('ID0264')):
-			ofertaUtil = ofertaUtil.query('clave != "ID0262"')
-		if(materiaHaSidoAprobada('ID0262')):
-			ofertaUtil = ofertaUtil.query('clave != "ID0264"')
-			
-		if(materiaHaSidoAprobada('ID0263')):
-			ofertaUtil = ofertaUtil.query('clave != "ID0265"')
-		if(materiaHaSidoAprobada('ID0265')):
-			ofertaUtil = ofertaUtil.query('clave != "ID0263"')
+		indices = set(ofertaUtil.index)
+		indicesUtiles = indices.copy()
+
+		for i in indices:
+		    if ofertaUtil.loc[i]['clave'] in self.eleccionLibre:
+		        ciclo = ofertaUtil.loc[i]['ciclos']
+		        ciclo = 2 if ciclo > 2 else ciclo - 1
+		        if self.eleccionLibrePorCiclos[ciclo] == self.eleccionLibreCargadasPorCiclo[ciclo]:
+		            indicesUtiles.remove(i)
+		ofertaUtil = ofertaUtil.loc[list(indicesUtiles)]
 			
 		#Si la disponibilidad de horario es una restricción, entonces elimina las materias que violen la restricción
 		if(disponibilidadComoRestriccion):
@@ -282,17 +290,16 @@ class Algoritmo():
 			return False
 		
 		#Si se llevan dos materias de elección libre del ciclo 1 y 2
-		clavesSet = set(datosCarga['clave'])
-		
-		if 'IL0102' in clavesSet and 'ID0160' in clavesSet:
+		eleccionLibreCargadas = [self.eleccionLibreCargadasPorCiclo[0],self.eleccionLibreCargadasPorCiclo[1],self.eleccionLibreCargadasPorCiclo[2]]
+		for materia in datosCarga.iloc:
+			if materia['clave'] in self.eleccionLibre:
+				ciclo = materia['ciclos']
+				ciclo = 2 if ciclo > 2 else ciclo - 1	
+				eleccionLibreCargadas[ciclo] += 1
+				
+		if eleccionLibreCargadas[0] > self.eleccionLibreCargadasPorCiclo[0] or eleccionLibreCargadas[1] > self.eleccionLibrePorCiclos[1] or eleccionLibreCargadas[2] > self.eleccionLibrePorCiclos[2]:
 			return False
-		if 'IT0103' in clavesSet and 'ID0161' in clavesSet:
-			return False
-		if 'ID0264' in clavesSet and 'ID0262' in clavesSet:
-			return False
-		if 'ID0263' in clavesSet and 'ID0265' in clavesSet:
-			return False
-		
+
 		return True
 
 	def obtenerHorario(self,carga):
@@ -328,6 +335,9 @@ class Algoritmo():
 	def UpCM(self,solucion):
 		if(self.cantidadIdealMaterias == 0):
 			return 1
+
+		if type(solucion) == pd.DataFrame:
+			solucion = list(solucion['clave'].values)
 		
 		solucionSet = set(solucion)
 		
@@ -532,8 +542,10 @@ class Algoritmo():
 			record = stats.compile(pop)
 			logbook.record(gen=gen, evals=len(invalid_ind), **record)
 
-			callbackProceso(porcentaje = gen,tiempoTranscurrido = (time.time() - tiempo_inicio))
+			if callbackProceso != None:
+				callbackProceso(porcentaje = gen,tiempoTranscurrido = (time.time() - tiempo_inicio))
 
-		callbackTerminacion(pop)
+		if callbackTerminacion != None:
+			callbackTerminacion(pop,logbook)
 
 		return pop, logbook

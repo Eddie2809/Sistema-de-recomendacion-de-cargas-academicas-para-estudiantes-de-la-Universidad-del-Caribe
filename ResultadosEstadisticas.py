@@ -8,7 +8,7 @@ class ResultadosEstadisticas(ctk.CTkToplevel):
     def __init__(self,*args,datos,controlador,**kwargs):
         super().__init__(*args,**kwargs)
 
-        self.geometry("830x600")
+        self.geometry("830x600+10+10")
         self.resizable(0,0)
         self.controlador = controlador
         self.estilo = Estilo()
@@ -23,11 +23,11 @@ class ResultadosEstadisticas(ctk.CTkToplevel):
         #Obtener estadísticas
         upcc,upmr,upcm,cpdh,cpah = controlador.algoritmo.obtenerDesempeno(datos)
 
-        upcc = self.redondear(upcc)
-        upmr = self.redondear(upmr)
-        upcm = self.redondear(upcm)
-        cpdh = self.redondear(cpdh)
-        cpah = self.redondear(cpah)
+        upcc = round(abs(upcc)*100,2)
+        upmr = round(abs(upmr)*100,2)
+        upcm = round(abs(upcm)*100,2)
+        cpdh = round(abs(cpdh)*100,2)
+        cpah = round(abs(cpah)*100,2)
 
         x = ["Cierre de ciclos", "Selección de materias reprobadas", "Cantidad ideal de materias"]
         y = [upcc, upmr, upcm]
@@ -66,6 +66,3 @@ class ResultadosEstadisticas(ctk.CTkToplevel):
             listaString.append(aux)
         return listaString
         
-    def redondear(self, num):
-        num = (num * (-1)) if num < 0 else num
-        return round(num*100,2)

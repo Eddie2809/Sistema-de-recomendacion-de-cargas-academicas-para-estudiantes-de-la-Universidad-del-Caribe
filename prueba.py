@@ -1,23 +1,8 @@
-import customtkinter as ctk
-from Estilo import Estilo
-import pandas as pd
+from pdfReader import Student
 
-ctk.set_appearance_mode('light')
+gabo =  'C:/Users/eddie/OneDrive/Escritorio/Proyecto Terminal/Recomendaci-n-de-cargas-acad-micas-basado-en-optimizaci-n-multiobjetivo/Kardex/estudiante_cardex190300697454.pdf'
+manu = 'C:/Users/eddie/OneDrive/Escritorio/Proyecto Terminal/Recomendaci-n-de-cargas-acad-micas-basado-en-optimizaci-n-multiobjetivo/Kardex/1.pdf'
 
-class App(ctk.CTk):
-    def __init__(self):
-        super().__init__()
+estudiante = Student(ruta = gabo,periodoActual = 202301)
 
-        self.estilo = Estilo()
-
-        self.title("Sistema de recomendación de cargas académicas")
-        self.geometry('1200x600')
-        self.minsize(1200,600)
-
-        self.grid_columnconfigure(0,weight=1)
-        self.grid_rowconfigure(0,weight=1)
-
-
-if __name__ == "__main__":
-    app = App()
-    app.mainloop()
+print(estudiante)

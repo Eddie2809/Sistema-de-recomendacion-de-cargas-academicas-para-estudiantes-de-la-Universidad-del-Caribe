@@ -136,7 +136,7 @@ class CantidadDeAsignaturas(ctk.CTkFrame):
         self.cambiarCantidadIdealMaterias = cambiarCantidadIdealMaterias
 
         self.cdaEntrada = ctk.CTkComboBox(self,values=['3','4','5','6','7','8','9'],command=self.onCombo,width=50,bg_color='transparent')
-        self.cdaEntrada.set('7')
+        self.cdaEntrada.set('8')
         self.cdaEntrada.grid(row = 0, column = 0,padx = (0,15))
 
         self.cdaIndefinido = ctk.CTkCheckBox(self,text = 'Indefinido',command=self.onIndefinido,bg_color='transparent')
@@ -161,7 +161,7 @@ class CantidadDeAsignaturas(ctk.CTkFrame):
 
 
 class PreferenciasIzquierda(ctk.CTkFrame):
-    def __init__(self,*args,cantidadIdealMaterias,pesos,cambiarPeso,cambiarCantidadIdealMaterias,**kwargs):
+    def __init__(self,*args,cantidadIdealMaterias,cambiarPreespecialidad,pesos,cambiarPeso,cambiarCantidadIdealMaterias,controlador,**kwargs):
         super().__init__(*args,**kwargs)
 
         estilo = Estilo()
@@ -177,8 +177,18 @@ class PreferenciasIzquierda(ctk.CTkFrame):
         self.cda = CantidadDeAsignaturas(self,fg_color='transparent',cantidadIdealMaterias=cantidadIdealMaterias,cambiarCantidadIdealMaterias=cambiarCantidadIdealMaterias)
         self.cda.grid(row = 2, column = 0, sticky='ew',pady=(0,15))
 
+        self.preespecialidadTitulo = ctk.CTkLabel(self,text='Selecciona tu preespecialidad', font=estilo.FUENTE_SUBTITULO)
+        self.preespecialidadTitulo.grid(row = 3, column = 0, sticky = 'w', pady = (0,10))
+
+        self.preespecialidadTexto = ctk.CTkLabel(self,text='Selecciona una preespecialidad de tu programa educativo. Esto es necesario para saber si las materias de dicha preespecialidad serán consideradas como básicas o de elección libre.', font=estilo.FUENTE_TEXTO, wraplength = 465, justify = 'left')
+        self.preespecialidadTexto.grid(row = 4, column = 0, pady = (0,15), sticky = 'w')
+
+        self.preespecialidadCombobox = ctk.CTkComboBox(self,values=controlador.obtenerPreespecialidades(),width=200,bg_color='transparent')
+        self.preespecialidadCombobox.configure(command = lambda x: cambiarPreespecialidad(self.preespecialidadCombobox.get()))
+        self.preespecialidadCombobox.grid(row = 5, column = 0,padx = (0,15), sticky = 'w')
+
         self.opcionesAvanzadasBoton = ctk.CTkButton(self,text='Opciones avanzadas',command=self.alternarPrefAvanzadas,fg_color='white',hover_color= '#E1E1E1',font=estilo.FUENTE_TEXTO,text_color=estilo.GRIS_OSCURO,anchor='w',border_width=1,border_color='black',width = 465)
-        self.opcionesAvanzadasBoton.grid(row = 3, column = 0,sticky='w', pady = (0,20))
+        self.opcionesAvanzadasBoton.grid(row = 6, column = 0,sticky='w', pady = 20)
 
         self.pesos = Pesos(self,pesos=pesos,cambiarPeso=cambiarPeso)
 
@@ -186,7 +196,7 @@ class PreferenciasIzquierda(ctk.CTkFrame):
         if self.prefAvanzadasEstado:
             self.pesos.grid_forget()
         else:
-            self.pesos.grid(row = 4, column = 0, sticky = 'w')
+            self.pesos.grid(row = 7, column = 0, sticky = 'w')
         self.prefAvanzadasEstado = not(self.prefAvanzadasEstado)
 
 
@@ -271,20 +281,9 @@ class Horario(ctk.CTkFrame):
 
 
     def obtenerHora(self,hora):
-        if hora < 10:
-            horaTexto = '0' + str(hora) + ':00 - '
-        else:
-            horaTexto = str(hora) + ':00 - '
-
-        if hora + 1 < 10:
-            horaTexto += ('0' + str(hora+1) + ':00')
-        else:
-            horaTexto += (str(hora+1) + ':00')
-
-        return horaTexto
-
-
-
+        horaTexto = ('0' + str(hora) + ':00 - ') if hora < 10 else (str(hora) + ':00 - ')
+        minutosTexto = ('0' + str(hora+1) + ':00') if hora + 1 < 10 else (str(hora+1) + ':00')
+        return horaTexto + minutosTexto
 
 class Celda(ctk.CTkButton):
     def __init__(self,*args,cambiarDisponibilidad,dia,hora,**kwargs):
@@ -328,11 +327,12 @@ class Preferencias(ctk.CTkScrollableFrame):
         self.cantidadIdealMaterias = controlador.cantidadIdealMaterias
         self.disponibilidad = controlador.disponibilidad
         self.disponibilidadComoRestriccion = controlador.disponibilidadComoRestriccion
+        self.preespecialidad = controlador.preespecialidad
 
         self.titulo = ctk.CTkLabel(self,text='Preferencias',font=estilo.FUENTE_TITULO, text_color = estilo.COLOR_TEXTO)
         self.titulo.grid(row=0,column=0,sticky='w', pady = (0,15))
 
-        self.prefIzq = PreferenciasIzquierda(self,fg_color='transparent',cantidadIdealMaterias=self.cantidadIdealMaterias,pesos=self.pesos,cambiarPeso=self.cambiarPeso,cambiarCantidadIdealMaterias=self.cambiarCantidadIdealMaterias)
+        self.prefIzq = PreferenciasIzquierda(self, cambiarPreespecialidad = self.cambiarPreespecialidad,fg_color='transparent',controlador = controlador,cantidadIdealMaterias=self.cantidadIdealMaterias,pesos=self.pesos,cambiarPeso=self.cambiarPeso,cambiarCantidadIdealMaterias=self.cambiarCantidadIdealMaterias)
         self.prefIzq.grid(row = 1, column = 0,sticky='nsew')
 
         self.prefDer = PreferenciasDerecha(self,fg_color='transparent',controlador=controlador,cambiarDisponibilidad = self.cambiarDisponibilidad,hacerCambios = self.hacerCambios,cambiarDisponibilidadComoRestriccion=self.cambiarDisponibilidadComoRestriccion)
@@ -340,6 +340,8 @@ class Preferencias(ctk.CTkScrollableFrame):
 
     def cambiarPeso(self,nuevoPeso,objetivo):
         self.pesos[objetivo] = nuevoPeso
+    def cambiarPreespecialidad(self,nuevaPreespecialidad):
+        self.preespecialidad = nuevaPreespecialidad
     def cambiarCantidadIdealMaterias(self,nuevaCantidadIdealMaterias):
         self.cantidadIdealMaterias = int(nuevaCantidadIdealMaterias)
     def cambiarDisponibilidad(self,dia,hora):
@@ -347,4 +349,4 @@ class Preferencias(ctk.CTkScrollableFrame):
     def cambiarDisponibilidadComoRestriccion(self):
         self.disponibilidadComoRestriccion = not(self.disponibilidadComoRestriccion)
     def hacerCambios(self):
-        self.controlador.cambiarPreferencias(self.disponibilidad,self.pesos,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion)
+        self.controlador.cambiarPreferencias(self.disponibilidad,self.pesos,self.cantidadIdealMaterias,self.disponibilidadComoRestriccion,self.preespecialidad)

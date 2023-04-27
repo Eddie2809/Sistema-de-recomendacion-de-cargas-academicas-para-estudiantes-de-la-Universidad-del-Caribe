@@ -33,11 +33,20 @@ class DatosCarga(ctk.CTkFrame):
         self.desempenoContenedor = ctk.CTkFrame(self,fg_color = 'transparent')
         self.desempenoContenedor.grid(row = 1, column = 0,pady=(0,8))
 
-        desempeno = 'Desempeño: ' + str(datos.iloc[0]['desempeno']) + ' / 5'
-        color = estiloG.RANGO_DE_COLORES[99 - int(round((datos.iloc[0]['desempeno'] * 99) / 5, 0))]
+        desempenoMaximo = self.controlador.obtenerDesempenoMaximo()
+        desempeno = (datos.iloc[0]['desempeno'] * 100) / desempenoMaximo
+        desempeno = round(desempeno,2)
+
+        if desempeno <= 50:
+            color = estiloG.ROJO
+        elif desempeno <= 80:
+            color = estiloG.AMARILLO
+        else:
+            color = estiloG.VERDE
+
         self.desempenoColor = ctk.CTkButton(self.desempenoContenedor,text = '', fg_color = color, width = 20, height = 20, corner_radius = 10, hover_color = color)
         self.desempenoColor.grid(row = 0, column = 0, padx=(15), sticky = 'w')
-        self.desempenoLabel = ctk.CTkLabel(self.desempenoContenedor,text=desempeno,font=estiloG.FUENTE_TEXTO_BOLD)
+        self.desempenoLabel = ctk.CTkLabel(self.desempenoContenedor,text='Desempeño: ' + str(desempeno) + ' / 100',font=estiloG.FUENTE_TEXTO_BOLD)
         self.desempenoLabel.grid(row = 0, column = 1, sticky = 'w')
 
         self.botones = ctk.CTkFrame(self, fg_color = 'transparent')
@@ -61,7 +70,7 @@ class DatosCarga(ctk.CTkFrame):
         else:
             self.controladorResultados.ventanaEmergente.destroy()
             self.controladorResultados.ventanaEmergente = ventanaClase(controlador = self.controlador,datos = self.datos) 
-        self.controladorResultados.ventanaEmergente.focus_set()
+        self.controladorResultados.ventanaEmergente.grab_set()
 
     def cambiarFavorito(self):
         idCarga = self.datos.iloc[0]['id_carga']

@@ -8,7 +8,8 @@ class Student():
         self.periodoActual = periodoActual
         self.ruta = ruta
         self.nombre,self.matricula,self.situacion,self.planNombre,self.kardex = self.obtenerDatosKardex()
-        self.plan = pd.read_csv("./Archivos/plan_2016.csv") 
+        self.plan = pd.read_csv("./Archivos/planes.csv") 
+        self.plan = self.plan.query('plan == "' + self.planNombre + '"')
         self.creditos = self.obtenerCreditos()
         
 
