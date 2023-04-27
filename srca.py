@@ -1,5 +1,6 @@
 import customtkinter as ctk
 import numpy as np
+import pandas as pd
 from Preferencias import Preferencias
 from Verificacion import Verificacion
 from Inicio import Inicio
@@ -62,6 +63,12 @@ class App(ctk.CTk):
         self.estudiantePlan = ""
 
         self.cancelarEjecucion = False
+
+        self.tasaReprobacion = pd.read_csv("Archivos/tasasDeReprobacion.csv")
+        self.datosCeneval = pd.read_csv("Archivos/datosCeneval.csv")
+        self.datosEntrenamientoKM = pd.read_csv("Archivos/vectoresCargas.csv")
+        self.datosEntrenamientoModelo = pd.read_csv("Archivos/datosEntrenamiento.csv")
+
         
         self.cambiarFrame("Inicio")
 
@@ -129,7 +136,7 @@ class App(ctk.CTk):
         self.cambiarFrame('PantallaCarga')
         NGEN = 0 if self.enDesarrollo else 100
 
-        self.algoritmo = Algoritmo(kardex = self.estudiante.kardex, NGEN = NGEN, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,planNombre = self.estudiante.planNombre,periodoActual=202301,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
+        self.algoritmo = Algoritmo(kardex = self.estudiante.kardex, datosEntrenamientoModelo = self.datosEntrenamientoModelo, datosEntrenamientoKM=self.datosEntrenamientoKM, datosCeneval=self.datosCeneval, tasasReprobacion=self.tasaReprobacion, situacion=self.estudianteSituacion, matricula=self.estudianteMatricula, NGEN = NGEN, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,planNombre = self.estudiante.planNombre,periodoActual=202301,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
         algThread = threading.Thread(target=lambda x: self.algoritmo.run(callbackTerminacion=self.cargarResultados,callbackProceso=self.frames['PantallaCarga'].actualizarBarra),args=(1,))
         algThread.start()
 
