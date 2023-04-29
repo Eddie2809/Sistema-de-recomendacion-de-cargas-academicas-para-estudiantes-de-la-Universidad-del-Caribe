@@ -28,7 +28,7 @@ class ResultadosEstadisticas(ctk.CTkToplevel):
         upcm = round(abs(upcm)*100,2)
         cpdh = round(abs(cpdh)*100,2)
         cpah = round(abs(cpah)*100,2)
-        cprr = round(abs(cpah)*100,2)
+        cprr = round(abs(cprr)*100,2)
 
         x = ["Cierre de ciclos", "Selección de materias reprobadas", "Cantidad ideal de materias"]
         y = [upcc, upmr, upcm]

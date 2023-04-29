@@ -9,7 +9,7 @@ import random
 from math import factorial
 
 class Algoritmo():
-	def __init__(self,*args,NGEN = 100, oferta,periodoActual = 202301, eleccionLibrePorCiclos, preespecialidad, situacion,plan,seriaciones, obtenerCancelarEjecucion,setCancelarEjecucion,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,datosEntrenamientoKM,datosEntrenamientoModelo,datosCeneval,tasasReprobacion,matricula,**kwargs):
+	def __init__(self,*args,NGEN = 100, oferta,periodoActual = 202301, eleccionLibrePorCiclos, preespecialidad, situacion,plan,seriaciones, obtenerCancelarEjecucion,setCancelarEjecucion,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,datosEntrenamientoKM,datosCeneval,tasasReprobacion,matricula,**kwargs):
 		super().__init__(*args,**kwargs)
 
 		self.obtenerCancelarEjecucion = obtenerCancelarEjecucion
@@ -31,7 +31,6 @@ class Algoritmo():
 		self.tasasReprobacion = tasasReprobacion
 		self.datosCeneval = datosCeneval
 		self.datosEntrenamientoKM = datosEntrenamientoKM
-		self.datosEntrenamientoModelo = datosEntrenamientoModelo
 		self.disponibilidad = pd.DataFrame({
 		    "hora": [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],
 		    "Lunes": disponibilidad[0],
@@ -72,16 +71,17 @@ class Algoritmo():
 		self.toolbox.register("mate", tools.cxUniform,indpb=0.5)
 		self.toolbox.register("mutate", self.mutacionUniforme,prob=0.15)
 
-		self.NOBJ = 5
+		self.NOBJ = 6
 		self.K = 10
 		self.NDIM = self.NOBJ + self.K - 1
-		self.P = 12
+		self.P = 5
 		self.H = factorial(self.NOBJ + self.P - 1) / (factorial(self.P) * factorial(self.NOBJ - 1))
 		self.MU = int(self.H + (4 - self.H % 4))
 		self.NGEN = NGEN
 		self.CXPB = 1.0
 		self.MUTPB = 1.0
 		self.ref_points = tools.uniform_reference_points(self.NOBJ, self.P)
+		print("H: ", self.H, " MU: ", self.MU)
 
 		self.toolbox.register("select", tools.selNSGA3, ref_points=self.ref_points)
 
@@ -160,7 +160,15 @@ class Algoritmo():
 
 		# Inicialización y entrenamiento del MPRREUC
 		self.mprreuc = LogisticRegressionCV(solver='lbfgs',cv=29, random_state=0)
-		self.entrenarMPRREUC()
+		self.coeficientesMPRREUC = np.array([[-1.28179085e-03, -3.95783640e-04, -1.25112137e-04,
+         2.01817818e-03, -1.22751778e-03,  2.28839006e-04,
+         1.10031265e-04,  2.68732520e-05, -8.38104493e-05,
+         5.02971792e-05,  2.01703397e-04, -5.07588959e-04,
+         8.93812837e-05, -2.46451676e-04,  2.64577131e-04,
+         2.62685047e-04]])
+		self.mprreuc.coef_ = self.coeficientesMPRREUC
+		self.mprreuc.intercept_ = np.array(4.32947121e-05)
+		self.mprreuc.classes_ = np.array([0, 1])
 
 		# Asignación de variables necesarias para MPRREUC
 		self.año_encurso = (int(str(periodoActual)[2:4])) - int(self.matricula[:2])
@@ -196,15 +204,6 @@ class Algoritmo():
 			self.ceneval_esp = 1086
 		else:
 			self.ceneval_esp = int(self.datosCeneval.query("matricula == "+self.matricula)["ceneval_esp"].values)
-		
-
-	def entrenarMPRREUC(self):
-		# Entrena el modelo con los datos recibidos. Notese que no hay conjunto de prueba
-		trainX = self.datosEntrenamientoModelo
-		trainY = trainX['carga_aprobada'].to_numpy()
-		del trainX["carga_aprobada"]
-		
-		self.mprreuc.fit(trainX, trainY)
 
 	def obtenerTotalRecursando(self, datosCarga):
 		cantidad = 0
@@ -290,8 +289,8 @@ class Algoritmo():
 	    return self.ordenarRecomendacionesPor(recomendacionesFinal,'despon')
 
 	def ordenarRecomendacionesPor(self,recomendaciones,objetivo):
-		func = self.UpCC if objetivo == 'upcc' else self.UpMR if objetivo == 'upmr' else self.UpCM if objetivo == 'upcm' else self.CpDH if objetivo == 'cpdh' else self.CpAH if objetivo == 'cpah' else self.CpHL if objetivo == 'uphl' else self.obtenerDesempenoPonderado
-		orden = 1 if (objetivo == 'cpdh' or objetivo == 'cpah' or objetivo == 'cphl') else -1
+		func = self.UpCC if objetivo == 'upcc' else self.UpMR if objetivo == 'upmr' else self.UpCM if objetivo == 'upcm' else self.CpDH if objetivo == 'cpdh' else self.CpAH if objetivo == 'cpah' else self.CpHL if objetivo == 'uphl' else self.CpRR if objetivo == 'uprr' else self.obtenerDesempenoPonderado
+		orden = 1 if (objetivo == 'cpdh' or objetivo == 'cpah' or objetivo == 'cphl' or objetivo == 'cprr') else -1
 		return sorted(recomendaciones,key = lambda x: orden * func(x))
 
 	def obtenerOfertaUtil(self):
@@ -559,11 +558,7 @@ class Algoritmo():
 	def CpRR(self, solucion):
 		datosCarga = solucion if type(solucion) == pd.DataFrame else self.obtenerDatosCarga(solucion)
 		entrada = [[self.obtenerTasaRepCarga(datosCarga), self.ceneval_analitico, self.ceneval_matematico, self.ceneval_lengua, self.ceneval_esp, self.tasa_aprob_per_prev, self.carrera_IA, self.carrera_IDeIO, self.carrera_NI, self.carrera_TS, self.semestre_Otoño, self.obtenerComplejidadCarga5(datosCarga), self.año_encurso, self.obtenerTotalRecursando(datosCarga), self.situacion_Condicionado, self.situacion_Irregular]]
-		pdentrada = pd.DataFrame(entrada , columns = ['tasa_rep_carga', 'ceneval_analitico', 'ceneval_matematico',
-       'ceneval_lengua', 'ceneval_esp', 'tasa_aprob_per_prev',
-       'carrera_IA', 'carrera_IDeIO','carrera_NI', 'carrera_TS', 'semestre_Otonio',
-       'complejidad_carga5', 'anio_encurso', 'total_recursando',
-       'situacion_Condicionado', 'situacion_Irregular'])
+		pdentrada = pd.DataFrame(entrada)
 		riesgoReprobacion = self.mprreuc.predict_proba(pdentrada)
 		return riesgoReprobacion[0][0]
 
@@ -584,7 +579,7 @@ class Algoritmo():
 			"upcm": (upcm * self.pesos["upcm"]),
 			"cpdh": self.pesos["cpdh"] - (cpdh * self.pesos["cpdh"]),
 			"cpah": self.pesos["cpah"] - (cpah * self.pesos["cpah"]),
-			"cpah": self.pesos["cprr"] - (cprr * self.pesos["cprr"]),
+			"cprr": self.pesos["cprr"] - (cprr * self.pesos["cprr"]),
 		}
 		
 		return sum(utilidades.values())
