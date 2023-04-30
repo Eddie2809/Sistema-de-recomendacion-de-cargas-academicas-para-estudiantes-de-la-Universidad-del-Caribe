@@ -166,7 +166,7 @@ class App(ctk.CTk):
             self.cambiarFrame('Inicio')
             return
 
-        self.algoritmo = Algoritmo(kardex = self.estudiante.kardex, eleccionLibrePorCiclos = self.eleccionLibrePorCiclos,datosEntrenamientoKM=self.datosEntrenamientoKM,datosCeneval=self.datosCeneval,tasasReprobacion=self.tasaReprobacion,matricula=self.estudianteMatricula, situacion = self.estudianteSituacion, oferta = oferta, preespecialidad = self.preespecialidad, plan = plan, seriaciones = seriacion, NGEN = NGEN, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
+        self.algoritmo = Algoritmo(kardex = self.estudiante.kardex, estudiantePlan = self.estudiantePlan, eleccionLibrePorCiclos = self.eleccionLibrePorCiclos,datosEntrenamientoKM=self.datosEntrenamientoKM,datosCeneval=self.datosCeneval,tasasReprobacion=self.tasaReprobacion,matricula=self.estudianteMatricula, situacion = self.estudianteSituacion, oferta = oferta, preespecialidad = self.preespecialidad, plan = plan, seriaciones = seriacion, NGEN = NGEN, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
         algThread = threading.Thread(target=lambda x: self.algoritmo.run(callbackTerminacion=self.cargarResultados,callbackProceso=self.frames['PantallaCarga'].actualizarBarra),args=(1,))
         algThread.start()
 

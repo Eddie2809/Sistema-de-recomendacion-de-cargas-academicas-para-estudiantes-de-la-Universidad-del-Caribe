@@ -9,7 +9,7 @@ import random
 from math import factorial
 
 class Algoritmo():
-	def __init__(self,*args,NGEN = 100, oferta,periodoActual = 202301, eleccionLibrePorCiclos, preespecialidad, situacion,plan,seriaciones, obtenerCancelarEjecucion,setCancelarEjecucion,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,datosEntrenamientoKM,datosCeneval,tasasReprobacion,matricula,**kwargs):
+	def __init__(self,*args,NGEN = 100, oferta,periodoActual = 202301, estudiantePlan, eleccionLibrePorCiclos, preespecialidad, situacion,plan,seriaciones, obtenerCancelarEjecucion,setCancelarEjecucion,kardex,pesos,disponibilidad,cantidadIdealMaterias,disponibilidadComoRestriccion,datosEntrenamientoKM,datosCeneval,tasasReprobacion,matricula,**kwargs):
 		super().__init__(*args,**kwargs)
 
 		self.obtenerCancelarEjecucion = obtenerCancelarEjecucion
@@ -24,9 +24,8 @@ class Algoritmo():
 		self.amplitudAceptable = 8
 		self.dias = ['Lunes','Martes','Miercoles','Jueves','Viernes']
 		self.kardex = kardex
-		self.situacion = situacion
 		self.matricula = matricula
-		self.carrera = "Ingenieria en Datos e Inteligencia Organizacional"
+		self.estudiantePlan = estudiantePlan
 		self.pesos = pesos
 		self.tasasReprobacion = tasasReprobacion
 		self.datosCeneval = datosCeneval
@@ -81,7 +80,6 @@ class Algoritmo():
 		self.CXPB = 1.0
 		self.MUTPB = 1.0
 		self.ref_points = tools.uniform_reference_points(self.NOBJ, self.P)
-		print("H: ", self.H, " MU: ", self.MU)
 
 		self.toolbox.register("select", tools.selNSGA3, ref_points=self.ref_points)
 
@@ -176,10 +174,10 @@ class Algoritmo():
 
 		self.asignarCeneval()
 		
-		self.carrera_IA = 1 if self.carrera == "Ingenieria Ambiental" else 0
-		self.carrera_IDeIO = 1 if self.carrera == "Ingenieria en Datos e Inteligencia Organizacional" else 0
-		self.carrera_NI = 1 if self.carrera == "Negocios Internacionales" else 0
-		self.carrera_TS = 1 if self.carrera == "Turismo Sustentable y Gestion Hotelera" else 0
+		self.carrera_IA = 1 if self.estudiantePlan[4:6] == "IA" else 0
+		self.carrera_IDeIO = 1 if self.estudiantePlan[4:6] == "ID" else 0
+		self.carrera_NI = 1 if self.estudiantePlan[4:6] == "NI" else 0
+		self.carrera_TS = 1 if self.estudiantePlan[4:6] == "TS" else 0
 
 		self.semestre_Otoño = 1 if str(periodoActual)[4:6] == "03" else 0
 		self.situacion_Condicionado = 1 if self.situacion == "Condicionado" else 0
