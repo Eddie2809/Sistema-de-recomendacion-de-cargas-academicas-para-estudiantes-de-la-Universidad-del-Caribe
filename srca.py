@@ -20,7 +20,7 @@ class App(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.enDesarrollo =   True
+        self.enDesarrollo = False
 
         estilo = Estilo()
         self.oferta = pd.read_csv('./Archivos/oferta.csv',encoding = 'utf8')
@@ -74,7 +74,6 @@ class App(ctk.CTk):
         self.tasaReprobacion = pd.read_csv("Archivos/tasasDeReprobacion.csv")
         self.datosCeneval = pd.read_csv("Archivos/datosCeneval.csv")
         self.datosEntrenamientoKM = pd.read_csv("Archivos/vectoresCargas.csv")
-        self.datosEntrenamientoModelo = pd.read_csv("Archivos/datosEntrenamiento.csv")
 
         
         self.cambiarFrame("Inicio")
@@ -167,7 +166,7 @@ class App(ctk.CTk):
             self.cambiarFrame('Inicio')
             return
 
-        self.algoritmo = Algoritmo(kardex = self.estudiante.kardex, eleccionLibrePorCiclos = self.eleccionLibrePorCiclos,datosEntrenamientoModelo = self.datosEntrenamientoModelo,datosEntrenamientoKM=self.datosEntrenamientoKM,datosCeneval=self.datosCeneval,tasasReprobacion=self.tasaReprobacion,matricula=self.estudianteMatricula, situacion = self.estudianteSituacion, oferta = oferta, preespecialidad = self.preespecialidad, plan = plan, seriaciones = seriacion, NGEN = NGEN, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
+        self.algoritmo = Algoritmo(kardex = self.estudiante.kardex, eleccionLibrePorCiclos = self.eleccionLibrePorCiclos,datosEntrenamientoKM=self.datosEntrenamientoKM,datosCeneval=self.datosCeneval,tasasReprobacion=self.tasaReprobacion,matricula=self.estudianteMatricula, situacion = self.estudianteSituacion, oferta = oferta, preespecialidad = self.preespecialidad, plan = plan, seriaciones = seriacion, NGEN = NGEN, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
         algThread = threading.Thread(target=lambda x: self.algoritmo.run(callbackTerminacion=self.cargarResultados,callbackProceso=self.frames['PantallaCarga'].actualizarBarra),args=(1,))
         algThread.start()
 
