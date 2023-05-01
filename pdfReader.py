@@ -3,13 +3,12 @@ import pandas as pd
 
 
 class Student():
-    def __init__(self, ruta, periodoActual):
+    def __init__(self, ruta, periodoActual,planes):
 
         self.periodoActual = periodoActual
         self.ruta = ruta
         self.nombre,self.matricula,self.situacion,self.planNombre,self.kardex = self.obtenerDatosKardex()
-        self.plan = pd.read_csv("./Archivos/planes.csv") 
-        self.plan = self.plan.query('plan == "' + self.planNombre + '"')
+        self.plan = planes.query('plan == "' + self.planNombre + '"')
         self.creditos = self.obtenerCreditos()
         
 

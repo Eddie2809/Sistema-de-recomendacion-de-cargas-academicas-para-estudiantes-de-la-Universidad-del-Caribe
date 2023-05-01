@@ -44,14 +44,14 @@ class Inicio(ctk.CTkFrame):
 		try:
 			if self.controlador.enDesarrollo:
 				try:
-					filename = 'C:/Users/eddie/OneDrive/Escritorio/Proyecto Terminal/Recomendaci-n-de-cargas-acad-micas-basado-en-optimizaci-n-multiobjetivo/Kardex/IDEIO/1.pdf'
-					student  = Student(ruta = filename, periodoActual = 202301)
+					filename = 'C:/Users/eddie/OneDrive/Escritorio/Proyecto Terminal/Recomendaci-n-de-cargas-acad-micas-basado-en-optimizaci-n-multiobjetivo/Kardex/IDEIO/.pdf'
+					student  = Student(ruta = filename, periodoActual = 202301,planes = self.controlador.planes)
 				except:
 					filename = askopenfilename(initialdir="C://")
-					student  = Student(ruta = filename, periodoActual = 202301)
+					student  = Student(ruta = filename, periodoActual = 202301,planes = self.controlador.planes)
 			else:
 				filename = askopenfilename(initialdir="C://")
-				student  = Student(ruta = filename, periodoActual = 202301)
+				student  = Student(ruta = filename, periodoActual = 202301,planes = self.controlador.planes)
 			message = "Bienvenido " + student.nombre
 			CTkMessagebox(title="Bienvenido",message= message, icon="check", option_1="Thanks")
 			self.boolKardex = True

@@ -72,12 +72,13 @@ class Algoritmo():
 		self.toolbox.register("mate", tools.cxUniform,indpb=0.5)
 		self.toolbox.register("mutate", self.mutacionUniforme,prob=0.15)
 
-		self.NOBJ = 5
+		self.NOBJ = 6
 		self.K = 10
 		self.NDIM = self.NOBJ + self.K - 1
-		self.P = 12
+		self.P = 5
 		self.H = factorial(self.NOBJ + self.P - 1) / (factorial(self.P) * factorial(self.NOBJ - 1))
 		self.MU = int(self.H + (4 - self.H % 4))
+		self.MU = 1000
 		self.NGEN = NGEN
 		self.CXPB = 1.0
 		self.MUTPB = 1.0
@@ -313,7 +314,7 @@ class Algoritmo():
 		#Se eliminan prácticas profesionales y proyecto terminal
 		for i in range(len(oferta['clave'].values)):
 			clave = oferta['clave'].values[i]
-			if clave[0:3] == 'PID' or clave == 'IT0427':
+			if clave[0:2] == 'PI' or clave == 'IT0427' :
 				try:
 					ofertaUtilIndex.remove(oferta.index.values[i])
 				except:
@@ -593,12 +594,12 @@ class Algoritmo():
 		if not(self.esValido(solucion)):
 			return 0,0,0,1,1,1
 		
-		upcc = self.UpCC(solucion)
-		upmr = self.UpMR(solucion)
-		upcm = self.UpCM(solucion)
-		cpdh = self.CpDH(solucion)
-		cpah = self.CpAH(solucion)
-		cprr = self.CpRR(solucion)
+		upcc = self.UpCC(solucion) if self.pesos['upcc'] != 0 else 1
+		upmr = self.UpMR(solucion) if self.pesos['upmr'] != 0 else 1
+		upcm = self.UpCM(solucion) if self.pesos['upcm'] != 0 else 1
+		cpdh = self.CpDH(solucion) if self.pesos['cpdh'] != 0 else 0
+		cpah = self.CpAH(solucion) if self.pesos['cpah'] != 0 else 0
+		cprr = self.CpRR(solucion) if self.pesos['cprr'] != 0 else 0
 		
 		return upcc,upmr,upcm,cpdh,cpah,cprr
 
