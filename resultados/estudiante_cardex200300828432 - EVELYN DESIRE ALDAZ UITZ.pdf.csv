@@ -1,0 +1,177 @@
+clave,ciclos,Nombre,Maestro,Lunes,Martes,Miercoles,Jueves,Viernes,tipo,id_carga,desempeno
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,0.0
+II0216,2,Termodinámica,Murillo Gómez / Gabriela Margarita,-,16:00-18:00,-,-,18:00-20:00,Basica,0.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,0.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,0.0
+II0216,2,Termodinámica,Murillo Gómez / Gabriela Margarita,-,16:00-18:00,-,-,18:00-20:00,Basica,1.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,1.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,1.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,1.0
+IA0307,3,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,Basica,1.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,1.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,2.0
+II0216,2,Termodinámica,Murillo Gómez / Gabriela Margarita,-,16:00-18:00,-,-,18:00-20:00,Basica,2.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,2.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,2.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,2.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,3.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,3.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,3.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,3.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,3.0
+IA0412,3,Calidad del agua,Duarte Muñoz / Vicente Antonio,20:00-22:00,-,-,-,18:00-20:00,Basica,3.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,3.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,4.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,4.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,4.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,4.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,4.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,4.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,5.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,5.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,5.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,5.0
+IA0412,3,Calidad del agua,Duarte Muñoz / Vicente Antonio,20:00-22:00,-,-,-,18:00-20:00,Basica,5.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,5.0
+IL0414,4,Taller de argumentación y técnicas de negociación,Contreras Macossay / Bani Obed,19:00-20:00,-,20:00-22:00,-,-,Elección libre,5.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,6.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,6.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,6.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,6.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,6.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,7.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,7.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,7.0
+IA0307,3,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,Basica,7.0
+IA3418,4,Geohidrología,Méndez Torres / Jennifer,-,-,-,16:00-18:00,17:00-18:00,Elección libre,7.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,7.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,8.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,8.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,8.0
+IA0307,3,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,Basica,8.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,8.0
+DP0498,4,Problemas de México,Manzo de León / Leonela Paola,18:00-20:00,-,-,-,18:00-19:00,Basica,8.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,9.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,9.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,9.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,9.0
+IA0412,3,Calidad del agua,Sánchez Drewes / Erece,07:00-09:00,-,-,09:00-11:00,-,Basica,9.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,9.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,9.0
+II0216,2,Termodinámica,Murillo Gómez / Gabriela Margarita,-,16:00-18:00,-,-,18:00-20:00,Basica,10.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,10.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,10.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,10.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,10.0
+IA0307,3,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,Basica,10.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,10.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,11.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,11.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,11.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,11.0
+IA0307,3,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,Basica,11.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,11.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,12.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,12.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,12.0
+IA0307,3,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,Basica,12.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,12.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,13.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,13.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,13.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,13.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,13.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,14.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,14.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,14.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,14.0
+IA0307,3,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,Basica,14.0
+DP0498,4,Problemas de México,Manzo de León / Leonela Paola,18:00-20:00,-,-,-,18:00-19:00,Basica,14.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,15.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,15.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,15.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,15.0
+IA0307,3,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,Basica,15.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,16.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,16.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,16.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,16.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,17.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,17.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,17.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,17.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,17.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,18.0
+II0216,2,Termodinámica,Murillo Gómez / Gabriela Margarita,-,16:00-18:00,-,-,18:00-20:00,Basica,18.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,18.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,18.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,18.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,18.0
+DP0498,4,Problemas de México,Manzo de León / Leonela Paola,20:00-22:00,-,20:00-21:00,-,-,Basica,18.0
+IA3421,4,Sistema de tratamiento de agua,Duarte Muñoz / Vicente Antonio,-,20:00-22:00,-,19:00-20:00,-,Preespecialidad,18.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,19.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,19.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,19.0
+IA0307,3,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,Basica,19.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,20.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,20.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,20.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,20.0
+II0216,2,Termodinámica,Ramírez Carmona / Leslye Johanna,07:00-09:00,-,13:00-15:00,-,-,Basica,21.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,21.0
+IL0204,3,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,21.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,21.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,21.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,21.0
+IL0204,3,Estadística analítica,Cruz Pichardo / Felisa,07:00-09:00,-,07:00-09:00,-,-,Basica,22.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,22.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,22.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,22.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,22.0
+IA0307,3,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,Basica,22.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,22.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,23.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,23.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,23.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,23.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,24.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,24.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,24.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,25.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,25.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,25.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,26.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,26.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,26.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,26.0
+II3429,4,Evaluación de tecnologías e impacto ambiental,Chavez Uribe / Juan Miguel,-,16:00-18:00,-,15:00-16:00,-,Elección libre,26.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,27.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,27.0
+IA0307,3,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,Basica,27.0
+IA3418,4,Geohidrología,Méndez Torres / Jennifer,-,-,-,16:00-18:00,17:00-18:00,Elección libre,27.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,27.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,-,18:00-19:00,15:00-17:00,-,-,Elección libre,27.0
+DP0498,4,Problemas de México,Manzo de León / Leonela Paola,18:00-20:00,-,-,-,18:00-19:00,Basica,27.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,28.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,28.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,28.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,28.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,29.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,29.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,29.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,29.0
+IL0204,3,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,30.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,30.0
+IA0412,3,Calidad del agua,Sánchez Drewes / Erece,07:00-09:00,-,-,09:00-11:00,-,Basica,30.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,30.0
+IA0307,3,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,Basica,30.0
+IA3418,4,Geohidrología,Méndez Torres / Jennifer,-,-,-,16:00-18:00,17:00-18:00,Elección libre,30.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,30.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,31.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,31.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,31.0
+IA0307,3,Gestión ambiental,Méndez Torres / Jennifer,15:00-17:00,-,-,15:00-16:00,-,Basica,31.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,31.0
+DP0498,4,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,Basica,31.0

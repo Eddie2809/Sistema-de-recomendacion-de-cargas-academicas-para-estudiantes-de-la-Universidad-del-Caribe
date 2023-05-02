@@ -229,6 +229,8 @@ class Algoritmo():
 	def obtenerTasaRepCarga(self, datosCarga):
 		# Calcula el promedio de las tasas de reprobacion de una carga
 		mergeTasaCarga = pd.merge(self.tasasReprobacion, datosCarga, how="right", on="clave")
+		if (len(mergeTasaCarga) == 0):
+			return 0
 		return mergeTasaCarga["tasaReprobacion"].mean()*100
 
 	def obtenerTasaAprobPerPrev(self):
@@ -324,11 +326,11 @@ class Algoritmo():
 		indicesUtiles = indices.copy()
 
 		for i in indices:
-		    if ofertaUtil.loc[i]['clave'] in self.eleccionLibre:
-		        ciclo = ofertaUtil.loc[i]['ciclos']
-		        ciclo = 2 if ciclo > 2 else ciclo - 1
-		        if self.eleccionLibrePorCiclos[ciclo] == self.eleccionLibreCargadasPorCiclo[ciclo]:
-		            indicesUtiles.remove(i)
+			if ofertaUtil.loc[i]['clave'] in self.eleccionLibre:
+				ciclo = int(ofertaUtil.loc[i]['ciclos'])
+				ciclo = 2 if ciclo > 2 else ciclo - 1
+				if self.eleccionLibrePorCiclos[ciclo] == self.eleccionLibreCargadasPorCiclo[ciclo]:
+					indicesUtiles.remove(i)
 		ofertaUtil = ofertaUtil.loc[list(indicesUtiles)]
 			
 		#Si la disponibilidad de horario es una restricción, entonces elimina las materias que violen la restricción

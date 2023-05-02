@@ -1,0 +1,173 @@
+clave,ciclos,Nombre,Maestro,Lunes,Martes,Miercoles,Jueves,Viernes,tipo,id_carga,desempeno
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,0.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,0.0
+DP0396,2,Identidad y cultura,Alavez San Pedro / Minerva,-,16:00-18:00,-,-,16:00-17:00,Basica,0.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,0.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,0.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,0.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,Basica,0.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,1.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,1.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,1.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,1.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,09:00-11:00,-,-,10:00-11:00,Basica,1.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,1.0
+II0422,4,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,07:00-09:00,-,07:00-08:00,-,-,Elección libre,1.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,1.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,2.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,2.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,2.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,2.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,2.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,2.0
+II0422,4,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,07:00-09:00,-,07:00-08:00,-,-,Elección libre,2.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,3.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,3.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,3.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,3.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,3.0
+II0422,4,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,07:00-09:00,-,07:00-08:00,-,-,Elección libre,3.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,3.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,4.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,4.0
+DP0396,2,Identidad y cultura,Alavez San Pedro / Minerva,-,09:00-11:00,-,08:00-09:00,-,Basica,4.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,4.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,4.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,4.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,Basica,4.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,5.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,5.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,5.0
+DP0396,2,Identidad y cultura,Alavez San Pedro / Minerva,-,16:00-18:00,-,-,16:00-17:00,Basica,5.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,5.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,5.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,Basica,5.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,6.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,6.0
+DP0396,2,Identidad y cultura,Alavez San Pedro / Minerva,-,09:00-11:00,-,08:00-09:00,-,Basica,6.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,6.0
+IL0204,2,Estadística analítica,Cruz Pichardo / Felisa,07:00-09:00,-,07:00-09:00,-,-,Basica,6.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,6.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,7.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,7.0
+DP0396,2,Identidad y cultura,Alavez San Pedro / Minerva,-,09:00-11:00,-,08:00-09:00,-,Basica,7.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,7.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,7.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,7.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,8.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,8.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,8.0
+IL0204,2,Estadística analítica,Cruz Pichardo / Felisa,07:00-09:00,-,07:00-09:00,-,-,Basica,8.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,8.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,8.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,Basica,8.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,9.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,9.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,9.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,9.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,9.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,9.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,Basica,9.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,10.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,10.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,10.0
+IL0204,2,Estadística analítica,Cruz Pichardo / Felisa,07:00-09:00,-,07:00-09:00,-,-,Basica,10.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,10.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,10.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,11.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,11.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,11.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,11.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,11.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,11.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,12.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,12.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,12.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,12.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,09:00-11:00,-,-,10:00-11:00,Basica,12.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,12.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,13.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,13.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,13.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,13.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,13.0
+II0422,4,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,07:00-09:00,-,07:00-08:00,-,-,Elección libre,13.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,14.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,14.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,14.0
+IL0204,2,Estadística analítica,Cruz Pichardo / Felisa,07:00-09:00,-,07:00-09:00,-,-,Basica,14.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,14.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,Basica,14.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,15.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,15.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,15.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,15.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,15.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,16.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,16.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,16.0
+DP0396,2,Identidad y cultura,Alavez San Pedro / Minerva,-,14:00-16:00,-,15:00-16:00,-,Basica,16.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,16.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,17.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,17.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,17.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,17.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,17.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,Basica,17.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,18.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,18.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,18.0
+IL0204,2,Estadística analítica,Cruz Pichardo / Felisa,07:00-09:00,-,07:00-09:00,-,-,Basica,18.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,18.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,19.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,19.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,19.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,19.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,19.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,20.0
+DP0396,2,Identidad y cultura,Alavez San Pedro / Minerva,-,09:00-11:00,-,08:00-09:00,-,Basica,20.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,20.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,20.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,20.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,20.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,21.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,21.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,21.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,09:00-11:00,-,-,10:00-11:00,Basica,21.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,21.0
+II0422,4,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,07:00-09:00,-,07:00-08:00,-,-,Elección libre,21.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,21.0
+IT0104,1,Matemáticas discretas,Naredo García / Enrique,-,-,15:00-17:00,-,14:00-15:00,Basica,22.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,22.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,22.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,22.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,23.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,23.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,23.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,23.0
+II0422,4,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,07:00-09:00,-,07:00-08:00,-,-,Elección libre,23.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,23.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,24.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,24.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,24.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,24.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,24.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,25.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,25.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,25.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,25.0
+II0422,4,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,07:00-09:00,-,07:00-08:00,-,-,Elección libre,25.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,26.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,26.0
+IL0204,2,Estadística analítica,Cruz Pichardo / Felisa,07:00-09:00,-,07:00-09:00,-,-,Basica,26.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,26.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,27.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,27.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,27.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,27.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,28.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,11:00-13:00,-,11:00-13:00,-,-,Basica,28.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,28.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,28.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,Basica,28.0

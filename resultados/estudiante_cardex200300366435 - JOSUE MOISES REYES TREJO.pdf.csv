@@ -1,0 +1,589 @@
+clave,ciclos,Nombre,Maestro,Lunes,Martes,Miercoles,Jueves,Viernes,tipo,id_carga,desempeno
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,0.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,0.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,0.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,0.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,0.0
+II3480,4,Máquinas de control numérico,López Monzalvo / Francisco,-,18:00-20:00,-,-,17:00-18:00,Preespecialidad,0.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,0.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,0.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,0.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,1.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,1.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,1.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,1.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,1.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,1.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,1.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,1.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,2.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,2.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,2.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,2.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,2.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,2.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,2.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,2.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,3.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,3.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,3.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,3.0
+II3480,4,Máquinas de control numérico,López Monzalvo / Francisco,-,18:00-20:00,-,-,17:00-18:00,Preespecialidad,3.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,3.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,3.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,3.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,3.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,4.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,4.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,4.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,4.0
+II3480,4,Máquinas de control numérico,López Monzalvo / Francisco,-,18:00-20:00,-,-,17:00-18:00,Preespecialidad,4.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,4.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,4.0
+DP0499,4,Seminario de investigación,Barragan Garcia / Marco Antonio,-,20:00-22:00,-,20:00-21:00,-,Basica,4.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,4.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,5.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,5.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,5.0
+DP0396,3,Identidad y cultura,Alavez San Pedro / Minerva,-,16:00-18:00,-,-,16:00-17:00,Basica,5.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,5.0
+II3480,4,Máquinas de control numérico,López Monzalvo / Francisco,-,18:00-20:00,-,-,17:00-18:00,Preespecialidad,5.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,5.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,5.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,6.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,6.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,6.0
+DP0396,3,Identidad y cultura,Alavez San Pedro / Minerva,-,16:00-18:00,-,-,16:00-17:00,Basica,6.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,6.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,6.0
+DP0499,4,Seminario de investigación,Barragan Garcia / Marco Antonio,-,20:00-22:00,-,20:00-21:00,-,Basica,6.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,6.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,7.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,7.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,7.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,7.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,7.0
+II3480,4,Máquinas de control numérico,López Monzalvo / Francisco,-,18:00-20:00,-,-,17:00-18:00,Preespecialidad,7.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,7.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,7.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,8.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,8.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,8.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,8.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,8.0
+II3480,4,Máquinas de control numérico,López Monzalvo / Francisco,-,18:00-20:00,-,-,17:00-18:00,Preespecialidad,8.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,8.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,8.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,9.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,9.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,9.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,9.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,9.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,9.0
+DP0498,4,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,Basica,9.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,9.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,10.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,10.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,10.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,10.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,10.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,10.0
+DP0498,4,Problemas de México,Aguilar Hernández / Miguel Ángel,16:00-17:00,-,16:00-18:00,-,-,Basica,10.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,10.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,11.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,11.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,11.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,11.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,11.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,11.0
+DP0498,4,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,Basica,11.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,11.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,12.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,12.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,12.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,12.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,12.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,12.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,16:00-18:00,-,18:00-19:00,-,-,Basica,12.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,12.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,13.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,13.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,13.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,13.0
+II3480,4,Máquinas de control numérico,López Monzalvo / Francisco,-,18:00-20:00,-,-,17:00-18:00,Preespecialidad,13.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,13.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,13.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,13.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,14.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,14.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,14.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,14.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,14.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,14.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,14.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,14.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,15.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,15.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,15.0
+DP0396,3,Identidad y cultura,Alavez San Pedro / Minerva,-,14:00-16:00,-,15:00-16:00,-,Basica,15.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,15.0
+II3480,4,Máquinas de control numérico,López Monzalvo / Francisco,-,18:00-20:00,-,-,17:00-18:00,Preespecialidad,15.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,15.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,15.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,16.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,16.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,16.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,16.0
+II3480,4,Máquinas de control numérico,López Monzalvo / Francisco,-,18:00-20:00,-,-,17:00-18:00,Preespecialidad,16.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,16.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,16.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,16.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,17.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,17.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,17.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,17.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,17.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,17.0
+DP0499,4,Seminario de investigación,Barragan Garcia / Marco Antonio,-,20:00-22:00,-,20:00-21:00,-,Basica,17.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,17.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,18.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,18.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,18.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,18.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,18.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,18.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,16:00-18:00,-,18:00-19:00,-,-,Basica,18.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,18.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,19.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,19.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,19.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,19.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,19.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,19.0
+DP0499,4,Seminario de investigación,Barragan Garcia / Marco Antonio,-,20:00-22:00,-,20:00-21:00,-,Basica,19.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,19.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,20.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,20.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,20.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,20.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,20.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,20.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,20.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,20.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,21.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,21.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,21.0
+DP0396,3,Identidad y cultura,Alavez San Pedro / Minerva,-,16:00-18:00,-,-,16:00-17:00,Basica,21.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,21.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,21.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,21.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,22.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,22.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,22.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,22.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,22.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,22.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,18:00-20:00,-,17:00-18:00,Basica,22.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,23.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,23.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,23.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,23.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,23.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,23.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,23.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,24.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,24.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,24.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,24.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,24.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,24.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,24.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,25.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,25.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,25.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,25.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,25.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,25.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,25.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,26.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,26.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,26.0
+DP0396,3,Identidad y cultura,Alavez San Pedro / Minerva,-,14:00-16:00,-,15:00-16:00,-,Basica,26.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,26.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,26.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,26.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,27.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,27.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,27.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,27.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,27.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,27.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,27.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,28.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,28.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,28.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,28.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,28.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,28.0
+DP0193,1,Taller de redacción profesional,Caamal Lora / Gabriel Adoni,-,20:00-21:00,-,-,20:00-22:00,Basica,28.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,29.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,29.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,29.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,29.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,29.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,29.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,29.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,30.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,30.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,30.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,30.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,30.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,30.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,30.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,31.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,31.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,31.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,31.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,31.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,31.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,31.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,32.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,32.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,32.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,32.0
+II0422,4,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,Elección libre,32.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,32.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,32.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,32.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,32.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,33.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,33.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,33.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,33.0
+II0422,4,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,Elección libre,33.0
+II3480,4,Máquinas de control numérico,López Monzalvo / Francisco,-,18:00-20:00,-,-,17:00-18:00,Preespecialidad,33.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,33.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,33.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,33.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,34.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,34.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,34.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,34.0
+II0422,4,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,Elección libre,34.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,34.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,34.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,34.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,34.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,35.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,35.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,35.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,35.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,35.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,35.0
+II0219,4,Ingeniería de costos,García Rivera / Miriam Angelica,-,13:00-15:00,-,14:00-15:00,-,Elección libre,35.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,35.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,35.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,36.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,36.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,36.0
+II0422,4,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,Elección libre,36.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,36.0
+II3480,4,Máquinas de control numérico,López Monzalvo / Francisco,-,18:00-20:00,-,-,17:00-18:00,Preespecialidad,36.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,36.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,36.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,36.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,37.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,37.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,37.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,37.0
+II0422,4,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,Elección libre,37.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,37.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,37.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,37.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,38.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,38.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,38.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,38.0
+II0422,4,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,Elección libre,38.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,38.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,38.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,38.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,39.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,39.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,39.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,39.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,39.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,39.0
+II0219,4,Ingeniería de costos,García Rivera / Miriam Angelica,-,13:00-15:00,-,14:00-15:00,-,Elección libre,39.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,39.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,40.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,40.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,40.0
+II0422,4,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,Elección libre,40.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,40.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,40.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,40.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,40.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,41.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,41.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,41.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,41.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,41.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,41.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,41.0
+II0219,4,Ingeniería de costos,García Rivera / Miriam Angelica,11:00-13:00,-,12:00-13:00,-,-,Elección libre,41.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,41.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,42.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,42.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,42.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,42.0
+II0422,4,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,Elección libre,42.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,42.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,42.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,42.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,42.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,43.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,43.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,43.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,43.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,43.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,43.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,43.0
+II0219,4,Ingeniería de costos,García Rivera / Miriam Angelica,11:00-13:00,-,12:00-13:00,-,-,Elección libre,43.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,43.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,44.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,44.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,44.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,44.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,44.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,44.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,44.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,44.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,45.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,45.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,45.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,45.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,45.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,45.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,45.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,45.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,46.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,46.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,46.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,46.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,46.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,46.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,46.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,46.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,47.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,47.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,47.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,47.0
+II0422,4,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,Elección libre,47.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,47.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,47.0
+II0219,4,Ingeniería de costos,García Rivera / Miriam Angelica,11:00-13:00,-,12:00-13:00,-,-,Elección libre,47.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,47.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,48.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,48.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,48.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,48.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,48.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,48.0
+II0219,4,Ingeniería de costos,García Rivera / Miriam Angelica,11:00-13:00,-,12:00-13:00,-,-,Elección libre,48.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,48.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,48.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,49.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,49.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,49.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,49.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,49.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,49.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,49.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,49.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,49.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,50.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,50.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,50.0
+DP0396,3,Identidad y cultura,Alavez San Pedro / Minerva,-,16:00-18:00,-,-,16:00-17:00,Basica,50.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,50.0
+II0422,4,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,Elección libre,50.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,50.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,50.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,50.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,51.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,51.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,51.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,51.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,51.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,51.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,51.0
+DP0498,4,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,Basica,51.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,51.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,52.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,52.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,52.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,52.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,52.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,52.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,52.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,52.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,52.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,53.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,53.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,53.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,53.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,53.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,53.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,53.0
+II3490,4,Robótica,Pérez Salgado / Teresita de Jesús,17:00-19:00,-,-,18:00-19:00,-,Elección libre,53.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,53.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,54.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,54.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,54.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,54.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,54.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,54.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,54.0
+II0422,4,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,07:00-09:00,-,07:00-08:00,-,-,Elección libre,54.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,54.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,55.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,55.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,55.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,55.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,55.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,55.0
+II3490,4,Robótica,Pérez Salgado / Teresita de Jesús,17:00-19:00,-,-,18:00-19:00,-,Elección libre,55.0
+II0217,2,Contabilidad financiera,García Rivera / Miriam Angelica,08:00-09:00,-,07:00-09:00,-,-,Elección libre,55.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,55.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,56.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,56.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,56.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,56.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,56.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,56.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,56.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,56.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,57.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,57.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,57.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,57.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,57.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,57.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,57.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,57.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,58.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,58.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,58.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,58.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,58.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,58.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,58.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,58.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,59.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,59.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,59.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,59.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,59.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,59.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,59.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,59.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,60.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,60.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,60.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,60.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,60.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,60.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,60.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,60.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,60.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,61.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,61.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,61.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,61.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,61.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,61.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,61.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,61.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,61.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,62.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,62.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,62.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,62.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,62.0
+II3480,4,Máquinas de control numérico,López Monzalvo / Francisco,-,18:00-20:00,-,-,17:00-18:00,Preespecialidad,62.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,62.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,62.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,62.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,63.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,63.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,63.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,63.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,63.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,63.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,63.0
+DP0498,4,Problemas de México,Manzo de León / Leonela Paola,18:00-20:00,-,-,-,18:00-19:00,Basica,63.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,63.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,64.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,64.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,64.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,64.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,64.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,64.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,64.0
+II0219,4,Ingeniería de costos,García Rivera / Miriam Angelica,11:00-13:00,-,12:00-13:00,-,-,Elección libre,64.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,64.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,65.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,65.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,65.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,65.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,65.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,65.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,65.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,65.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,65.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,66.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,66.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,66.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,66.0
+DP0396,3,Identidad y cultura,Alavez San Pedro / Minerva,-,-,19:00-21:00,-,19:00-20:00,Basica,66.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,66.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,66.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,66.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,66.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,67.0
+IL0204,2,Estadística analítica,Virgen Suárez / Jarmen Said,-,07:00-09:00,-,07:00-09:00,-,Basica,67.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,67.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,67.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,67.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,67.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,67.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,67.0
+DP0193,1,Taller de redacción profesional,Vargas Hernández / Argentina,-,-,11:00-13:00,-,13:00-14:00,Basica,67.0
+II0318,2,Investigación de operaciones,Can Tun / Miguel Alberto,-,09:00-11:00,-,09:00-11:00,-,Basica,68.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,68.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,68.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,68.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,68.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,68.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,68.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,68.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,68.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,69.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,69.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,69.0
+DP0396,3,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,Basica,69.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,69.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,69.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,69.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,69.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,69.0
+II0318,2,Investigación de operaciones,Canul Chalé / Juan Diego,20:00-22:00,-,20:00-22:00,-,-,Basica,70.0
+IL0204,2,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,70.0
+IL3422,2,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,70.0
+II0320,3,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,Basica,70.0
+II3425,3,Planeación y control de la producción,Mateo Díaz / Nicolás Francisco,14:00-16:00,-,-,14:00-15:00,-,Basica,70.0
+II3486,3,Ergonomía,Armenta Aranceta / Mijaíl,-,16:00-18:00,-,15:00-16:00,-,Basica,70.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,16:00-17:00,-,17:00-19:00,-,-,Basica,70.0
+DP0396,3,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,Basica,70.0
+DP0193,1,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,Basica,70.0

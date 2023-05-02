@@ -1,0 +1,45 @@
+clave,ciclos,Nombre,Maestro,Lunes,Martes,Miercoles,Jueves,Viernes,tipo,id_carga,desempeno
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,-,18:00-20:00,-,16:00-18:00,-,Basica,0.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,0.0
+IT0263,3,Electrónica analógica,Márquez Chacón / Wilberth,-,-,18:00-20:00,-,18:00-19:00,Basica,0.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,0.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,0.0
+IT3472,4,Principios de automatización y robótica,Landaverde Lorenzo / Pablo Jacob,-,20:00-22:00,-,21:00-22:00,-,Elección libre,0.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,-,18:00-20:00,-,16:00-18:00,-,Basica,1.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,1.0
+IT0263,3,Electrónica analógica,Márquez Chacón / Wilberth,-,-,18:00-20:00,-,18:00-19:00,Basica,1.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,1.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,1.0
+NI3431,4,Marketing en los negocios electrónicos,Canche Dzul / Arely Del Socorro,21:00-22:00,-,-,-,19:00-21:00,Elección libre,1.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,-,18:00-20:00,-,16:00-18:00,-,Basica,2.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,2.0
+IT0263,3,Electrónica analógica,Márquez Chacón / Wilberth,-,-,18:00-20:00,-,18:00-19:00,Basica,2.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,2.0
+IT3472,4,Principios de automatización y robótica,Landaverde Lorenzo / Pablo Jacob,-,20:00-22:00,-,21:00-22:00,-,Elección libre,2.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,-,18:00-20:00,-,16:00-18:00,-,Basica,3.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,3.0
+IT0263,3,Electrónica analógica,Márquez Chacón / Wilberth,-,-,18:00-20:00,-,18:00-19:00,Basica,3.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,3.0
+NI3431,4,Marketing en los negocios electrónicos,Canche Dzul / Arely Del Socorro,21:00-22:00,-,-,-,19:00-21:00,Elección libre,3.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,4.0
+IT0263,3,Electrónica analógica,Márquez Chacón / Wilberth,-,-,18:00-20:00,-,18:00-19:00,Basica,4.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,4.0
+IT3472,4,Principios de automatización y robótica,Landaverde Lorenzo / Pablo Jacob,-,20:00-22:00,-,21:00-22:00,-,Elección libre,4.0
+ID0205,2,Geometría computacional,Naredo García / Enrique,-,14:00-16:00,-,14:00-15:00,-,Basica,5.0
+IT0263,3,Electrónica analógica,Márquez Chacón / Wilberth,-,-,18:00-20:00,-,18:00-19:00,Basica,5.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,5.0
+NI3431,4,Marketing en los negocios electrónicos,Canche Dzul / Arely Del Socorro,21:00-22:00,-,-,-,19:00-21:00,Elección libre,5.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,-,18:00-20:00,-,16:00-18:00,-,Basica,6.0
+IT0263,3,Electrónica analógica,Márquez Chacón / Wilberth,-,-,18:00-20:00,-,18:00-19:00,Basica,6.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,6.0
+IT3472,4,Principios de automatización y robótica,Landaverde Lorenzo / Pablo Jacob,-,20:00-22:00,-,21:00-22:00,-,Elección libre,6.0
+ID0206,2,Interconectividad en redes,Sansores Pérez / Candelaria Elizabeth,-,18:00-20:00,-,16:00-18:00,-,Basica,7.0
+IT0263,3,Electrónica analógica,Márquez Chacón / Wilberth,-,-,18:00-20:00,-,18:00-19:00,Basica,7.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,7.0
+NI3431,4,Marketing en los negocios electrónicos,Canche Dzul / Arely Del Socorro,21:00-22:00,-,-,-,19:00-21:00,Elección libre,7.0
+IT0263,3,Electrónica analógica,Márquez Chacón / Wilberth,-,-,18:00-20:00,-,18:00-19:00,Basica,8.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,8.0
+IT3472,4,Principios de automatización y robótica,Landaverde Lorenzo / Pablo Jacob,-,20:00-22:00,-,21:00-22:00,-,Elección libre,8.0
+IT0263,3,Electrónica analógica,Márquez Chacón / Wilberth,-,-,18:00-20:00,-,18:00-19:00,Basica,9.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,9.0
+NI3431,4,Marketing en los negocios electrónicos,Canche Dzul / Arely Del Socorro,21:00-22:00,-,-,-,19:00-21:00,Elección libre,9.0

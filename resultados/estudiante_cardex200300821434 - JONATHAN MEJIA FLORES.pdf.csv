@@ -1,0 +1,187 @@
+clave,ciclos,Nombre,Maestro,Lunes,Martes,Miercoles,Jueves,Viernes,tipo,id_carga,desempeno
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,0.0
+II0216,2,Termodinámica,Murillo Gómez / Gabriela Margarita,-,16:00-18:00,-,-,18:00-20:00,Basica,0.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,0.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,0.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,1.0
+II0216,2,Termodinámica,Murillo Gómez / Gabriela Margarita,-,16:00-18:00,-,-,18:00-20:00,Basica,1.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,1.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,1.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,1.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,1.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,1.0
+DP0498,4,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,Basica,1.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,2.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,2.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,2.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,2.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,2.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,2.0
+II3429,4,Evaluación de tecnologías e impacto ambiental,Chavez Uribe / Juan Miguel,-,16:00-18:00,-,15:00-16:00,-,Elección libre,2.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,3.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,3.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,3.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,3.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,3.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,3.0
+DP0498,4,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,Basica,3.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,4.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,4.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,4.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,4.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,4.0
+II3429,4,Evaluación de tecnologías e impacto ambiental,Chavez Uribe / Juan Miguel,-,16:00-18:00,-,15:00-16:00,-,Elección libre,4.0
+DP0498,4,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,Basica,4.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,5.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,5.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,5.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,5.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,5.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,5.0
+II3429,4,Evaluación de tecnologías e impacto ambiental,Chavez Uribe / Juan Miguel,-,16:00-18:00,-,15:00-16:00,-,Elección libre,5.0
+DP0498,4,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,Basica,5.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,6.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,6.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,6.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,6.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,6.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,6.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,6.0
+II3429,4,Evaluación de tecnologías e impacto ambiental,Chavez Uribe / Juan Miguel,-,16:00-18:00,-,15:00-16:00,-,Elección libre,6.0
+DP0498,4,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,Basica,6.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,7.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,7.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,7.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,7.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,7.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,7.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,7.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,8.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,8.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,8.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,8.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,8.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,8.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,8.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,9.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,9.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,9.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,9.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,9.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,9.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,9.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,9.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,10.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,10.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,10.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,10.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,10.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,10.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,10.0
+II3429,4,Evaluación de tecnologías e impacto ambiental,Chavez Uribe / Juan Miguel,-,16:00-18:00,-,15:00-16:00,-,Elección libre,10.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,11.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,11.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,11.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,11.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,11.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,11.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,11.0
+DP0498,4,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,Basica,11.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,12.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,12.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,12.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,12.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,12.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,12.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,12.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,12.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,13.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,13.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,13.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,13.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,13.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,13.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,13.0
+II3429,4,Evaluación de tecnologías e impacto ambiental,Chavez Uribe / Juan Miguel,-,16:00-18:00,-,15:00-16:00,-,Elección libre,13.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,14.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,14.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,14.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,14.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,14.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,14.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,14.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,14.0
+II3429,4,Evaluación de tecnologías e impacto ambiental,Chavez Uribe / Juan Miguel,-,16:00-18:00,-,15:00-16:00,-,Elección libre,14.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,15.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,15.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,15.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,15.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,15.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,15.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,15.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,15.0
+DP0498,4,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,Basica,15.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,16.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,16.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,16.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,16.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,16.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,16.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,16.0
+II3429,4,Evaluación de tecnologías e impacto ambiental,Chavez Uribe / Juan Miguel,-,16:00-18:00,-,15:00-16:00,-,Elección libre,16.0
+DP0498,4,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,Basica,16.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,17.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,17.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,17.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,17.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,17.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,17.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,17.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,17.0
+II3429,4,Evaluación de tecnologías e impacto ambiental,Chavez Uribe / Juan Miguel,-,16:00-18:00,-,15:00-16:00,-,Elección libre,17.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,18.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,18.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,18.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,18.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,18.0
+IA0412,3,Calidad del agua,Sánchez Drewes / Erece,07:00-09:00,-,-,09:00-11:00,-,Basica,18.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,18.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,18.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,19.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,19.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,19.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,19.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,19.0
+IA0412,3,Calidad del agua,Sánchez Drewes / Erece,07:00-09:00,-,-,09:00-11:00,-,Basica,19.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,19.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,19.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,20.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,20.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,20.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,20.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,20.0
+IA0412,3,Calidad del agua,Sánchez Drewes / Erece,07:00-09:00,-,-,09:00-11:00,-,Basica,20.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,20.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,20.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,20.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,21.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,21.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,21.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,21.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,21.0
+IA0412,3,Calidad del agua,Sánchez Drewes / Erece,07:00-09:00,-,-,09:00-11:00,-,Basica,21.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,21.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,21.0
+II3429,4,Evaluación de tecnologías e impacto ambiental,Chavez Uribe / Juan Miguel,-,16:00-18:00,-,15:00-16:00,-,Elección libre,21.0
+II0216,2,Termodinámica,Romero Medina / Víctor Manuel,-,-,11:00-13:00,-,09:00-11:00,Basica,22.0
+IA0209,2,Ecuaciones diferenciales,Canul Chalé / Juan Diego,15:00-17:00,-,-,16:00-18:00,-,Basica,22.0
+II0218,2,Cálculo vectorial,Can Tun / Miguel Alberto,-,18:00-20:00,18:00-20:00,-,-,Basica,22.0
+IL0204,3,Estadística analítica,Ortega Espinosa / Viridiana Alhelí,18:00-20:00,-,-,18:00-20:00,-,Basica,22.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,22.0
+IA0412,3,Calidad del agua,Sánchez Drewes / Erece,07:00-09:00,-,-,09:00-11:00,-,Basica,22.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,22.0
+IA3428,3,Energía eólica,Romero Medina / Víctor Manuel,-,15:00-16:00,-,-,15:00-17:00,Preespecialidad,22.0
+DP0497,3,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,Basica,22.0

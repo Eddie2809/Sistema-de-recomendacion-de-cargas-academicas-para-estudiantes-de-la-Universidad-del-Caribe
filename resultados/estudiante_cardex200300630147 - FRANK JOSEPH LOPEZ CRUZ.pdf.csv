@@ -1,0 +1,380 @@
+clave,ciclos,Nombre,Maestro,Lunes,Martes,Miercoles,Jueves,Viernes,tipo,id_carga,desempeno
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,0.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,08:00-10:00,-,08:00-10:00,Basica,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,0.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,13:00-14:00,-,10:00-12:00,-,-,Basica,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,0.0
+DP0498,3,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,Basica,0.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,1.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,1.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,1.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,1.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,1.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,1.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,1.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,16:00-18:00,-,16:00-18:00,Basica,2.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,2.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,2.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,2.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,2.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,2.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,3.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,3.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,3.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,3.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,3.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,3.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,3.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,4.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,4.0
+ID0414,4,Seguridad de datos,Aguilar Pérez / Jairo Cesar,-,18:00-20:00,-,18:00-20:00,-,Basica,4.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,4.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,4.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,4.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,09:00-11:00,-,-,10:00-11:00,Basica,5.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,5.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,5.0
+IT0425,3,Introducción a la inteligencia artificial,Sansores Pérez / Candelaria Elizabeth,14:00-16:00,-,14:00-15:00,-,-,Basica,5.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,5.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,5.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,5.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,6.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,6.0
+ID3416,3,Diseño multimedia,Landeros Alvarado / Aurea,-,08:00-09:00,-,09:00-11:00,-,Preespecialidad,6.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,6.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,6.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,6.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,6.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,7.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,7.0
+IT0263,3,Electrónica analógica,Casas De La Cruz / Rosa Guadalupe,13:00-14:00,-,10:00-12:00,-,-,Basica,7.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,7.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,7.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,7.0
+DP0498,3,Problemas de México,Aguilar Hernández / Miguel Ángel,16:00-17:00,-,16:00-18:00,-,-,Basica,7.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,8.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,8.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,8.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,8.0
+DP0498,3,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,Basica,8.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,9.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,9.0
+ID0310,3,Minería de datos,Gómez García / Hector Fernando,-,-,16:00-18:00,-,16:00-18:00,Basica,9.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,9.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,9.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,10.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,10.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,10.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,10.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,10.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,10.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,10.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,11.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,11.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,11.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,11.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,11.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,11.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,Basica,11.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,12.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,12.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,12.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,12.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,12.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,12.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,12.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,13.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,13.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,13.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,13.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,13.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,13.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,13.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,14.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,14.0
+ID3416,3,Diseño multimedia,Landeros Alvarado / Aurea,-,08:00-09:00,-,09:00-11:00,-,Preespecialidad,14.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,14.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,14.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,14.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,14.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,15.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,15.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,15.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,15.0
+DP0498,3,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,Basica,15.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,15.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,16.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,16.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,16.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,16.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,16.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,09:00-11:00,-,-,10:00-11:00,Basica,17.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,17.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,17.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,17.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,17.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,17.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,18.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,18.0
+ID3416,3,Diseño multimedia,Landeros Alvarado / Aurea,-,08:00-09:00,-,09:00-11:00,-,Preespecialidad,18.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,18.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,18.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,18.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,18.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,19.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,19.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,19.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,19.0
+ID0414,4,Seguridad de datos,Aguilar Pérez / Jairo Cesar,-,18:00-20:00,-,18:00-20:00,-,Basica,19.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,19.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,19.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,20.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,20.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,20.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,20.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,20.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,20.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,21.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,21.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,21.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,21.0
+ID0307,3,Ingeniería de software,Aguas García / Nancy,-,16:00-18:00,-,16:00-17:00,-,Basica,22.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,22.0
+IT0263,3,Electrónica analógica,Márquez Chacón / Wilberth,-,-,18:00-20:00,-,18:00-19:00,Basica,22.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,22.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,22.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,23.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,23.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,23.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,23.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,23.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,23.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,24.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,24.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,24.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,24.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,24.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,24.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,24.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,Basica,24.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,25.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,25.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,25.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,25.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,26.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,26.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,26.0
+IT3472,4,Principios de automatización y robótica,Landaverde Lorenzo / Pablo Jacob,-,20:00-22:00,-,21:00-22:00,-,Elección libre,26.0
+DP0498,3,Problemas de México,Aguilar Hernández / Miguel Ángel,16:00-17:00,-,16:00-18:00,-,-,Basica,26.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,09:00-11:00,-,-,10:00-11:00,Basica,27.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,27.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,27.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,27.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,27.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,27.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,28.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,28.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,28.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,28.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,28.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,28.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,09:00-11:00,-,-,10:00-11:00,Basica,29.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,29.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,29.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,29.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,29.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,29.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,29.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,30.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,30.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,30.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,30.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,30.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,30.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,30.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,31.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,31.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,31.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,31.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,31.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,31.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,32.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,32.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,32.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,32.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,32.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,32.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,32.0
+DP0498,3,Problemas de México,Cervera León / José Samuel,-,09:00-11:00,-,-,10:00-11:00,Basica,33.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,33.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,33.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,33.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,33.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,33.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,34.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,34.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,34.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,34.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,35.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,35.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,35.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,35.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,35.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,35.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,36.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,36.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,36.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,36.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,37.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,37.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,37.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,38.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,38.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,38.0
+ID0414,4,Seguridad de datos,Aguilar Pérez / Jairo Cesar,-,18:00-20:00,-,18:00-20:00,-,Basica,38.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,38.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,38.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,39.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,39.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,39.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,39.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,39.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,40.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,40.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,40.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,41.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,41.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,41.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,41.0
+ID0414,4,Seguridad de datos,Aguilar Pérez / Jairo Cesar,-,18:00-20:00,-,18:00-20:00,-,Basica,41.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,41.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,41.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,42.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,42.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,42.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,42.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,42.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,42.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,43.0
+ID3416,3,Diseño multimedia,Landeros Alvarado / Aurea,-,08:00-09:00,-,09:00-11:00,-,Preespecialidad,43.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,43.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,43.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,43.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,43.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,43.0
+DP0498,3,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,Basica,43.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,44.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,44.0
+ID3416,3,Diseño multimedia,Landeros Alvarado / Aurea,-,08:00-09:00,-,09:00-11:00,-,Preespecialidad,44.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,44.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,44.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,44.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,44.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,44.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,45.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,45.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,45.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,45.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,45.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,46.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,46.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,46.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,46.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,46.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,46.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,47.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,47.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,47.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,47.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,47.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,48.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,48.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,48.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,48.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,48.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,48.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,49.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,49.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,49.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,49.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,49.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,50.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,50.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,50.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,51.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,51.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,51.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,51.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,51.0
+IL3422,4,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,Elección libre,52.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,52.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,52.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,52.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,52.0
+ID0414,4,Seguridad de datos,Aguilar Pérez / Jairo Cesar,-,18:00-20:00,-,18:00-20:00,-,Basica,52.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,52.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,52.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,53.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,53.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,53.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,53.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,54.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,54.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,54.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,54.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,54.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,55.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,55.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,55.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,55.0
+II0422,4,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,Elección libre,56.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,56.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,56.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,56.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,56.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,57.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,57.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,57.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,57.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,58.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,58.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,58.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,58.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,58.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,59.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,59.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,59.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,59.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,60.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,60.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,60.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,60.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,60.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,61.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,61.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,61.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,61.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,62.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,62.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,62.0
+ID0307,3,Ingeniería de software,Morales Saavedra / Emmanuel,11:00-13:00,-,12:00-13:00,-,-,Basica,63.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,63.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,63.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,63.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,64.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,64.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,64.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,65.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,65.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,65.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,65.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,66.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,66.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,66.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,67.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,67.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,67.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,67.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,09:00-11:00,-,-,13:00-14:00,-,Elección libre,68.0
+ID3424,4,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,Preespecialidad,68.0
+IT0423,4,Administración de proyectos de desarrollo de software,Galvan Herrera / Maria Fernanda,19:00-21:00,-,-,20:00-21:00,-,Basica,68.0

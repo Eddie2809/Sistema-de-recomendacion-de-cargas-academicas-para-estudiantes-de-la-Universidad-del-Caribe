@@ -242,87 +242,6 @@ ciclos,clave,nombre,creditos,tipo,plan,preespecialidad
 4,IA3432,Modelación de transporte de contaminantes en el ambiente,6,Preespecialidad,2019IA,Regeración ambiental
 3,IA3423,Saneamiento de suelos,6,Preespecialidad,2019IA,Regeración ambiental
 4,IA3421,Sistema de tratamiento de agua,6,Preespecialidad,2019IA,Regeración ambiental
-1,II0322,Álgebra lineal,6,Basica,2012IA,NA
-1,II0106,Cálculo diferencial,8,Basica,2012IA,NA
-1,II0209,Cálculo integral,6,Basica,2012IA,NA
-1,DP0194,Desarrollo de habilidades del pensamiento,6,Basica,2012IA,NA
-1,II0102,Física experimental,8,Basica,2012IA,NA
-1,IL0415,Ingeniería económica,8,Basica,2012IA,NA
-1,IA0101,Introducción a la ingeniería ambiental,6,Basica,2012IA,NA
-1,II0104,Medio ambiente y desarrollo sustentable,6,Basica,2012IA,NA
-1,IA0103,Microbiología,8,Basica,2012IA,NA
-1,DP0001,"Propedéutico de habilidades básicas de lectura, estudio e investigación",6,Basica,2012IA,NA
-1,II0002,Propedéutico de matematicas para ingenierias,8,Basica,2012IA,NA
-1,IA0102,Química general,8,Basica,2012IA,NA
-1,DP0191,Taller de interacción grupal y competencias comunicativas,6,Basica,2012IA,NA
-1,DP0193,Taller de redacción profesional,6,Basica,2012IA,NA
-1,II0217,Contabilidad financiera,6,Elección libre,2012IA,NA
-1,II0421,Organización y administración de empresas,6,Elección libre,2012IA,NA
-1,IT0192,Taller de computación,6,Elección libre,2012IA,NA
-1,IL0102,Teoría general de sistemas,6,Elección libre,2012IA,NA
-2,II0218,Cálculo vectorial,8,Basica,2012IA,NA
-2,II0320,Ecuaciones diferenciales,6,Basica,2012IA,NA
-2,II0215,Electricidad y magnetismo,8,Basica,2012IA,NA
-2,IL0204,Estadística analítica,8,Basica,2012IA,NA
-2,DP0396,Identidad y cultura,6,Basica,2012IA,NA
-2,IA0206,Legislación y normativa ambiental,6,Basica,2012IA,NA
-2,II0213,Mecánica de fluidos,6,Basica,2012IA,NA
-2,PIA0201,Prácticas profesionales I,10,Basica,2012IA,NA
-2,II0319,Probabilidad y estadística,6,Basica,2012IA,NA
-2,IA0205,Química ambiental,8,Basica,2012IA,NA
-2,IA0204,Química analítica,6,Basica,2012IA,NA
-2,DP0295,Taller de formación en responsabilidad social y ambiental,6,Basica,2012IA,NA
-2,II0216,Termodinámica,8,Basica,2012IA,NA
-2,IT0101,Algoritmos y estructura de datos,6,Elección libre,2012IA,NA
-2,II0164,Metrología y normalización,6,Elección libre,2012IA,NA
-2,II0269,Recursos energéticos,6,Elección libre,2012IA,NA
-2,II3472,Taller de software para ingeniería,6,Elección libre,2012IA,NA
-3,IA0307,Gestión ambiental,6,Basica,2012IA,NA
-3,II0423,Métodos numéricos por computadora,8,Basica,2012IA,NA
-3,PIA0302,Prácticas profesionales II,10,Basica,2012IA,NA
-3,DP0497,Problemas del mundo contemporáneo,6,Basica,2012IA,NA
-3,IA0309,Procesos Fisicoquímicos,8,Basica,2012IA,NA
-3,II0264,Seguridad e higiene industrial,6,Basica,2012IA,NA
-3,II0323,Transferencia de calor,6,Basica,2012IA,NA
-3,IA0308,Transferencia de masa,6,Basica,2012IA,NA
-3,IA0412,Calidad del agua,8,Basica,2012IA,NA
-3,IA0414,Calidad del aire,8,Basica,2012IA,NA
-3,IA0410,Ingeniería de procesos ambientales,8,Basica,2012IA,NA
-3,IA0411,Planeación y evaluación de proyectos ambientales,6,Basica,2012IA,NA
-3,PIA0404,Prácticas profesionales preespecialidad: Energías renovables y eficiencia energética,10,Basica,2012IA,NA
-3,PIA0403,Prácticas profesionales preespecialidad: Regeneración ambiental,10,Basica,2012IA,NA
-3,DP0498,Problemas de México,6,Basica,2012IA,NA
-3,IT0427,Proyecto terminal,6,Basica,2012IA,NA
-3,DP0499,Seminario de investigación,6,Basica,2012IA,NA
-3,IA0413,Tratamiento de residuos,8,Basica,2012IA,NA
-4,IA3420,Bioclimatismo,6,Elección libre,2012IA,NA
-4,IA3417,Control y principios de automatización,6,Elección libre,2012IA,NA
-4,IL3421,Desarrollo de habilidades gerenciales,6,Elección libre,2012IA,NA
-4,IL0308,Diseño de experimentos,6,Elección libre,2012IA,NA
-4,II3429,Evaluación de tecnologías e impacto ambiental,6,Elección libre,2012IA,NA
-4,IA3418,Geohidrología,6,Elección libre,2012IA,NA
-4,II3427,Instalaciones industriales,6,Elección libre,2012IA,NA
-4,IA3415,Instrumentos de política ambiental,6,Elección libre,2012IA,NA
-4,IA3419,Meteorología y climatología,6,Elección libre,2012IA,NA
-4,IA3401,Movilidad I,6,Elección libre,2012IA,NA
-4,IA3402,Movilidad II,6,Elección libre,2012IA,NA
-4,IA3403,Movilidad III,6,Elección libre,2012IA,NA
-4,IA3404,Movilidad IV,6,Elección libre,2012IA,NA
-4,IA3405,Movilidad V,6,Elección libre,2012IA,NA
-4,IA3406,Movilidad VI,6,Elección libre,2012IA,NA
-4,IL0414,Taller de argumentación y técnicas de negociación,6,Elección libre,2012IA,NA
-4,II0422,Taller de emprendedores,6,Elección libre,2012IA,NA
-4,IA3416,Toxicología ambiental,6,Elección libre,2012IA,NA
-4,IA3430,Bioenergéticos,6,Preespecialidad,2012IA,Energías renovables y eficiencia energética
-4,IA3424,Bioremediación,6,Preespecialidad,2012IA,Regeración ambiental
-4,IA3422,Control de emisiones,6,Preespecialidad,2012IA,Regeración ambiental
-4,IA3426,Eficiencia energética,6,Preespecialidad,2012IA,Energías renovables y eficiencia energética
-4,IA3429,Energía del agua,6,Preespecialidad,2012IA,Energías renovables y eficiencia energética
-4,IA3428,Energía eólica,6,Preespecialidad,2012IA,Energías renovables y eficiencia energética
-4,IA3427,Energía solar,6,Preespecialidad,2012IA,Energías renovables y eficiencia energética
-4,IA3423,Saneamiento de suelos,6,Preespecialidad,2012IA,Regeración ambiental
-4,IA3421,Sistema de tratamiento de agua,6,Preespecialidad,2012IA,Regeración ambiental
-4,IA3425,Temas selectos de remediación ambiental,6,Preespecialidad,2012IA,Regeración ambiental
 1,II0322,Álgebra lineal,6,Basica,2018IL,NA
 1,IT0101,Algoritmos y estructura de datos,6,Basica,2018IL,NA
 1,II0106,Cálculo diferencial,8,Basica,2018IL,NA
@@ -484,14 +403,14 @@ ciclos,clave,nombre,creditos,tipo,plan,preespecialidad
 4,NI0267,Taller de emprendedores,6,Elección libre,2009IL,NA
 4,II3472,Taller de software para ingeniería,6,Elección libre,2009IL,NA
 4,IL3421,Desarrollo de habilidades gerenciales,6,Preespecialidad,2009IL,Dirección estratégica
-4,IL3416,Industria del servicio,6,Preespecialidad,2009IL,
-4,IL3420,Industria turística y su entorno,6,Preespecialidad,2009IL,
-4,IL3422,Liderazgo y equipos de trabajo,6,Preespecialidad,2009IL,
-4,IL3419,Logística comercial global,6,Preespecialidad,2009IL,
-4,IL3417,Logística de recuperación,6,Preespecialidad,2009IL,
-4,IL3418,Logística urbana,6,Preespecialidad,2009IL,
-4,NI0423,Planeación estratégica,6,Preespecialidad,2009IL,
-4,IL3424,Sistemas de gestión estratégica,6,Preespecialidad,2009IL,
+4,IL3416,Industria del servicio,6,Preespecialidad,2009IL,Inteligencia de negocios
+4,IL3420,Industria turística y su entorno,6,Preespecialidad,2009IL,Inteligencia de negocios
+4,IL3422,Liderazgo y equipos de trabajo,6,Preespecialidad,2009IL,Dirección estratégica
+4,IL3419,Logística comercial global,6,Preespecialidad,2009IL,Inteligencia de negocios
+4,IL3417,Logística de recuperación,6,Preespecialidad,2009IL,Inteligencia de negocios
+4,IL3418,Logística urbana,6,Preespecialidad,2009IL,Inteligencia de negocios
+4,NI0423,Planeación estratégica,6,Preespecialidad,2009IL,Dirección estratégica
+4,IL3424,Sistemas de gestión estratégica,6,Preespecialidad,2009IL,Dirección estratégica
 4,IL3423,Taller de estrategias para la logística y cadena de suministro,6,Preespecialidad,2009IL,Dirección estratégica
 1,II0322,Álgebra lineal,6,Basica,2018II,NA
 1,II0106,Cálculo diferencial,8,Basica,2018II,NA
@@ -660,21 +579,21 @@ ciclos,clave,nombre,creditos,tipo,plan,preespecialidad
 4,II3472,Taller de software para ingeniería,6,Elección libre,2011II,NA
 4,IL0102,Teoría general de sistemas,6,Elección libre,2011II,NA
 4,II0323,Transferencia de calor,6,Elección libre,2011II,NA
-4,II3473,Abastecimientos,6,Preespecialidad,2011II,
-4,II3474,Aire acondicionado y refrigeración,6,Preespecialidad,2011II,
-4,II3433,Calidad del aire,6,Preespecialidad,2011II,
-4,II3479,Diseño de procesos industriales,6,Preespecialidad,2011II,
-4,II3440,Distribución estratégica,6,Preespecialidad,2011II,
-4,II3429,Evaluación de tecnologías e impacto ambiental,6,Preespecialidad,2011II,
-4,II3439,Gestión de operaciones,6,Preespecialidad,2011II,
-4,IL0311,Investigación de operaciones estocásticas,8,Preespecialidad,2011II,
-4,II3426,Laboratorio de manufactura integrado por computadora,6,Preespecialidad,2011II,
-4,II3430,Manejo alternativo de energía,6,Preespecialidad,2011II,
-4,II3480,Máquinas de control numérico,6,Preespecialidad,2011II,
-4,II0267,"Mecanización, automatización y principios de robótica",6,Preespecialidad,2011II,
-4,II0424,Simulación,6,Preespecialidad,2011II,
-4,II3432,Sistemas de aprovechamiento hidráulico,6,Preespecialidad,2011II,
-4,II3431,Tratamiento de residuos sólidos,6,Preespecialidad,2011II,
+4,II3473,Abastecimientos,6,Preespecialidad,2011II,Gestión de operaciones
+4,II3474,Aire acondicionado y refrigeración,6,Preespecialidad,2011II,"Producción, manufactura y mantenimiento"
+4,II3433,Calidad del aire,6,Preespecialidad,2011II,"Producción, manufactura y mantenimiento"
+4,II3479,Diseño de procesos industriales,6,Preespecialidad,2011II,Gestión de operaciones
+4,II3440,Distribución estratégica,6,Preespecialidad,2011II,Gestión de operaciones
+4,II3429,Evaluación de tecnologías e impacto ambiental,6,Preespecialidad,2011II,Gestión de operaciones
+4,II3439,Gestión de operaciones,6,Preespecialidad,2011II,Gestión de operaciones
+4,IL0311,Investigación de operaciones estocásticas,8,Preespecialidad,2011II,Gestión de operaciones
+4,II3426,Laboratorio de manufactura integrado por computadora,6,Preespecialidad,2011II,"Producción, manufactura y mantenimiento"
+4,II3430,Manejo alternativo de energía,6,Preespecialidad,2011II,"Producción, manufactura y mantenimiento"
+4,II3480,Máquinas de control numérico,6,Preespecialidad,2011II,"Producción, manufactura y mantenimiento"
+4,II0267,"Mecanización, automatización y principios de robótica",6,Preespecialidad,2011II,"Producción, manufactura y mantenimiento"
+4,II0424,Simulación,6,Preespecialidad,2011II,Gestión de operaciones
+4,II3432,Sistemas de aprovechamiento hidráulico,6,Preespecialidad,2011II,"Producción, manufactura y mantenimiento"
+4,II3431,Tratamiento de residuos sólidos,6,Preespecialidad,2011II,"Producción, manufactura y mantenimiento"
 1,DP0191,Taller de interacción grupal y competencias comunicativas,6,Basica,2021ID,NA
 1,DP0193,Taller de redacción profesional,6,Basica,2021ID,NA
 1,DP0194,Desarrollo de habilidades del pensamiento,6,Basica,2021ID,NA
@@ -770,83 +689,3 @@ ciclos,clave,nombre,creditos,tipo,plan,preespecialidad
 4,ID3422,Negocios digitales,6,Preespecialidad,2021ID,Inteligencia Organizacional y de negocios
 4,ID3423,Sistemas de apoyo para la toma de decisiones,6,Preespecialidad,2021ID,Inteligencia Organizacional y de negocios
 4,ID3424,Visualización de datos,6,Preespecialidad,2021ID,Inteligencia Organizacional y de negocios
-1,IT0101,Algoritmos y estructura de datos,6,Basica,2016ID,NA
-1,II0106,Cálculo diferencial,8,Basica,2016ID,NA
-1,II0209,Cálculo integral,6,Basica,2016ID,NA
-1,DP0194,Desarrollo de habilidades del pensamiento,6,Basica,2016ID,NA
-1,ID0101,Diseño de patrones para datos estructurados,6,Basica,2016ID,NA
-1,ID0102,Física clásica,8,Basica,2016ID,NA
-1,IT0264,Introducción a los sistemas de información,6,Basica,2016ID,NA
-1,IT0104,Matemáticas discretas,6,Basica,2016ID,NA
-1,ID0103,Organización y diseño de computadoras,8,Basica,2016ID,NA
-1,IT0161,Sistemas operativos POSIX,6,Basica,2016ID,NA
-1,DP0191,Taller de interacción grupal y competencias comunicativas,6,Basica,2016ID,NA
-1,DP0193,Taller de redacción profesional,6,Basica,2016ID,NA
-1,IT0103,Introducción a las redes,6,Elección libre,2016ID,NA
-1,ID0160,Pensamiento crítico para ingeniería,6,Elección libre,2016ID,NA
-1,ID0161,Recursos de comunicación para la era digital,6,Elección libre,2016ID,NA
-1,IL0102,Teoría general de sistemas,6,Elección libre,2016ID,NA
-2,II0322,Álgebra lineal,6,Basica,2016ID,NA
-2,ID0204,Bases de Datos,8,Basica,2016ID,NA
-2,II0320,Ecuaciones diferenciales,6,Basica,2016ID,NA
-2,II0215,Electricidad y magnetismo,8,Basica,2016ID,NA
-2,IL0204,Estadística analítica,8,Basica,2016ID,NA
-2,ID0205,Geometría computacional,6,Basica,2016ID,NA
-2,DP0396,Identidad y cultura,6,Basica,2016ID,NA
-2,ID0206,Interconectividad en redes,8,Basica,2016ID,NA
-2,PID0201,Prácticas Profesionales I,10,Basica,2016ID,NA
-2,II0319,Probabilidad y estadística,6,Basica,2016ID,NA
-2,IT0210,Programación orientada a objetos,6,Basica,2016ID,NA
-2,DP0295,Taller de formación en responsabilidad social y ambiental,6,Basica,2016ID,NA
-2,IT0107,Técnicas algorítmicas,8,Basica,2016ID,NA
-2,ID0262,Contabilidad y costos para ingeniería,6,Elección libre,2016ID,NA
-2,ID0264,Innovación disruptiva,6,Elección libre,2016ID,NA
-2,ID0265,Programación web,6,Elección libre,2016ID,NA
-2,ID0263,Sistemas de planificación de recursos empresariales,6,Elección libre,2016ID,NA
-3,ID0308,Análisis de grandes volúmenes de datos,8,Basica,2016ID,NA
-3,ID0309,Aprendizaje estadístico,6,Basica,2016ID,NA
-3,IT0263,Electrónica analógica,6,Basica,2016ID,NA
-3,IT0208,Electrónica digital,8,Basica,2016ID,NA
-3,ID0307,Ingeniería de software,6,Basica,2016ID,NA
-3,IT0425,Introducción a la inteligencia artificial,6,Basica,2016ID,NA
-3,ID0310,Minería de datos,8,Basica,2016ID,NA
-3,PID0302,Prácticas profesionales II,10,Basica,2016ID,NA
-3,DP0498,Problemas de México,6,Basica,2016ID,NA
-3,DP0497,Problemas del mundo contemporáneo,6,Basica,2016ID,NA
-4,IT0423,Administración de proyectos de desarrollo de software,6,Basica,2016ID,NA
-4,ID0411,Cómputo de alto desempeño,8,Basica,2016ID,NA
-4,ID0412,Métodos de desarrollo de software,8,Basica,2016ID,NA
-4,PID0404,Prácticas Profesionales preespecialidad: Innovación en TIC,10,Basica,2016ID,NA
-4,PID0403,Prácticas profesionales preespecialidad: Inteligencia organizacional y de negocios,10,Basica,2016ID,NA
-4,ID0413,Procesamiento de datos en la nube,6,Basica,2016ID,NA
-4,IT0427,Proyecto terminal,6,Basica,2016ID,NA
-4,ID0414,Seguridad de datos,8,Basica,2016ID,NA
-4,DP0499,Seminario de investigación,6,Basica,2016ID,NA
-4,IT0322,Teoría de la información,6,Basica,2016ID,NA
-4,IT0317,Diseño de interfaces humano-máquina,6,Elección libre,2016ID,NA
-4,ID3466,Gobierno de datos y redes sociales,6,Elección libre,2016ID,NA
-4,ID3467,Graficación por computadora,6,Elección libre,2016ID,NA
-4,ID3468,Herramientas para la gestión de grandes volúmenes de datos,6,Elección libre,2016ID,NA
-4,ID3469,Internet de las cosas,6,Elección libre,2016ID,NA
-4,IL3422,Liderazgo y equipos de trabajo,6,Elección libre,2016ID,NA
-4,NI3431,Marketing en los negocios electrónicos,6,Elección libre,2016ID,NA
-4,II0423,Métodos numéricos por computadora,8,Elección libre,2016ID,NA
-4,NI0423,Planeación estratégica,6,Elección libre,2016ID,NA
-4,IT3472,Principios de automatización y robótica,6,Elección libre,2016ID,NA
-4,ID3470,Programación de aplicaciones de red,6,Elección libre,2016ID,NA
-4,ID3471,Realidad virtual,6,Elección libre,2016ID,NA
-4,ID3474,Sistemas de información geográfica,6,Elección libre,2016ID,NA
-4,IL0414,Taller de argumentación y técnicas de negociación,6,Elección libre,2016ID,NA
-4,II0422,Taller de emprendedores,6,Elección libre,2016ID,NA
-4,ID3472,Tópicos selectos en ingeniería de datos,6,Elección libre,2016ID,NA
-4,ID3473,Tópicos selectos en inteligencia organizacional,6,Elección libre,2016ID,NA
-4,ID3420,Analítica para la inteligencia de negocios,6,Preespecialidad,2016ID,Inteligencia Organizacional y de negocios
-4,ID3415,Cómputo ubicuo,6,Preespecialidad,2016ID,Innovación en TIC
-4,ID3417,Diseño de juegos,6,Preespecialidad,2016ID,Innovación en TIC
-3,ID3416,Diseño multimedia,6,Preespecialidad,2016ID,Innovación en TIC
-3,ID3421,Gestión del conocimiento,6,Preespecialidad,2016ID,Inteligencia Organizacional y de negocios
-3,ID3422,Negocios digitales,6,Preespecialidad,2016ID,Inteligencia Organizacional y de negocios
-4,ID3423,Sistemas de apoyo para la toma de decisiones,6,Preespecialidad,2016ID,Inteligencia Organizacional y de negocios
-3,ID3418,TIC para la educación,6,Preespecialidad,2016ID,Innovación en TIC
-4,ID3419,TIC para la salud,6,Preespecialidad,2016ID,Innovación en TIC
-4,ID3424,Visualización de datos,6,Preespecialidad,2016ID,Inteligencia Organizacional y de negocios

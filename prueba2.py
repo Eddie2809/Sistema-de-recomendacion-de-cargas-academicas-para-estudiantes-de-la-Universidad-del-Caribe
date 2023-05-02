@@ -41,7 +41,7 @@ def saveToCsv(pop,log,estudiante):
     f.close()
 
     f = open('./resultados/' + estudiante + '.csv','w')
-    f.write('clave,ciclos,Nombre,Maestro,Lunes,Martes,Miercoles,Jueves,Viernes,tipo,id\n')
+    f.write('clave,ciclos,Nombre,Maestro,Lunes,Martes,Miercoles,Jueves,Viernes,tipo,id_carga,desempeno\n')
     for p in pop.iloc:
         f.write(str(p[0]) + ',')
         f.write(str(p[1]) + ',')
@@ -84,14 +84,8 @@ planes = pd.read_csv('./Archivos/planes.csv',encoding = 'utf8')
 seriaciones = pd.read_csv('./Archivos/seriacion.csv',encoding = 'utf8')
 eleccionLibrePorCiclos = pd.read_csv('./Archivos/elib_por_ciclos.csv',encoding = 'utf8')
 nombres = os.listdir('./Kardex-respuestas')
-student  = Student(ruta = './Kardex-respuestas/' + nombres[0], periodoActual = 202301,planes = planes)
-nombre,matricula,situacion,planNombre,kardex = student.obtenerDatosKardex()
-matricula = str(matricula)
 
-plan = planes.query('plan == "' + planNombre + '"')
-seriacion = seriaciones.query('plan == "' + planNombre + '"')
-eleccionLibrePorCiclos = eleccionLibrePorCiclos.query('plan == "' + planNombre + '"')
-oferta = oferta.query('plan == "' + planNombre + '"')
+
 disp = [
 	[(9,15)],
 	[(9,15)],
@@ -1346,17 +1340,28 @@ preferencias["Kardex - MARCO ANTONIO ALFARO BARUCH.pdf"] = {
 }
 NGEN = 100
 
-ini = 0
-fin = 5
+ini = 44
+fin = 45
 
 for i in range(ini,fin):
+	print(nombres[i], " ", i)
 	nombreAlumno = nombres[i]
-	algoritmo = Algoritmo(kardex = kardex, eleccionLibrePorCiclos = eleccionLibrePorCiclos,datosEntrenamientoKM=datosEntrenamientoKM,datosCeneval=datosCeneval,tasasReprobacion=tasaReprobacion,matricula=matricula, situacion = situacion, oferta = oferta, preespecialidad = preferencias[nombreAlumno]['preespecialidad'], plan = plan, seriaciones = seriacion, NGEN = NGEN, setCancelarEjecucion=lambda x: x, obtenerCancelarEjecucion=lambda: False,pesos=preferencias[nombreAlumno]['pesos'],disponibilidad=preferencias[nombreAlumno]['disponibilidad'],cantidadIdealMaterias=preferencias[nombreAlumno]['cantidadIdealMaterias'],disponibilidadComoRestriccion=False)
+	student  = Student(ruta = './Kardex-respuestas/' + nombreAlumno, periodoActual = 202301,planes = planes)
+	nombre,matricula,situacion,planNombre,kardex = student.obtenerDatosKardex()
+    
+	matricula = str(matricula)
+	plan = planes.query('plan == "' + planNombre + '"')
+	seriacion = seriaciones.query('plan == "' + planNombre + '"')
+	eleccionLibrePorCiclo = eleccionLibrePorCiclos.query('plan == "' + planNombre + '"')
+	ofert = oferta.query('plan == "' + planNombre + '"')
+	
+	algoritmo = Algoritmo(kardex = kardex, eleccionLibrePorCiclos = eleccionLibrePorCiclo,datosEntrenamientoKM=datosEntrenamientoKM,datosCeneval=datosCeneval,tasasReprobacion=tasaReprobacion,matricula=matricula, situacion = situacion, oferta = ofert, preespecialidad = preferencias[nombreAlumno]['preespecialidad'], plan = plan, seriaciones = seriacion, NGEN = NGEN, setCancelarEjecucion=lambda x: x, obtenerCancelarEjecucion=lambda: False,pesos=preferencias[nombreAlumno]['pesos'],disponibilidad=preferencias[nombreAlumno]['disponibilidad'],cantidadIdealMaterias=preferencias[nombreAlumno]['cantidadIdealMaterias'],disponibilidadComoRestriccion=False)
 	pop,log = algoritmo.run(callbackProceso=lambda porcentaje,tiempoTranscurrido: print(porcentaje))
 	dfFinal = pd.DataFrame(columns = ['clave','ciclos','Nombre','Maestro','Lunes','Martes','Miercoles','Jueves','Viernes','tipo'])
 	rec = algoritmo.obtenerRecomendacionesUnicas(pop)
 	for i,p in enumerate(rec):
-	    df = algoritmo.obtenerDatosCarga(p)
-	    df['id'] = int(i)
-	    dfFinal = pd.concat([dfFinal,df],axis = 0)
+		df = algoritmo.obtenerDatosCarga(p)
+		df['id_carga'] = int(i)
+		df['desempeno'] = round(algoritmo.obtenerDesempenoPonderado(p), 2)
+		dfFinal = pd.concat([dfFinal,df],axis = 0)
 	saveToCsv(dfFinal,log,nombreAlumno)
