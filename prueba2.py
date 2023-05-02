@@ -85,6 +85,7 @@ planes = pd.read_csv('./Archivos/planes.csv',encoding = 'utf8')
 seriaciones = pd.read_csv('./Archivos/seriacion.csv',encoding = 'utf8')
 eleccionLibrePorCiclosOrig = pd.read_csv('./Archivos/elib_por_ciclos.csv',encoding = 'utf8')
 nombres = os.listdir('./Kardex-respuestas')
+
 disp = [
 	[(9,15)],
 	[(9,15)],
@@ -1337,24 +1338,68 @@ preferencias["Kardex - MARCO ANTONIO ALFARO BARUCH.pdf"] = {
 	"disponibilidadComoRestriccion": True,
 	"disponibilidad": crearDisponibilidad(disp)
 }
-NGEN = 100
+disp = [
+	[(14,22)],
+	[(14,22)],
+	[(14,22)],
+	[(14,22)],
+	[(14,21)]
+]
+preferencias["Comparto _estudiante_cardex190300433383_ contigo - AURORA GUADALUPE DE LA ROSA TRONCOSO.pdf"] = {
+	"preespecialidad": preesp["ra"],
+	"pesos": {
+		"upcc": 0.7,
+		"upmr": 1,
+		"upcm": 0.7,
+		"cpdh": 0.9,
+		"cpah": 0.9,
+		"cprr": 0.3,
+	},
+	"cantidadIdealMaterias": 7,
+	"disponibilidadComoRestriccion": False,
+	"disponibilidad": crearDisponibilidad(disp)
+}
+disp = [
+	[(7,22)],
+	[(7,22)],
+	[(7,22)],
+	[(7,22)],
+	[(7,22)]
+]
+preferencias[""] = {
+	"preespecialidad": preesp["ion"],
+	"pesos": {
+		"upcc": 1,
+		"upmr": 0,
+		"upcm": 1,
+		"cpdh": 0.6,
+		"cpah": 0.5,
+		"cprr": 0,
+	},
+	"cantidadIdealMaterias": 7,
+	"disponibilidadComoRestriccion": False,
+	"disponibilidad": crearDisponibilidad(disp)
+}
+
+NGEN = 1
 
 ini = 0
-fin = 1
-
-nombres = ['estudiante_cardex190300607268 - KARINA MIRANDA AVILA.pdf']
+fin = len(nombres)
 
 for i in range(ini,fin):
+	print(nombres[i], " ", i)
 	nombreAlumno = nombres[i]
-	student  = Student(ruta = './Kardex-respuestas/' + nombres[0], periodoActual = 202301,planes = planes)
-	nombre,matricula,situacion,planNombre,kardex = student.obtenerDatosKardex()
-	matricula = str(matricula)
 
+	student  = Student(ruta = './Kardex-respuestas/' + nombreAlumno, periodoActual = 202301,planes = planes)
+	nombre,matricula,situacion,planNombre,kardex = student.obtenerDatosKardex()
+    
+	matricula = str(matricula)
 	plan = planes.query('plan == "' + planNombre + '"')
 	seriacion = seriaciones.query('plan == "' + planNombre + '"')
 	eleccionLibrePorCiclos = eleccionLibrePorCiclosOrig.query('plan == "' + planNombre + '"')
-	oferta = oferta.query('plan == "' + planNombre + '"')
-	algoritmo = Algoritmo(kardex = kardex, eleccionLibrePorCiclos = eleccionLibrePorCiclos,datosEntrenamientoKM=datosEntrenamientoKM,datosCeneval=datosCeneval,tasasReprobacion=tasaReprobacion,matricula=matricula, situacion = situacion, oferta = oferta, preespecialidad = preferencias[nombreAlumno]['preespecialidad'], plan = plan, seriaciones = seriacion, NGEN = NGEN, setCancelarEjecucion=lambda x: x, obtenerCancelarEjecucion=lambda: False,pesos=preferencias[nombreAlumno]['pesos'],disponibilidad=preferencias[nombreAlumno]['disponibilidad'],cantidadIdealMaterias=preferencias[nombreAlumno]['cantidadIdealMaterias'],disponibilidadComoRestriccion=False)
+	ofert = oferta.query('plan == "' + planNombre + '"')
+
+	algoritmo = Algoritmo(kardex = kardex, eleccionLibrePorCiclos = eleccionLibrePorCiclos,datosEntrenamientoKM=datosEntrenamientoKM,datosCeneval=datosCeneval,tasasReprobacion=tasaReprobacion,matricula=matricula, situacion = situacion, oferta = ofert, preespecialidad = preferencias[nombreAlumno]['preespecialidad'], plan = plan, seriaciones = seriacion, NGEN = NGEN, setCancelarEjecucion=lambda x: x, obtenerCancelarEjecucion=lambda: False,pesos=preferencias[nombreAlumno]['pesos'],disponibilidad=preferencias[nombreAlumno]['disponibilidad'],cantidadIdealMaterias=preferencias[nombreAlumno]['cantidadIdealMaterias'],disponibilidadComoRestriccion=preferencias[nombreAlumno]['disponibilidadComoRestriccion'])
 	pop,log = algoritmo.run(callbackProceso=lambda porcentaje,tiempoTranscurrido: print(porcentaje))
 	dfFinal = pd.DataFrame(columns = ['clave','ciclos','Nombre','Maestro','Lunes','Martes','Miercoles','Jueves','Viernes','tipo'])
 	rec = algoritmo.obtenerRecomendacionesUnicas(pop)
