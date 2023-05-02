@@ -72,8 +72,6 @@ class Algoritmo():
 		self.toolbox.register("mutate", self.mutacionUniforme,prob=0.15)
 
 		self.NOBJ = 6
-		self.K = 10
-		self.NDIM = self.NOBJ + self.K - 1
 		self.P = 5
 		self.H = factorial(self.NOBJ + self.P - 1) / (factorial(self.P) * factorial(self.NOBJ - 1))
 		self.MU = int(self.H + (4 - self.H % 4))

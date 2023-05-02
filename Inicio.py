@@ -52,6 +52,12 @@ class Inicio(ctk.CTkFrame):
 			else:
 				filename = askopenfilename(initialdir="C://")
 				student  = Student(ruta = filename, periodoActual = 202301,planes = self.controlador.planes)
+
+			if self.controlador.enPruebas:
+				nombreArchivo = filename.split('/')[-1]
+				nombreArchivo += '.csv'
+				if nombreArchivo in self.controlador.nombresResultadosPruebas:
+					self.controlador.nombreResultadoPrueba = nombreArchivo
 			message = "Bienvenido " + student.nombre
 			CTkMessagebox(title="Bienvenido",message= message, icon="check", option_1="Thanks")
 			self.boolKardex = True

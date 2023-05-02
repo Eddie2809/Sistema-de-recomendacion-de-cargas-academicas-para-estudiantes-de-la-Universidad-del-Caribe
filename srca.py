@@ -13,6 +13,7 @@ from CTkMessagebox import CTkMessagebox
 from ResultadosEstadisticas import ResultadosEstadisticas
 import pandas as pd
 import threading
+import os
 
 ctk.set_appearance_mode('light')
 
@@ -21,12 +22,15 @@ class App(ctk.CTk):
         super().__init__()
 
         self.enDesarrollo = False
+        self.enPruebas = True
 
         estilo = Estilo()
         self.oferta = pd.read_csv('./Archivos/oferta.csv',encoding = 'utf8')
         self.planes = pd.read_csv('./Archivos/planes.csv',encoding = 'utf8')
         self.seriaciones = pd.read_csv('./Archivos/seriacion.csv',encoding = 'utf8')
         self.eleccionLibrePorCiclos = pd.read_csv('./Archivos/elib_por_ciclos.csv',encoding = 'utf8')
+        self.nombresResultadosPruebas = os.listdir('./resultados')
+        self.nombreResultadoPrueba = None
 
         self.title("Sistema de recomendación de cargas académicas")
         self.geometry('1200x600+0+0')
@@ -109,6 +113,27 @@ class App(ctk.CTk):
 
         self.cambiarRuta(frame)        
 
+    def cargarResultadosDePrueba(self):
+        plan = self.planes.query('plan == "' + self.estudiantePlan + '"')
+        seriacion = self.seriaciones.query('plan == "' + self.estudiantePlan + '"')
+        eleccionLibrePorCiclos = self.eleccionLibrePorCiclos.query('plan == "' + self.estudiantePlan + '"')
+        oferta = self.oferta.query('plan == "' + self.estudiantePlan + '"')
+        NGEN = 100
+
+        self.algoritmo = Algoritmo(kardex = self.estudiante.kardex, eleccionLibrePorCiclos = self.eleccionLibrePorCiclos,datosEntrenamientoKM=self.datosEntrenamientoKM,datosCeneval=self.datosCeneval,tasasReprobacion=self.tasaReprobacion,matricula=self.estudianteMatricula, situacion = self.estudianteSituacion, oferta = oferta, preespecialidad = self.preespecialidad, plan = plan, seriaciones = seriacion, NGEN = NGEN, setCancelarEjecucion=self.setCancelarEjecucion, obtenerCancelarEjecucion=self.obtenerCancelarEjecucion,pesos=self.pesos,disponibilidad=self.disponibilidad,cantidadIdealMaterias=self.cantidadIdealMaterias,disponibilidadComoRestriccion=self.disponibilidadComoRestriccion)
+        resultados = pd.read_csv('./resultados/' + self.nombreResultadoPrueba,encoding = 'ansi')
+        self.resultados = []
+
+        tam = max(resultados['id_carga'])
+        tam = int(tam)
+
+        for i in range(tam):
+            df = resultados.query('id_carga == ' + str(i))
+            df['desempeno'] = self.algoritmo.obtenerDesempenoPonderado(df)
+            self.resultados.append(df)
+
+        self.cambiarFrame('Resultados')
+
     def cambiarPreferencias(self,nuevaDisponibilidad,nuevosPesos,nuevoCIM,nuevoDCR,nuevaPreespecialidad):
         self.disponibilidad = nuevaDisponibilidad
         self.disponibilidadComoRestriccion = nuevoDCR
@@ -153,6 +178,9 @@ class App(ctk.CTk):
         return preespecialidadesFinal
 
     def ejecutarAlgoritmo(self):
+        if self.enPruebas:
+            self.cargarResultadosDePrueba()
+            return
         self.cambiarFrame('PantallaCarga')
         NGEN = 0 if self.enDesarrollo else 100
 

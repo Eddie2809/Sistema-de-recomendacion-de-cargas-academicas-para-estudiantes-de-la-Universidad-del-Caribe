@@ -80,7 +80,6 @@ class FrameListaAsignaturas(ctk.CTkFrame):
 		self.scrollAsignaturas = ScrollFrameAsignaturas(master=self, controlador=controlador)
 		self.scrollAsignaturas.grid(row=1, columnspan=4, sticky=ctk.NSEW)
 
-
 class ScrollFrameAsignaturas(ctk.CTkFrame):
 	def __init__(self, master, controlador):
 		super().__init__(master)
@@ -106,7 +105,6 @@ class ScrollFrameAsignaturas(ctk.CTkFrame):
 
 		dataframeKardex = pd.concat([dataframeKardex,resultado], axis=1)
 		listaKardex = dataframeKardex.values.tolist()
-
 
 		for i in range(len(listaKardex)):
 			master.master.listaClaves.append(ctk.StringVar())
