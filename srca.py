@@ -189,7 +189,7 @@ class App(ctk.CTk):
         eleccionLibrePorCiclos = self.eleccionLibrePorCiclos.query('plan == "' + self.estudiantePlan + '"')
         oferta = self.oferta.query('plan == "' + self.estudiantePlan + '"')
 
-        if self.estudiantePlan != '2016ID' and self.estudiantePlan != '2018II' and self.estudiantePlan != '2012IA' and self.estudiantePlan != '2018IL':
+        if self.estudiantePlan != '2016ID' and self.estudiantePlan != '2021ID' and self.estudiantePlan != '2018II' and self.estudiantePlan != '2012IA' and self.estudiantePlan != '2019IA' and self.estudiantePlan != '2018IL':
             CTkMessagebox(title="Error", message="Una disculpa, no tenemos los datos completos de tu plan de estudios.", icon="cancel")
             self.cambiarFrame('Inicio')
             return

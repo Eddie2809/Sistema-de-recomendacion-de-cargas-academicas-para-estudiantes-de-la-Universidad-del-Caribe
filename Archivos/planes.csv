@@ -616,7 +616,7 @@ ciclos,clave,nombre,creditos,tipo,plan,preespecialidad
 2,II0319,Probabilidad y estadística,8,Basica,2021ID,NA
 2,ID0207,Probabilidad y estadística,8,Basica,2021ID,NA
 2,II0320,Ecuaciones diferenciales,8,Basica,2021ID,NA
-2,IA0209 ,Ecuaciones diferenciales,8,Basica,2021ID,NA
+2,IA0209,Ecuaciones diferenciales,8,Basica,2021ID,NA
 2,IL0204,Estadística analítica,8,Basica,2021ID,NA
 2,IT0107,Técnicas algorítmicas,6,Basica,2021ID,NA
 2,ID0208,Técnicas algorítmicas,6,Basica,2021ID,NA
@@ -689,3 +689,5 @@ ciclos,clave,nombre,creditos,tipo,plan,preespecialidad
 4,ID3422,Negocios digitales,6,Preespecialidad,2021ID,Inteligencia Organizacional y de negocios
 4,ID3423,Sistemas de apoyo para la toma de decisiones,6,Preespecialidad,2021ID,Inteligencia Organizacional y de negocios
 4,ID3424,Visualización de datos,6,Preespecialidad,2021ID,Inteligencia Organizacional y de negocios
+1,ID0107,Diseño de patrones para datos estructurados,6,Basica,2021ID,NA
+1,ID0108,Física clásica,6,Basica,2021ID,NA

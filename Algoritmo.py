@@ -496,7 +496,7 @@ class Algoritmo():
 			if claves[i][0:2] == 'AD'or claves[i][0:2] == 'TA' or claves[i][0:2] == 'LI' or claves[i][0:2] == 'PI':
 				continue
 				
-			print(claves[i])
+			#print(claves[i])
 			ciclo = self.plan.query('clave == "' + claves[i] + '"')['ciclos'].values[0] - 1
 			utilidadTotal += self.utilidad[ciclo - self.menorCiclo]
 		
