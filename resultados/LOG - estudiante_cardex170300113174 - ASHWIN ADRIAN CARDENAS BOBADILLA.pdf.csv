@@ -1,0 +1,2 @@
+gen,evals,avg_upcc,avg_upmr,avg_upcm,avg_cpdh,avg_cpah,avg_cprr,std_upcc,std_upmr,std_upcm,std_cpdh,std_cpah,std_cprr,min_upcc,min_upmr,min_upcm,min_cpdh,min_cpah,min_cprr,max_upcc,max_upmr,max_upcm,max_cpdh,max_cpah,max_cprr
+0,1000,0.013517241379310343,0.011,0.0126,0.979,0.9939999999999999,0.979,0.09536422450322386,0.10430244484191172,0.08832462850190669,0.14338409953687276,0.06064887232493105,0.14338409953687276,0.0,0.0,0.0,0.0,-0.0,-0.0,0.9310344827586207,1.0,0.8,1.0,1.0,1.0

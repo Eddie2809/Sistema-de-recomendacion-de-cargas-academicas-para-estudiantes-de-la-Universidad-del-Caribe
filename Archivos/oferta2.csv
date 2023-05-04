@@ -1,0 +1,98 @@
+,clave,Nombre,Maestro,Lunes,Martes,Miercoles,Jueves,Viernes,plan
+0,DP0001,"Propedéutico de habilidades básicas de lectura, estudio e investigación",Caamal Lora / Gabriel Adoni,-,-,08:00-09:00,-,09:00-11:00,2018IL
+1,II0209,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,2018IL
+2,IL0206,Taller de sistemas empresariales,Gallareta Negrón / Mirbella Teresa,11:00-13:00,-,12:00-14:00,-,-,2018IL
+3,IL0263,Introducción a la dirección estratégica,Gallareta Negrón / Mirbella Teresa,-,13:00-14:00,09:00-11:00,-,-,2018IL
+4,IL3416,Industria del servicio,Basto Cohuo / Jonathan Abimael,07:00-09:00,-,07:00-08:00,-,-,2018IL
+5,IT0101,Algoritmos y estructura de datos,Morales Saavedra / Emmanuel,-,09:00-11:00,-,08:00-09:00,-,2018IL
+6,NI0162,Envase y embalaje,Rodríguez Herrera / Ricardo Renato,-,07:00-09:00,-,07:00-08:00,-,2018IL
+7,DP0193,Taller de redacción profesional,Alvarado Martínez / María Del Carmen,-,-,17:00-18:00,-,16:00-18:00,2018IL
+8,DP0001,"Propedéutico de habilidades básicas de lectura, estudio e investigación",Trujillo Ramírez / Jorge Antonio,15:00-17:00,-,-,17:00-18:00,-,2018IL
+9,DP0001,"Propedéutico de habilidades básicas de lectura, estudio e investigación",Landero Caraveo / Cledia María,-,17:00-18:00,-,-,15:00-17:00,2018IL
+10,DP0191,Taller de interacción grupal y competencias comunicativas,Diaz Barriga Cuevas / Claudia,-,-,-,15:00-17:00,17:00-18:00,2018IL
+11,DP0191,Taller de interacción grupal y competencias comunicativas,Diaz Barriga Cuevas / Claudia,18:00-20:00,-,-,17:00-18:00,-,2018IL
+12,DP0193,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,18:00-20:00,-,17:00-18:00,2018IL
+13,DP0194,Desarrollo de habilidades del pensamiento,Mendoza Luna / José Arturo,-,-,19:00-20:00,-,20:00-22:00,2018IL
+14,II0209,Cálculo integral,Canul Chalé / Juan Diego,17:00-19:00,-,16:00-17:00,-,-,2018IL
+15,DP0193,Taller de redacción profesional,Parra Dorantes / Roberto,-,-,-,17:00-18:00,18:00-20:00,2018IL
+16,DP0193,Taller de redacción profesional,Caamal Lora / Gabriel Adoni,-,20:00-21:00,-,-,20:00-22:00,2018IL
+17,DP0194,Desarrollo de habilidades del pensamiento,Maich Sangiacomo / Karinna,-,20:00-22:00,-,20:00-21:00,-,2018IL
+18,DP0194,Desarrollo de habilidades del pensamiento,Aguilar Hernández / Miguel Ángel,-,19:00-20:00,-,-,18:00-20:00,2018IL
+19,DP0191,Taller de interacción grupal y competencias comunicativas,Maldonado Santiago / David,-,-,19:00-20:00,-,16:00-18:00,2018IL
+20,DP0193,Taller de redacción profesional,Caamal Lora / Gabriel Adoni,20:00-22:00,-,20:00-21:00,-,-,2018IL
+21,DP0001,"Propedéutico de habilidades básicas de lectura, estudio e investigación",Landero Caraveo / Cledia María,14:00-16:00,-,14:00-15:00,-,-,2018IL
+22,II0106,Cálculo diferencial,Zue / Juan Carlos,18:00-20:00,-,20:00-22:00,-,-,2018IL
+23,II0322,Álgebra lineal,Zavala Amezcua / Eva Mirelle,15:00-17:00,-,-,16:00-17:00,-,2018IL
+24,II0002,Propedéutico de matematicas para ingenierias,Caamal Uc / Abner Gadiel,07:00-09:00,-,07:00-09:00,-,-,2018IL
+25,DP0191,Taller de interacción grupal y competencias comunicativas,Trujillo Ramírez / Jorge Antonio,-,20:00-21:00,-,20:00-22:00,-,2018IL
+26,DP0194,Desarrollo de habilidades del pensamiento,López Ávila / Nicté,19:00-21:00,-,-,-,20:00-21:00,2018IL
+27,DP0191,Taller de interacción grupal y competencias comunicativas,Maldonado Santiago / David,-,16:00-18:00,-,17:00-18:00,-,2018IL
+28,DP0191,Taller de interacción grupal y competencias comunicativas,Maldonado Santiago / David,-,-,18:00-19:00,-,18:00-20:00,2018IL
+29,DP0194,Desarrollo de habilidades del pensamiento,Cantero Flores / Víctor,19:00-20:00,-,-,18:00-20:00,-,2018IL
+30,DP0194,Desarrollo de habilidades del pensamiento,Aguilar Hernández / Miguel Ángel,-,16:00-18:00,-,16:00-17:00,-,2018IL
+31,DP0194,Desarrollo de habilidades del pensamiento,Aguilar Hernández / Miguel Ángel,-,18:00-19:00,-,19:00-21:00,-,2018IL
+32,DP0194,Desarrollo de habilidades del pensamiento,Peralta Del Riego / Víctor Manuel,-,-,12:00-14:00,-,13:00-14:00,2018IL
+33,II0106,Cálculo diferencial,Can Tun / Miguel Alberto,07:00-09:00,-,07:00-09:00,-,-,2018IL
+34,II0106,Can Tun / Miguel Alberto,Cálculo diferencial,-,07:00-09:00,-,-,07:00-09:00,2018IL
+35,DP0295,Taller de formación en responsabilidad social y ambiental,Blanco Valdés / Santiago,-,13:00-15:00,-,13:00-14:00,-,2018IL
+36,II0320,Ecuaciones diferenciales,Mejenes Sánchez / Omar,07:00-10:00,-,-,-,-,2018IL
+37,II0422,Taller de emprendedores,Contreras Macossay / Bani Obed,-,09:00-11:00,11:00-12:00,-,-,2018IL
+38,IL0203,Análisis sistemático de la producción y distribución de bienes y servicios,Batun Chay / Gaby Betsaida,-,07:00-09:00,-,07:00-08:00,-,2018IL
+39,IL0204,Estadística analítica,Can Tun / Miguel Alberto,-,-,09:00-11:00,-,09:00-11:00,2018IL
+40,IL0208,Taller de sistemas logísticos,Moo Valle / Ricky Omar,12:00-14:00,-,12:00-14:00,-,-,2018IL
+41,IL0311,Investigación de operaciones estocásticas,Moo Valle / Ricky Omar,-,-,-,09:00-11:00,07:00-09:00,2018IL
+42,DP0295,Taller de formación en responsabilidad social y ambiental,Cucurachi Durán / Sergio Jesús,-,-,17:00-18:00,-,16:00-18:00,2018IL
+43,DP0295,Taller de formación en responsabilidad social y ambiental,Cerón Benitez / Mitzi Anayancin,-,-,19:00-21:00,-,20:00-21:00,2018IL
+44,DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,16:00-18:00,-,-,16:00-17:00,2018IL
+45,II0320,Ecuaciones diferenciales,Mejenes Sánchez / Omar,-,07:00-09:00,-,07:00-08:00,-,2018IL
+46,II0320,Ecuaciones diferenciales,Canul Chalé / Juan Diego,-,-,19:00-20:00,-,14:00-16:00,2018IL
+47,DP0295,Taller de formación en responsabilidad social y ambiental,Cucurachi Durán / Sergio Jesús,-,-,18:00-20:00,-,18:00-19:00,2018IL
+48,DP0295,Taller de formación en responsabilidad social y ambiental,Lugo Hernández / Lizbeth,-,-,17:00-19:00,17:00-18:00,-,2018IL
+49,DP0396,Identidad y cultura,Cucurachi Durán / Sergio Jesús,-,20:00-21:00,-,-,20:00-22:00,2018IL
+50,IL3422,Liderazgo y equipos de trabajo,García Rivera / Miriam Angelica,-,-,15:00-16:00,-,14:00-16:00,2018IL
+51,DP0295,Taller de formación en responsabilidad social y ambiental,Lugo Hernández / Lizbeth,-,-,19:00-21:00,-,20:00-21:00,2018IL
+52,DP0295,Taller de formación en responsabilidad social y ambiental,Muñoz Dzib / Melchor Ernesto,-,18:00-19:00,-,-,18:00-20:00,2018IL
+53,DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,14:00-16:00,-,15:00-16:00,-,2018IL
+54,II0422,Taller de emprendedores,Arreola Mejía / Sonia Amalia,-,13:00-15:00,-,13:00-14:00,-,2018IL
+55,DP0497,Problemas del mundo contemporáneo,Vázquez Flores / Graciela,-,-,09:00-11:00,-,09:00-10:00,2018IL
+56,ID0308,Análisis de grandes volúmenes de datos,Olivares González / Cyntya,09:00-11:00,-,-,09:00-11:00,-,2018IL
+57,ID0309,Aprendizaje estadístico,Treviño Arzápalo / Ángel Alejandro,-,09:00-11:00,-,07:00-08:00,-,2018IL
+58,ID3424,Visualización de datos,Mendiola Fuentes / Jessica Carmin,07:00-08:00,-,-,-,07:00-09:00,2018IL
+59,II0217,Contabilidad financiera,García Rivera / Miriam Angelica,08:00-09:00,-,07:00-09:00,-,-,2018IL
+60,II0219,Ingeniería de costos,García Rivera / Miriam Angelica,11:00-13:00,-,12:00-13:00,-,-,2018IL
+61,II3472,Taller de software para ingeniería,Gallareta Negrón / Mirbella Teresa,13:00-14:00,-,-,13:00-15:00,-,2018IL
+62,II3473,Abastecimientos,Moo Valle / Ricky Omar,-,13:00-15:00,-,-,10:00-11:00,2018IL
+63,NI3439,Formulación y desarrollo del plan de marketing,Zapata Solís / Zuemy De Lourdes,-,07:00-09:00,-,08:00-09:00,-,2018IL
+64,II3473,Abastecimientos,Moo Valle / Ricky Omar,-,-,14:00-15:00,-,14:00-16:00,2018IL
+65,DP0497,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,20:00-22:00,-,-,19:00-20:00,2018IL
+66,DP0498,Problemas de México,Manzo de León / Leonela Paola,20:00-22:00,-,20:00-21:00,-,-,2018IL
+67,II0422,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,07:00-09:00,-,07:00-08:00,-,-,2018IL
+68,NI3431,Marketing en los negocios electrónicos,Canche Dzul / Arely Del Socorro,21:00-22:00,-,-,-,19:00-21:00,2018IL
+69,DP0497,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,20:00-22:00,-,-,17:00-18:00,-,2018IL
+70,DP0396,Identidad y cultura,Alavez San Pedro / Minerva,-,-,19:00-21:00,-,19:00-20:00,2018IL
+71,DP0396,Identidad y cultura,Barragan Garcia / Marco Antonio,-,14:00-16:00,-,-,17:00-18:00,2018IL
+72,II0219,Ingeniería de costos,García Rivera / Miriam Angelica,-,13:00-15:00,-,14:00-15:00,-,2018IL
+73,PIL0303,Prácticas profesionales II,García Fernández / Alejandro,-,-,-,-,-,2018IL
+74,DP0497,Problemas del mundo contemporáneo,Sánchez Novelo / Mariela de Jesús,-,18:00-20:00,-,-,20:00-21:00,2018IL
+75,DP0497,Problemas del mundo contemporáneo,Castro Gonzalez / Julieta,-,-,19:00-20:00,-,20:00-22:00,2018IL
+76,DP0498,Problemas de México,Díaz Molina / Libertad Fidelina,-,14:00-16:00,-,15:00-16:00,-,2018IL
+77,IL0418,Modelos de simulación y logística,Cobos Del Ángel / Diana del Pilar,-,16:00-17:00,17:00-19:00,-,-,2018IL
+78,IL0419,Transporte y distribución,Cobos Del Ángel / Diana del Pilar,-,17:00-19:00,-,16:00-18:00,-,2018IL
+79,IL3417,Logística de recuperación,Cabello Robles / Citlali Abigail,-,19:00-21:00,-,20:00-21:00,-,2018IL
+80,IL3420,Industria turística y su entorno,Basto Cohuo / Jonathan Abimael,20:00-21:00,-,19:00-21:00,-,-,2018IL
+81,IL3427,Minería de procesos,Gallareta Negrón / Mirbella Teresa,19:00-20:00,-,-,18:00-20:00,-,2018IL
+82,IT0427,Proyecto terminal,Aguas García / Nancy,16:00-19:00,-,-,-,-,2018IL
+83,DP0499,Seminario de investigación,Barragan Garcia / Marco Antonio,16:00-19:00,-,-,-,-,2018IL
+84,II3473,Abastecimientos,Moo Valle / Ricky Omar,-,-,14:00-15:00,-,14:00-16:00,2018IL
+85,DP0498,Problemas de México,Cervera León / José Samuel,-,-,17:00-19:00,16:00-17:00,-,2018IL
+86,DP0499,Seminario de investigación,Barragan Garcia / Marco Antonio,-,20:00-22:00,-,20:00-21:00,-,2018IL
+87,II0422,Taller de emprendedores,Treviño Arzápalo / Ángel Alejandro,07:00-09:00,-,07:00-08:00,-,-,2018IL
+88,NI3431,Marketing en los negocios electrónicos,Canche Dzul / Arely Del Socorro,21:00-22:00,-,-,-,19:00-21:00,2018IL
+89,DP0498,Problemas de México,Aguilar Hernández / Miguel Ángel,16:00-17:00,-,16:00-18:00,-,-,2018IL
+90,DP0498,Problemas de México,Barragan Garcia / Marco Antonio,-,-,16:00-18:00,-,16:00-17:00,2018IL
+91,DP0499,Seminario de investigación,Reyes Miranda / José Felipe,16:00-18:00,-,18:00-19:00,-,-,2018IL
+92,IT0427,Proyecto terminal,Zavala López / Erika Erendira,16:00-19:00,-,-,-,-,2018IL
+93,II0219,Ingeniería de costos,García Rivera / Miriam Angelica,-,13:00-15:00,-,14:00-15:00,-,2018IL
+94,IL0417,Almacenes e inventarios,Treviño Arzápalo / Ángel Alejandro,-,08:00-09:00,08:00-10:00,-,-,2018IL
+95,DP0498,Problemas de México,Manzo de León / Leonela Paola,18:00-20:00,-,-,-,18:00-19:00,2018IL
+96,DP0499,Seminario de investigación,Reyes Miranda / José Felipe,14:00-16:00,-,14:00-15:00,-,-,2018IL

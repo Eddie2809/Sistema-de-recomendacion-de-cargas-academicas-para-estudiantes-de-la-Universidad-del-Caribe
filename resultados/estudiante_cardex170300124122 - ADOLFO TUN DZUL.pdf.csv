@@ -1,0 +1,386 @@
+clave,ciclos,Nombre,Maestro,Lunes,Martes,Miercoles,Jueves,Viernes,tipo,id_carga,desempeno
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,0.0,2.86
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,0.0,2.86
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,0.0,2.86
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,1.0,2.86
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,1.0,2.86
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,1.0,2.86
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,2.0,2.86
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,2.0,2.86
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,2.0,2.86
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,3.0,2.68
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,3.0,2.68
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,3.0,2.68
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,4.0,2.68
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,4.0,2.68
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,4.0,2.68
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,5.0,2.68
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,5.0,2.68
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,5.0,2.68
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,6.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,6.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,7.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,7.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,8.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,8.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,8.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,9.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,9.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,9.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,10.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,10.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,10.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,11.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,11.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,11.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,12.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,12.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,12.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,13.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,13.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,13.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,14.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,14.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,14.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,15.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,15.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,15.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,16.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,16.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,16.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,17.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,17.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,17.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,18.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,18.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,18.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,19.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,19.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,19.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,20.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,20.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,20.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,21.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,21.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,21.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,22.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,22.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,22.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,23.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,23.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,23.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,24.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,24.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,24.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,25.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,25.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,25.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,26.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,26.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,26.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,27.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,27.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,27.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,28.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,28.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,28.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,29.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,29.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,29.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,30.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,30.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,30.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,31.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,31.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,31.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,31.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,32.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,32.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,32.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,32.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,33.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,33.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,33.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,33.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,34.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,34.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,34.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,34.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,35.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,35.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,35.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,35.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,36.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,36.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,36.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,36.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,37.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,37.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,37.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,37.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,38.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,38.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,38.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,38.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,39.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,39.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,39.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,39.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,40.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,40.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,40.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,40.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,41.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,41.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,41.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,41.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,42.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,42.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,42.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,42.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,43.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,43.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,43.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,43.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,44.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,44.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,44.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,44.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,45.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,45.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,45.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,45.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,46.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,46.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,46.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,46.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,47.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,47.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,47.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,47.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,48.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,48.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,48.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,48.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,49.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,49.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,49.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,49.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,50.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,50.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,50.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,50.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,51.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,51.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,51.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,51.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,52.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,52.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,52.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,52.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,53.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,53.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,53.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,53.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,54.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,54.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,54.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,54.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,55.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,55.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,55.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,55.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,56.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,56.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,56.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,56.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,57.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,57.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,57.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,57.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,58.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,58.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,58.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,58.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,59.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,59.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,59.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,59.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,60.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,60.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,60.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,60.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,61.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,61.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,61.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,61.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,62.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,62.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,62.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,62.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,63.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,63.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,63.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,63.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,64.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,64.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,64.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,64.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,65.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,65.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,65.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,65.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,66.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,66.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,66.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,66.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,66.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,67.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,67.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,67.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,67.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,67.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,68.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,68.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,68.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,68.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,68.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,69.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,69.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,69.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,69.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,69.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,70.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,70.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,70.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,70.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,70.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,71.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,71.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,71.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,71.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,71.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,72.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,72.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,72.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,72.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,72.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,73.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,73.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,73.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,73.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,73.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,74.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,74.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,74.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,74.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,74.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,75.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,75.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,75.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,75.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,75.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,76.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,76.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,76.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,76.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,76.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,77.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,77.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,77.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,77.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,77.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,78.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,78.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,78.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,78.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,78.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,79.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,79.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,79.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,79.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,79.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,80.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,80.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,80.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,80.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,80.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,81.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,81.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,81.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,81.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,81.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,82.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,82.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,82.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,82.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,82.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,83.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,83.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,83.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,83.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,83.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,84.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,84.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,84.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,84.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,84.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,85.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,85.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,85.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,85.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,85.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,86.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,86.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,86.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,86.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,86.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,87.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,87.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,87.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,87.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,87.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,87.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,88.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,88.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,88.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,88.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,88.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,88.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,89.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,89.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,89.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,89.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,89.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,89.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,90.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,90.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,90.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,90.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,90.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,90.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,91.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,91.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,91.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,91.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,91.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,91.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,92.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,92.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,92.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,92.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,92.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,92.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,93.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,93.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,93.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,93.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,93.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,93.0,0.0
+ID3422,3,Negocios digitales,Rodríguez Santiago / Juan Manuel,-,18:00-20:00,-,18:00-19:00,-,Preespecialidad,94.0,0.0
+ID3468,4,Herramientas para la gestión de grandes volúmenes de datos,Mendiola Fuentes / Jessica Carmin,18:00-20:00,-,-,19:00-20:00,-,Elección libre,94.0,0.0
+II0422,4,Taller de emprendedores,García Rivera / Miriam Angelica,16:00-18:00,-,-,17:00-18:00,-,Elección libre,94.0,0.0
+IT0317,4,Diseño de interfaces humano-máquina,Morales Saavedra / Emmanuel,-,-,15:00-16:00,-,14:00-16:00,Elección libre,94.0,0.0
+II0423,4,Métodos numéricos por computadora,Mejenes Sánchez / Omar,-,16:00-18:00,18:00-20:00,-,-,Elección libre,94.0,0.0
+ID3415,4,Cómputo ubicuo,Sansores Pérez / Candelaria Elizabeth,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,94.0,0.0
+ID3420,4,Analítica para la inteligencia de negocios,Gómez García / Hector Fernando,-,-,18:00-20:00,-,18:00-19:00,Preespecialidad,94.0,0.0

@@ -109,7 +109,7 @@ class ListaCargas(ctk.CTkFrame):
         self.botonAnterior.grid(row = 0, column = 0)
         self.botonCasa = ctk.CTkButton(seccionBotonesNavegacion, command = lambda: self.cambiarPagina(0), state = 'disabled', image=casaIcono,text='',fg_color = estiloG.GRIS_CLARO,text_color='white', font=estiloG.FUENTE_TEXTO,width=30)
         self.botonCasa.grid(row = 0, column = 1, padx=15)
-        self.botonSiguiente = ctk.CTkButton(seccionBotonesNavegacion, hover_color = '#0A0F29', command = lambda: self.cambiarPagina(1), state = 'normal' if len(cargasParaMostrar) > 10 else 'disabled', image=flechaDerecha,text='',fg_color = estiloG.COLOR_PRINCIPAL if len(cargasParaMostrar) > 10 else estiloG.GRIS_CLARO,text_color='white', font=estiloG.FUENTE_TEXTO,width=30)
+        self.botonSiguiente = ctk.CTkButton(seccionBotonesNavegacion, hover_color = '#0A0F29', command = lambda: self.cambiarPagina(1), state = 'normal' if len(cargasParaMostrar) > 5 else 'disabled', image=flechaDerecha,text='',fg_color = estiloG.COLOR_PRINCIPAL if len(cargasParaMostrar) > 10 else estiloG.GRIS_CLARO,text_color='white', font=estiloG.FUENTE_TEXTO,width=30)
         self.botonSiguiente.grid(row = 0, column = 2)
 
         self.paginaActualLabel = ctk.CTkLabel(self, fg_color = 'transparent', font = estiloG.FUENTE_TEXTO, text_color = estiloG.COLOR_TEXTO, text='Pagina: 1 / ' + str(self.ultimaPagina))

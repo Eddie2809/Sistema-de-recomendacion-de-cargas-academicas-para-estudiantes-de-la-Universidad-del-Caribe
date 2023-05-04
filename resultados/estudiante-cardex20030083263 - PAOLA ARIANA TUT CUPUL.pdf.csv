@@ -1,0 +1,162 @@
+clave,ciclos,Nombre,Maestro,Lunes,Martes,Miercoles,Jueves,Viernes,tipo,id_carga,desempeno
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,0.0,3.04
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,0.0,3.04
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,0.0,3.04
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,0.0,3.04
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,0.0,3.04
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,1.0,2.89
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,1.0,2.89
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,1.0,2.89
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,1.0,2.89
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,2.0,2.89
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,2.0,2.89
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,2.0,2.89
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,2.0,2.89
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,3.0,2.84
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,3.0,2.84
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,3.0,2.84
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,3.0,2.84
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,4.0,2.84
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,4.0,2.84
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,4.0,2.84
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,4.0,2.84
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,5.0,2.73
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,5.0,2.73
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,5.0,2.73
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,6.0,2.69
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,6.0,2.69
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,6.0,2.69
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,7.0,2.69
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,7.0,2.69
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,7.0,2.69
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,8.0,2.69
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,8.0,2.69
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,8.0,2.69
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,9.0,2.69
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,9.0,2.69
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,9.0,2.69
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,10.0,2.64
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,10.0,2.64
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,10.0,2.64
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,11.0,2.31
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,11.0,2.31
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,11.0,2.31
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,11.0,2.31
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,12.0,2.31
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,12.0,2.31
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,12.0,2.31
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,12.0,2.31
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,13.0,2.16
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,13.0,2.16
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,13.0,2.16
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,14.0,2.16
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,14.0,2.16
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,14.0,2.16
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,15.0,2.11
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,15.0,2.11
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,15.0,2.11
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,16.0,2.11
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,16.0,2.11
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,16.0,2.11
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,17.0,2.11
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,17.0,2.11
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,17.0,2.11
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,18.0,2.11
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,18.0,2.11
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,18.0,2.11
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,19.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,19.0,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,20.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,20.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,21.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,21.0,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,22.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,22.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,23.0,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,23.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,23.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,24.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,24.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,24.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,25.0,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,25.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,25.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,26.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,26.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,26.0,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,27.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,27.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,27.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,28.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,28.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,28.0,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,29.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,29.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,29.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,30.0,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,30.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,30.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,30.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,31.0,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,31.0,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,31.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,31.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,32.0,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,32.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,32.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,32.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,33.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,33.0,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,33.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,33.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,34.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,34.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,34.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,34.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,35.0,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,35.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,35.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,35.0,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,36.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,36.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,36.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,36.0,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,37.0,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,37.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,37.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,37.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,38.0,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,38.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,38.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,38.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,39.0,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,39.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,39.0,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,39.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,39.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,40.0,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,40.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,40.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,40.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,40.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,41.0,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,41.0,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,41.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,41.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,41.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,42.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,42.0,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,42.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,42.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,42.0,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,43.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,43.0,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,43.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,43.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,43.0,0.0
+II0209,1,Cálculo integral,Zavala Amezcua / Eva Mirelle,09:00-11:00,-,-,09:00-10:00,-,Basica,44.0,0.0
+IA0310,3,Procesos fisicoquímicos,García Rosas / Marina Isabel,-,13:00-15:00,-,13:00-14:00,-,Basica,44.0,0.0
+IA3428,3,Energía eólica,Ramírez Carmona / Leslye Johanna,11:00-14:00,-,-,-,-,Preespecialidad,44.0,0.0
+IA3462,4,SIG para ingeniería ambiental,Muñoz Dzib / Melchor Ernesto,-,-,13:00-15:00,-,14:00-15:00,Elección libre,44.0,0.0
+IA3463,4,Análisis de riesgo e impacto ambiental,Sánchez Drewes / Erece,09:00-11:00,-,-,-,09:00-10:00,Elección libre,44.0,0.0
+DP0499,4,Seminario de investigación,Reyes Miranda / José Felipe,-,-,-,12:00-13:00,09:00-11:00,Basica,44.0,0.0

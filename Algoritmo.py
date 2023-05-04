@@ -56,6 +56,13 @@ class Algoritmo():
 				ciclo = ciclo - 2 if ciclo == 4 else ciclo - 1
 				self.eleccionLibreCargadasPorCiclo[ciclo] += 1
 
+		if self.eleccionLibreCargadasPorCiclo[0] > self.eleccionLibrePorCiclos[0]:
+			self.eleccionLibreCargadasPorCiclo[0] = self.eleccionLibrePorCiclos[0]
+		if self.eleccionLibreCargadasPorCiclo[1] > self.eleccionLibrePorCiclos[1]:
+			self.eleccionLibreCargadasPorCiclo[1] = self.eleccionLibrePorCiclos[1]
+		if self.eleccionLibreCargadasPorCiclo[2] > self.eleccionLibrePorCiclos[2]:
+			self.eleccionLibreCargadasPorCiclo[2] = self.eleccionLibrePorCiclos[2]
+
 		self.ofertaUtil = self.obtenerOfertaUtil()
 
 		creator.create("FitnessMin", base.Fitness, weights=(1,1,1,-1,-1,-1))
@@ -408,8 +415,14 @@ class Algoritmo():
 				ciclo = 2 if ciclo > 2 else ciclo - 1	
 				eleccionLibreCargadas[ciclo] += 1
 				
-		if eleccionLibreCargadas[0] > self.eleccionLibreCargadasPorCiclo[0] or eleccionLibreCargadas[1] > self.eleccionLibrePorCiclos[1] or eleccionLibreCargadas[2] > self.eleccionLibrePorCiclos[2]:
+		#print('===================')
+		#print(eleccionLibreCargadas[0],self.eleccionLibrePorCiclos[0])
+		#print(eleccionLibreCargadas[1],self.eleccionLibrePorCiclos[1])
+		#print(eleccionLibreCargadas[2],self.eleccionLibrePorCiclos[2])
+		#print('===================')
+		if eleccionLibreCargadas[0] > self.eleccionLibrePorCiclos[0] or eleccionLibreCargadas[1] > self.eleccionLibrePorCiclos[1] or eleccionLibreCargadas[2] > self.eleccionLibrePorCiclos[2]:
 			return False
+
 
 		return True
 
@@ -483,6 +496,7 @@ class Algoritmo():
 			if claves[i][0:2] == 'AD'or claves[i][0:2] == 'TA' or claves[i][0:2] == 'LI' or claves[i][0:2] == 'PI':
 				continue
 				
+			print(claves[i])
 			ciclo = self.plan.query('clave == "' + claves[i] + '"')['ciclos'].values[0] - 1
 			utilidadTotal += self.utilidad[ciclo - self.menorCiclo]
 		
@@ -590,7 +604,7 @@ class Algoritmo():
 	def obtenerDesempeno(self,solucion):
 		if not(self.esValido(solucion)):
 			return 0,0,0,1,1,1
-		
+
 		upcc = self.UpCC(solucion) if self.pesos['upcc'] != 0 else 1
 		upmr = self.UpMR(solucion) if self.pesos['upmr'] != 0 else 1
 		upcm = self.UpCM(solucion) if self.pesos['upcm'] != 0 else 1
